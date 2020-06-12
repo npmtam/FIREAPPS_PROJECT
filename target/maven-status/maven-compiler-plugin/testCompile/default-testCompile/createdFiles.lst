@@ -1,0 +1,14 @@
+fireappsIO\functionsShopifyApps.class
+fireappsIO\functionWhatsNewPage.class
+cucumberOptions\CucumberTestRunner.class
+shopify\Main$1.class
+fireappsIO\functionHomePage.class
+shopify\changePlan.class
+shopify\createStore.class
+shopify\uninstallApp.class
+fireappsIO\functionBlogPage.class
+shopify\installApp.class
+cucumberOptions\Hooks.class
+shopify\Main.class
+shopify\reactionRate.class
+stepDefinitions\WebsiteSteps.class

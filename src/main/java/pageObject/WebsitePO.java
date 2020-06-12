@@ -214,7 +214,6 @@ public class WebsitePO extends AbstractPage {
     public void waitForMapSlideAndTakeTheScrShot(String indexValue, String fileName){
         waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
         if(isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue)){
-            scrollToElement(WebsiteUI.FEEDBACK_LABEL);
             sleepInSecond(1);
             takeScreenshot(fileName);
         }
@@ -372,11 +371,22 @@ public class WebsitePO extends AbstractPage {
     }
 
     public void clickToCloseMessenger(){
-        switchToFrameOrIframe(WebsiteUI.MESSENGER_IFRAME);
-        waitToElementVisible(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
-        clickToElement(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
-        driver.switchTo().defaultContent();
+        if(isElementPresentInDOM(WebsiteUI.MESSENGER_IFRAME)) {
+            switchToFrameOrIframe(WebsiteUI.MESSENGER_IFRAME);
+            waitToElementVisible(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
+            clickToElement(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
+            driver.switchTo().defaultContent();
+        }
     }
 
+    public boolean checkBlogPostAtHomePage(String postPosition){
+        String postTitle;
+        waitToElementVisible(WebsiteUI.BLOG_TITLE_IN_HOME_PAGE, postPosition);
+        postTitle = getTextElement(WebsiteUI.BLOG_TITLE_IN_HOME_PAGE, postPosition);
+        System.out.println(postTitle);
+        clickToElement(WebsiteUI.BLOG_TITLE_IN_HOME_PAGE, postPosition);
+        String title = getTextElement(WebsiteUI.BLOG_CHECK_TITLE);
+        return postTitle.contains(title);
+    }
 
 }

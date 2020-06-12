@@ -23,13 +23,16 @@ public class WebsiteUI {
     //App slider
     public static final String PREVIOUS_SLIDE_BTN = "//span[contains(@class, 'swiper-button-prev')]";
     public static final String NEXT_SLIDE_BTN = "//span[contains(@class, 'swiper-button-next')]";
+    public static final String DOT_ICON_TO_MOVE_SLIDE_APP = "//span[contains(@class, 'swiper-pagination-bullet') and @aria-label='Go to slide %s']";
 
 
     public static final String FEEDBACK_LABEL = "//h4[@class='a-text-lead']";
-    public static final String MAP_SLIDEBAR = "//div[@class='swiper-slide row align-items-center swiper-slide-visible swiper-slide-active' and @data-swiper-slide-index='%s']";
+    public static final String MAP_SLIDEBAR = "//div[@class='swiper-slide-content swiper-slide swiper-slide-active' and @data-swiper-slide-index='%s']";
 
     //Blog articles at Home Page
     public static final String BLOG_POST_IN_HOME_PAGE = "//h4/a[contains(text(), '%s')]";
+    public static final String BLOG_TITLE_IN_HOME_PAGE = "//div[@class='col-12 col-md-4'][%s]//h4/a";
+    public static final String BLOG_CHECK_TITLE = "//article[@class='m-article-detail mb-5']/h1";
     public static final String BLOG_POST_TITLE = "//h1[contains(text(), '%s')]";
 
     //Footer

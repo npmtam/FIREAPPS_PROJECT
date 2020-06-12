@@ -12,6 +12,7 @@ import cucumber.api.java.en.When;
 import cucumberOptions.Hooks;
 import org.openqa.selenium.WebDriver;
 import pageObject.WebsitePO;
+import pageUI.WebsiteUI;
 
 public class WebsiteSteps extends AbstractTest {
     WebDriver driver;
@@ -95,9 +96,14 @@ public class WebsiteSteps extends AbstractTest {
                 verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alireviews"));
     }
 
-    @And("^verify the previous button is disabled$")
-    public void verify_the_previous_button_is_disabled() {
+    @And("^verify the Previous button is disabled$")
+    public void verify_the_Previous_button_is_disabled() {
         verifyEquals(websitePage.isPrevSlideButtonDisabled(), "true");
+    }
+
+    @And("^verify the Next button is disabled$")
+    public void verify_the_next_button_is_disabled() {
+        verifyEquals(websitePage.isNextSlideButtonDisabled(), "true");
     }
 
     @And("^I click to Get App button of \"([^\"]*)\" app$")
@@ -165,7 +171,6 @@ public class WebsiteSteps extends AbstractTest {
         abstractPage.sleepInSecond(1);
         websitePage.scrollToAppSlideBar();
         websitePage.clickToNextAppSlide();
-        websitePage.clickToNextAppSlide();
         abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("aliorders"));
     }
@@ -174,10 +179,94 @@ public class WebsiteSteps extends AbstractTest {
     public void i_check_the_sales_box_app_from_the_slider() {
         websitePage.scrollToAppSlideBar();
         websitePage.clickToNextAppSlide();
-        websitePage.clickToNextAppSlide();
-        websitePage.clickToNextAppSlide();
         abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("salesbox"));
     }
+
+    @And("^I wait for testimonial slide \"([^\"]*)\" display and take the screenshot$")
+    public void i_wait_for_testimonial_slide_something_display_and_take_the_screenshot(String slideNum) {
+        abstractPage.scrollToElement(WebsiteUI.DOT_ICON_TO_MOVE_SLIDE_APP, "1");
+        String indexValue;
+        switch (slideNum){
+            case "1":
+                indexValue = "0";
+                websitePage.waitForMapSlideAndTakeTheScrShot("0", "HomePage5-AliReviewMap0.jpg");
+//                abstractPage.waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
+//                verifyTrue(abstractPage.isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue));
+//                abstractPage.takeScreenshot("HomePage5-AliReviewMap1.jpg");
+                break;
+            case "2":
+                indexValue = "1";
+                websitePage.waitForMapSlideAndTakeTheScrShot(indexValue, "HomePage6-AliOrderMap1.jpg");
+//                abstractPage.waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
+//                verifyTrue(abstractPage.isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue));
+//                abstractPage.takeScreenshot("HomePage6-AliOrderMap1.jpg");
+                break;
+            case "3":
+                indexValue = "2";
+                websitePage.waitForMapSlideAndTakeTheScrShot(indexValue, "HomePage7-SalesBoxMap2.jpg");
+//                abstractPage.waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
+//                verifyTrue(abstractPage.isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue));
+//                abstractPage.takeScreenshot("HomePage7-SalesBoxMap2.jpg");
+                break;
+            case "4":
+                indexValue = "3";
+                websitePage.waitForMapSlideAndTakeTheScrShot(indexValue, "HomePage8-AliHunterMap3.jpg");
+//                abstractPage.waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
+//                verifyTrue(abstractPage.isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue));
+//                abstractPage.takeScreenshot("HomePage8-AliHunterMap3.jpg");
+                break;
+            case "5":
+                indexValue = "4";
+                websitePage.waitForMapSlideAndTakeTheScrShot(indexValue, "HomePage9-AliReviewMap4.jpg");
+//                abstractPage.waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
+//                verifyTrue(abstractPage.isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue));
+//                abstractPage.takeScreenshot("HomePage9-AliReviewMap4.jpg");
+                break;
+            case "6":
+                indexValue = "5";
+                websitePage.waitForMapSlideAndTakeTheScrShot(indexValue, "HomePage10-AliOrdersMap5.jpg");
+//                abstractPage.waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
+//                verifyTrue(abstractPage.isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue));
+//                abstractPage.takeScreenshot("HomePage10-AliOrdersMap5.jpg");
+                break;
+            case "7":
+                indexValue = "6";
+                websitePage.waitForMapSlideAndTakeTheScrShot(indexValue, "HomePage11-SalesBoxMap6.jpg");
+//                abstractPage.waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
+//                verifyTrue(abstractPage.isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue));
+//                abstractPage.takeScreenshot("HomePage11-SalesBoxMap6.jpg");
+                break;
+            case "8":
+                indexValue = "7";
+                websitePage.waitForMapSlideAndTakeTheScrShot(indexValue, "HomePage12-AliHunterMap7.jpg");
+//                abstractPage.waitToElementVisible(WebsiteUI.MAP_SLIDEBAR, indexValue);
+//                verifyTrue(abstractPage.isElementDisplayed(WebsiteUI.MAP_SLIDEBAR, indexValue));
+//                abstractPage.takeScreenshot("HomePage12-AliHunterMap7.jpg");
+                break;
+        }
+    }
+
+    @And("^I back to Home page$")
+    public void i_back_to_home_page() {
+        driver.get(Constants.WEBSITE_URL);
+    }
+
+    @And("^I check the \"([^\"]*)\" blog post at Home page work well$")
+    public void i_check_the_something_blog_post_at_home_page_work_well(String blogPosition) {
+        switch (blogPosition){
+            case "1st":
+                verifyTrue(websitePage.checkBlogPostAtHomePage("1"));
+                break;
+            case "2nd":
+                verifyTrue(websitePage.checkBlogPostAtHomePage("2"));
+                break;
+            case "3rd":
+                verifyTrue(websitePage.checkBlogPostAtHomePage("3"));
+                break;
+        }
+        verifyTrue(websitePage.checkBlogPostAtHomePage(blogPosition));
+    }
+
 }
 

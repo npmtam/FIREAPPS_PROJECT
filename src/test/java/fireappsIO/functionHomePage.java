@@ -130,7 +130,7 @@ public class functionHomePage extends AbstractTest {
 //        driver.get(Constants.WEBSITE_URL);
 
 //        log.info("Body 6: Check Maps on Home Page");
-//        websitePage.waitForMapSlideAndTakeTheScrShot("0", "HomePage-AliReviewMap0.jpg");
+        websitePage.waitForMapSlideAndTakeTheScrShot("0", "HomePage-AliReviewMap0.jpg");
 //        websitePage.waitForMapSlideAndTakeTheScrShot("1", "HomePage-AliOrdersMap1.jpg");
 //        websitePage.waitForMapSlideAndTakeTheScrShot("2", "HomePage-SalesBoxMap2.jpg");
 //        websitePage.waitForMapSlideAndTakeTheScrShot("3", "HomePage-AliHunterMap3.jpg");

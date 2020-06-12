@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                11,
-                2,
-                25,
+                49,
+                0,
+                0,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 38) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 49) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                2
+                2,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   1,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -234,7 +234,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>ACCEPTANCE TEST FOR SERVER</td>
               <td>1</td>
-            <td>12 Jun 2020, 13:25</td>
+            <td>12 Jun 2020, 16:32</td>
     </tr>
   </tbody>
 </table>
@@ -331,52 +331,52 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-feature_WebsiteTestcases-feature.html">Check functions for Home page Fireapps.io</a></td>
         
-        <td      class="passed"    >11</td>
-        <td      class="failed"    >2</td>
-        <td     class="skipped"   >25</td>
+        <td      class="passed"    >49</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">38</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">49</td>
 
+        <td  class="passed"    >2</td>
         <td >0</td>
-        <td  class="failed"    >2</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="116175488700">1:56.175</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="111855990400">1:51.855</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>11</td>
-      <td>2</td>
-      <td>25</td>
+            <td>49</td>
       <td>0</td>
       <td>0</td>
-      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49</td>
 
+      <td>2</td>
       <td>0</td>
       <td>2</td>
-      <td>2</td>
 
-      <td class="duration">1:56.175</td>
+      <td class="duration">1:51.855</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-            <td>28.95%</td>
-      <td>5.26%</td>
-      <td>65.79%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
       <td>100.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

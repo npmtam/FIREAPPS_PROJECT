@@ -26,7 +26,7 @@ public class WebsiteSteps extends AbstractTest {
     }
 
     @Given("^I access the website$")
-    public void i_access_the_website(){
+    public void i_access_the_website() {
         driver.get(Constants.WEBSITE_URL);
 //        websitePage = PageGeneratorManager.getWebsitePage(driver);
     }
@@ -49,7 +49,7 @@ public class WebsiteSteps extends AbstractTest {
 
     @And("^I close the messenger pop up$")
     public void i_close_the_messenger_pop_up() {
-        websitePage.clickToCloseMessenger();
+            websitePage.clickToCloseMessenger();
     }
 
     @And("^verify the Shopify Apps page has been accessed$")
@@ -91,9 +91,9 @@ public class WebsiteSteps extends AbstractTest {
 
     @And("^I check the Ali Review app from the slider$")
     public void i_check_the_ali_review_app_from_the_slider() {
-                websitePage.scrollToAppSlideBar();
-                abstractPage.sleepInSecond(1);
-                verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alireviews"));
+        websitePage.scrollToAppSlideBar();
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alireviews"));
     }
 
     @And("^verify the Previous button is disabled$")
@@ -187,7 +187,7 @@ public class WebsiteSteps extends AbstractTest {
     public void i_wait_for_testimonial_slide_something_display_and_take_the_screenshot(String slideNum) {
         abstractPage.scrollToElement(WebsiteUI.DOT_ICON_TO_MOVE_SLIDE_APP, "1");
         String indexValue;
-        switch (slideNum){
+        switch (slideNum) {
             case "1":
                 indexValue = "0";
                 websitePage.waitForMapSlideAndTakeTheScrShot("0", "HomePage5-AliReviewMap0.jpg");
@@ -252,20 +252,19 @@ public class WebsiteSteps extends AbstractTest {
         driver.get(Constants.WEBSITE_URL);
     }
 
-    @And("^I check the \"([^\"]*)\" blog post at Home page work well$")
-    public void i_check_the_something_blog_post_at_home_page_work_well(String blogPosition) {
-        switch (blogPosition){
-            case "1st":
-                verifyTrue(websitePage.checkBlogPostAtHomePage("1"));
-                break;
-            case "2nd":
-                verifyTrue(websitePage.checkBlogPostAtHomePage("2"));
-                break;
-            case "3rd":
-                verifyTrue(websitePage.checkBlogPostAtHomePage("3"));
-                break;
-        }
-        verifyTrue(websitePage.checkBlogPostAtHomePage(blogPosition));
+    @And("^I check the 1st blog post at Home page work well$")
+    public void i_check_the_1st_blog_post_at_home_page_work_well()  {
+        verifyTrue(websitePage.checkBlogPostAtHomePage("1"));
+    }
+
+    @And("^I check the 2nd blog post at Home page work well$")
+    public void i_check_the_2nd_blog_post_at_home_page_work_well()  {
+        verifyTrue(websitePage.checkBlogPostAtHomePage("2"));
+    }
+
+    @And("^I check the 3rd blog post at Home page work well$")
+    public void i_check_the_3rd_blog_post_at_home_page_work_well()  {
+        verifyTrue(websitePage.checkBlogPostAtHomePage("3"));
     }
 
 }

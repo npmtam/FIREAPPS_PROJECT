@@ -371,17 +371,16 @@ public class WebsitePO extends AbstractPage {
     }
 
     public void clickToCloseMessenger(){
-        if(isElementPresentInDOM(WebsiteUI.MESSENGER_IFRAME)) {
+            sleepInSecond(1);
             switchToFrameOrIframe(WebsiteUI.MESSENGER_IFRAME);
             waitToElementVisible(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
             clickToElement(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
             driver.switchTo().defaultContent();
-        }
     }
 
     public boolean checkBlogPostAtHomePage(String postPosition){
         String postTitle;
-        waitToElementVisible(WebsiteUI.BLOG_TITLE_IN_HOME_PAGE, postPosition);
+//        waitToElementVisible(WebsiteUI.BLOG_TITLE_IN_HOME_PAGE, postPosition);
         postTitle = getTextElement(WebsiteUI.BLOG_TITLE_IN_HOME_PAGE, postPosition);
         System.out.println(postTitle);
         clickToElement(WebsiteUI.BLOG_TITLE_IN_HOME_PAGE, postPosition);

@@ -22,31 +22,34 @@ Feature: Check functions for Home page Fireapps.io
 #    And I take the screenshot as "Header5-GetAppNow.jpg"
 #    Then I return to Home page
 
-  Scenario: 02 - Check body of Home Page
+#  Scenario: 02 - Check Apps list slide bar
+#    Given I access the website
+#    When I click on Get App Now button
+#    And verify the Shopify Apps page has been accessed
+#    And I access the "Home" from header
+#    And I close the messenger pop up
+#    And I check the Ali Review app from the slider
+#    And verify the Previous button is disabled
+#    And I take the screenshot as "HomePage1-AliReviewSlide.jpg"
+#    And I click to Get App button of "Ali Reviews" app
+#    And verify the "Ali Reviews" install page appears
+#    And I check the Ali Hunter app from the slider
+#    And I take the screenshot as "HomePage2-AliHunterSlide.jpg"
+#    And I click to Get App button of "Ali Hunter" app
+#    And verify the "Ali Hunter" install page appears
+#    And I check the Ali Orders app from the slider
+#    And I take the screenshot as "HomePage3-AliOrdersSlide.jpg"
+#    And I click to Get App button of "Ali Orders" app
+#    And verify the "Ali Orders" install page appears
+#    And I check the Sales Box app from the slider
+#    And verify the Next button is disabled
+#    And I take the screenshot as "HomePage4-SalesBoxSlide.jpg"
+#    And I click to Get App button of "Sales Box" app
+#    Then verify the "Sales Box" install page appears
+
+  Scenario: 03 - Check testimonial slide
     Given I access the website
-    When I click on Get App Now button
-    And verify the Shopify Apps page has been accessed
-    And I access the "Home" from header
-    And I close the messenger pop up
-    And I check the Ali Review app from the slider
-    And verify the Previous button is disabled
-    And I take the screenshot as "HomePage1-AliReviewSlide.jpg"
-    And I click to Get App button of "Ali Reviews" app
-    And verify the "Ali Reviews" install page appears
-    And I check the Ali Hunter app from the slider
-    And I take the screenshot as "HomePage2-AliHunterSlide.jpg"
-    And I click to Get App button of "Ali Hunter" app
-    And verify the "Ali Hunter" install page appears
-    And I check the Ali Orders app from the slider
-    And I take the screenshot as "HomePage3-AliOrdersSlide.jpg"
-    And I click to Get App button of "Ali Orders" app
-    And verify the "Ali Orders" install page appears
-    And I check the Sales Box app from the slider
-    And verify the Next button is disabled
-    And I take the screenshot as "HomePage4-SalesBoxSlide.jpg"
-    And I click to Get App button of "Sales Box" app
-    And verify the "Sales Box" install page appears
-    And I back to Home page
+    When I close the messenger pop up
     And I wait for testimonial slide "1" display and take the screenshot
     And I wait for testimonial slide "2" display and take the screenshot
     And I wait for testimonial slide "3" display and take the screenshot
@@ -54,11 +57,15 @@ Feature: Check functions for Home page Fireapps.io
     And I wait for testimonial slide "5" display and take the screenshot
     And I wait for testimonial slide "6" display and take the screenshot
     And I wait for testimonial slide "7" display and take the screenshot
-    And I wait for testimonial slide "8" display and take the screenshot
-    And I check the "1st" blog post at Home page work well
+    Then I wait for testimonial slide "8" display and take the screenshot
+
+  Scenario: 04 - Check blog posts in Home page
+    Given I access the website
+    When I close the messenger pop up
+    And I check the 1st blog post at Home page work well
     And I return to Home page
-    And I check the "2nd" blog post at Home page work well
+    And I check the 2nd blog post at Home page work well
     And I return to Home page
-    And I check the "3rd" blog post at Home page work well
+    Then I check the 3rd blog post at Home page work well
 
     

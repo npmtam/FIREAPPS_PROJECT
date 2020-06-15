@@ -28,9 +28,10 @@ public class WebsitePO extends AbstractPage {
         return isElementDisplayed(WebsiteUI.H4_TEXT_CONTENT, "Premium E-commerce solutions come together");
     }
 
-    public String isShopifyAppsPageAccessed(){
+    public boolean isShopifyAppsPageAccessed(){
         sleepInSecond(1);
-        return getCurrentPageURL();
+        String currentURL = getCurrentPageURL();
+        return currentURL.contains(Constants.WEBSITE_SHOPIFY_APPS);
     }
 
     public boolean isBlogPageAccessed(){
@@ -109,6 +110,11 @@ public class WebsitePO extends AbstractPage {
         scrollToElement(WebsiteUI.FOOTER_MENUS, menuText);
         waitToElementClickable(WebsiteUI.FOOTER_MENUS, menuText);
         clickToElement(WebsiteUI.FOOTER_MENUS, menuText);
+    }
+
+    public void clickToViewAllBlogsLink(){
+        waitToElementVisible(WebsiteUI.VIEW_ALL_BLOGS_LINK);
+        clickToElement(WebsiteUI.VIEW_ALL_BLOGS_LINK);
     }
 
     public boolean isWhatsNewPageAccessed(){

@@ -29,6 +29,7 @@ public class Hooks extends AbstractTest {
 
     @After
     public void closeBrowser(){
-        closeBrowserAndDriver(driver);
+//        closeBrowserAndDriver(driver);
+        driver.quit();
     }
 }

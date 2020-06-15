@@ -49,12 +49,13 @@ public class WebsiteSteps extends AbstractTest {
 
     @And("^I close the messenger pop up$")
     public void i_close_the_messenger_pop_up() {
-            websitePage.clickToCloseMessenger();
+        websitePage.scrollToFooter();
+        websitePage.clickToCloseMessenger();
     }
 
     @And("^verify the Shopify Apps page has been accessed$")
     public void verify_the_shopify_apps_page_has_been_accessed() {
-        verifyEquals(websitePage.isShopifyAppsPageAccessed(), Constants.WEBSITE_SHOPIFY_APPS);
+        verifyTrue(websitePage.isShopifyAppsPageAccessed());
     }
 
     @And("^verify the Blog page has been accessed$")
@@ -253,18 +254,33 @@ public class WebsiteSteps extends AbstractTest {
     }
 
     @And("^I check the 1st blog post at Home page work well$")
-    public void i_check_the_1st_blog_post_at_home_page_work_well()  {
+    public void i_check_the_1st_blog_post_at_home_page_work_well() {
         verifyTrue(websitePage.checkBlogPostAtHomePage("1"));
     }
 
     @And("^I check the 2nd blog post at Home page work well$")
-    public void i_check_the_2nd_blog_post_at_home_page_work_well()  {
+    public void i_check_the_2nd_blog_post_at_home_page_work_well() {
         verifyTrue(websitePage.checkBlogPostAtHomePage("2"));
     }
 
     @And("^I check the 3rd blog post at Home page work well$")
-    public void i_check_the_3rd_blog_post_at_home_page_work_well()  {
+    public void i_check_the_3rd_blog_post_at_home_page_work_well() {
         verifyTrue(websitePage.checkBlogPostAtHomePage("3"));
+    }
+
+    @And("^I click to View all blogs link$")
+    public void i_click_to_view_all_blogs_link(){
+        websitePage.clickToViewAllBlogsLink();
+    }
+
+    @When("^I click to \"([^\"]*)\" from the footer$")
+    public void i_click_to_something_from_the_footer(String menuText) {
+        websitePage.clickToFooterMenus(menuText);
+    }
+
+    @And("^verify the What's New page has been accessed$")
+    public void verify_the_whats_new_page_has_been_accessed() {
+        websitePage.isWhatsNewPageAccessed();
     }
 
 }

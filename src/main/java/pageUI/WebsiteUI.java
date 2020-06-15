@@ -28,6 +28,7 @@ public class WebsiteUI {
 
     public static final String FEEDBACK_LABEL = "//h4[@class='a-text-lead']";
     public static final String MAP_SLIDEBAR = "//div[@class='swiper-slide-content swiper-slide swiper-slide-active' and @data-swiper-slide-index='%s']";
+    public static final String VIEW_ALL_BLOGS_LINK = "//p[@class='mb-0 text-center']/a[contains(text(), 'View all blogs')]";
 
     //Blog articles at Home Page
     public static final String BLOG_POST_IN_HOME_PAGE = "//h4/a[contains(text(), '%s')]";

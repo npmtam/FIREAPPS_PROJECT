@@ -24,6 +24,8 @@ public class WebsiteUI {
     public static final String PREVIOUS_SLIDE_BTN = "//span[contains(@class, 'swiper-button-prev')]";
     public static final String NEXT_SLIDE_BTN = "//span[contains(@class, 'swiper-button-next')]";
     public static final String DOT_ICON_TO_MOVE_SLIDE_APP = "//span[contains(@class, 'swiper-pagination-bullet') and @aria-label='Go to slide %s']";
+    public static final String OUR_ESSENTIAL_APPS_TEXT = "//p[text()='Our essential apps']";
+    public static final String GO_TO_SLIDE_DOTS = "//span[@aria-label='Go to slide %s']";
 
 
     public static final String FEEDBACK_LABEL = "//h4[@class='a-text-lead']";

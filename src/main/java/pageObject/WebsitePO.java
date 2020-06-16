@@ -25,7 +25,7 @@ public class WebsitePO extends AbstractPage {
     }
 
     public boolean isHomePageAccessed(){
-        return isElementDisplayed(WebsiteUI.H4_TEXT_CONTENT, "Premium E-commerce solutions come together");
+        return isElementDisplayed(WebsiteUI.H4_TEXT_CONTENT, "Premium e-commerce solutions come together");
     }
 
     public boolean isShopifyAppsPageAccessed(){
@@ -60,6 +60,7 @@ public class WebsitePO extends AbstractPage {
     }
 
     public boolean isAppLogoDisplayedAfterSelectSlidebar(String fileLogo){
+        scrollToElement(WebsiteUI.APPS_LOGO_IN_SLIDEBAR, fileLogo);
         return isElementDisplayed(WebsiteUI.APPS_LOGO_IN_SLIDEBAR, fileLogo);
     }
 
@@ -377,11 +378,13 @@ public class WebsitePO extends AbstractPage {
     }
 
     public void clickToCloseMessenger(){
+        if(isElementDisplayed(WebsiteUI.MESSENGER_IFRAME)) {
             sleepInSecond(1);
             switchToFrameOrIframe(WebsiteUI.MESSENGER_IFRAME);
             waitToElementVisible(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
             clickToElement(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
             driver.switchTo().defaultContent();
+        }
     }
 
     public boolean checkBlogPostAtHomePage(String postPosition){
@@ -392,6 +395,17 @@ public class WebsitePO extends AbstractPage {
         clickToElement(WebsiteUI.BLOG_TITLE_IN_HOME_PAGE, postPosition);
         String title = getTextElement(WebsiteUI.BLOG_CHECK_TITLE);
         return postTitle.contains(title);
+    }
+
+
+    //SLIDE APPS
+    public void scrollToOurEssentialApps(){
+        scrollToElement(WebsiteUI.OUR_ESSENTIAL_APPS_TEXT);
+    }
+
+    public void selectAppsByDot(String dotPos){
+        waitToElementVisible(WebsiteUI.GO_TO_SLIDE_DOTS, dotPos);
+        clickToElement(WebsiteUI.GO_TO_SLIDE_DOTS, dotPos);
     }
 
 }

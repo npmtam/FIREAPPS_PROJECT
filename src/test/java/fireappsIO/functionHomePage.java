@@ -51,7 +51,7 @@ public class functionHomePage extends AbstractTest {
         log.info("Header 5: Get App Now button");
         websitePage.clickToHeaderDynamic("Get App Now");
         abstractPage.switchToWindowsByTitle("Apps by FireApps - Premium Apps on the Shopify App Store");
-        verifyTrue(websitePage.isShopifyAppStoreFireAppsDisplayed());
+        verifyEquals(websitePage.isShopifyAppsPageAccessed(), Constants.WEBSITE_SHOPIFY_APPS);
         abstractPage.takeScreenshot("HomePage4-Header-ShopifyApps.jpg");
         abstractPage.switchToWindowsByTitle("Blog - Fireapps");
         websitePage.clickToHeaderDynamic(Constants.WEBSITE_HOME_BUTTON);
@@ -59,7 +59,46 @@ public class functionHomePage extends AbstractTest {
         verifyTrue(websitePage.isHomePageAccessed());
     }
 
-    @Test(enabled = true)
+    @Test(invocationCount = 10)
+    public void Home2_CheckSlideApps(){
+        log.info("Slide App 1: Check Ali Review");
+        websitePage = PageGeneratorManager.getWebsitePage(driver);
+        websitePage.scrollToOurEssentialApps();
+        websitePage.clickToCloseMessenger();
+        websitePage.selectAppsByDot("1");
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alireviews"));
+//        abstractPage.sleepInSecond(1);
+
+        log.info("Slide App 2: Check Sales Box");
+        websitePage.selectAppsByDot("4");
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("salesbox"));
+//        abstractPage.sleepInSecond(1);
+
+        log.info("Slide App 1: Check Ali Review");
+        websitePage = PageGeneratorManager.getWebsitePage(driver);
+        websitePage.scrollToOurEssentialApps();
+        websitePage.clickToCloseMessenger();
+        websitePage.selectAppsByDot("1");
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alireviews"));
+
+        log.info("Slide App 2: Check Ali Orders");
+        websitePage.selectAppsByDot("3");
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("aliorders"));
+//        abstractPage.sleepInSecond(1);
+
+
+        log.info("Slide App 2: Check Ali Hunter");
+        websitePage.selectAppsByDot("2");
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alihunter"));
+//        abstractPage.sleepInSecond(1);
+    }
+
+    @Test(enabled = false)
     public void Home2_checkBodyFunctions(){
         log.info("Body 1: Get App Now button");
         websitePage = PageGeneratorManager.getWebsitePage(driver);
@@ -67,44 +106,42 @@ public class functionHomePage extends AbstractTest {
         verifyEquals(websitePage.isShopifyAppsPageAccessed(), Constants.WEBSITE_SHOPIFY_APPS);
         websitePage.clickToHeaderDynamic(Constants.WEBSITE_HOME_BUTTON);
         verifyTrue(websitePage.isHomePageAccessed());
+        websitePage.clickToCloseMessenger();
 
         log.info("Body 2: Ali Review in slide bar - Get App button");
         websitePage.scrollToAppSlideBar();
-        abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alireviews"));
         abstractPage.takeScreenshot("HomePage5-AliReview.jpg");
         verifyEquals(websitePage.isPrevSlideButtonDisabled(), "true");
-        abstractPage.sleepInSecond(3);
-        websitePage.clickToGetAppButtonInSlidebar(Constants.WHATSNEW_ALIREVIEWS);
+        websitePage.clickToGetAppButtonInSlidebar(Constants.ALI_REVIEW_GET_APP);
         verifyTrue(websitePage.isGetAppPageAccessed(Constants.WEBSITE_ALI_REVIEW_URL));
         abstractPage.takeScreenshot("HomePage6-AliReviewAppPage.jpg");
-        driver.get(Constants.WEBSITE_URL);
+        abstractPage.switchToWindowsByTitle("Home Page - Fireapps");
 
         log.info("Body 3: Ali Hunter in slide bar - Get App button");
         websitePage.scrollToAppSlideBar();
-//        abstractPage.sleepInSecond(1);
         websitePage.clickToNextAppSlide();
-        abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alihunter"));
         abstractPage.takeScreenshot("HomePage7-AliHunter.jpg");
-        websitePage.clickToGetAppButtonInSlidebar(Constants.WHATSNEW_ALIHUNTER);
+        websitePage.clickToGetAppButtonInSlidebar(Constants.ALI_HUNTER_GET_APP);
         abstractPage.takeScreenshot("HomePage8-AliHunter.jpg");
         verifyTrue(websitePage.isGetAppPageAccessed(Constants.WEBSITE_ALI_HUNTER_URL));
-        driver.get(Constants.WEBSITE_URL);
+        abstractPage.switchToWindowsByTitle("Home Page - Fireapps");
 
         log.info("Body 4: Ali Orders in slide bar - Get App button");
-        websitePage.scrollToAppSlideBar();
+//        websitePage.scrollToAppSlideBar();
         websitePage.clickToNextAppSlide();
-        abstractPage.sleepInSecond(2);
+//        abstractPage.sleepInSecond(2);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("aliorders"));
         abstractPage.takeScreenshot("Homepage9-AliOrders.jpg");
-        websitePage.clickToGetAppButtonInSlidebar(Constants.WHATSNEW_ALIORDERS);
+        websitePage.clickToGetAppButtonInSlidebar(Constants.ALI_ORDERS_GET_APP);
         abstractPage.takeScreenshot("Homepage10-AliOrders");
+        abstractPage.switchToWindowsByTitle("Home Page - Fireapps");
 
         log.info("Body 4: Sales Box in slide bar - Get App button");
-        websitePage.scrollToAppSlideBar();
+//        websitePage.scrollToAppSlideBar();
         websitePage.clickToNextAppSlide();
-        abstractPage.sleepInSecond(2);
+//        abstractPage.sleepInSecond(2);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("salesbox"));
         abstractPage.takeScreenshot("Homepage9-SalesBox.jpg");
 //        log.info("Body 4: Sales Box in slide bar - Get App button");
@@ -166,6 +203,7 @@ public class functionHomePage extends AbstractTest {
     public void Home3_checkFooterFunctions(){
         log.info("Footer 1: Shopify Apps link");
         websitePage = PageGeneratorManager.getWebsitePage(driver);
+        websitePage.clickToCloseMessenger();
         websitePage.clickToFooterMenus("Shopify Apps");
         verifyEquals(websitePage.isShopifyAppsPageAccessed(), Constants.WEBSITE_SHOPIFY_APPS);
         abstractPage.takeScreenshot("HomePage14-Footer-ShopifyApps.jpg");
@@ -190,6 +228,7 @@ public class functionHomePage extends AbstractTest {
         verifyTrue(websitePage.isHelpCenterPageAccessed());
         abstractPage.takeScreenshot("HomePage18-Footer-HelpCenter.jpg");
         driver.get(Constants.WEBSITE_URL);
+        websitePage.clickToCloseMessenger();
 
         log.info("Footer 6: Privacy Policy link");
         websitePage.clickToFooterMenus("Privacy Policy");

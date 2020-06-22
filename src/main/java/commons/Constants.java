@@ -52,7 +52,7 @@ public class Constants {
     //WEBSITE CHECK FUNCTIONS
     public static final String WEBSITE_URL = "https://beta.fireapps.io";
     public static final String WEBSITE_HOME_BUTTON = "Home";
-    public static final String WEBSITE_SHOPIFY_APPS = "https://beta.fireapps.io/shopify-apps/";
+    public static final String WEBSITE_SHOPIFY_APPS = "https://beta.fireapps.io/shopify-apps";
     public static final String WEBSITE_ALI_REVIEW_URL = "https://fireapps.io/shopify-apps/ali-reviews/";
     public static final String WEBSITE_ALI_ORDERS_URL = "https://fireapps.io/shopify-apps/ali-orders/";
     public static final String WEBSITE_SALES_BOX_URL = "https://fireapps.io/shopify-apps/sales-box/";
@@ -62,7 +62,7 @@ public class Constants {
     public static final String DESCRIPTION_APP_ALIORDERS = "Bulk import products into your Shopify store and process orders";
     public static final String DESCRIPTION_APP_SALESBOX = "";
     public static final String DESCRIPTION_APP_ALIHUNTER = "";
-    public static final String HOME_PAGE_TITLE = "Home Page - Fireapps";
+    public static final String HOME_PAGE_TITLE = "Home Page - FireApps";
     public static final String ALI_REVIEW_GET_APP = "alireviews";
     public static final String ALI_HUNTER_GET_APP = "alihunter";
     public static final String ALI_ORDERS_GET_APP = "aliorders";
@@ -93,7 +93,7 @@ public class Constants {
 
 
     //WHATS NEW
-    public static final String WHATSNEW_URL = "https://fireapps.io/whats-new";
+    public static final String WHATSNEW_URL = "https://beta.fireapps.io/whats-new";
     public static final String WHATSNEW_ALIREVIEWS = "ali-reviews";
     public static final String WHATSNEW_ALIORDERS = "ali-orders";
     public static final String WHATSNEW_SALESBOX = "sales-box";

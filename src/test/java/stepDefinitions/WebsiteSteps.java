@@ -28,8 +28,13 @@ public class WebsiteSteps extends AbstractTest {
     @Given("^I access the website$")
     public void i_access_the_website() {
         driver.get(Constants.WEBSITE_URL);
-//        websitePage = PageGeneratorManager.getWebsitePage(driver);
     }
+
+    @And("^I quit the browser$")
+    public void i_quit_the_browser() {
+        closeBrowserAndDriver(driver);
+    }
+
 
     @When("^I access the \"([^\"]*)\" from header$")
     public void i_access_the_something_from_header(String headerMenu) {
@@ -67,14 +72,14 @@ public class WebsiteSteps extends AbstractTest {
     public void verify_the_affiliate_page_has_been_accessed() {
         verifyTrue(websitePage.isAffiliateTabAccessed());
         abstractPage.takeScreenshot("Header4-Affiliate.jpg");
-        abstractPage.switchToWindowsByTitle("Blog - Fireapps");
+        abstractPage.switchToWindowsByTitle("Blog - FireApps");
         verifyTrue(websitePage.isBlogPageAccessed());
     }
 
     @And("^verify the FireApps app store has been accessed$")
     public void verify_the_fireapps_app_store_has_been_accessed() {
-        abstractPage.switchToWindowsByTitle("Apps by FireApps - Premium Apps on the Shopify App Store");
-        verifyTrue(websitePage.isShopifyAppStoreFireAppsDisplayed());
+        String url = websitePage.getCurrentPageURL();
+        verifyEquals(url, Constants.WEBSITE_SHOPIFY_APPS);
     }
 
     @Then("^I return to Home page$")
@@ -102,11 +107,6 @@ public class WebsiteSteps extends AbstractTest {
         verifyEquals(websitePage.isPrevSlideButtonDisabled(), "true");
     }
 
-    @And("^verify the Next button is disabled$")
-    public void verify_the_next_button_is_disabled() {
-        verifyEquals(websitePage.isNextSlideButtonDisabled(), "true");
-    }
-
     @And("^I click to Get App button of \"([^\"]*)\" app$")
     public void i_click_to_get_app_button_of_something_app(String app) {
         switch (app) {
@@ -129,40 +129,65 @@ public class WebsiteSteps extends AbstractTest {
     public void verify_the_something_install_page_appears(String app) {
         switch (app) {
             case "Ali Reviews":
-                abstractPage.switchToWindowsByTitle("Ali Reviews – Import AliExpress Reviews to Shopify Store - FireApps");
-                abstractPage.sleepInSecond(1);
-                verifyTrue(websitePage.isGetAppPageAccessed(Constants.WEBSITE_ALI_REVIEW_URL));
-//                driver.get(Constants.WEBSITE_URL);
+//                abstractPage.switchToWindowsByTitle("Ali Reviews – Import AliExpress Reviews to Shopify Store - FireApps");
+                verifyTrue(websitePage.isInstallAppPageAccessed("Ali Reviews"));
                 abstractPage.switchToWindowsByTitle(Constants.HOME_PAGE_TITLE);
                 break;
             case "Ali Hunter":
-                abstractPage.switchToWindowsByTitle("Ali Hunter - FireApps");
+//                abstractPage.switchToWindowsByTitle("Ali Hunter - FireApps");
                 abstractPage.sleepInSecond(1);
-                verifyTrue(websitePage.isGetAppPageAccessed(Constants.WEBSITE_ALI_HUNTER_URL));
-//                driver.get(Constants.WEBSITE_URL);
+                verifyTrue(websitePage.isInstallAppPageAccessed("Ali Hunter"));
                 abstractPage.switchToWindowsByTitle(Constants.HOME_PAGE_TITLE);
                 break;
             case "Ali Orders":
-                abstractPage.switchToWindowsByTitle("Ali Orders – Automate Your AliExpress Dropshipping Business - FireApps");
+//                abstractPage.switchToWindowsByTitle("Ali Orders – Automate Your AliExpress Dropshipping Business - FireApps");
                 abstractPage.sleepInSecond(1);
-                verifyTrue(websitePage.isGetAppPageAccessed(Constants.WEBSITE_ALI_ORDERS_URL));
-//                driver.get(Constants.WEBSITE_URL);
+                verifyTrue(websitePage.isInstallAppPageAccessed("Ali Orders"));
                 abstractPage.switchToWindowsByTitle(Constants.HOME_PAGE_TITLE);
                 break;
             case "Sales Box":
-                abstractPage.switchToWindowsByTitle("Sales Box - FireApps");
+//                abstractPage.switchToWindowsByTitle("Sales Box - FireApps");
                 abstractPage.sleepInSecond(1);
-                verifyTrue(websitePage.isGetAppPageAccessed(Constants.WEBSITE_SALES_BOX_URL));
-//                driver.get(Constants.WEBSITE_URL);
+                verifyTrue(websitePage.isInstallAppPageAccessed("Sales Box"));
+//                verifyTrue(websitePage.isGetAppPageAccessed(Constants.WEBSITE_SALES_BOX_URL));
                 abstractPage.switchToWindowsByTitle(Constants.HOME_PAGE_TITLE);
                 break;
         }
     }
 
+    @And("^verify the Ali Reviews install page appears$")
+    public void verify_the_ali_reviews_install_page_appears() {
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isInstallAppPageAccessed("Ali Reviews"));
+        abstractPage.switchToWindowsByTitle(Constants.HOME_PAGE_TITLE);
+    }
+
+    @And("^verify the Ali Hunter install page appears$")
+    public void verify_the_ali_hunter_install_page_appears(){
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isInstallAppPageAccessed("Ali Hunter"));
+        abstractPage.switchToWindowsByTitle(Constants.HOME_PAGE_TITLE);
+    }
+
+    @And("^verify the Ali Orders install page appears$")
+    public void verify_the_ali_orders_install_page_appears(){
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isInstallAppPageAccessed("Ali Orders"));
+        abstractPage.switchToWindowsByTitle(Constants.HOME_PAGE_TITLE);
+    }
+
+    @And("^verify the Sales Box install page appears$")
+    public void verify_the_sales_box_install_page_appears(){
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isInstallAppPageAccessed("Sales Box"));
+        abstractPage.switchToWindowsByTitle(Constants.HOME_PAGE_TITLE);
+    }
+
     @And("^I check the Ali Hunter app from the slider$")
     public void i_check_the_ali_hunter_app_from_the_slider() {
         websitePage.scrollToAppSlideBar();
-        websitePage.clickToNextAppSlide();
+//        websitePage.clickToNextAppSlide();
+        websitePage.switchBannerByDot("3");
         abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("alihunter"));
     }
@@ -171,7 +196,8 @@ public class WebsiteSteps extends AbstractTest {
     public void i_check_the_ali_orders_app_from_the_slider() {
         abstractPage.sleepInSecond(1);
         websitePage.scrollToAppSlideBar();
-        websitePage.clickToNextAppSlide();
+//        websitePage.clickToNextAppSlide();
+        websitePage.switchBannerByDot("2");
         abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("aliorders"));
     }
@@ -179,14 +205,14 @@ public class WebsiteSteps extends AbstractTest {
     @And("^I check the Sales Box app from the slider$")
     public void i_check_the_sales_box_app_from_the_slider() {
         websitePage.scrollToAppSlideBar();
-        websitePage.clickToNextAppSlide();
+        websitePage.switchBannerByDot("4");
         abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isAppLogoDisplayedAfterSelectSlidebar("salesbox"));
     }
 
     @And("^I wait for testimonial slide \"([^\"]*)\" display and take the screenshot$")
     public void i_wait_for_testimonial_slide_something_display_and_take_the_screenshot(String slideNum) {
-        abstractPage.scrollToElement(WebsiteUI.DOT_ICON_TO_MOVE_SLIDE_APP, "1");
+        abstractPage.scrollToElement(WebsiteUI.LOVED_BY_PEOPLES_LABEL);
         String indexValue;
         switch (slideNum) {
             case "1":
@@ -281,6 +307,22 @@ public class WebsiteSteps extends AbstractTest {
     @And("^verify the What's New page has been accessed$")
     public void verify_the_whats_new_page_has_been_accessed() {
         websitePage.isWhatsNewPageAccessed();
+    }
+
+    @And("^verify the Contact Us page has been accessed$")
+    public void verify_the_contact_us_page_has_been_accessed() {
+        verifyTrue(websitePage.isContactUsPageAccessed());
+    }
+
+    @And("^verify the About Us page has been accessed$")
+    public void verify_the_about_us_page_has_been_accessed() {
+        abstractPage.sleepInSecond(1);
+        verifyTrue(websitePage.isAboutUsPageAccessed());
+    }
+
+    @And("^verify the Help Center page has been accessed$")
+    public void verify_the_help_center_page_has_been_accessed() {
+        verifyTrue(websitePage.isHelpCenterPageAccessed());
     }
 
 }

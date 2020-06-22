@@ -221,9 +221,9 @@ public class AbstractPage {
 
     public boolean isElementDisplayed(String locator, String... values) {
         locator = String.format(locator, (Object[]) values);
-        overideGlobalTimeout(shortTimeout);
+//        overideGlobalTimeout(shortTimeout);
         element = driver.findElement(By.xpath(locator));
-        overideGlobalTimeout(longTimeout);
+//        overideGlobalTimeout(longTimeout);
         return element.isDisplayed();
     }
 

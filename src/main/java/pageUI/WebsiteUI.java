@@ -12,13 +12,18 @@ public class WebsiteUI {
 
     //Apps slide bar at Home Page
     public static final String SLIDE_BAR_BUTTONS = "//span[@aria-label='Go to slide %s']";
-    public static final String APPS_LOGO_IN_SLIDEBAR = "//div[@class='row flex-md-row-reverse']//img[contains(@src, '%s')]";
+//    public static final String APPS_LOGO_IN_SLIDEBAR = "//div[@class='row flex-md-row-reverse']//img[contains(@src, '%s')]";
+    public static final String APPS_LOGO_IN_SLIDEBAR = "//div[contains(@class, 'swiper-slide-active')]//img[contains(@src, '%s')]";
+
 //    public static final String DESCRIPTION_APP_IN_SLIDEBAR = "//p[@class='a-text a-line-bottom' and contains(text(), '%s')]";
-    public static final String GET_APP_LINK_IN_SLIDEBAR = "//img[contains(@src, '%s')]/parent::div/following-sibling::a[@class='a-text-danger']";
+//    public static final String GET_APP_LINK_IN_SLIDEBAR = "//img[contains(@src, '%s')]/parent::div/following-sibling::a[contains(@class, 'a-text-danger')]";
+    public static final String GET_APP_LINK_IN_SLIDEBAR = "//img[contains(@src, '%s')]/ancestor::div[contains(@class, 'swiper-slide-active')]//a[contains(@class, 'a-text-danger')]";
     public static final String CLOSE_BUTTON_MESSENGER_POPUP = "//div[@class='_2t-5']";
     public static final String MESSENGER_ICON = "//div[@tabindex='0' and @role='button' and @style='cursor: pointer; outline: none;']";
     public static final String MESSENGER_IFRAME = "//iframe[contains(@src, 'customerchat')]";
     public static final String EXPLORE_ALL_OF_OUR_APPS_LINK = "//div[@class='text-center container']/a[@class='a-text-danger underlineltr']";
+
+    public static final String LOVED_BY_PEOPLES_LABEL = "//p[@class='a-text-big' and contains(text(), 'Loved')]";
 
     //App slider
     public static final String PREVIOUS_SLIDE_BTN = "//span[contains(@class, 'swiper-button-prev')]";
@@ -31,10 +36,11 @@ public class WebsiteUI {
     public static final String FEEDBACK_LABEL = "//h4[@class='a-text-lead']";
     public static final String MAP_SLIDEBAR = "//div[@class='swiper-slide-content swiper-slide swiper-slide-active' and @data-swiper-slide-index='%s']";
     public static final String VIEW_ALL_BLOGS_LINK = "//p[@class='mb-0 text-center']/a[contains(text(), 'View all blogs')]";
+    public static final String ALI_HUNTER_DESCRIPTION = "//p[@class='para-hunter']";
 
     //Blog articles at Home Page
     public static final String BLOG_POST_IN_HOME_PAGE = "//h4/a[contains(text(), '%s')]";
-    public static final String BLOG_TITLE_IN_HOME_PAGE = "//div[@class='col-12 col-md-4'][%s]//h4/a";
+    public static final String BLOG_TITLE_IN_HOME_PAGE = "//div[@class='col-12 col-md-4 mb-3 mb-md-0'][%s]//h4/a";
     public static final String BLOG_CHECK_TITLE = "//article[@class='m-article-detail mb-5']/h1";
     public static final String BLOG_POST_TITLE = "//h1[contains(text(), '%s')]";
 

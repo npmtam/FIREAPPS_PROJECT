@@ -40,7 +40,7 @@ public class WebsitePO extends AbstractPage {
     }
 
     public boolean isAffiliateTabAccessed(){
-        switchToWindowsByTitle("Fireapps.io");
+        switchToWindowsByTitle("Affiliate - FireApps");
         return isElementDisplayed(WebsiteUI.AFFILIATE_JOIN_NOW_BUTTON);
     }
 
@@ -83,7 +83,9 @@ public class WebsitePO extends AbstractPage {
     }
 
     public boolean isGetAppPageAccessed(String link){
-        return getCurrentPageURL().equals(link);
+        sleepInSecond(1);
+        String url = getCurrentPageURL();
+        return url.contains(link);
     }
 
     public void clickToBlogPostInHomePage(String postTitle){
@@ -99,7 +101,8 @@ public class WebsitePO extends AbstractPage {
 
     public void clickToNextAppSlide(){
         waitToElementVisible(WebsiteUI.NEXT_SLIDE_BTN);
-        clickToElement(WebsiteUI.NEXT_SLIDE_BTN);
+        sleepInSecond(1);
+        clickToElementByJS(WebsiteUI.NEXT_SLIDE_BTN);
     }
 
     public void clickToPrevAppSlide(){
@@ -131,6 +134,7 @@ public class WebsitePO extends AbstractPage {
     }
 
     public boolean isHelpCenterPageAccessed(){
+        sleepInSecond(1);
         return getCurrentPageURL().equals(Constants.HELP_CENTER_URL);
     }
 
@@ -378,7 +382,7 @@ public class WebsitePO extends AbstractPage {
     }
 
     public void clickToCloseMessenger(){
-        if(isElementDisplayed(WebsiteUI.MESSENGER_IFRAME)) {
+        if(isElementPresentInDOM(WebsiteUI.MESSENGER_IFRAME)) {
             sleepInSecond(1);
             switchToFrameOrIframe(WebsiteUI.MESSENGER_IFRAME);
             waitToElementVisible(WebsiteUI.CLOSE_BUTTON_MESSENGER_POPUP);
@@ -406,6 +410,37 @@ public class WebsitePO extends AbstractPage {
     public void selectAppsByDot(String dotPos){
         waitToElementVisible(WebsiteUI.GO_TO_SLIDE_DOTS, dotPos);
         clickToElement(WebsiteUI.GO_TO_SLIDE_DOTS, dotPos);
+    }
+
+    public boolean isInstallAppPageAccessed(String app){
+        boolean pageAccessed;
+        switch (app){
+            case "Ali Reviews":
+                switchToWindowsByTitle("Ali Reviews – Import AliExpress Reviews to Shopify Store - FireApps");
+                pageAccessed = isElementPresentInDOM(WebsiteUI.BLOG_POST_TITLE, "Ali Reviews");
+                break;
+            case "Ali Hunter":
+                switchToWindowsByTitle("Ali Hunter - FireApps");
+                sleepInSecond(1);
+                pageAccessed = isElementDisplayed(WebsiteUI.ALI_HUNTER_DESCRIPTION);
+                break;
+            case "Ali Orders":
+                switchToWindowsByTitle("Ali Orders – Automate Your AliExpress Dropshipping Business - FireApps");
+                pageAccessed = isElementPresentInDOM(WebsiteUI.BLOG_POST_TITLE, "Ali Orders");
+                break;
+            case "Sales Box":
+                switchToWindowsByTitle("Sales Box - FireApps");
+                pageAccessed = isElementPresentInDOM(WebsiteUI.BLOG_POST_TITLE, "Sales Box");
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + app);
+        }
+        return pageAccessed;
+    }
+
+    public void switchBannerByDot(String position){
+        waitToElementVisible(WebsiteUI.DOT_ICON_TO_MOVE_SLIDE_APP, position);
+        clickToElement(WebsiteUI.DOT_ICON_TO_MOVE_SLIDE_APP, position);
     }
 
 }

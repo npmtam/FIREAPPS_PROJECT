@@ -78,15 +78,38 @@ Feature: Check functions for Home page Fireapps.io
     And verify the Shopify Apps page has been accessed
     And I click to "New" from the footer
     And verify the What's New page has been accessed
+    And I take the screenshot as "Footer1-WhatsNew.jpg"
     And I back to Home page
     And I click to "Contact Us" from the footer
     And verify the Contact Us page has been accessed
+    And I take the screenshot as "Footer2-ContactUs.jpg"
     And I back to Home page
     And I click to "About Us" from the footer
     And verify the About Us page has been accessed
+    And I take the screenshot as "Footer3-AboutUs.jpg"
     And I back to Home page
     And I click to "Help Center" from the footer
     And verify the Help Center page has been accessed
+    And I take the screenshot as "Footer4-HelpCenter.jpg"
+    And I back to Home page
+    And I click to "Privacy Policy" from the footer
+    And verify the Privacy Policy page has been accessed
+    And I take the screenshot as "Footer5-PrivacyPolicy.jpg"
+    And I back to Home page
+    And I click to "Terms of Service" from the footer
+    And verify the Term of Service page has been accessed
+    And I take the screenshot as "Footer6-TermsOfService.jpg"
+    And I click to "Facebook" social icon in the footer
+    And verify the Facebook page has been accessed
+    And I back to Home page
+    And I click to "Instagram" social icon in the footer
+    And verify the Instagram page has been accessed
+    And I back to Home page
+    And I click to "Twitter" social icon in the footer
+    And verify the Twitter page has been accessed
+    And I back to Home page
+    And I click to "Youtube" social icon in the footer
+    And verify the Youtube page has been accessed
     And I quit the browser
 
 

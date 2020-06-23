@@ -207,7 +207,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>ACCEPTANCE TEST FOR SERVER</projectName>
+                            <projectName>CHECK FUNCTIONS FOR FIREAPPS.IO</projectName>
                             <outputDirectory>${project.build.directory}/site/cucumber-reporting</outputDirectory>
                             <inputDirectory>${project.build.directory}/site</inputDirectory>
                             <jsonFiles>

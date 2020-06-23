@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class Hooks extends AbstractTest {
     private static WebDriver driver;
 
-    @Before
+    @Before()
     public static WebDriver openBrowser() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -29,7 +29,6 @@ public class Hooks extends AbstractTest {
 
     @After
     public void closeBrowser(){
-//        closeBrowserAndDriver(driver);
-        driver.quit();
+        closeBrowserAndDriver(driver);
     }
 }

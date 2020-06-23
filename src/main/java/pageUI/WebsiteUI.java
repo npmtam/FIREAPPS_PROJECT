@@ -52,6 +52,7 @@ public class WebsiteUI {
     public static final String EMAIL_TEXTBOX_CONTACT_US = "//input[@name='your-email']";
     public static final String FOOTER_REDIRECT_PAGE_TITLE = "//h1[contains(text(), '%s')]";
     public static final String BACK_TO_TOP_BUTTON = "//a[@class='a-btn-top a-btn shadow']";
+    public static final String HELP_PAGE_LOGO = "//div[@class='header__logo']//img[@alt='FireApps']";
 
 
     //BLOG PAGE

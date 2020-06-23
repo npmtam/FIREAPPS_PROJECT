@@ -57,12 +57,8 @@ public class Constants {
     public static final String WEBSITE_ALI_ORDERS_URL = "https://fireapps.io/shopify-apps/ali-orders/";
     public static final String WEBSITE_SALES_BOX_URL = "https://fireapps.io/shopify-apps/sales-box/";
     public static final String WEBSITE_ALI_HUNTER_URL = "https://fireapps.io/shopify-apps/ali-hunter/";
-    public static final String HELP_CENTER_URL = "https://help.fireapps.io/en/";
-    public static final String DESCRIPTION_APP_ALIREVIEW = "Ali Reviews lets you import reviews directly to your store";
-    public static final String DESCRIPTION_APP_ALIORDERS = "Bulk import products into your Shopify store and process orders";
-    public static final String DESCRIPTION_APP_SALESBOX = "";
-    public static final String DESCRIPTION_APP_ALIHUNTER = "";
     public static final String HOME_PAGE_TITLE = "Home Page - FireApps";
+    public static final String HELP_PAGE_TITLE = "FireApps";
     public static final String ALI_REVIEW_GET_APP = "alireviews";
     public static final String ALI_HUNTER_GET_APP = "alihunter";
     public static final String ALI_ORDERS_GET_APP = "aliorders";

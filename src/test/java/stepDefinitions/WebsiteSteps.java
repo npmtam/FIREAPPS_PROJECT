@@ -325,5 +325,116 @@ public class WebsiteSteps extends AbstractTest {
         verifyTrue(websitePage.isHelpCenterPageAccessed());
     }
 
+    @And("^verify the Privacy Policy page has been accessed$")
+    public void verify_the_privacy_policy_page_has_been_accessed() {
+        verifyTrue(websitePage.isPrivacyPolicyPageAccessed());
+    }
+
+    @And("^verify the Term of Service page has been accessed$")
+    public void verify_the_term_of_service_page_has_been_accessed() {
+        verifyTrue(websitePage.isTermsOfServicePageAccessed());
+    }
+
+    @And("^I click to \"([^\"]*)\" social icon in the footer$")
+    public void i_click_to_something_social_icon_in_the_footer(String social) {
+        String socialNetwork = null;
+        switch (social){
+            case "Facebook":
+                socialNetwork = "facebook-square";
+                websitePage.clickToFooterSocialIcons(socialNetwork);
+                break;
+            case "Instagram":
+                socialNetwork = "instagram";
+                websitePage.clickToFooterSocialIcons(socialNetwork);
+                break;
+            case "Twitter":
+                socialNetwork = "twitter-square";
+                websitePage.clickToFooterSocialIcons(socialNetwork);
+                break;
+            case "Youtube":
+                socialNetwork = "youtube";
+                websitePage.clickToFooterSocialIcons(socialNetwork);
+                break;
+            default: System.out.println("Please fill the social network");
+        }
+    }
+
+    @And("^verify the Facebook page has been accessed$")
+    public void verify_the_facebook_page_has_been_accessed() {
+        verifyTrue(websitePage.isFooterSocialAccessed(Constants.FACEBOOK_TITLE, Constants.FOOTER_FACEBOOK_URL));
+    }
+
+    @And("^verify the Instagram page has been accessed$")
+    public void verify_the_instagram_page_has_been_accessed() {
+        verifyTrue(websitePage.isFooterSocialAccessed(Constants.INSTAGRAM_TITLE, Constants.FOOTER_INSTAGRAM_URL));
+    }
+
+    @And("^verify the Youtube page has been accessed$")
+    public void verify_the_youtube_page_has_been_accessed() {
+        verifyTrue(websitePage.isFooterSocialAccessed(Constants.YOUTUBE_TITLE, Constants.FOOTER_YOUTUBE_URL));
+    }
+
+    @And("^verify the Twitter page has been accessed$")
+    public void verify_the_twitter_page_has_been_accessed(){
+        verifyTrue(websitePage.isFooterSocialAccessed(Constants.TWITTER_TITLE, Constants.FOOTER_TWITTER_URL));
+    }
+
+    @And("^verify the loading wheel is displayed if there are more than 4 posts$")
+    public void verify_the_loading_wheel_is_displayed_if_there_are_more_than_4_posts() {
+        verifyTrue(websitePage.isThereLoadingWheel());
+    }
+
+    @And("^verify the text label display after scroll to the end of page$")
+    public void verify_the_text_label_display_after_scroll_to_the_end_of_page(){
+        verifyTrue(websitePage.isEndOfPageLabelDisplayed());
+    }
+
+    @And("^I click on the \"([^\"]*)\" checkbox$")
+    public void i_click_on_the_something_checkbox(String appCheckbox){
+        String app = null;
+        abstractPage.sleepInSecond(1);
+        switch (appCheckbox){
+            case "Ali Reviews":
+                app = Constants.WHATSNEW_ALIREVIEWS;
+                websitePage.selectAppFilter(app);
+                break;
+            case "Ali Hunter":
+                app = Constants.WHATSNEW_ALIHUNTER;
+                websitePage.selectAppFilter(app);
+                break;
+            case "Ali Orders":
+                app = Constants.WHATSNEW_ALIORDERS;
+                websitePage.selectAppFilter(app);
+                break;
+            case "Sales Box":
+                app = Constants.WHATSNEW_SALESBOX;
+                websitePage.selectAppFilter(app);
+                break;
+        }
+    }
+
+    @And("^verify that only the posts of \"([^\"]*)\" displayed$")
+    public void verify_that_only_the_posts_of_something_displayed(String appFiltered) {
+        switch (appFiltered){
+            case "Ali Reviews":
+                verifyTrue(websitePage.isOnlyAliReviewsPostsFiltered());
+                break;
+            case "Ali Hunter":
+                verifyTrue(websitePage.isOnlyAliHunterPostsFiltered());
+                break;
+            case "Ali Orders":
+                verifyTrue(websitePage.isOnlyAliOrdersPostsFiltered());
+                break;
+            case "Sales Box":
+                verifyTrue(websitePage.isOnlySalesBoxPostsFiltered());
+                break;
+        }
+    }
+
+    @And("^I click on back to all changes button$")
+    public void i_click_on_back_to_all_changes_button() {
+        websitePage.clickToBackToAllChanges();
+    }
+
 }
 

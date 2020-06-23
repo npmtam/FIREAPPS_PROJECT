@@ -134,8 +134,9 @@ public class WebsitePO extends AbstractPage {
     }
 
     public boolean isHelpCenterPageAccessed(){
-        sleepInSecond(1);
-        return getCurrentPageURL().equals(Constants.HELP_CENTER_URL);
+        switchToWindowsByTitle(Constants.HELP_PAGE_TITLE);
+        waitToElementVisible(WebsiteUI.HELP_PAGE_LOGO);
+        return isElementDisplayed(WebsiteUI.HELP_PAGE_LOGO);
     }
 
     public boolean isPrivacyPolicyPageAccessed(){
@@ -265,21 +266,26 @@ public class WebsitePO extends AbstractPage {
     }
 
     public boolean isThereLoadingWheel(){
+        boolean isLoadingWheelDisplay;
         if(countElements(WebsiteUI.WHATSNEW_POSTS_TITLE) >= 4){
             scrollToElement(WebsiteUI.FOOTER_MENUS, "About Us");
+            isLoadingWheelDisplay = isElementDisplayed(WebsiteUI.WHATSNEW_LOADING_WHEEL);
         }else{
             System.out.println("There is lower than 4 post to load more");
+            isLoadingWheelDisplay = !isElementDisplayed(WebsiteUI.WHATSNEW_LOADING_WHEEL);
         }
-        return isElementDisplayed(WebsiteUI.WHATSNEW_LOADING_WHEEL);
+        return isLoadingWheelDisplay;
     }
 
     public boolean isEndOfPageLabelDisplayed(){
-        sleepInSecond(1);
+        sleepInSecond(2);
+        scrollToElement(WebsiteUI.WHATSNEW_ENDOFPAGE_LABEL);
         return isElementDisplayed(WebsiteUI.WHATSNEW_ENDOFPAGE_LABEL);
     }
 
     public void selectAppFilter(String app){
-        scrollToElement(WebsiteUI.WHATSNEW_SEARCH_TEXTBOX);
+//        scrollToElement(WebsiteUI.WHATSNEW_SEARCH_TEXTBOX);
+        waitToElementClickable(WebsiteUI.WHATSNEW_APP_CHECKBOXES, app);
         clickToElementByJS(WebsiteUI.WHATSNEW_APP_CHECKBOXES, app);
     }
 

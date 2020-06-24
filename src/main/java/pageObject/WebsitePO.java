@@ -285,7 +285,7 @@ public class WebsitePO extends AbstractPage {
 
     public void selectAppFilter(String app){
 //        scrollToElement(WebsiteUI.WHATSNEW_SEARCH_TEXTBOX);
-        waitToElementClickable(WebsiteUI.WHATSNEW_APP_CHECKBOXES, app);
+//        waitToElementClickable(WebsiteUI.WHATSNEW_APP_CHECKBOXES, app);
         clickToElementByJS(WebsiteUI.WHATSNEW_APP_CHECKBOXES, app);
     }
 

@@ -60,6 +60,7 @@ public class WebsiteSteps extends AbstractTest {
 
     @And("^verify the Shopify Apps page has been accessed$")
     public void verify_the_shopify_apps_page_has_been_accessed() {
+        abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isShopifyAppsPageAccessed());
     }
 
@@ -349,6 +350,7 @@ public class WebsiteSteps extends AbstractTest {
                 break;
             case "Twitter":
                 socialNetwork = "twitter-square";
+                abstractPage.sleepInSecond(1);
                 websitePage.clickToFooterSocialIcons(socialNetwork);
                 break;
             case "Youtube":
@@ -376,6 +378,7 @@ public class WebsiteSteps extends AbstractTest {
 
     @And("^verify the Twitter page has been accessed$")
     public void verify_the_twitter_page_has_been_accessed(){
+        abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isFooterSocialAccessed(Constants.TWITTER_TITLE, Constants.FOOTER_TWITTER_URL));
     }
 
@@ -410,6 +413,8 @@ public class WebsiteSteps extends AbstractTest {
                 app = Constants.WHATSNEW_SALESBOX;
                 websitePage.selectAppFilter(app);
                 break;
+            default:
+                System.out.println("The app name you inputted is incorrect or you did not input the app name");
         }
     }
 
@@ -436,5 +441,34 @@ public class WebsiteSteps extends AbstractTest {
         websitePage.clickToBackToAllChanges();
     }
 
+    @And("^I scroll to the bottom of page$")
+    public void i_scroll_to_the_bottom_of_page() {
+        websitePage.scrollToFooter();
+    }
+
+    @And("^I select the \"([^\"]*)\" tag$")
+    public void i_select_the_something_tag(String tagName){
+        websitePage.clickToTagApps(tagName);
+    }
+
+    @And("^I input the \"([^\"]*)\" keyword to the search text box$")
+    public void i_input_the_something_keyword_to_the_search_text_box(String keyword){
+        websitePage.inputToWhatsNewSearch(keyword);
+    }
+
+    @And("^I click to search button$")
+    public void i_click_to_search_button() {
+        websitePage.clickToWhatsNewSearchAction();
+    }
+
+    @Then("^verify the result contains the \"([^\"]*)\" keyword$")
+    public void verify_the_result_contains_the_something_keyword(String keyword) {
+        verifyTrue(websitePage.isWhatsNewSearchResultContains(keyword));
+    }
+
+    @Then("^verify there are no result display$")
+    public void verify_there_are_no_result_display() {
+        verifyTrue(websitePage.isWhatsNewNoResult());
+    }
 }
 

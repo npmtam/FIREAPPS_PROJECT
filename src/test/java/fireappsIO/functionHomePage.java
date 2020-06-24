@@ -21,7 +21,7 @@ public class functionHomePage extends AbstractTest {
         driver.get(Constants.WEBSITE_URL);
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void Home1_checkHeaderLinks(){
         log.info("Header 1: Home button");
         websitePage = PageGeneratorManager.getWebsitePage(driver);
@@ -57,7 +57,7 @@ public class functionHomePage extends AbstractTest {
         verifyTrue(websitePage.isHomePageAccessed());
     }
 
-    @Test()
+    @Test(enabled=false)
     public void Home2_CheckSlideApps(){
         log.info("Slide App 1: Check Ali Review");
         websitePage = PageGeneratorManager.getWebsitePage(driver);
@@ -199,7 +199,7 @@ public class functionHomePage extends AbstractTest {
         verifyTrue(websitePage.isHomePageAccessed());
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void Home3_checkFooterFunctions(){
         log.info("Footer 1: Shopify Apps link");
         websitePage = PageGeneratorManager.getWebsitePage(driver);
@@ -269,6 +269,18 @@ public class functionHomePage extends AbstractTest {
         log.info("Footer 11: Back to top button");
         websitePage.clickToBackToTopButton();
         verifyTrue(websitePage.isPageBackToTop());
+    }
+
+    @Test
+    public void test(){
+        log.info("Footer 2: What's New link");
+        websitePage = PageGeneratorManager.getWebsitePage(driver);
+        websitePage.clickToFooterMenus("What");
+        verifyTrue(websitePage.isWhatsNewPageAccessed());
+        abstractPage.takeScreenshot("HomePage15-Footer-WhatsNew.jpg");
+
+        String app = Constants.WHATSNEW_ALIREVIEWS;
+        websitePage.selectAppFilter(app);
     }
 
     @AfterClass

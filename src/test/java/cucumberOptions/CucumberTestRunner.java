@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         monochrome = false,
         plugin = {"pretty", "html:target/site/cucumber-report-default", "json:target/site/cucumber.json"},
         snippets = SnippetType.CAMELCASE,
-        tags = {"@WhatsNewPage"})
+        tags = {"@HomePage"})
 
 public class CucumberTestRunner {
 

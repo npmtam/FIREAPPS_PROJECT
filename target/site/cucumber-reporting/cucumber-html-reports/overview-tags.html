@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@HomePage", ] ,
+        labels:  [ "@HomePage",  "@WhatsNewPage", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 68.69, ]             },
+                data:  [ 100.00,  100.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 3.03, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 28.28, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ]             }
+                data:  [ 0.00,  0.00, ]             }
         ]
     };
 
@@ -131,7 +131,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>CHECK FUNCTIONS FOR FIREAPPS.IO</td>
               <td>1</td>
-            <td>23 Jun 2020, 15:35</td>
+            <td>25 Jun 2020, 12:05</td>
     </tr>
   </tbody>
 </table>
@@ -195,52 +195,69 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-tag_HomePage.html">@HomePage</a></td>
         
-        <td      class="passed"    >68</td>
-        <td      class="failed"    >3</td>
-        <td     class="skipped"   >28</td>
+        <td      class="passed"    >96</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">99</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">96</td>
 
-        <td  class="passed"    >2</td>
-        <td  class="failed"    >3</td>
+        <td  class="passed"    >5</td>
+        <td >0</td>
         <td class="total">5</td>
 
-        <td class="duration" data-value="506160986386">8:26.160</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="166444971637">2:46.444</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_WhatsNewPage.html">@WhatsNewPage</a></td>
+        
+        <td      class="passed"    >49</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">49</td>
+
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="134349389983">2:14.349</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>68</td>
-      <td>3</td>
-      <td>28</td>
+            <td>145</td>
       <td>0</td>
       <td>0</td>
-      <td>99</td>
+      <td>0</td>
+      <td>0</td>
+      <td>145</td>
 
+      <td>9</td>
       <td>0</td>
-      <td>5</td>
-      <td>5</td>
+      <td>9</td>
 
-      <td class="duration">8:26.160</td>
-      <td>1</td>
+      <td class="duration">5:0.794</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>
-            <td>68.69%</td>
-      <td>3.03%</td>
-      <td>28.28%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
       <td>100.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

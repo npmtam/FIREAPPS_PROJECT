@@ -21,6 +21,7 @@ public class Hooks extends AbstractTest {
         chromeOptions.addArguments("--disable-notifications");
         chromeOptions.setExperimentalOption("useAutomationExtension", false);
         chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+//        chromeOptions.setHeadless(true);
         driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();

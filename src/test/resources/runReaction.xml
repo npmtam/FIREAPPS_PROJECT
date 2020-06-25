@@ -5,7 +5,7 @@
     <test name="RUN ON CHROME UI">
         <parameter name="browser" value="chrome_headless" />
         <classes>
-            <class name="com.shopify.fireapps.reactionRate" />
+            <class name="shopify.reactionRate" />
         </classes>
     </test>
 

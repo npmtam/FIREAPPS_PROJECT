@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                68,
-                3,
-                28,
+                145,
+                0,
+                0,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 99) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 145) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                2,
-                3
+                9,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   2,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -234,7 +234,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>CHECK FUNCTIONS FOR FIREAPPS.IO</td>
               <td>1</td>
-            <td>23 Jun 2020, 15:35</td>
+            <td>25 Jun 2020, 12:05</td>
     </tr>
   </tbody>
 </table>
@@ -329,54 +329,71 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_WebsiteTestcases-feature.html">Check functions for Home page Fireapps.io</a></td>
+        <td class="tagname"><a href="report-feature_HomePage-feature.html">Check functions for Home page Fireapps.io</a></td>
         
-        <td      class="passed"    >68</td>
-        <td      class="failed"    >3</td>
-        <td     class="skipped"   >28</td>
+        <td      class="passed"    >96</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">99</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">96</td>
 
-        <td  class="passed"    >2</td>
-        <td  class="failed"    >3</td>
+        <td  class="passed"    >5</td>
+        <td >0</td>
         <td class="total">5</td>
 
-        <td class="duration" data-value="506160986386">8:26.160</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="166444971637">2:46.444</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_WhatsNewPage-feature.html">Check functions for What's New page on Fireapps.io</a></td>
+        
+        <td      class="passed"    >49</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">49</td>
+
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="134349389983">2:14.349</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>68</td>
-      <td>3</td>
-      <td>28</td>
+            <td>145</td>
       <td>0</td>
       <td>0</td>
-      <td>99</td>
+      <td>0</td>
+      <td>0</td>
+      <td>145</td>
 
+      <td>9</td>
+      <td>0</td>
+      <td>9</td>
+
+      <td class="duration">5:0.794</td>
       <td>2</td>
-      <td>3</td>
-      <td>5</td>
-
-      <td class="duration">8:26.160</td>
-      <td>1</td>
     </tr>
     <tr>
       <td></td>
-            <td>68.69%</td>
-      <td>3.03%</td>
-      <td>28.28%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>40.00%</td>
-      <td>60.00%</td>
-      <td></td>
-      <td></td>
+      <td>100.00%</td>
       <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

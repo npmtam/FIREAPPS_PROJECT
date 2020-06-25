@@ -8,7 +8,7 @@ Feature: Check functions for Home page Fireapps.io
     When I access the "Home" from header
     And verify the Home page has been accessed
     And I take the screenshot as "Header1-Home.jpg"
-    And I close the messenger pop up
+#    And I close the messenger pop up
     And I access the "SHOPIFY APPS" from header
     And verify the Shopify Apps page has been accessed
     And I take the screenshot as "Header2-ShopifyApps.jpg"
@@ -27,7 +27,6 @@ Feature: Check functions for Home page Fireapps.io
     When I click on Get App Now button
     And verify the Shopify Apps page has been accessed
     And I access the "Home" from header
-    And I close the messenger pop up
     And I check the Ali Review app from the slider
     And I take the screenshot as "HomePage1-AliReviewSlide.jpg"
     And I click to Get App button of "Ali Reviews" app
@@ -49,7 +48,6 @@ Feature: Check functions for Home page Fireapps.io
   Scenario: 03 - Check testimonial slide
     Given I access the website
     When I wait for testimonial slide "1" display and take the screenshot
-    And I close the messenger pop up
     And I wait for testimonial slide "2" display and take the screenshot
     And I wait for testimonial slide "3" display and take the screenshot
     And I wait for testimonial slide "4" display and take the screenshot
@@ -61,8 +59,7 @@ Feature: Check functions for Home page Fireapps.io
 
   Scenario: 04 - Check blog posts in Home page
     Given I access the website
-    When I close the messenger pop up
-    And I check the 1st blog post at Home page work well
+    When I check the 1st blog post at Home page work well
     And I return to Home page
     And I check the 2nd blog post at Home page work well
     And I return to Home page
@@ -96,6 +93,7 @@ Feature: Check functions for Home page Fireapps.io
     And verify the Privacy Policy page has been accessed
     And I take the screenshot as "Footer5-PrivacyPolicy.jpg"
     And I back to Home page
+    And I scroll to the bottom of page
     And I click to "Terms of Service" from the footer
     And verify the Term of Service page has been accessed
     And I take the screenshot as "Footer6-TermsOfService.jpg"

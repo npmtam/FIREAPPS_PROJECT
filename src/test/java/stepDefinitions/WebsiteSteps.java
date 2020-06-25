@@ -368,11 +368,13 @@ public class WebsiteSteps extends AbstractTest {
 
     @And("^verify the Instagram page has been accessed$")
     public void verify_the_instagram_page_has_been_accessed() {
+        abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isFooterSocialAccessed(Constants.INSTAGRAM_TITLE, Constants.FOOTER_INSTAGRAM_URL));
     }
 
     @And("^verify the Youtube page has been accessed$")
     public void verify_the_youtube_page_has_been_accessed() {
+        abstractPage.sleepInSecond(1);
         verifyTrue(websitePage.isFooterSocialAccessed(Constants.YOUTUBE_TITLE, Constants.FOOTER_YOUTUBE_URL));
     }
 

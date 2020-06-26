@@ -8,6 +8,7 @@ public class ShopifyPageUI {
 
     //Error Msg
     public static final String ERR_NAME_EXISTS = "//span[contains(text(), 'A store with that name already exists')]";
+    public static final String ERR_ZIP_CODE = "//div[@id='PolarisTextField8Error']";
 
     //Tell us a little about yourself
     public static final String TITLE_MORE_INFO = "//h1[text()='Tell us a little about yourself']";

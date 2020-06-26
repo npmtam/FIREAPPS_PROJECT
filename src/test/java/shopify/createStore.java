@@ -1,5 +1,6 @@
 package shopify;
 
+import com.github.javafaker.Faker;
 import commons.AbstractPage;
 import commons.AbstractTest;
 import commons.Constants;
@@ -9,15 +10,17 @@ import org.testng.annotations.*;
 import pageObject.ShopifyPO;
 import pageUI.ShopifyPageUI;
 
+import java.util.Locale;
 import java.util.Random;
 
 public class createStore extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
-    String email, storeName, storeNameBackup, phoneNumber, dateTime;
+    String email, storeName, storeNameBackup, phoneNumber, dateTime, country, address;
     boolean isStoreNameExisted;
     public int randomNumber;
+    Faker faker;
 
 
     @Parameters("browser")
@@ -25,6 +28,7 @@ public class createStore extends AbstractTest {
     public void beforeTest(String browserName) {
         driver = getBrowserDriver(browserName);
         abstractPage = new AbstractPage(driver);
+        faker = new Faker(new Locale("en-US"));
     }
 
     @Test(invocationCount = 3)
@@ -33,10 +37,12 @@ public class createStore extends AbstractTest {
         Random random = new Random();
         randomNumber = random.nextInt(9999);
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
+        country = shopifyPage.getRandomCountry();
+        address = faker.address().streetAddress();
 
-        email = Constants.EMAIL + shopifyPage.getRandomCountry() + "@mail.com";
-        storeName = Constants.STORE_NAME + " " + shopifyPage.getRandomCountry();
-        storeNameBackup = Constants.STORE_NAME + " " + abstractPage.randomNumber(Constants.RAMDOM_BOUND);
+        email = faker.name().firstName() + "_" + faker.name().lastName() + "@mail.com";
+        storeName = faker.name().firstName() + " " + faker.name().lastName();
+        storeNameBackup = faker.name().fullName() + country;
         phoneNumber = Constants.PHONE_NUMBER + abstractPage.randomNumber(Constants.RAMDOM_BOUND);
 
         //Create store test
@@ -75,17 +81,19 @@ public class createStore extends AbstractTest {
         shopifyPage.clickToNextButton();
 
         log.info("Step 06: Fill address");
-        shopifyPage.inputAddressTextboxes("firstName", Constants.FIRST_NAME);
-        shopifyPage.inputAddressTextboxes("lastName", Constants.LAST_NAME);
-        shopifyPage.inputAddressTextboxes("address1", Constants.ADDRESS);
+        shopifyPage.inputAddressTextboxes("firstName", faker.name().firstName());
+        shopifyPage.inputAddressTextboxes("lastName", faker.name().lastName());
+        shopifyPage.inputAddressTextboxes("address1", address);
         shopifyPage.inputAddressTextboxes("city", Constants.CITY);
-        shopifyPage.selectCountry(shopifyPage.getRandomCountry());
+        shopifyPage.selectCountry(country);
+        System.out.println("Country: " + country);
         //Select the 2nd state/province
         shopifyPage.selectStateorProvince(2);
         shopifyPage.inputAddressTextboxes("zip", Constants.ZIPCODE);
 
         shopifyPage.inputAddressTextboxes("phone", phoneNumber);
         shopifyPage.clickToEnterMyStoreButton();
+
 
         log.info("Step 07: Verify the store has been created");
         verifyTrue(shopifyPage.isTheStoreCreated());
@@ -95,10 +103,12 @@ public class createStore extends AbstractTest {
         System.out.println("Email: " + email);
         System.out.println("Store Name: " + storeName);
         System.out.println("Created time: " + dateTime);
+        System.out.println("Country: " + country);
+        System.out.println("Address: " + address);
 
 
         log.info("Step 08: Write data to the csv");
-        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, dateTime);
+        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, country, address, dateTime);
         System.out.println("Written Data");
     }
 

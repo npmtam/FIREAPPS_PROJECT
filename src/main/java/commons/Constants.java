@@ -1,17 +1,23 @@
 package commons;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Locale;
+
 public class Constants {
+
+
     static String rootFolder = System.getProperty("user.dir");
     public static final String URL = "https://shopify.com/";
     public static final String ORIGINAL_URL = "https://origin-dev.fireapps.io/install";
+    public static final String TRANSCY_URK = "https://translate-dev.fireapps.io/install";
     public static final int RAMDOM_BOUND = 10;
 
     //REGISTER
-    public static String EMAIL = "transcy_firegroup_";
+//    public static String EMAIL = faker.name().firstName() + "_" + faker.name().lastName();
     public static final String SHOPIFY_PASSWORD = "Abc123";
-    public static final String STORE_NAME = "Thomas Henry ";
+//    public static final String STORE_NAME = faker.name().fullName();
 
     //TELLING US A LITTLE ABOUT YOURSELF
     public static final String ALREADY_SELLING = "I’m just playing around";
@@ -19,9 +25,9 @@ public class Constants {
     public static final String INDUSTRY = "Beauty";
 
     //ADDRESS INFO
-    public static final String FIRST_NAME = "Store";
-    public static final String LAST_NAME = "Original Test";
-    public static final String ADDRESS = "02 Quang Trung";
+//    public static final String FIRST_NAME = faker.name().firstName();
+//    public static final String LAST_NAME = faker.name().lastName();
+//    public static final String ADDRESS = faker.address().streetAddress();
     public static final String CITY = "Da Nang";
     public static final String ZIPCODE = "55000";
     public static String PHONE_NUMBER = "098877678";

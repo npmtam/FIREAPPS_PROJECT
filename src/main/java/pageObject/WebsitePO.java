@@ -122,7 +122,9 @@ public class WebsitePO extends AbstractPage {
     }
 
     public boolean isWhatsNewPageAccessed(){
-        return isElementDisplayed(WebsiteUI.WHATS_NEW_LOGO);
+        sleepInSecond(1);
+        String url = getCurrentPageURL();
+        return url.contains("fireapps.io/whats-new");
     }
 
     public boolean isContactUsPageAccessed(){

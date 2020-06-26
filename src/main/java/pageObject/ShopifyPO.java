@@ -84,6 +84,10 @@ public class ShopifyPO extends AbstractPage {
         sleepInSecond(1);
         waitToElementClickable(ShopifyPageUI.ENTER_MY_STORE_BUTTON);
         clickToElement(ShopifyPageUI.ENTER_MY_STORE_BUTTON);
+        sleepInSecond(1);
+        if(isElementPresentInDOM(ShopifyPageUI.ERR_ZIP_CODE)){
+            inputAddressTextboxes("zip", "2020");
+        }
     }
 
     public boolean isTheStoreCreated() {
@@ -145,9 +149,9 @@ public class ShopifyPO extends AbstractPage {
         clickToElement(ShopifyPageUI.CONFIRM_DELETE_ORIGINAL);
     }
 
-    public void writeDataToCsv(String fileName, String email, String storeName, String dateTime) {
+    public void writeDataToCsv(String fileName, String email, String storeName, String country, String address, String dateTime) {
         //Create new data object
-        StoresLink data = new StoresLink(storeURL, email, storeName, "", dateTime);
+        StoresLink data = new StoresLink(storeURL, email, storeName, "", country, address, dateTime);
 
         List<StoresLink> storeData = new ArrayList<>();
         storeData.add(data);
@@ -170,7 +174,9 @@ public class ShopifyPO extends AbstractPage {
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getStore_type());
                 fileWriter.append(Constants.COMMA_DELIMITER);
-                fileWriter.append(storeValues.getStore_type());
+                fileWriter.append(storeValues.getCountry());
+                fileWriter.append(Constants.COMMA_DELIMITER);
+                fileWriter.append(storeValues.getAddress());
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getDateTime());
             }
@@ -248,7 +254,6 @@ public class ShopifyPO extends AbstractPage {
                 "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"};
         Random random = new Random();
         int index = random.nextInt(countries.length);
-        System.out.println("Country: " + countries[index]);
         return countries[index];
     }
 

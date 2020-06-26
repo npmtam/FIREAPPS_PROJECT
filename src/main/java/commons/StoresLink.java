@@ -6,19 +6,23 @@ public class StoresLink {
     private String email;
     private String storeName;
     private String dateTime;
+    private String country;
+    private String address;
 
-    public StoresLink(String url, String email, String storeName, String store_type, String dateTime) {
+    public StoresLink(String url, String email, String storeName, String store_type, String country, String address, String dateTime) {
         super();
         this.url = url;
         this.email = email;
         this.storeName = storeName;
         this.store_type = store_type;
+        this.country = country;
+        this.address = address;
         this.dateTime = dateTime;
     }
 
     @Override
     public String toString() {
-        return url + ", " + email + ", " + storeName + ", " + store_type + ", " + dateTime;
+        return url + ", " + email + ", " + storeName + ", " + store_type + ", " + country + ", " + address + ", " + dateTime;
     }
 
     public String getUrl() {
@@ -35,6 +39,14 @@ public class StoresLink {
 
     public String getStoreName() {
         return storeName;
+    }
+
+    public String getCountry(){
+        return country;
+    }
+
+    public String getAddress(){
+        return address;
     }
 
     public String getDateTime(){
@@ -55,6 +67,14 @@ public class StoresLink {
 
     public void setStoreName(String storeName) {
         this.storeName = storeName;
+    }
+
+    public void setCountry(String country){
+        this.country = country;
+    }
+
+    public void setAddress(String address){
+        this.address = address;
     }
 
     public void setDateTime(String dateTime){

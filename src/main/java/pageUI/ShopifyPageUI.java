@@ -20,6 +20,9 @@ public class ShopifyPageUI {
     //Address info
     public static final String ADDRESS_INFO_TEXTBOXES = "//input[@name='account_setup[%s]']";
     public static final String ENTER_MY_STORE_BUTTON = "//button[@aria-label='Enter my store']";
+    public static final String COUNTRY_DROPDOWN = "//select[@name='account_setup[country]']";
+    public static final String STATES_DROPDOWN = "//select[@id='PolarisSelect3']";
+    public static final String PROVINCE_DROPDOWN = "//select[@id='PolarisSelect2']";
 
     //Admin Page
     public static final String SELECT_PLAN_MSG = "//p[text()='Your trial just started']";

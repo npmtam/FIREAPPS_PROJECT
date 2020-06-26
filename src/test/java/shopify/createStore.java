@@ -15,7 +15,7 @@ public class createStore extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
-    String email, storeName, storeNameBackup, phoneNumber;
+    String email, storeName, storeNameBackup, phoneNumber, dateTime;
     boolean isStoreNameExisted;
     public int randomNumber;
 
@@ -27,14 +27,15 @@ public class createStore extends AbstractTest {
         abstractPage = new AbstractPage(driver);
     }
 
-    @Test(invocationCount = 12)
+    @Test(invocationCount = 3)
     public void TC01_CreateShopifyStore() {
         //Init data
         Random random = new Random();
         randomNumber = random.nextInt(9999);
+        shopifyPage = PageGeneratorManager.getShopifyPage(driver);
 
-        email = Constants.EMAIL + randomNumber + "@mail.com";
-        storeName = Constants.STORE_NAME + " " + randomNumber;
+        email = Constants.EMAIL + shopifyPage.getRandomCountry() + "@mail.com";
+        storeName = Constants.STORE_NAME + " " + shopifyPage.getRandomCountry();
         storeNameBackup = Constants.STORE_NAME + " " + abstractPage.randomNumber(Constants.RAMDOM_BOUND);
         phoneNumber = Constants.PHONE_NUMBER + abstractPage.randomNumber(Constants.RAMDOM_BOUND);
 
@@ -78,18 +79,26 @@ public class createStore extends AbstractTest {
         shopifyPage.inputAddressTextboxes("lastName", Constants.LAST_NAME);
         shopifyPage.inputAddressTextboxes("address1", Constants.ADDRESS);
         shopifyPage.inputAddressTextboxes("city", Constants.CITY);
+        shopifyPage.selectCountry(shopifyPage.getRandomCountry());
+        //Select the 2nd state/province
+        shopifyPage.selectStateorProvince(2);
         shopifyPage.inputAddressTextboxes("zip", Constants.ZIPCODE);
+
         shopifyPage.inputAddressTextboxes("phone", phoneNumber);
         shopifyPage.clickToEnterMyStoreButton();
 
         log.info("Step 07: Verify the store has been created");
         verifyTrue(shopifyPage.isTheStoreCreated());
+        dateTime = shopifyPage.getCurrentDateTime();
         shopifyPage.printStoreURL();
+        System.out.println("Account info:");
         System.out.println("Email: " + email);
         System.out.println("Store Name: " + storeName);
+        System.out.println("Created time: " + dateTime);
+
 
         log.info("Step 08: Write data to the csv");
-        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName);
+        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, dateTime);
         System.out.println("Written Data");
     }
 

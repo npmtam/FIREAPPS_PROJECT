@@ -8,14 +8,19 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Random;
 
 public class ShopifyPO extends AbstractPage {
     WebDriver driver;
     public String storeURL;
     AbstractTest abstractTest = new AbstractTest();
     ReadDataCSV readDataCSV = new ReadDataCSV();
+//    private final String[] countries;
 
     public ShopifyPO(WebDriver driver) {
         super(driver);
@@ -69,8 +74,10 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public void inputAddressTextboxes(String nameValue, String textValue) {
-        waitToElementVisible(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, nameValue);
-        sendKeyToElement(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, textValue, nameValue);
+        if(isElementPresentInDOM(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, nameValue)) {
+            waitToElementVisible(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, nameValue);
+            sendKeyToElement(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, textValue, nameValue);
+        }
     }
 
     public void clickToEnterMyStoreButton() {
@@ -138,9 +145,9 @@ public class ShopifyPO extends AbstractPage {
         clickToElement(ShopifyPageUI.CONFIRM_DELETE_ORIGINAL);
     }
 
-    public void writeDataToCsv(String fileName, String email, String storeName) {
+    public void writeDataToCsv(String fileName, String email, String storeName, String dateTime) {
         //Create new data object
-        StoresLink data = new StoresLink(storeURL, email, storeName, "");
+        StoresLink data = new StoresLink(storeURL, email, storeName, "", dateTime);
 
         List<StoresLink> storeData = new ArrayList<>();
         storeData.add(data);
@@ -162,6 +169,10 @@ public class ShopifyPO extends AbstractPage {
                 fileWriter.append(storeValues.getStoreName());
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getStore_type());
+                fileWriter.append(Constants.COMMA_DELIMITER);
+                fileWriter.append(storeValues.getStore_type());
+                fileWriter.append(Constants.COMMA_DELIMITER);
+                fileWriter.append(storeValues.getDateTime());
             }
 
             fileWriter.append(Constants.NEW_LINE_SEPARATOR);
@@ -213,7 +224,49 @@ public class ShopifyPO extends AbstractPage {
             System.out.println("THIS STORE ALREADY DELETED THE ORIGINAL APP");
             System.out.println("Ordinal Numbers: " + stt);
         }
+    }
 
+    public String getRandomCountry() {
+        //Declare list countries
+        final String[] countries = new String[]{"Afghanistan", "Åland Islands", "Albania", "Algeria", "Andorra", "Angola", "Anguilla", "Antigua & Barbuda",
+                "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium",
+                "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia & Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei",
+                "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Caribbean Netherlands", "Cayman Islands", "Chad",
+                "Chile", "China", "Colombia", "Comoros", "Congo - Brazzaville", "Congo - Kinshasa", "Cook Islands", "Costa Rica", "Croatia", "Curaçao", "Cyprus",
+                "Czechia", "Côte d’Ivoire", "Denmark", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Estonia",
+                "Eswatini", "Ethiopia", "Faroe Islands", "Fiji", "Finland", "France", "French Guiana", "French Polynesia", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
+                "Gibraltar", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guatemala", "Guernsey", "Guyana", "Haiti", "Honduras", "Hong Kong SAR China", "Hungary",
+                "Iceland", "India", "Indonesia", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya",
+                "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Liechtenstein", "Lithuania", "Luxembourg", "Macao SAR China", "Madagascar",
+                "Malawi", "Malaysia", "Maldives", "Malta", "Martinique", "Mauritius", "Mayotte", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco",
+                "Mozambique", "Myanmar (Burma)", "Namibia", "Nepal", "Netherlands", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia",
+                "Norway", "Oman", "Pakistan", "Palestinian Territories", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar",
+                "Réunion", "Romania", "Russia", "Rwanda", "Samoa", "San Marino", "São Tomé & Príncipe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Singapore",
+                "Sint Maarten", "Slovakia", "Slovenia", "Solomon Islands", "South Africa", "South Korea", "South Sudan", "Spain", "Sri Lanka", "St. Kitts & Nevis", "St. Lucia",
+                "St. Martin", "St. Vincent & Grenadines", "Sudan", "Suriname", "Sweden", "Switzerland", "Taiwan", "Tanzania", "Thailand", "Timor-Leste", "Togo", "Trinidad & Tobago",
+                "Tunisia", "Turkey", "Turkmenistan", "Turks & Caicos Islands", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan",
+                "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"};
+        Random random = new Random();
+        int index = random.nextInt(countries.length);
+        System.out.println("Country: " + countries[index]);
+        return countries[index];
+    }
+
+    public void selectCountry(String country){
+        waitToElementVisible(ShopifyPageUI.COUNTRY_DROPDOWN);
+        selectItemInDropdown(ShopifyPageUI.COUNTRY_DROPDOWN, country);
+    }
+
+    public void selectStateorProvince(int index){
+        if(isElementPresentInDOM(ShopifyPageUI.STATES_DROPDOWN)){
+            waitToElementVisible(ShopifyPageUI.STATES_DROPDOWN);
+            selectItemInDropdownByIndex(ShopifyPageUI.STATES_DROPDOWN, index);
+        } else if(isElementPresentInDOM(ShopifyPageUI.PROVINCE_DROPDOWN)){
+            waitToElementVisible(ShopifyPageUI.PROVINCE_DROPDOWN);
+            selectItemInDropdownByIndex(ShopifyPageUI.PROVINCE_DROPDOWN, index);
+        } else {
+            System.out.println("There is no State or Province for this country");
+        }
     }
 
     public void readDataAndDeleteApp() {
@@ -240,6 +293,12 @@ public class ShopifyPO extends AbstractPage {
                 crunchifyException.printStackTrace();
             }
         }
+    }
+
+    public String getCurrentDateTime(){
+        DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Calendar calobj = Calendar.getInstance();
+        return df.format(calobj.getTime());
     }
 
 }

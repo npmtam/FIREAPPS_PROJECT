@@ -1,0 +1,2 @@
+2020-06-26 14:24:35,600 INFO  shopify.createStore - OS Name = windows 10
+2020-06-26 14:24:36,358 INFO  shopify.createStore - ----------------QUIT BROWSER SUCCESS-----------------

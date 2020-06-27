@@ -17,7 +17,8 @@ public class createStore extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
-    String email, storeName, storeNameBackup, phoneNumber, dateTime, country, city, address, firstName, lastName, password;
+    String email, storeName, phoneNumber, dateTime, country, city, address, firstName, lastName, password;
+    private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;
     Faker faker;
@@ -33,13 +34,14 @@ public class createStore extends AbstractTest {
         faker = new Faker(new Locale("en-US"));
     }
 
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 3)
     public void TC01_CreateShopifyStore() {
         //Init data
         Random random = new Random();
         randomNumber = random.nextInt(99);
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         country = shopifyPage.getRandomCountry();
+        industry = shopifyPage.getRandomIndustry();
         address = faker.address().streetAddress();
         firstName = faker.name().firstName();
         lastName = faker.name().lastName();
@@ -69,7 +71,7 @@ public class createStore extends AbstractTest {
 //        if (isStoreNameExisted) {
 //            shopifyPage.inputToRegisterTextBoxes("Your store name", storeNameBackup);
 //        } else {
-            shopifyPage.clickToCreateYourStoreButton();
+        shopifyPage.clickToCreateYourStoreButton();
 //        }
 
         log.info("Step 04: Verify the user can create the store");
@@ -80,7 +82,7 @@ public class createStore extends AbstractTest {
         if (isDropdownStepChanged) {
             shopifyPage.selectAlreadySellingDropdown(Constants.ALREADY_SELLING);
             shopifyPage.selectCurrentRevenueDropdown(Constants.CURRENT_REVENUE);
-            shopifyPage.selectIndustryDropdown(Constants.INDUSTRY);
+            shopifyPage.selectIndustryDropdown(industry);
         } else {
             shopifyPage.selectDescribesDropdown(1);
         }
@@ -100,10 +102,11 @@ public class createStore extends AbstractTest {
         shopifyPage.inputAddressTextboxes("phone", phoneNumber);
         shopifyPage.clickToEnterMyStoreButton();
 
-
         log.info("Step 07: Verify the store has been created");
         verifyTrue(shopifyPage.isTheStoreCreated());
         dateTime = shopifyPage.getCurrentDateTime();
+
+        log.info("Step 08: Print store info");
         shopifyPage.printStoreURL();
         System.out.println("Account info:");
         System.out.println("Email: " + email);
@@ -114,26 +117,23 @@ public class createStore extends AbstractTest {
         System.out.println("Country: " + country);
         System.out.println("Created time: " + dateTime);
 
-        log.info("Step 08: Write data to the csv");
+        log.info("Step 09: Write data to the csv");
         shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
         //Create item
-        log.info("Step 09: Select product menu");
-        shopifyPage.clickToProductMenu();
-
         log.info("Step 10: Add new product");
+        shopifyPage.clickToProductMenu();
         shopifyPage.clickToAddProduct();
         shopifyPage.inputToProductName("Test");
         shopifyPage.clickToSaveProduct();
 
         log.info("Step 11: Verify the product has been added");
         verifyTrue(shopifyPage.isPreviewProductButtonDisplayed());
-
     }
 
     @AfterClass
-    public void quitBrowser(){
+    public void quitBrowser() {
         closeBrowserAndDriver(driver);
     }
 }

@@ -1,10 +1,7 @@
 package commons;
 
 import org.openqa.selenium.WebDriver;
-import pageObject.OriginalPO;
-import pageObject.ShopifyPO;
-import pageObject.WebsitePO;
-import pageObject.WhatNewPO;
+import pageObject.*;
 
 public class PageGeneratorManager {
     public static ShopifyPO getShopifyPage(WebDriver driver) {
@@ -21,5 +18,9 @@ public class PageGeneratorManager {
 
     public static WebsitePO getWebsitePage(WebDriver driver){
         return new WebsitePO(driver);
+    }
+
+    public static TranscyPO getTranscyPage(WebDriver driver){
+        return new TranscyPO(driver);
     }
 }

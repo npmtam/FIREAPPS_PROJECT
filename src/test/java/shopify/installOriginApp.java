@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import pageObject.OriginalPO;
 import pageObject.ShopifyPO;
 
-public class installApp extends AbstractTest {
+public class installOriginApp extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private OriginalPO originalPO;
@@ -23,7 +23,6 @@ public class installApp extends AbstractTest {
     public void beforeTest(String browserName) {
         driver = getBrowserDriver(browserName);
         abstractPage = new AbstractPage(driver);
-
     }
 
     @Test

@@ -20,7 +20,6 @@ public class ShopifyPO extends AbstractPage {
     public String storeURL;
     AbstractTest abstractTest = new AbstractTest();
     ReadDataCSV readDataCSV = new ReadDataCSV();
-//    private final String[] countries;
 
     public ShopifyPO(WebDriver driver) {
         super(driver);
@@ -74,7 +73,7 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public void inputAddressTextboxes(String nameValue, String textValue) {
-        if(isElementPresentInDOM(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, nameValue)) {
+        if (isElementPresentInDOM(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, nameValue)) {
             waitToElementVisible(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, nameValue);
             sendKeyToElement(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, textValue, nameValue);
         }
@@ -85,7 +84,7 @@ public class ShopifyPO extends AbstractPage {
         waitToElementClickable(ShopifyPageUI.ENTER_MY_STORE_BUTTON);
         clickToElement(ShopifyPageUI.ENTER_MY_STORE_BUTTON);
         sleepInSecond(1);
-        if(isElementPresentInDOM(ShopifyPageUI.ERR_ZIP_CODE)){
+        if (isElementPresentInDOM(ShopifyPageUI.ERR_ZIP_CODE)) {
             inputAddressTextboxes("zip", "2020");
         }
     }
@@ -261,16 +260,25 @@ public class ShopifyPO extends AbstractPage {
         return countries[index];
     }
 
-    public void selectCountry(String country){
+    public void selectCountry(String country) {
         waitToElementVisible(ShopifyPageUI.COUNTRY_DROPDOWN);
         selectItemInDropdown(ShopifyPageUI.COUNTRY_DROPDOWN, country);
     }
 
-    public void selectStateorProvince(int index){
-        if(isElementPresentInDOM(ShopifyPageUI.STATES_DROPDOWN)){
+    public String getRandomIndustry() {
+        String[] industry = new String[]{"Beauty", "Clothing", "Electronics", "Furniture", "Handcrafts", "Jewelry",
+                "Painting", "Photography", "Restaurants", "Groceries", "Other food & drink", "Sports", "Toys",
+                "Services", "Virtual services"};
+        Random random = new Random();
+        int index = random.nextInt(industry.length);
+        return industry[index];
+    }
+
+    public void selectStateorProvince(int index) {
+        if (isElementPresentInDOM(ShopifyPageUI.STATES_DROPDOWN)) {
             waitToElementVisible(ShopifyPageUI.STATES_DROPDOWN);
             selectItemInDropdownByIndex(ShopifyPageUI.STATES_DROPDOWN, index);
-        } else if(isElementPresentInDOM(ShopifyPageUI.PROVINCE_DROPDOWN)){
+        } else if (isElementPresentInDOM(ShopifyPageUI.PROVINCE_DROPDOWN)) {
             waitToElementVisible(ShopifyPageUI.PROVINCE_DROPDOWN);
             selectItemInDropdownByIndex(ShopifyPageUI.PROVINCE_DROPDOWN, index);
         } else {
@@ -304,33 +312,33 @@ public class ShopifyPO extends AbstractPage {
         }
     }
 
-    public String getCurrentDateTime(){
+    public String getCurrentDateTime() {
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Calendar calobj = Calendar.getInstance();
         return df.format(calobj.getTime());
     }
 
-    public void clickToProductMenu(){
+    public void clickToProductMenu() {
         waitToElementVisible(ShopifyPageUI.PRODUCT_MENU);
         clickToElement(ShopifyPageUI.PRODUCT_MENU);
     }
 
-    public void clickToAddProduct(){
+    public void clickToAddProduct() {
         waitToElementClickable(ShopifyPageUI.ADD_PRODUCT_BTN);
         clickToElement(ShopifyPageUI.ADD_PRODUCT_BTN);
     }
 
-    public void inputToProductName(String productName){
+    public void inputToProductName(String productName) {
         waitToElementVisible(ShopifyPageUI.PRODUCT_NAME_TEXTBOX);
         sendKeyToElement(ShopifyPageUI.PRODUCT_NAME_TEXTBOX, productName);
     }
 
-    public void clickToSaveProduct(){
+    public void clickToSaveProduct() {
         waitToElementClickable(ShopifyPageUI.SAVE_PRODUCT_BTN);
         clickToElement(ShopifyPageUI.SAVE_PRODUCT_BTN);
     }
 
-    public boolean isPreviewProductButtonDisplayed(){
+    public boolean isPreviewProductButtonDisplayed() {
         return isElementDisplayed(ShopifyPageUI.PREVIEW_PRODUCT_BTN);
     }
 }

@@ -7,11 +7,11 @@ import java.util.Locale;
 
 public class Constants {
 
-
     static String rootFolder = System.getProperty("user.dir");
     public static final String URL = "https://shopify.com/";
     public static final String ORIGINAL_URL = "https://origin-dev.fireapps.io/install";
-    public static final String TRANSCY_URK = "https://translate-dev.fireapps.io/install";
+    public static final String TRANSCY_URL = "https://translate-dev.fireapps.io/install";
+    public static final String WELCOME_TRANSCY_URL = "https://translate-dev.fireapps.io/onboarding/welcome";
     public static final int RAMDOM_BOUND = 10;
 
     //REGISTER
@@ -28,7 +28,7 @@ public class Constants {
 //    public static final String FIRST_NAME = faker.name().firstName();
 //    public static final String LAST_NAME = faker.name().lastName();
 //    public static final String ADDRESS = faker.address().streetAddress();
-    public static final String CITY = "Da Nang";
+//    public static final String CITY = "Da Nang";
     public static final String ZIPCODE = "55000";
     public static String PHONE_NUMBER = "098877678";
 
@@ -42,17 +42,22 @@ public class Constants {
     public static final String READ_CSV_FILE_PATH = rootFolder + "/src/test/resources/readStoreData.csv";
     public static String STORE_URL_CSV = null;
     public static String STORE_EMAIL_CSV = null;
+    public static String STORE_PASSWORD_CSV = null;
     public static String STORE_NAME_CSV = null;
     public static String STORE_TYPE_CSV = null;
 
     //PLAN TYPES
-    public static final String PREMIUM_PAN = "Premium";
+    public static final String PREMIUM_PLAN = "Premium";
     public static final String ESSENTIAL_PLAN = "Essential";
     public static final String STARTER_PLAN = "Starter";
+    public static final String FREE_PLAN = "Free";
     public static final String NO_PLAN = "No-plan";
 
     //DELETE APP
     public static final String DELETE_SUCCESS_MESSAGE = "You successfully deleted origin-app-dev.";
+
+
+
 
 
     //WEBSITE CHECK FUNCTIONS

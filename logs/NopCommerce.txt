@@ -1,13 +1,3 @@
-2020-06-27 17:37:06,811 INFO  shopify.createStore - Pre-condition: Access Shopify
-2020-06-27 17:37:10,538 INFO  shopify.createStore - Step 01: Press on Start free trial button
-2020-06-27 17:37:11,312 INFO  shopify.createStore - Step 02: Fill info to register
-2020-06-27 17:37:12,546 INFO  shopify.createStore - Step 03: Press Create your store button
-2020-06-27 17:37:15,877 INFO  shopify.createStore - Step 04: Verify the user can create the store
-2020-06-27 17:37:38,368 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
-2020-06-27 17:37:38,368 INFO  shopify.createStore - Step 05: Fill info at About yourself
-2020-06-27 17:37:39,096 INFO  shopify.createStore - Step 06: Fill address
-2020-06-27 17:37:55,703 INFO  shopify.createStore - Step 07: Verify the store has been created
-2020-06-27 17:38:07,999 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
-2020-06-27 17:38:08,035 INFO  shopify.createStore - Step 08: Write data to the csv
-2020-06-27 17:38:08,047 INFO  shopify.createStore - OS Name = windows 10
-2020-06-27 17:38:08,966 INFO  shopify.createStore - ----------------QUIT BROWSER SUCCESS-----------------
+2020-06-28 00:54:24,383 INFO  shopify.installTranscyApp - Read data from CSV file and install Transcy app depends on Store Type column
+2020-06-28 00:56:30,507 INFO  shopify.installTranscyApp - OS Name = windows 10
+2020-06-28 00:56:31,377 INFO  shopify.installTranscyApp - ----------------QUIT BROWSER SUCCESS-----------------

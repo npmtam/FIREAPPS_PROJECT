@@ -1,9 +1,6 @@
 package pageObject;
 
-import commons.AbstractPage;
-import commons.AbstractTest;
-import commons.Constants;
-import commons.ReadDataCSV;
+import commons.*;
 import org.openqa.selenium.WebDriver;
 import pageUI.InstallAppUI;
 
@@ -12,20 +9,20 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class OriginalPO extends AbstractPage {
+public class TranscyPO extends AbstractPage {
     WebDriver driver;
     ReadDataCSV readDataCSV = new ReadDataCSV();
     AbstractTest abstractTest = new AbstractTest();
     boolean isInstalledApp;
 
-    public OriginalPO(WebDriver driver) {
+    public TranscyPO(WebDriver driver) {
         super(driver);
         this.driver = driver;
     }
 
-    public void inputStoreURL(String textValue) {
+    public void inputStoreURL(String storeURL) {
         waitToElementVisible(InstallAppUI.STORE_NAME_TEXTBOX);
-        sendKeyToElement(InstallAppUI.STORE_NAME_TEXTBOX, textValue);
+        sendKeyToElement(InstallAppUI.STORE_NAME_TEXTBOX, storeURL);
     }
 
     public void clickToLoginButton() {
@@ -53,9 +50,13 @@ public class OriginalPO extends AbstractPage {
         return isElementDisplayed(InstallAppUI.INSTALL_LABEL);
     }
 
-    public void selectPlan(String planName) {
-        waitToElementClickable(InstallAppUI.SELECT_PLAN_BUTTONS, planName);
-        clickToElement(InstallAppUI.SELECT_PLAN_BUTTONS, planName);
+    public void selectStartFree() {
+        waitToElementVisible(InstallAppUI.START_FREE_BUTTON);
+        clickToElement(InstallAppUI.START_FREE_BUTTON);
+    }
+
+    public boolean isLoginSuccessfully() {
+        return isElementPresentInDOM(InstallAppUI.START_FREE_BUTTON);
     }
 
     public void clickToStart7DaysTrialButton() {
@@ -68,22 +69,28 @@ public class OriginalPO extends AbstractPage {
         clickToElement(InstallAppUI.START_FREE_TRIAL_BUTTON);
     }
 
-    public boolean isOriginalLogoDisplayed() {
-        waitToElementVisible(InstallAppUI.LOGO);
-        return isElementDisplayed(InstallAppUI.LOGO);
-    }
-
-    public void clickToPricingMenu(){
+    public void clickToPricingMenu() {
         waitToElementClickable(InstallAppUI.PRICING_MENU);
         clickToElement(InstallAppUI.PRICING_MENU);
     }
 
-    public void clickLoginToAnotherAccount(){
+    public void clickLoginToAnotherAccount() {
         scrollToElement(InstallAppUI.LOGIN_TO_ANOTHER_ACCOUNT);
         clickToLoginToAnotherAccount();
     }
 
-    public void loginToOriginal(){
+    public void selectPlan(String planName) {
+        waitToElementClickable(InstallAppUI.SELECT_PLAN_BUTTONS_NEW_DESIGN, planName);
+        clickToElement(InstallAppUI.SELECT_PLAN_BUTTONS_NEW_DESIGN, planName);
+    }
+
+    public boolean isSelectedThePlan() {
+        sleepInSecond(1);
+        String url = getCurrentPageURL();
+        return url.contains(Constants.WELCOME_TRANSCY_URL);
+    }
+
+    public void loginToTranscy() {
         inputStoreURL(Constants.STORE_URL_CSV);
         clickToLoginButton();
         if (isLoginToAnotherAccountPresentInDOM(InstallAppUI.LOGIN_TO_ANOTHER_ACCOUNT)) {
@@ -91,47 +98,48 @@ public class OriginalPO extends AbstractPage {
         }
         inputToLoginTextboxes("email", Constants.STORE_EMAIL_CSV);
         clickToDynamicButtons("Next");
-        inputToLoginTextboxes("password", Constants.SHOPIFY_PASSWORD);
+
+        inputToLoginTextboxes("password", Constants.STORE_PASSWORD_CSV);
         clickToDynamicButtons("Log in");
     }
 
     public void installApp() {
-        loginToOriginal();
+        loginToTranscy();
         if (isElementPresentInDOM(InstallAppUI.DYNAMIC_BUTTONS, "Install unlisted app")) {
             scrollToElement(InstallAppUI.DYNAMIC_BUTTONS, "Install unlisted app");
             clickToDynamicButtons("Install unlisted app");
-        } else if (driver.getCurrentUrl().equals("https://origin-dev.fireapps.io/")) {
+        } else if (driver.getCurrentUrl().equals("https://translate-dev.fireapps.io/")) {
             System.out.println("THIS ACCOUNT " + Constants.STORE_URL_CSV + " HAS BEEN SELECTED THE PLAN BEFORE");
             isInstalledApp = true;
         }
     }
 
-
     public void initStoreData(List<String> store) {
         String stt = store.get(0);
-        String url = store.get(1);
-        String urlSplit1 = url.substring(8);
-        Constants.STORE_URL_CSV = urlSplit1.substring(0, urlSplit1.length() - 14);
+        String storeLink = store.get(1);
+        String storeLinkSplit = storeLink.substring(8);
+        Constants.STORE_URL_CSV = storeLinkSplit.substring(0, storeLinkSplit.length() - 14);
         Constants.STORE_EMAIL_CSV = store.get(2);
         Constants.STORE_NAME_CSV = store.get(3);
         Constants.STORE_TYPE_CSV = store.get(4);
+        Constants.STORE_PASSWORD_CSV = store.get(5);
 
         if (Constants.STORE_TYPE_CSV.equals(Constants.PREMIUM_PLAN)) {
-            driver.get(Constants.ORIGINAL_URL);
+            driver.get(Constants.TRANSCY_URL);
             installApp();
-            if (isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS, "PREMIUM")) {
-                selectPlan("PREMIUM");
+            if (isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS_NEW_DESIGN, Constants.PREMIUM_PLAN)) {
+                selectPlan(Constants.PREMIUM_PLAN);
                 clickToStart7DaysTrialButton();
                 clickToStartFreeTrialButton();
                 abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
-                System.out.println(Constants.STORE_NAME_CSV + " has been installed the Original App");
+                System.out.println(Constants.STORE_NAME_CSV + "has been installed the Transcy app");
                 System.out.println("Ordinal Numbers: " + stt + " | Plan: " + Constants.STORE_TYPE_CSV);
             }
         } else if (Constants.STORE_TYPE_CSV.equals(Constants.ESSENTIAL_PLAN)) {
-            driver.get(Constants.ORIGINAL_URL);
+            driver.get(Constants.TRANSCY_URL);
             installApp();
-            if (isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS, "ESSENTIAL")) {
-                selectPlan("ESSENTIAL");
+            if (isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS_NEW_DESIGN, Constants.ESSENTIAL_PLAN)) {
+                selectPlan(Constants.ESSENTIAL_PLAN);
                 clickToStart7DaysTrialButton();
                 clickToStartFreeTrialButton();
                 abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
@@ -139,18 +147,25 @@ public class OriginalPO extends AbstractPage {
                 System.out.println("Ordinal Numbers: " + stt + " | Plan: " + Constants.STORE_TYPE_CSV);
             }
         } else if (Constants.STORE_TYPE_CSV.equals(Constants.STARTER_PLAN)) {
-            driver.get(Constants.ORIGINAL_URL);
+            driver.get(Constants.TRANSCY_URL);
             installApp();
-            if (isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS, "STARTER")) {
-                selectPlan("STARTER");
+            if (isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS_NEW_DESIGN, Constants.STARTER_PLAN)) {
+                selectPlan(Constants.STARTER_PLAN);
                 clickToStart7DaysTrialButton();
                 clickToStartFreeTrialButton();
                 abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
                 System.out.println(Constants.STORE_NAME_CSV + " has been installed the Original App");
                 System.out.println("Ordinal Numbers: " + stt + " | Plan: " + Constants.STORE_TYPE_CSV);
             }
+        } else if (Constants.STORE_TYPE_CSV.equals(Constants.FREE_PLAN)) {
+            driver.get(Constants.TRANSCY_URL);
+            installApp();
+            if (isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS_NEW_DESIGN, Constants.STARTER_PLAN)) {
+                selectStartFree();
+                abstractTest.verifyTrue(isSelectedThePlan());
+            }
         } else {
-            driver.get(Constants.ORIGINAL_URL);
+            driver.get(Constants.TRANSCY_URL);
             installApp();
             if (isInstalledApp == false) {
                 abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
@@ -169,9 +184,7 @@ public class OriginalPO extends AbstractPage {
             //Read file in java line by line
             while ((line = br.readLine()) != null) {
                 while ((line = br.readLine()) != null) {
-                    while ((line = br.readLine()) != null) {
-                        initStoreData(readDataCSV.parseCsvLine(line));
-                    }
+                    initStoreData(readDataCSV.parseCsvLine(line));
                 }
             }
         } catch (IOException e) {
@@ -185,68 +198,4 @@ public class OriginalPO extends AbstractPage {
             }
         }
     }
-
-
-    //CHANGE PLAN
-    public void changePlan(List<String> stores) {
-        String stt = stores.get(0);
-        String url = stores.get(1);
-        String urlSplit1 = url.substring(8);
-        Constants.STORE_URL_CSV = urlSplit1.substring(0, urlSplit1.length() - 14);
-        Constants.STORE_EMAIL_CSV = stores.get(2);
-        Constants.STORE_NAME_CSV = stores.get(3);
-        Constants.STORE_TYPE_CSV = stores.get(4);
-
-        driver.get(Constants.ORIGINAL_URL);
-        loginToOriginal();
-        //If No-plan before
-        if(isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS, "PREMIUM")){
-            switch (Constants.STORE_TYPE_CSV){
-                case Constants.PREMIUM_PLAN:
-                    selectPlan("PREMIUM");
-                    clickToStart7DaysTrialButton();
-                    clickToStartFreeTrialButton();
-                    abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
-                    System.out.println(Constants.STORE_NAME_CSV + " has been changed to PREMIUM");
-                    break;
-                case Constants.ESSENTIAL_PLAN:
-                    selectPlan("ESSENTIAL");
-                    clickToStart7DaysTrialButton();
-                    clickToStartFreeTrialButton();
-                    abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
-                    System.out.println(Constants.STORE_NAME_CSV + " has been changed to ESSENTIAL");
-                    break;
-                case Constants.STARTER_PLAN:
-                    selectPlan("STARTER");
-                    clickToStart7DaysTrialButton();
-                    clickToStartFreeTrialButton();
-                    abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
-                    System.out.println(Constants.STORE_NAME_CSV + " has been changed to STARTER");
-                    break;
-            }
-            //Can lam tiep phan nay
-        }
-        if (Constants.STORE_TYPE_CSV.equals(Constants.NO_PLAN)) {
-            if (!isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS, "PREMIUM")) {
-                System.out.println("CAN NOT CHANGE THE PLAN FROM OTHERS TO NO-PLAN");
-            }
-        }
-        if (Constants.STORE_TYPE_CSV.equals(Constants.PREMIUM_PLAN)) {
-
-            clickToPricingMenu();
-            selectPlan("PREMIUM");
-            if (isElementPresentInDOM(InstallAppUI.YOU_ARE_HERE_BUTTON)) {
-                System.out.println("NO PLAN CHANGE");
-            }else{
-                clickToStart7DaysTrialButton();
-                clickToStartFreeTrialButton();
-                abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
-                System.out.println(Constants.STORE_NAME_CSV + " has been changed to PREMIUM");
-            }
-        }
-        if(Constants.STORE_TYPE_CSV.equals(Constants.ESSENTIAL_PLAN)){
-            clickToPricingMenu();
-        }
-    }
-
 }

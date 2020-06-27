@@ -1,6 +1,6 @@
 package pageUI;
 
-public class OriginalUI {
+public class InstallAppUI {
 
     public static final String STORE_NAME_TEXTBOX = "//input[@placeholder='Store name']";
     public static final String LOGIN_BUTTON = "//button[@type='submit']";
@@ -12,6 +12,8 @@ public class OriginalUI {
 
     //SELECT PLAN
     public static final String SELECT_PLAN_BUTTONS = "//span[contains(text(),'%s')]/parent::div";
+    public static final String SELECT_PLAN_BUTTONS_NEW_DESIGN = "//div[contains(@class, 'desktop')]//div[@class='plan-name' and text()='%s']/following-sibling::form/button";
+    public static final String START_FREE_BUTTON = "//span[text()='Start Free']/parent::button";
     public static final String START_TRIAL_BUTTON = "//button[@class='a-btn a-btn-primary']";
     public static final String START_FREE_TRIAL_BUTTON = "//button[@id='approve-charges-button']";
 

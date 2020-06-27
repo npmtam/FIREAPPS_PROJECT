@@ -8,21 +8,25 @@ public class StoresLink {
     private String dateTime;
     private String country;
     private String address;
+    private String password;
+    private String city;
 
-    public StoresLink(String url, String email, String storeName, String store_type, String country, String address, String dateTime) {
+    public StoresLink(String url, String email, String storeName, String store_type, String password, String address, String city, String country, String dateTime) {
         super();
         this.url = url;
         this.email = email;
         this.storeName = storeName;
         this.store_type = store_type;
+        this.city = city;
         this.country = country;
         this.address = address;
         this.dateTime = dateTime;
+        this.password = password;
     }
 
     @Override
     public String toString() {
-        return url + ", " + email + ", " + storeName + ", " + store_type + ", " + country + ", " + address + ", " + dateTime;
+        return url + ", " + email + ", " + storeName + ", " + store_type + ", " + password + ", " + address + ", " + city + ", " + country + ", " + dateTime;
     }
 
     public String getUrl() {
@@ -39,6 +43,14 @@ public class StoresLink {
 
     public String getStoreName() {
         return storeName;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public String getCity(){
+        return city;
     }
 
     public String getCountry(){
@@ -61,6 +73,10 @@ public class StoresLink {
         this.store_type = store_type;
     }
 
+    public void setPassword(String password){
+        this.password = password;
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
@@ -71,6 +87,10 @@ public class StoresLink {
 
     public void setCountry(String country){
         this.country = country;
+    }
+
+    public void setCity(String city){
+        this.city = city;
     }
 
     public void setAddress(String address){

@@ -32,6 +32,11 @@ public class ShopifyPageUI {
     public static final String DELETE_ORIGINAL = "//button[@aria-label='Delete origin-app-dev']";
     public static final String CONFIRM_DELETE_ORIGINAL = "//div[@class='_1fyLs']//span[text()='Delete']";
     public static final String DELETE_SUCCESS_MESSAGE = "//div[@id='Banner1Content']";
+    public static final String PRODUCT_MENU = "//span[text()='Products']/ancestor::a";
+    public static final String ADD_PRODUCT_BTN = "//span[text()='Add product']/ancestor::a";
+    public static final String PRODUCT_NAME_TEXTBOX = "//input[@name='title']";
+    public static final String SAVE_PRODUCT_BTN = "//span[text()='Save']/ancestor::button";
+    public static final String PREVIEW_PRODUCT_BTN = "//span[text()='Preview']/ancestor::button";
 
     //Login
     public static final String LOGIN_BUTTON = "//a[@href='/login' and @class='marketing-nav__item marketing-nav__item--user']";

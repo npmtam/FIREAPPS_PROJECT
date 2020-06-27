@@ -17,7 +17,7 @@ public class createStore extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
-    String email, storeName, storeNameBackup, phoneNumber, dateTime, country, address;
+    String email, storeName, storeNameBackup, phoneNumber, dateTime, country, city, address, firstName, lastName, password;
     boolean isStoreNameExisted;
     public int randomNumber;
     Faker faker;
@@ -28,20 +28,26 @@ public class createStore extends AbstractTest {
     public void beforeTest(String browserName) {
         driver = getBrowserDriver(browserName);
         abstractPage = new AbstractPage(driver);
+
+        //Init fake library
         faker = new Faker(new Locale("en-US"));
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 1)
     public void TC01_CreateShopifyStore() {
         //Init data
         Random random = new Random();
-        randomNumber = random.nextInt(9999);
+        randomNumber = random.nextInt(99);
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         country = shopifyPage.getRandomCountry();
         address = faker.address().streetAddress();
+        firstName = faker.name().firstName();
+        lastName = faker.name().lastName();
+        password = faker.name().firstName() + randomNumber;
+        city = faker.address().city();
 
-        email = faker.name().firstName() + "_" + faker.name().lastName() + "@mail.com";
-        storeName = faker.name().firstName() + " " + faker.name().lastName();
+        email = firstName.toLowerCase() + "_" + lastName.toLowerCase() + "@mail.com";
+        storeName = firstName + " " + lastName;
         storeNameBackup = faker.name().fullName() + country;
         phoneNumber = Constants.PHONE_NUMBER + abstractPage.randomNumber(Constants.RAMDOM_BOUND);
 
@@ -55,7 +61,7 @@ public class createStore extends AbstractTest {
 
         log.info("Step 02: Fill info to register");
         shopifyPage.inputToRegisterTextBoxes("Email address", email);
-        shopifyPage.inputToRegisterTextBoxes("Password", Constants.SHOPIFY_PASSWORD);
+        shopifyPage.inputToRegisterTextBoxes("Password", password);
         shopifyPage.inputToRegisterTextBoxes("Your store name", storeName);
 
         log.info("Step 03: Press Create your store button");
@@ -81,10 +87,10 @@ public class createStore extends AbstractTest {
         shopifyPage.clickToNextButton();
 
         log.info("Step 06: Fill address");
-        shopifyPage.inputAddressTextboxes("firstName", faker.name().firstName());
-        shopifyPage.inputAddressTextboxes("lastName", faker.name().lastName());
+        shopifyPage.inputAddressTextboxes("firstName", firstName);
+        shopifyPage.inputAddressTextboxes("lastName", lastName);
         shopifyPage.inputAddressTextboxes("address1", address);
-        shopifyPage.inputAddressTextboxes("city", Constants.CITY);
+        shopifyPage.inputAddressTextboxes("city", city);
         shopifyPage.selectCountry(country);
         System.out.println("Country: " + country);
         //Select the 2nd state/province
@@ -102,14 +108,28 @@ public class createStore extends AbstractTest {
         System.out.println("Account info:");
         System.out.println("Email: " + email);
         System.out.println("Store Name: " + storeName);
-        System.out.println("Created time: " + dateTime);
-        System.out.println("Country: " + country);
+        System.out.println("Password: " + password);
         System.out.println("Address: " + address);
-
+        System.out.println("City: " + city);
+        System.out.println("Country: " + country);
+        System.out.println("Created time: " + dateTime);
 
         log.info("Step 08: Write data to the csv");
-        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, country, address, dateTime);
+        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, password, address, city, country, dateTime);
         System.out.println("Written Data");
+
+        //Create item
+        log.info("Step 09: Select product menu");
+        shopifyPage.clickToProductMenu();
+
+        log.info("Step 10: Add new product");
+        shopifyPage.clickToAddProduct();
+        shopifyPage.inputToProductName("Test");
+        shopifyPage.clickToSaveProduct();
+
+        log.info("Step 11: Verify the product has been added");
+        verifyTrue(shopifyPage.isPreviewProductButtonDisplayed());
+
     }
 
     @AfterClass

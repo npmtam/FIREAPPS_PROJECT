@@ -1,35 +1,13 @@
-2020-06-26 15:27:59,276 INFO  shopify.createStore - Pre-condition: Access Shopify
-2020-06-26 15:28:02,566 INFO  shopify.createStore - Step 01: Press on Start free trial button
-2020-06-26 15:28:02,865 INFO  shopify.createStore - Step 02: Fill info to register
-2020-06-26 15:28:04,231 INFO  shopify.createStore - Step 03: Press Create your store button
-2020-06-26 15:28:07,594 INFO  shopify.createStore - Step 04: Verify the user can create the store
-2020-06-26 15:28:29,511 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
-2020-06-26 15:28:29,513 INFO  shopify.createStore - Step 05: Fill info at About yourself
-2020-06-26 15:28:30,196 INFO  shopify.createStore - Step 06: Fill address
-2020-06-26 15:28:43,742 INFO  shopify.createStore - Step 07: Verify the store has been created
-2020-06-26 15:28:49,918 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
-2020-06-26 15:28:49,956 INFO  shopify.createStore - Step 08: Write data to the csv
-2020-06-26 15:28:49,959 INFO  shopify.createStore - Pre-condition: Access Shopify
-2020-06-26 15:28:51,105 INFO  shopify.createStore - Step 01: Press on Start free trial button
-2020-06-26 15:28:51,837 INFO  shopify.createStore - Step 02: Fill info to register
-2020-06-26 15:28:52,637 INFO  shopify.createStore - Step 03: Press Create your store button
-2020-06-26 15:28:56,163 INFO  shopify.createStore - Step 04: Verify the user can create the store
-2020-06-26 15:29:17,677 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
-2020-06-26 15:29:17,677 INFO  shopify.createStore - Step 05: Fill info at About yourself
-2020-06-26 15:29:18,490 INFO  shopify.createStore - Step 06: Fill address
-2020-06-26 15:29:32,480 INFO  shopify.createStore - Step 07: Verify the store has been created
-2020-06-26 15:29:38,620 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
-2020-06-26 15:29:38,658 INFO  shopify.createStore - Step 08: Write data to the csv
-2020-06-26 15:29:38,661 INFO  shopify.createStore - Pre-condition: Access Shopify
-2020-06-26 15:29:39,742 INFO  shopify.createStore - Step 01: Press on Start free trial button
-2020-06-26 15:29:40,455 INFO  shopify.createStore - Step 02: Fill info to register
-2020-06-26 15:29:41,255 INFO  shopify.createStore - Step 03: Press Create your store button
-2020-06-26 15:29:44,486 INFO  shopify.createStore - Step 04: Verify the user can create the store
-2020-06-26 15:30:06,168 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
-2020-06-26 15:30:06,168 INFO  shopify.createStore - Step 05: Fill info at About yourself
-2020-06-26 15:30:06,797 INFO  shopify.createStore - Step 06: Fill address
-2020-06-26 15:30:17,846 INFO  shopify.createStore - Step 07: Verify the store has been created
-2020-06-26 15:30:27,497 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
-2020-06-26 15:30:27,540 INFO  shopify.createStore - Step 08: Write data to the csv
-2020-06-26 15:30:27,542 INFO  shopify.createStore - OS Name = windows 10
-2020-06-26 15:30:28,478 INFO  shopify.createStore - ----------------QUIT BROWSER SUCCESS-----------------
+2020-06-27 17:37:06,811 INFO  shopify.createStore - Pre-condition: Access Shopify
+2020-06-27 17:37:10,538 INFO  shopify.createStore - Step 01: Press on Start free trial button
+2020-06-27 17:37:11,312 INFO  shopify.createStore - Step 02: Fill info to register
+2020-06-27 17:37:12,546 INFO  shopify.createStore - Step 03: Press Create your store button
+2020-06-27 17:37:15,877 INFO  shopify.createStore - Step 04: Verify the user can create the store
+2020-06-27 17:37:38,368 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
+2020-06-27 17:37:38,368 INFO  shopify.createStore - Step 05: Fill info at About yourself
+2020-06-27 17:37:39,096 INFO  shopify.createStore - Step 06: Fill address
+2020-06-27 17:37:55,703 INFO  shopify.createStore - Step 07: Verify the store has been created
+2020-06-27 17:38:07,999 INFO  shopify.createStore -  -------------------------- PASSED -------------------------- 
+2020-06-27 17:38:08,035 INFO  shopify.createStore - Step 08: Write data to the csv
+2020-06-27 17:38:08,047 INFO  shopify.createStore - OS Name = windows 10
+2020-06-27 17:38:08,966 INFO  shopify.createStore - ----------------QUIT BROWSER SUCCESS-----------------

@@ -149,9 +149,9 @@ public class ShopifyPO extends AbstractPage {
         clickToElement(ShopifyPageUI.CONFIRM_DELETE_ORIGINAL);
     }
 
-    public void writeDataToCsv(String fileName, String email, String storeName, String country, String address, String dateTime) {
+    public void writeDataToCsv(String fileName, String email, String storeName, String password, String address, String city, String country, String dateTime) {
         //Create new data object
-        StoresLink data = new StoresLink(storeURL, email, storeName, "", country, address, dateTime);
+        StoresLink data = new StoresLink(storeURL, email, storeName, "", password, address, city, country, dateTime);
 
         List<StoresLink> storeData = new ArrayList<>();
         storeData.add(data);
@@ -174,9 +174,13 @@ public class ShopifyPO extends AbstractPage {
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getStore_type());
                 fileWriter.append(Constants.COMMA_DELIMITER);
-                fileWriter.append(storeValues.getCountry());
+                fileWriter.append(storeValues.getPassword());
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getAddress());
+                fileWriter.append(Constants.COMMA_DELIMITER);
+                fileWriter.append(storeValues.getCity());
+                fileWriter.append(Constants.COMMA_DELIMITER);
+                fileWriter.append(storeValues.getCountry());
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getDateTime());
             }
@@ -306,4 +310,27 @@ public class ShopifyPO extends AbstractPage {
         return df.format(calobj.getTime());
     }
 
+    public void clickToProductMenu(){
+        waitToElementVisible(ShopifyPageUI.PRODUCT_MENU);
+        clickToElement(ShopifyPageUI.PRODUCT_MENU);
+    }
+
+    public void clickToAddProduct(){
+        waitToElementClickable(ShopifyPageUI.ADD_PRODUCT_BTN);
+        clickToElement(ShopifyPageUI.ADD_PRODUCT_BTN);
+    }
+
+    public void inputToProductName(String productName){
+        waitToElementVisible(ShopifyPageUI.PRODUCT_NAME_TEXTBOX);
+        sendKeyToElement(ShopifyPageUI.PRODUCT_NAME_TEXTBOX, productName);
+    }
+
+    public void clickToSaveProduct(){
+        waitToElementClickable(ShopifyPageUI.SAVE_PRODUCT_BTN);
+        clickToElement(ShopifyPageUI.SAVE_PRODUCT_BTN);
+    }
+
+    public boolean isPreviewProductButtonDisplayed(){
+        return isElementDisplayed(ShopifyPageUI.PREVIEW_PRODUCT_BTN);
+    }
 }

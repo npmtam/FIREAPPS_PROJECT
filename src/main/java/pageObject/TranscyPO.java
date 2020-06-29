@@ -51,6 +51,7 @@ public class TranscyPO extends AbstractPage {
     }
 
     public void selectStartFree() {
+        scrollToElement(InstallAppUI.START_FREE_BUTTON);
         waitToElementVisible(InstallAppUI.START_FREE_BUTTON);
         clickToElement(InstallAppUI.START_FREE_BUTTON);
     }
@@ -85,7 +86,7 @@ public class TranscyPO extends AbstractPage {
     }
 
     public boolean isSelectedThePlan() {
-        sleepInSecond(1);
+        sleepInSecond(2);
         String url = getCurrentPageURL();
         return url.contains(Constants.WELCOME_TRANSCY_URL);
     }
@@ -93,20 +94,25 @@ public class TranscyPO extends AbstractPage {
     public void loginToTranscy() {
         inputStoreURL(Constants.STORE_URL_CSV);
         clickToLoginButton();
-        if (isLoginToAnotherAccountPresentInDOM(InstallAppUI.LOGIN_TO_ANOTHER_ACCOUNT)) {
-            clickLoginToAnotherAccount();
-        }
-        inputToLoginTextboxes("email", Constants.STORE_EMAIL_CSV);
-        clickToDynamicButtons("Next");
+        sleepInSecond(1);
+        if (isElementPresentInDOM(InstallAppUI.LOGIN_TEXTBOXES, "email") || isElementPresentInDOM(InstallAppUI.LOGIN_TO_ANOTHER_ACCOUNT)) {
+            if (isLoginToAnotherAccountPresentInDOM(InstallAppUI.LOGIN_TO_ANOTHER_ACCOUNT)) {
+                clickLoginToAnotherAccount();
+            }
+            inputToLoginTextboxes("email", Constants.STORE_EMAIL_CSV);
+            clickToDynamicButtons("Next");
 
-        inputToLoginTextboxes("password", Constants.STORE_PASSWORD_CSV);
-        clickToDynamicButtons("Log in");
+            inputToLoginTextboxes("password", Constants.STORE_PASSWORD_CSV);
+            clickToDynamicButtons("Log in");
+        }
     }
+
 
     public void installApp() {
         loginToTranscy();
         if (isElementPresentInDOM(InstallAppUI.DYNAMIC_BUTTONS, "Install unlisted app")) {
             scrollToElement(InstallAppUI.DYNAMIC_BUTTONS, "Install unlisted app");
+            scrollToEndOfPage();
             clickToDynamicButtons("Install unlisted app");
         } else if (driver.getCurrentUrl().equals("https://translate-dev.fireapps.io/")) {
             System.out.println("THIS ACCOUNT " + Constants.STORE_URL_CSV + " HAS BEEN SELECTED THE PLAN BEFORE");
@@ -115,14 +121,14 @@ public class TranscyPO extends AbstractPage {
     }
 
     public void initStoreData(List<String> store) {
-        String stt = store.get(0);
-        String storeLink = store.get(1);
+//        String stt = store.get(0);
+        String storeLink = store.get(0);
         String storeLinkSplit = storeLink.substring(8);
         Constants.STORE_URL_CSV = storeLinkSplit.substring(0, storeLinkSplit.length() - 14);
-        Constants.STORE_EMAIL_CSV = store.get(2);
-        Constants.STORE_NAME_CSV = store.get(3);
-        Constants.STORE_TYPE_CSV = store.get(4);
-        Constants.STORE_PASSWORD_CSV = store.get(5);
+        Constants.STORE_EMAIL_CSV = store.get(1);
+        Constants.STORE_NAME_CSV = store.get(2);
+        Constants.STORE_TYPE_CSV = store.get(3);
+        Constants.STORE_PASSWORD_CSV = store.get(4);
 
         if (Constants.STORE_TYPE_CSV.equals(Constants.PREMIUM_PLAN)) {
             driver.get(Constants.TRANSCY_URL);
@@ -133,7 +139,6 @@ public class TranscyPO extends AbstractPage {
                 clickToStartFreeTrialButton();
                 abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
                 System.out.println(Constants.STORE_NAME_CSV + "has been installed the Transcy app");
-                System.out.println("Ordinal Numbers: " + stt + " | Plan: " + Constants.STORE_TYPE_CSV);
             }
         } else if (Constants.STORE_TYPE_CSV.equals(Constants.ESSENTIAL_PLAN)) {
             driver.get(Constants.TRANSCY_URL);
@@ -143,8 +148,7 @@ public class TranscyPO extends AbstractPage {
                 clickToStart7DaysTrialButton();
                 clickToStartFreeTrialButton();
                 abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
-                System.out.println(Constants.STORE_NAME_CSV + " has been installed the Original App");
-                System.out.println("Ordinal Numbers: " + stt + " | Plan: " + Constants.STORE_TYPE_CSV);
+                System.out.println(Constants.STORE_NAME_CSV + " has been installed the Transcy App");
             }
         } else if (Constants.STORE_TYPE_CSV.equals(Constants.STARTER_PLAN)) {
             driver.get(Constants.TRANSCY_URL);
@@ -154,15 +158,16 @@ public class TranscyPO extends AbstractPage {
                 clickToStart7DaysTrialButton();
                 clickToStartFreeTrialButton();
                 abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
-                System.out.println(Constants.STORE_NAME_CSV + " has been installed the Original App");
-                System.out.println("Ordinal Numbers: " + stt + " | Plan: " + Constants.STORE_TYPE_CSV);
+                System.out.println(Constants.STORE_NAME_CSV + " has been installed the Transcy App");
             }
         } else if (Constants.STORE_TYPE_CSV.equals(Constants.FREE_PLAN)) {
             driver.get(Constants.TRANSCY_URL);
             installApp();
             if (isElementPresentInDOM(InstallAppUI.SELECT_PLAN_BUTTONS_NEW_DESIGN, Constants.STARTER_PLAN)) {
                 selectStartFree();
+                sleepInSecond(2);
                 abstractTest.verifyTrue(isSelectedThePlan());
+                System.out.println(Constants.STORE_NAME_CSV + " has been installed the Transcy App");
             }
         } else {
             driver.get(Constants.TRANSCY_URL);
@@ -170,7 +175,6 @@ public class TranscyPO extends AbstractPage {
             if (isInstalledApp == false) {
                 abstractTest.verifyTrue(isElementDisplayed(InstallAppUI.LOGO));
                 System.out.println(Constants.STORE_NAME_CSV + " has been installed the Original App");
-                System.out.println("Ordinal Numbers: " + stt + " | Plan: " + Constants.STORE_TYPE_CSV);
             }
         }
     }
@@ -183,9 +187,7 @@ public class TranscyPO extends AbstractPage {
 
             //Read file in java line by line
             while ((line = br.readLine()) != null) {
-                while ((line = br.readLine()) != null) {
-                    initStoreData(readDataCSV.parseCsvLine(line));
-                }
+                initStoreData(readDataCSV.parseCsvLine(line));
             }
         } catch (IOException e) {
             e.printStackTrace();

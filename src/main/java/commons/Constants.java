@@ -15,10 +15,7 @@ public class Constants {
     public static final int RAMDOM_BOUND = 10;
 
     //REGISTER
-//    public static String EMAIL = faker.name().firstName() + "_" + faker.name().lastName();
     public static final String SHOPIFY_PASSWORD = "Abc123";
-//    public static final String STORE_NAME = faker.name().fullName();
-
     //TELLING US A LITTLE ABOUT YOURSELF
     public static final String ALREADY_SELLING = "I’m just playing around";
     public static final String CURRENT_REVENUE = "₫0 VND (I'm just getting started)";
@@ -36,10 +33,10 @@ public class Constants {
     public static final String WRITE_CSV_FILE_PATH = rootFolder + "/src/test/resources/storeData.csv";
     public static final String COMMA_DELIMITER = ",";
     public static final String NEW_LINE_SEPARATOR = "\n";
-    public static final String FILE_HEADER = "URL, Email, Store Name, Store Type";
+    public static final String FILE_HEADER = "URL, Store Link, Email, Store Name, Store Type, Password, Address, City, Country, Created Date";
 
     //READ DATA
-    public static final String READ_CSV_FILE_PATH = rootFolder + "/src/test/resources/readStoreData.csv";
+    public static final String READ_CSV_FILE_PATH = rootFolder + "/src/test/resources/storeData.csv";
     public static String STORE_URL_CSV = null;
     public static String STORE_EMAIL_CSV = null;
     public static String STORE_PASSWORD_CSV = null;

@@ -1,24 +1,5 @@
-Default password: Abc123,,,,
-STT,URL,Email,Store Name,Store Type
-1,https://fire-original-2874.myshopify.com,firegroup_original2874@mail.com,Fire Original 2874,Starter
-2,https://fire-original-2060.myshopify.com,firegroup_original2060@mail.com,Fire Original 2060,Starter
-3,https://fire-original-1803.myshopify.com,firegroup_original1803@mail.com,Fire Original 1803,Starter
-4,https://fire-original-949.myshopify.com,firegroup_original949@mail.com,Fire Original 949,Essential
-5,https://fire-original-7186.myshopify.com,firegroup_original7186@mail.com,Fire Original 7186,Starter
-6,https://fire-original-9803.myshopify.com,firegroup_original9803@mail.com,Fire Original 9803,Starter
-7,https://fire-original-519.myshopify.com,firegroup_original519@mail.com,Fire Original 519,Starter
-8,https://fire-original-1471.myshopify.com,firegroup_original1471@mail.com,Fire Original 1471,Premium
-9,https://fire-original-1670.myshopify.com,firegroup_original1670@mail.com,Fire Original 1670,Starter
-10,https://fire-original-1974.myshopify.com,firegroup_original1974@mail.com,Fire Original 1974,Starter
-11,https://fire-original-2010.myshopify.com,firegroup_original2010@mail.com,Fire Original 2010,Premium
-12,https://fire-original-7251.myshopify.com,firegroup_original7251@mail.com,Fire Original 7251,Essential
-13,https://fire-original-2982.myshopify.com,firegroup_original2982@mail.com,Fire Original 2982,Essential
-14,https://fire-original-4135.myshopify.com,firegroup_original4135@mail.com,Fire Original 4135,Premium
-15,https://fire-original-9431.myshopify.com,firegroup_original9431@mail.com,Fire Original 9431,Premium
-16,https://fire-original-3486.myshopify.com,firegroup_original3486@mail.com,Fire Original 3486,Premium
-17,https://fire-original-797.myshopify.com,firegroup_original797@mail.com,Fire Original 797,Premium
-18,https://fire-original-325.myshopify.com,firegroup_original325@mail.com,Fire Original 325,Premium
-19,https://fire-original-2837.myshopify.com,firegroup_original2837@mail.com,Fire Original 2837,Starter
-20,https://fire-original-4875.myshopify.com,firegroup_original4875@mail.com,Fire Original 4875,Premium
-21,https://fire-original-3944.myshopify.com,firegroup_original3944@mail.com,Fire Original 3944,Essential
-22,https://fire-original-3904.myshopify.com,firegroup_original3904@mail.com,Fire Original 3904,Starter
+STT,Store link,Email,Store Name,Store type,Password,Address,City,Country,Created Date
+1,https://lavada-murray.myshopify.com,lavada_murray@mail.com,Lavada Murray,Free,Edd51,54823 Tillman Station,Kaleton,Belize,27/06/2020 17:38:08
+2,https://devante-heaney.myshopify.com,devante_heaney@mail.com,Devante Heaney,Free,Maggie71,4337 Nicolas Causeway,Noestad,Bahamas,27/06/2020 22:22:58
+3,https://zaria-hickle.myshopify.com,zaria_hickle@mail.com,Zaria Hickle,Free,Frederick59,2152 Ritchie Creek,Ullrichbury,Austria,28/06/2020 00:41:47
+4,https://kaela-harris.myshopify.com,kaela_harris@mail.com,Kaela Harris,Free,Dallin42,3158 Alexa Manor,East Tombury,Honduras,28/06/2020 00:44:23

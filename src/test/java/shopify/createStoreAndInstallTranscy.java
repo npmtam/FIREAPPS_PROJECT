@@ -6,17 +6,22 @@ import commons.AbstractTest;
 import commons.Constants;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 import pageObject.ShopifyPO;
+import pageObject.TranscyPO;
 import pageUI.ShopifyPageUI;
 
 import java.util.Locale;
 import java.util.Random;
 
-public class createStore extends AbstractTest {
+public class createStoreAndInstallTranscy extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
+    private TranscyPO transcyPage;
     String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
@@ -32,9 +37,14 @@ public class createStore extends AbstractTest {
 
         //Init fake library
         faker = new Faker(new Locale("en-US"));
+
+        //Clear data before test
+        log.info("Pre-condition: Clear test data");
+        shopifyPage = PageGeneratorManager.getShopifyPage(driver);
+        shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 3)
     public void TC01_CreateShopifyStore() {
         //Init data
         Random random = new Random();
@@ -132,6 +142,13 @@ public class createStore extends AbstractTest {
 
         log.info("Step 11: Verify the product has been added");
         verifyTrue(shopifyPage.isPreviewProductButtonDisplayed());
+    }
+
+    @Test
+    public void TC02_ReadAndInstallTranscy(){
+        log.info("Read data from CSV file and install Transcy app depends on Store Type column");
+        transcyPage = PageGeneratorManager.getTranscyPage(driver);
+        transcyPage.readDataCsv();
     }
 
     @AfterClass

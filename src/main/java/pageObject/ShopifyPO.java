@@ -148,9 +148,9 @@ public class ShopifyPO extends AbstractPage {
         clickToElement(ShopifyPageUI.CONFIRM_DELETE_ORIGINAL);
     }
 
-    public void writeDataToCsv(String fileName, String email, String storeName, String password, String address, String city, String country, String dateTime) {
+    public void writeDataToCsv(String fileName, String email, String storeName, String store_type, String password, String address, String city, String country, String dateTime) {
         //Create new data object
-        StoresLink data = new StoresLink(storeURL, email, storeName, "", password, address, city, country, dateTime);
+        StoresLink data = new StoresLink(storeURL, email, storeName, store_type, password, address, city, country, dateTime);
 
         List<StoresLink> storeData = new ArrayList<>();
         storeData.add(data);
@@ -340,5 +340,13 @@ public class ShopifyPO extends AbstractPage {
 
     public boolean isPreviewProductButtonDisplayed() {
         return isElementDisplayed(ShopifyPageUI.PREVIEW_PRODUCT_BTN);
+    }
+
+    public void clearStoreData(String fileName){
+        try {
+            FileWriter fileWriter = new FileWriter(fileName, false);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

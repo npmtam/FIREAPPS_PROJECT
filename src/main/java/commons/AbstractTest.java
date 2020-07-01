@@ -3,6 +3,7 @@ package commons;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -40,6 +41,7 @@ public class AbstractTest {
 				FirefoxOptions options = new FirefoxOptions();
 				options.setHeadless(true);
 				driver = new FirefoxDriver(options);
+				driver.manage().window().setSize(new Dimension(1600, 900));
 				break;
 			case "chrome":
 //			System.setProperty("webdriver.chrome.driver", rootFolder + "\\resources\\chromedriver.exe");

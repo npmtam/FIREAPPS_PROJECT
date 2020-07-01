@@ -37,6 +37,12 @@ public class ShopifyPageUI {
     public static final String PRODUCT_NAME_TEXTBOX = "//input[@name='title']";
     public static final String SAVE_PRODUCT_BTN = "//span[text()='Save']/ancestor::button";
     public static final String PREVIEW_PRODUCT_BTN = "//span[text()='Preview']/ancestor::button";
+    public static final String VISIT_SHOPIFY_APP_STORE_BTN = "//span[text()='Visit the Shopify App Store']/ancestor::a";
+    public static final String SEARCH_APPS_TEXTBOX = "//input[@type='search' and contains(@class, 'hero')]";
+    public static final String TRANSCY_APP_IN_APPSTORE = "//h4[text()='Transcy ‑ Translate languages']/parent::a";
+    public static final String ADD_APP_BTN = "//input[@value='Add app']";
+    public static final String UPGRADE_YOUR_ACCOUNT_PAGE = "//h1[text()='Upgrade your account']";
+    public static final String SEARCH_BTN = "//button[@type='submit' and contains(@class, 'hero-search')]";
 
     //Login
     public static final String LOGIN_BUTTON = "//a[@href='/login' and @class='marketing-nav__item marketing-nav__item--user']";

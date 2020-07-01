@@ -142,9 +142,33 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step 11: Verify the product has been added");
         verifyTrue(shopifyPage.isPreviewProductButtonDisplayed());
+
+        //Install Transcy app
+        log.info("Step 12: Select Apps menu");
+        transcyPage = PageGeneratorManager.getTranscyPage(driver);
+        transcyPage.selectAppsMenu();
+
+        log.info("Step 13: Visit Shopify App store");
+        transcyPage.clickToVisitShopifyAppStore();
+
+        log.info("Step 14: Search app by keyword");
+        transcyPage.inputKeyword(transcyPage.getRandomKeyword());
+        transcyPage.clickToSearchBtn();
+
+        log.info("Step 15: Select Transcy app");
+        transcyPage.selectTranscyInAppStore();
+
+        log.info("Step 16: Add Transcy app to store");
+        transcyPage.clickToAddApp();
+        transcyPage.clickToInstallApp();
+
+        log.info("Step 17: Verify the required upgrade page display");
+        verifyTrue(transcyPage.isRequiredUpgradePageDisplay());
+
+
     }
 
-    @Test
+//    @Test
     public void TC02_ReadAndInstallTranscy(){
         log.info("Read data from CSV file and install Transcy app depends on Store Type column");
         transcyPage = PageGeneratorManager.getTranscyPage(driver);

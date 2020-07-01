@@ -3,11 +3,13 @@ package pageObject;
 import commons.*;
 import org.openqa.selenium.WebDriver;
 import pageUI.InstallAppUI;
+import pageUI.ShopifyPageUI;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
+import java.util.Random;
 
 public class TranscyPO extends AbstractPage {
     WebDriver driver;
@@ -92,7 +94,7 @@ public class TranscyPO extends AbstractPage {
     }
 
     public void loginToTranscy() {
-        inputStoreURL(Constants.STORE_URL_CSV);
+        inputStoreURL(Constants.URL);
         clickToLoginButton();
         sleepInSecond(1);
         if (isElementPresentInDOM(InstallAppUI.LOGIN_TEXTBOXES, "email") || isElementPresentInDOM(InstallAppUI.LOGIN_TO_ANOTHER_ACCOUNT)) {
@@ -118,6 +120,12 @@ public class TranscyPO extends AbstractPage {
             System.out.println("THIS ACCOUNT " + Constants.STORE_URL_CSV + " HAS BEEN SELECTED THE PLAN BEFORE");
             isInstalledApp = true;
         }
+    }
+
+    public void clickToInstallApp(){
+//        scrollToEndOfPage();
+        waitToElementVisible(InstallAppUI.DYNAMIC_BUTTONS, "Install app");
+        clickToDynamicButtons("Install app");
     }
 
     public void initStoreData(List<String> store) {
@@ -199,5 +207,48 @@ public class TranscyPO extends AbstractPage {
                 crunchifyException.printStackTrace();
             }
         }
+    }
+
+    public void selectAppsMenu(){
+        waitToElementClickable(ShopifyPageUI.APPS_MENU);
+        clickToElement(ShopifyPageUI.APPS_MENU);
+    }
+
+    public String getRandomKeyword(){
+        final String[] keywords = new String[]{"translate", "Translate", "translate"};
+        Random random = new Random();
+        int index = random.nextInt(keywords.length);
+        return keywords[index];
+    }
+
+    public void clickToVisitShopifyAppStore(){
+        waitToElementClickable(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
+        clickToElement(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
+    }
+
+    public void inputKeyword(String keyword){
+        switchToWindowsByTitle("Shopify App Store: Ecommerce App Marketplace");
+        waitToElementVisible(ShopifyPageUI.SEARCH_APPS_TEXTBOX);
+        sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
+    }
+
+    public void selectTranscyInAppStore(){
+        waitToElementVisible(ShopifyPageUI.TRANSCY_APP_IN_APPSTORE);
+        clickToElement(ShopifyPageUI.TRANSCY_APP_IN_APPSTORE);
+    }
+
+    public void clickToAddApp(){
+        waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
+        clickToElement(ShopifyPageUI.ADD_APP_BTN);
+    }
+
+    public void clickToSearchBtn(){
+        waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
+        clickToElement(ShopifyPageUI.SEARCH_BTN);
+    }
+
+    public boolean isRequiredUpgradePageDisplay(){
+        sleepInSecond(1);
+        return isElementDisplayed(ShopifyPageUI.UPGRADE_YOUR_ACCOUNT_PAGE);
     }
 }

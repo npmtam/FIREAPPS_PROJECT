@@ -44,7 +44,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 11)
     public void TC01_CreateShopifyStore() {
         //Init data
         Random random = new Random();

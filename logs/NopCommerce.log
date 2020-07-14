@@ -1195,3 +1195,1127 @@ Driver info: driver.version: RemoteWebDriver
 2020-07-01 21:06:29,778 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
 2020-07-01 21:07:07,896 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
 2020-07-01 21:07:08,808 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-02 09:33:51,377 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-02 09:33:51,388 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-02 09:33:53,064 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-02 09:33:53,398 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-02 09:33:54,038 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-02 09:33:57,422 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-02 09:34:16,951 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:34:16,952 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-02 09:34:17,357 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-02 09:34:33,340 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-02 09:34:41,135 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:34:41,135 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-02 09:34:41,159 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-02 09:34:41,160 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-02 09:34:45,066 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-02 09:34:49,187 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:34:49,188 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-02 09:34:49,332 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-02 09:34:50,641 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-02 09:34:59,202 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-02 09:35:00,571 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-02 09:35:11,137 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-02 09:35:12,338 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:35:12,340 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-02 09:35:12,994 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-02 09:35:13,323 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-02 09:35:13,792 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-02 09:35:16,957 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-02 09:35:37,046 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:35:37,046 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-02 09:35:37,430 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-02 09:35:50,247 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-02 09:35:57,101 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:35:57,101 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-02 09:35:57,123 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-02 09:35:57,123 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-02 09:36:00,091 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-02 09:36:03,363 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:36:03,363 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-02 09:36:03,496 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-02 09:36:04,349 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-02 09:36:11,021 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-02 09:36:12,021 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-02 09:36:19,748 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-02 09:36:20,782 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:36:20,784 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-02 09:36:21,416 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-02 09:36:21,730 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-02 09:36:22,167 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-02 09:36:25,342 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-02 09:36:46,607 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:36:46,607 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-02 09:36:46,979 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-02 09:36:59,766 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-02 09:37:08,226 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:37:08,227 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-02 09:37:08,248 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-02 09:37:08,249 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-02 09:37:11,488 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-02 09:37:14,747 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:37:14,747 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-02 09:37:14,868 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-02 09:37:15,654 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-02 09:37:22,020 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-02 09:37:23,142 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-02 09:37:31,551 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-02 09:37:32,575 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:37:32,576 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-02 09:37:33,199 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-02 09:37:33,500 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-02 09:37:33,927 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-02 09:37:37,113 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-02 09:37:57,087 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:37:57,087 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-02 09:37:57,487 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-02 09:38:10,371 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-02 09:38:16,902 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:38:16,902 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-02 09:38:16,925 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-02 09:38:16,926 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-02 09:38:20,305 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-02 09:38:23,749 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:38:23,749 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-02 09:38:23,868 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-02 09:38:25,008 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-02 09:38:32,858 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-02 09:38:34,036 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-02 09:38:45,661 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-02 09:38:46,686 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:38:46,688 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-02 09:38:47,304 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-02 09:38:47,596 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-02 09:38:48,007 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-02 09:38:51,216 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-02 09:39:11,152 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:39:11,152 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-02 09:39:11,525 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-02 09:39:24,426 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-02 09:39:31,149 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:39:31,149 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-02 09:39:31,166 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-02 09:39:31,167 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-02 09:39:34,434 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-02 09:39:38,254 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:39:38,254 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-02 09:39:38,376 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-02 09:39:39,279 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-02 09:39:46,516 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-02 09:39:47,601 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-02 09:39:56,504 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-02 09:39:57,740 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-02 09:39:57,740 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-02 09:39:58,532 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-03 09:38:12,746 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-03 09:38:12,756 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-03 09:38:14,831 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-03 09:38:15,011 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-03 09:38:16,643 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-03 09:38:19,978 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-03 09:38:42,120 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:38:42,121 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-03 09:38:42,499 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-03 09:38:55,658 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-03 09:39:06,767 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:39:06,768 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-03 09:39:06,793 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-03 09:39:06,795 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-03 09:39:11,011 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-03 09:39:14,952 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:39:14,952 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-03 09:39:15,081 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-03 09:39:15,961 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-03 09:39:24,537 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-03 09:39:25,499 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-03 09:39:35,382 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-03 09:39:36,425 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:39:36,427 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-03 09:39:37,054 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-03 09:39:37,393 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-03 09:39:37,829 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-03 09:39:41,041 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-03 09:40:01,691 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:40:01,691 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-03 09:40:02,082 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-03 09:40:14,930 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-03 09:40:23,528 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:40:23,528 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-03 09:40:23,548 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-03 09:40:23,548 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-03 09:40:27,465 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-03 09:40:31,066 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:40:31,066 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-03 09:40:31,200 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-03 09:40:33,125 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-03 09:40:39,946 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-03 09:40:40,994 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-03 09:40:50,350 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-03 09:40:51,389 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:40:51,390 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-03 09:40:52,217 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-03 09:40:52,354 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-03 09:40:52,918 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-03 09:40:56,117 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-03 09:41:19,701 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:41:19,701 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-03 09:41:20,094 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-03 09:41:32,919 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-03 09:41:39,646 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:41:39,646 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-03 09:41:39,667 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-03 09:41:39,668 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-03 09:41:43,659 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-03 09:41:47,528 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:41:47,528 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-03 09:41:47,661 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-03 09:41:49,048 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-03 09:41:55,700 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-03 09:41:56,656 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-03 09:42:05,173 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-03 09:42:06,226 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:42:06,227 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-03 09:42:06,863 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-03 09:42:07,178 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-03 09:42:07,612 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-03 09:42:10,809 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-03 09:42:31,533 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:42:31,533 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-03 09:42:31,912 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-03 09:42:44,761 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-03 09:42:52,672 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:42:52,673 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-03 09:42:52,693 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-03 09:42:52,694 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-03 09:42:56,334 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-03 09:42:59,906 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:42:59,906 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-03 09:43:00,033 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-03 09:43:01,303 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-03 09:43:08,805 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-03 09:43:10,144 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-03 09:43:18,586 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-03 09:43:19,653 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:43:19,654 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-03 09:43:20,793 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-03 09:43:21,088 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-03 09:43:21,545 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-03 09:43:24,698 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-03 09:43:46,372 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:43:46,372 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-03 09:43:46,754 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-03 09:44:02,445 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-03 09:44:09,453 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:44:09,453 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-03 09:44:09,473 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-03 09:44:09,473 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-03 09:44:12,994 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-03 09:44:17,370 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:44:17,370 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-03 09:44:17,494 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-03 09:44:18,333 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-03 09:44:25,563 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-03 09:44:26,568 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-03 09:44:39,152 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-03 09:44:40,183 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-03 09:44:40,183 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-03 09:44:40,984 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-04 08:49:25,552 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-04 08:49:25,572 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-04 08:49:27,259 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-04 08:49:57,541 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-04 08:49:58,328 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-04 08:50:28,551 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-04 08:50:29,029 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-04 08:51:19,588 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-04 08:51:19,598 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-04 08:51:21,617 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-04 08:51:22,009 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-04 08:51:22,616 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-04 08:51:25,840 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-04 08:51:45,742 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:51:45,745 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-04 08:51:46,169 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-04 08:51:56,644 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-04 08:52:03,283 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:52:03,283 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-04 08:52:03,307 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-04 08:52:03,307 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-04 08:52:07,198 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-04 08:52:11,110 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:52:11,110 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-04 08:52:11,251 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-04 08:52:12,184 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-04 08:52:21,083 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-04 08:52:23,161 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-04 08:52:37,268 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-04 08:52:38,324 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:52:38,324 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-04 08:52:38,948 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-04 08:52:39,291 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-04 08:52:39,744 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-04 08:52:42,923 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-04 08:53:03,796 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:53:03,796 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-04 08:53:04,193 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-04 08:53:14,544 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-04 08:53:44,592 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-04 08:53:45,239 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-04 08:53:45,545 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-04 08:53:45,976 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-04 08:53:49,190 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-04 08:54:10,755 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:54:10,755 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-04 08:54:11,129 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-04 08:54:24,048 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-04 08:54:32,134 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:54:32,134 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-04 08:54:32,156 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-04 08:54:32,157 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-04 08:54:35,860 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-04 08:54:40,007 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:54:40,007 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-04 08:54:40,131 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-04 08:54:41,000 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-04 08:54:47,932 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-04 08:54:49,569 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-04 08:55:00,783 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-04 08:55:01,818 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:55:01,818 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-04 08:55:02,448 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-04 08:55:02,754 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-04 08:55:03,171 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-04 08:55:06,370 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-04 08:55:26,567 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:55:26,568 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-04 08:55:26,934 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-04 08:55:36,994 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-04 08:55:43,574 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:55:43,575 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-04 08:55:43,593 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-04 08:55:43,593 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-04 08:55:46,727 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-04 08:55:50,779 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:55:50,779 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-04 08:55:50,902 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-04 08:55:51,759 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-04 08:55:58,215 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-04 08:55:59,197 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-04 08:56:08,884 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-04 08:56:09,940 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:56:09,940 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-04 08:56:10,582 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-04 08:56:10,888 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-04 08:56:11,340 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-04 08:56:14,465 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-04 08:56:34,649 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:56:34,649 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-04 08:56:35,019 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-04 08:56:51,000 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-04 08:56:58,396 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:56:58,396 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-04 08:56:58,418 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-04 08:56:58,418 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-04 08:57:02,075 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-04 08:57:05,239 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:57:05,239 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-04 08:57:05,376 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-04 08:57:06,844 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-04 08:57:13,527 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-04 08:57:14,623 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-04 08:57:23,104 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-04 08:57:24,130 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-04 08:57:24,130 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-04 08:57:25,149 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-06 09:02:09,949 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-06 09:02:09,949 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:02:12,180 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:02:12,353 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:02:12,934 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:02:17,574 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:02:37,512 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:02:37,514 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:02:37,894 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:02:51,444 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:02:58,643 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:02:58,643 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:02:58,669 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:02:58,670 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:03:02,412 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:03:06,293 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:03:06,293 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:03:06,423 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:03:07,369 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:03:15,629 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:03:17,631 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:03:29,213 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:03:30,242 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:03:30,244 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:03:30,862 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:03:31,203 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:03:31,633 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:03:34,821 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:03:55,063 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:03:55,063 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:03:55,438 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:04:08,527 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:04:17,580 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:04:17,580 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:04:17,603 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:04:17,603 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:04:21,415 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:04:26,305 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:04:26,306 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:04:26,432 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:04:27,151 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:04:33,695 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:04:34,853 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:04:42,938 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:04:44,018 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:04:44,020 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:04:44,606 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:04:44,926 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:04:45,362 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:04:48,541 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:05:09,756 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:05:09,756 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:05:13,104 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:05:29,167 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:05:36,462 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:05:36,462 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:05:36,481 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:05:36,481 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:05:39,842 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:05:43,520 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:05:43,520 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:05:43,655 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:05:44,943 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:05:51,623 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:05:52,617 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:06:02,767 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:06:03,805 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:06:03,805 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:06:04,434 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:06:04,759 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:06:05,201 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:06:08,404 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:06:29,037 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:06:29,037 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:06:29,428 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:06:42,421 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:06:50,785 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:06:50,785 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:06:50,807 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:06:50,807 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:06:54,945 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:06:58,989 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:06:58,989 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:06:59,119 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:06:59,835 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:07:06,151 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:07:07,140 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:07:15,907 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:07:16,955 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:07:16,955 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:07:17,607 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:07:17,913 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:07:18,359 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:07:21,527 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:07:41,318 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:07:41,318 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:07:41,701 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:07:54,724 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:08:02,142 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:08:02,142 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:08:02,166 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:08:02,166 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:08:05,686 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:08:09,326 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:08:09,326 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:08:09,467 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:08:10,556 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:08:16,824 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:08:17,826 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:08:26,304 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:08:27,362 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:08:27,362 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:08:28,069 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:08:28,382 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:08:28,813 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:08:32,047 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:08:51,839 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:08:51,839 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:08:52,222 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:09:05,238 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:09:12,571 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:09:12,572 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:09:12,599 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:09:12,599 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:09:16,052 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:09:20,703 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:09:20,703 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:09:20,843 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:09:21,926 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:09:29,166 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:09:30,249 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:09:39,908 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:09:40,952 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:09:40,952 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:09:41,594 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:09:41,909 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:09:42,344 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:09:45,555 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:10:05,568 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:10:05,568 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:10:05,942 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:10:19,038 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:10:26,294 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:10:26,294 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:10:26,317 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:10:26,318 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:10:29,602 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:10:33,591 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:10:33,591 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:10:33,712 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:10:34,517 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:10:41,333 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:10:42,420 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:10:50,243 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:10:51,343 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:10:51,345 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:10:51,941 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:10:52,262 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:10:52,705 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:10:55,892 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:11:15,382 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:11:15,382 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:11:15,815 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:11:31,899 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:11:38,681 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:11:38,681 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:11:38,702 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:11:38,702 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:11:41,890 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:11:45,670 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:11:45,670 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:11:45,801 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:11:46,841 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:11:54,563 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:11:55,630 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:12:03,296 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:12:04,321 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:12:04,322 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:12:04,940 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:12:05,268 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:12:05,699 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:12:08,897 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:12:29,429 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:12:29,429 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:12:29,805 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:12:39,899 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:12:47,611 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:12:47,611 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:12:47,630 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:12:47,630 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:12:50,931 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:12:54,841 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:12:54,841 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:12:54,977 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:12:56,291 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:13:03,696 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:13:04,697 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:13:13,204 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:13:14,615 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:13:14,616 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-06 09:13:15,267 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-06 09:13:15,556 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-06 09:13:15,975 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-06 09:13:19,164 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-06 09:13:38,796 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:13:38,796 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-06 09:13:42,384 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-06 09:13:55,424 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-06 09:14:03,240 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:14:03,240 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-06 09:14:03,261 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-06 09:14:03,262 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-06 09:14:06,727 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-06 09:14:10,250 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:14:10,250 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-06 09:14:10,379 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-06 09:14:11,403 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-06 09:14:18,565 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-06 09:14:19,854 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-06 09:14:29,095 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-06 09:14:30,157 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-06 09:14:30,157 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-06 09:14:30,969 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-08 09:22:08,725 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-08 09:22:08,747 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:22:10,855 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:22:11,998 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:22:12,453 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:22:15,643 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:22:35,741 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:22:35,744 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:22:36,130 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:22:49,320 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:23:00,624 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:23:00,624 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:23:00,649 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:23:00,651 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:23:04,376 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:23:07,850 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:23:07,851 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:23:07,997 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:23:08,743 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:23:16,669 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:23:18,439 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:23:28,565 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:23:29,605 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:23:29,606 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:23:30,729 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:23:31,056 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:23:31,510 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:23:34,656 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:23:54,629 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:23:54,629 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:23:55,026 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:24:08,017 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:24:17,736 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:24:17,736 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:24:17,759 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:24:17,759 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:24:21,233 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:24:25,495 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:24:25,495 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:24:25,617 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:24:26,907 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:24:33,254 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:24:34,338 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:24:42,964 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:24:44,000 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:24:44,001 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:24:45,083 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:24:45,400 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:24:45,838 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:24:48,962 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:25:09,256 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:25:09,256 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:25:09,634 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:25:22,521 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:25:30,850 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:25:30,850 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:25:30,873 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:25:30,873 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:25:34,402 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:25:37,913 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:25:37,913 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:25:38,040 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:25:38,874 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:25:46,159 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:25:47,270 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:25:55,868 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:25:56,897 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:25:56,898 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:25:57,973 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:25:58,298 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:25:58,714 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:26:01,901 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:26:22,294 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:26:22,294 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:26:22,674 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:26:35,600 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:26:42,208 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:26:42,208 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:26:42,229 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:26:42,230 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:26:45,493 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:26:49,606 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:26:49,606 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:26:49,731 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:26:51,296 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:26:58,009 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:26:59,043 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:27:08,007 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:27:09,040 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:27:09,041 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:27:09,659 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:27:09,945 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:27:10,389 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:27:13,534 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:27:34,891 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:27:34,891 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:27:35,264 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:27:48,153 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:27:55,684 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:27:55,684 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:27:55,705 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:27:55,706 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:27:59,764 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:28:03,261 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:28:03,261 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:28:03,383 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:28:04,135 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:28:10,692 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:28:11,704 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:28:21,495 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:28:22,531 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:28:22,531 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:28:23,148 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:28:23,453 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:28:23,880 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:28:27,054 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:28:48,606 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:28:48,606 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:28:48,971 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:29:04,763 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:29:15,262 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:29:15,262 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:29:15,282 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:29:15,282 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:29:19,554 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:29:23,848 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:29:23,848 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:29:23,986 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:29:24,798 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:29:31,438 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:29:32,534 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:29:41,266 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:29:42,291 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:29:42,292 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:29:42,913 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:29:43,215 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:29:43,633 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:29:46,805 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:30:07,410 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:30:07,410 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:30:07,816 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:30:20,668 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:30:28,834 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:30:28,834 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:30:28,854 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:30:28,854 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:30:32,014 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:30:35,549 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:30:35,549 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:30:35,679 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:30:36,970 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:30:44,458 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:30:45,445 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:30:54,112 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:30:55,147 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:30:55,148 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:30:55,772 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:30:56,073 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:30:56,504 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:30:59,685 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:31:19,730 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:31:19,730 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:31:20,104 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:31:33,012 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:31:39,455 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:31:39,456 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:31:39,484 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:31:39,485 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:31:43,152 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:31:46,670 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:31:46,670 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:31:46,809 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:31:48,077 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:31:54,798 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:31:55,828 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:32:04,813 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:32:05,863 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:32:05,864 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:32:06,619 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:32:06,903 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:32:07,330 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:32:10,537 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:32:31,633 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:32:31,633 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-08 09:32:31,995 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-08 09:32:44,903 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-08 09:32:52,144 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:32:52,144 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-08 09:32:52,167 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-08 09:32:52,168 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-08 09:32:56,436 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-08 09:33:00,173 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:33:00,173 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-08 09:33:00,296 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-08 09:33:01,166 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-08 09:33:07,973 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-08 09:33:09,107 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-08 09:33:17,876 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-08 09:33:18,914 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-08 09:33:18,915 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-08 09:33:19,751 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-08 09:33:20,064 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-08 09:33:20,490 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-08 09:33:21,253 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-08 09:33:51,326 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-08 09:33:52,511 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-09 09:06:04,505 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-09 09:06:04,520 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:06:06,609 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:06:06,893 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:06:07,380 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:06:10,610 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:06:31,569 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:06:31,570 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:06:32,025 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:06:45,208 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:06:53,605 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:06:53,605 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:06:53,628 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:06:53,630 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:06:57,304 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:07:00,773 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:07:00,773 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:07:00,901 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:07:01,656 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:07:10,693 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:07:11,733 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:07:23,416 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:07:24,475 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:07:24,475 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:07:25,155 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:07:25,489 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:07:25,929 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:07:29,087 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:07:51,802 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:07:51,802 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:07:52,178 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:08:05,210 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:08:14,769 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:08:14,769 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:08:14,789 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:08:14,789 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:08:19,194 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:08:22,696 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:08:22,696 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:08:22,818 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:08:24,571 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:08:31,954 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:08:33,057 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:08:44,860 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:08:45,912 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:08:45,912 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:08:46,711 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:08:46,842 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:08:47,271 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:08:50,472 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:09:11,669 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:09:11,669 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:09:12,060 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:09:28,036 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:09:36,675 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:09:36,675 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:09:36,698 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:09:36,699 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:09:40,112 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:09:43,475 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:09:43,475 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:09:43,614 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:09:44,318 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:09:50,436 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:09:51,522 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:09:59,948 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:10:00,991 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:10:00,991 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:10:01,909 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:10:02,058 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:10:02,811 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:10:06,035 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:10:27,093 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:10:27,093 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:10:27,450 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:10:40,331 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:10:48,264 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:10:48,264 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:10:48,287 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:10:48,287 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:10:52,119 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:10:55,968 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:10:55,968 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:10:56,104 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:10:56,823 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:11:03,453 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:11:04,491 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:11:13,557 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:11:14,611 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:11:14,611 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:11:15,303 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:11:15,586 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:11:16,045 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:11:19,185 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:11:40,433 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:11:40,433 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:11:40,805 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:11:53,864 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:12:01,639 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:12:01,640 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:12:01,669 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:12:01,669 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:12:05,474 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:12:09,869 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:12:09,869 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:12:09,994 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:12:11,498 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:12:17,713 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:12:18,670 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:12:27,261 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:12:28,318 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:12:28,318 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:12:28,925 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:12:29,214 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:12:29,623 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:12:32,845 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:12:54,625 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:12:54,625 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:12:54,996 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:13:07,926 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:13:14,997 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:13:14,997 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:13:15,020 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:13:15,020 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:13:18,329 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:13:22,863 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:13:22,863 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:13:22,991 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:13:24,956 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:13:32,043 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:13:33,411 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:13:44,123 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:13:45,179 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:13:45,179 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:13:45,796 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:13:46,105 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:13:46,538 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:13:49,702 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:14:11,425 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:14:11,425 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:14:11,794 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:14:24,855 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:14:32,654 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:14:32,654 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:14:32,680 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:14:32,680 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:14:35,825 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:14:39,223 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:14:39,224 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:14:39,343 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:14:40,229 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:14:47,611 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:14:48,668 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:15:00,018 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:15:01,074 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:15:01,074 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:15:01,694 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:15:01,996 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:15:02,429 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:15:05,567 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:15:26,486 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:15:26,486 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:15:26,849 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:15:40,020 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:15:48,224 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:15:48,224 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:15:48,253 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:15:48,253 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:15:52,117 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:15:56,298 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:15:56,298 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:15:56,424 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:15:57,162 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:16:03,440 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:16:04,627 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:16:12,735 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:16:13,766 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:16:13,767 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:16:14,402 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:16:14,671 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:16:15,110 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:16:15,904 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:16:45,924 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:16:46,924 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:16:47,191 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:16:47,618 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:16:50,765 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:17:13,353 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:17:13,353 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:17:13,742 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:17:26,812 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:17:34,498 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:17:34,498 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:17:34,523 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:17:34,523 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:17:38,007 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:17:41,725 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:17:41,730 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:17:41,863 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:17:42,577 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:17:49,796 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:17:50,932 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:17:58,618 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:17:59,649 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:17:59,649 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-09 09:18:00,251 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-09 09:18:00,552 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-09 09:18:00,981 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-09 09:18:04,156 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-09 09:18:24,852 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:18:24,852 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-09 09:18:25,227 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-09 09:18:35,366 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-09 09:18:44,591 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:18:44,591 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-09 09:18:44,611 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-09 09:18:44,612 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-09 09:18:47,744 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-09 09:18:51,256 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:18:51,256 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-09 09:18:51,394 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-09 09:18:52,232 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-09 09:19:01,019 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-09 09:19:02,178 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-09 09:19:11,238 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-09 09:19:12,294 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-09 09:19:12,294 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-09 09:19:13,387 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-10 09:58:55,549 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-10 09:58:55,567 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 09:58:57,584 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 09:58:57,948 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-10 09:58:58,361 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-10 09:59:01,731 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-10 09:59:23,365 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-10 09:59:23,366 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-10 09:59:23,761 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-10 09:59:37,010 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-10 09:59:45,579 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-10 09:59:45,579 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-10 09:59:45,607 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-10 09:59:45,608 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-10 09:59:48,235 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 09:59:48,886 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:00:19,259 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:00:20,217 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:00:50,329 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:00:50,828 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:01:21,198 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:01:21,691 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:01:52,068 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:01:52,587 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:02:22,989 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:02:23,454 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:02:53,714 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:02:54,219 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:03:24,586 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:03:25,099 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:03:55,444 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:03:55,943 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:04:26,274 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-10 10:04:26,774 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-10 10:04:57,274 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-10 10:04:58,208 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-14 10:00:32,271 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-14 10:00:32,287 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 10:00:34,423 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 10:00:34,584 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 10:00:35,053 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-14 10:00:38,426 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-14 10:00:58,521 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 10:00:58,522 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-14 10:00:58,906 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-14 10:01:09,243 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-14 10:01:17,369 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 10:01:17,369 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-14 10:01:17,392 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-14 10:01:17,393 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-14 10:01:20,834 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-14 10:01:24,879 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 10:01:24,879 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-14 10:01:25,011 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-14 10:01:25,816 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-14 10:01:35,605 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-14 10:01:37,304 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-14 10:01:49,549 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-14 10:01:50,609 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 10:01:50,609 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-14 10:01:51,343 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-14 11:55:09,559 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-14 11:55:09,559 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 11:55:11,792 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 11:55:12,002 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 11:55:12,469 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-14 11:55:15,768 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-14 11:55:35,878 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 11:55:35,880 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-14 11:55:36,313 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-14 11:55:49,644 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-14 11:55:58,644 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 11:55:58,644 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-14 11:55:58,679 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-14 11:55:58,680 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-14 11:56:02,590 INFO  shopify.createStoreAndInstallTranscy - Step 11: Verify the product has been added
+2020-07-14 11:56:05,934 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 11:56:05,934 INFO  shopify.createStoreAndInstallTranscy - Step 12: Select Apps menu
+2020-07-14 11:56:06,056 INFO  shopify.createStoreAndInstallTranscy - Step 13: Visit Shopify App store
+2020-07-14 11:56:06,846 INFO  shopify.createStoreAndInstallTranscy - Step 14: Search app by keyword
+2020-07-14 11:56:14,697 INFO  shopify.createStoreAndInstallTranscy - Step 15: Select Transcy app
+2020-07-14 11:56:16,210 INFO  shopify.createStoreAndInstallTranscy - Step 16: Add Transcy app to store
+2020-07-14 11:56:29,286 INFO  shopify.createStoreAndInstallTranscy - Step 17: Verify the required upgrade page display
+2020-07-14 11:56:30,344 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 11:56:30,344 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-14 11:56:31,188 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-07-14 13:07:36,529 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
+2020-07-14 13:07:36,529 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:07:38,763 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:07:39,119 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:07:39,626 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-14 13:07:42,840 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-14 13:08:04,667 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 13:08:04,668 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
+2020-07-14 13:08:05,075 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
+2020-07-14 13:08:18,384 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
+2020-07-14 13:08:24,803 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
+2020-07-14 13:08:24,803 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
+2020-07-14 13:08:24,826 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
+2020-07-14 13:08:24,826 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
+2020-07-14 13:09:05,095 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:09:06,153 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:09:11,405 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:09:12,994 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
+2020-07-14 13:09:26,159 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
+2020-07-14 13:09:56,363 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:09:56,965 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:10:02,156 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:10:32,393 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:10:32,881 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:10:38,023 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:11:08,410 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:11:08,875 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:11:14,025 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:11:44,420 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:11:44,903 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:11:50,061 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:12:20,309 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:12:20,774 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:12:25,924 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:12:56,114 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:12:56,595 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:13:01,741 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:13:32,238 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:13:32,758 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:13:37,885 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:14:08,220 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:14:08,684 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:14:13,812 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:14:44,110 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
+2020-07-14 13:14:44,549 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
+2020-07-14 13:14:49,698 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
+2020-07-14 13:15:20,145 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
+2020-07-14 13:15:20,863 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------

@@ -1,7 +1,10 @@
 # FIREAPPS_PROJECT
 
 Run test:
+
 ```- run all: mvn test```
+
+
 ```- run a suite: mvn -Dtest=createStoreAndInstallMessent test```
 
 This project contains 3 main functions:

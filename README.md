@@ -2,10 +2,13 @@
 
 Run test:
 
-```- run all: mvn test```
+- run all
 
+```mvn test```
 
-```- run a suite: mvn -Dtest=createStoreAndInstallMessent test```
+- run a suite
+
+```mvn -Dtest=createStoreAndInstallMessent test```
 
 This project contains 3 main functions:
 - Create the Shopify stores

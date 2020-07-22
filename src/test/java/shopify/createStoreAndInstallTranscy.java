@@ -14,8 +14,10 @@ import pageObject.ShopifyPO;
 import pageObject.TranscyPO;
 import pageUI.ShopifyPageUI;
 
+import java.io.IOException;
 import java.util.Locale;
 import java.util.Random;
+import java.lang.Thread;
 
 public class createStoreAndInstallTranscy extends AbstractTest {
     private WebDriver driver;
@@ -31,8 +33,8 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
     @Parameters("browser")
     @BeforeTest
-    public void beforeTest(String browserName) {
-        driver = getBrowserDriver(browserName);
+    public void beforeTest() {
+        driver = getBrowserDriver("chrome");
         abstractPage = new AbstractPage(driver);
 
         //Init fake library
@@ -44,8 +46,8 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 11)
-    public void TC01_CreateShopifyStore() {
+    @Test(invocationCount = 2)
+    public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
         randomNumber = random.nextInt(99);
@@ -63,6 +65,13 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         storeName = firstName + " " + lastName;
         storeNameBackup = faker.name().fullName() + country;
         phoneNumber = Constants.PHONE_NUMBER + abstractPage.randomNumber(Constants.RAMDOM_BOUND);
+
+//        try {
+//            log.info("Sleep 10s");
+//            Thread.sleep(10000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
         //Create store test
         log.info("Pre-condition: Access Shopify");

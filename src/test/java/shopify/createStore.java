@@ -10,6 +10,7 @@ import org.testng.annotations.*;
 import pageObject.ShopifyPO;
 import pageUI.ShopifyPageUI;
 
+import java.io.IOException;
 import java.util.Locale;
 import java.util.Random;
 
@@ -35,7 +36,7 @@ public class createStore extends AbstractTest {
     }
 
     @Test(invocationCount = 1)
-    public void TC01_CreateShopifyStore() {
+    public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
         randomNumber = random.nextInt(99);

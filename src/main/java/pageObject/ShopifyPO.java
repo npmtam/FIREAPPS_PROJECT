@@ -1,13 +1,11 @@
 package pageObject;
 
 import commons.*;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import pageUI.ShopifyPageUI;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -148,12 +146,18 @@ public class ShopifyPO extends AbstractPage {
         clickToElement(ShopifyPageUI.CONFIRM_DELETE_ORIGINAL);
     }
 
-    public void writeDataToCsv(String fileName, String email, String storeName, String store_type, String password, String address, String city, String country, String dateTime) {
+    public void writeDataToCsv(String fileName, String email, String storeName, String store_type, String password, String address, String city, String country, String dateTime) throws IOException {
         //Create new data object
         StoresLink data = new StoresLink(storeURL, email, storeName, store_type, password, address, city, country, dateTime);
 
         List<StoresLink> storeData = new ArrayList<>();
         storeData.add(data);
+        File src = new File(System.getProperty("user.dir") + "/src/test/resources/templateStoreData.csv");
+        File dest = new File(fileName);
+
+        if(!dest.exists()){
+            FileUtils.copyFile(src, dest);
+        }
 
         FileWriter fileWriter = null;
         try {

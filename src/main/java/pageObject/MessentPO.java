@@ -251,4 +251,15 @@ public class MessentPO extends AbstractPage {
         sleepInSecond(1);
         return isElementDisplayed(ShopifyPageUI.UPGRADE_YOUR_ACCOUNT_PAGE);
     }
+
+    public void cliclToLoadPageTwo() {
+        String elementPage2 = "//div//a[@class='search-pagination__link' and text()='2']";
+        waitToElementVisible(elementPage2);
+        clickToElement(elementPage2);
+    }
+
+    public boolean isChoosePlanPageDisplay(){
+        sleepInSecond(1);
+        return isElementDisplayed("//h4[text()='Choose your plan']");
+    }
 }

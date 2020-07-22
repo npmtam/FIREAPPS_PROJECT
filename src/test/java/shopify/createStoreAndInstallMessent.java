@@ -14,6 +14,10 @@ import pageObject.ShopifyPO;
 import pageObject.MessentPO;
 import pageUI.ShopifyPageUI;
 
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 import java.util.Random;
 
@@ -27,6 +31,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
     boolean isStoreNameExisted;
     public int randomNumber;
     Faker faker;
+    public String csvName;
 
 
     @Parameters("browser")
@@ -34,6 +39,10 @@ public class createStoreAndInstallMessent extends AbstractTest {
     public void beforeTest() {
         driver = getBrowserDriver("chrome");
         abstractPage = new AbstractPage(driver);
+
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
+        Date date = new Date();
+        csvName = dateFormat.format(date) + "_Messent.csv";
 
         //Init fake library
         faker = new Faker(new Locale("en-US"));
@@ -44,8 +53,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 1)
-    public void TC01_CreateShopifyStore() {
+    @Test(invocationCount = 2)
+    public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
         randomNumber = random.nextInt(99);
@@ -129,11 +138,12 @@ public class createStoreAndInstallMessent extends AbstractTest {
         System.out.println("Country: " + country);
         System.out.println("Created time: " + dateTime);
 
-        log.info("Step 09: Write data to the csv");
-        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
+        log.info("Step 09: Write data to the csv" + csvName);
+        shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
-        //Install Transcy app
+        //Install Messent app
+        // pause code
         log.info("Step 12: Select Apps menu");
         messentPage = PageGeneratorManager.getMessentPage(driver);
         messentPage.selectAppsMenu();
@@ -145,6 +155,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
         messentPage.inputKeyword(messentPage.getRandomKeyword());
         messentPage.clickToSearchBtn();
 
+        log.info("Step 14.1: Load page 2");
+        messentPage.cliclToLoadPageTwo();
+
         log.info("Step 15: Select Messent app");
         messentPage.selectMessentInAppStore();
 
@@ -152,9 +165,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         messentPage.clickToAddApp();
         messentPage.clickToInstallApp();
 
-        log.info("Step 17: Verify the required upgrade page display");
-        verifyTrue(messentPage.isRequiredUpgradePageDisplay());
-
+        log.info("Step 17: Verify the choose plan page display");
+        verifyTrue(messentPage.isChoosePlanPageDisplay());
     }
 
 //    @Test

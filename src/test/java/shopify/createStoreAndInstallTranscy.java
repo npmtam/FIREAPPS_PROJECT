@@ -15,6 +15,9 @@ import pageObject.TranscyPO;
 import pageUI.ShopifyPageUI;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 import java.util.Random;
 import java.lang.Thread;
@@ -29,6 +32,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
     boolean isStoreNameExisted;
     public int randomNumber;
     Faker faker;
+    public  String csvName;
 
 
     @Parameters("browser")
@@ -40,13 +44,17 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         //Init fake library
         faker = new Faker(new Locale("en-US"));
 
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
+        Date date = new Date();
+        csvName = dateFormat.format(date) + "_Transcy.csv";
+
         //Clear data before test
         log.info("Pre-condition: Clear test data");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 2)
+    @Test(invocationCount = 1)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -138,8 +146,12 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         System.out.println("Country: " + country);
         System.out.println("Created time: " + dateTime);
 
-        log.info("Step 09: Write data to the csv");
-        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
+//        log.info("Step 09: Write data to the csv");
+//        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
+//        System.out.println("Written Data");
+
+        log.info("Step 09: Write data to the csv" + csvName);
+        shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
         //Create item

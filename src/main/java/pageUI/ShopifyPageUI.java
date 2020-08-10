@@ -18,6 +18,10 @@ public class ShopifyPageUI {
     public static final String DROPDOWN_DESCRIBES = "//select[@id='QuestionnaireSelect-which_best_describes_you']";
     public static final String NEXT_BUTTON = "//button[@aria-label='Next']";
 
+    //Account
+    public static final String CREATE_ACCOUNT_TEXTBOXES = "//input[@name='account[%s]']";
+    public static final String CREATE_ACCOUNT_BUTTON = "//button[text()='Create account']";
+
     //Address info
     public static final String ADDRESS_INFO_TEXTBOXES = "//input[@name='account_setup[%s]']";
     public static final String ENTER_MY_STORE_BUTTON = "//button[@aria-label='Enter my store']";
@@ -44,6 +48,10 @@ public class ShopifyPageUI {
     public static final String ADD_APP_BTN = "//input[@value='Add app']";
     public static final String UPGRADE_YOUR_ACCOUNT_PAGE = "//h1[text()='Upgrade your account']";
     public static final String SEARCH_BTN = "//button[@type='submit' and contains(@class, 'hero-search')]";
+    public static final String CHOOSE_PLAN = "//h4[text()='Choose your plan']";
+    public static final String ONLINE_STORE = "//a[@href='/admin/themes?channel=true']";
+    public static final String OBERLO_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Oberlo')]";
+    public static final String EXPLORE_FREE_THEMES =  "//span[text()='Explore free themes']/ancestor::a";
 
     //Login
     public static final String LOGIN_BUTTON = "//a[@href='/login' and @class='marketing-nav__item marketing-nav__item--user']";

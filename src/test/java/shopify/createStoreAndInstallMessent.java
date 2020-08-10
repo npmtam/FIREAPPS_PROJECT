@@ -26,7 +26,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
     private MessentPO messentPage;
-    String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password;
+    String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;
@@ -37,7 +37,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
     @Parameters("browser")
     @BeforeTest
     public void beforeTest() {
-        driver = getBrowserDriver("chrome");
+        driver = getBrowserDriver("firefox");
         abstractPage = new AbstractPage(driver);
 
         DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
@@ -53,7 +53,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 2)
+    @Test(invocationCount = 28)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -65,6 +65,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         firstName = faker.name().firstName();
         lastName = faker.name().lastName();
         password = faker.name().firstName() + randomNumber;
+        password_confirmation = password;
         city = faker.address().city();
         store_type = Constants.FREE_PLAN;
 
@@ -94,6 +95,13 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToCreateYourStoreButton();
         }
 
+        log.info("Step Create an account");
+        shopifyPage.inputToCreateAccount("first_name", firstName);
+        shopifyPage.inputToCreateAccount("last_name", lastName);
+        shopifyPage.inputToCreateAccount("password", password);
+        shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
+        shopifyPage.clickToCreateAccountButton();
+
         log.info("Step 04: Verify the user can create the store");
         verifyTrue(shopifyPage.isRegisterInfoAcceptable());
 
@@ -109,8 +117,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToNextButton();
 
         log.info("Step 06: Fill address");
-        shopifyPage.inputAddressTextboxes("firstName", firstName);
-        shopifyPage.inputAddressTextboxes("lastName", lastName);
+        //shopifyPage.inputAddressTextboxes("firstName", firstName);
+        //shopifyPage.inputAddressTextboxes("lastName", lastName);
         shopifyPage.inputAddressTextboxes("address1", address);
         shopifyPage.inputAddressTextboxes("city", city);
         shopifyPage.selectCountry(country);
@@ -140,6 +148,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         log.info("Step 09: Write data to the csv" + csvName);
         shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
+        //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
         //Install Messent app
@@ -155,8 +164,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         messentPage.inputKeyword(messentPage.getRandomKeyword());
         messentPage.clickToSearchBtn();
 
-        log.info("Step 14.1: Load page 2");
-        messentPage.cliclToLoadPageTwo();
+        /*log.info("Step 14.1: Load page 2");
+        messentPage.cliclToLoadPageTwo();*/
 
         log.info("Step 15: Select Messent app");
         messentPage.selectMessentInAppStore();

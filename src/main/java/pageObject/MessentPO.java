@@ -96,7 +96,7 @@ public class MessentPO extends AbstractPage {
     public void loginToTranscy() {
         inputStoreURL(Constants.URL);
         clickToLoginButton();
-        sleepInSecond(1);
+        sleepInSecond(3);
         if (isElementPresentInDOM(InstallAppUI.LOGIN_TEXTBOXES, "email") || isElementPresentInDOM(InstallAppUI.LOGIN_TO_ANOTHER_ACCOUNT)) {
             if (isLoginToAnotherAccountPresentInDOM(InstallAppUI.LOGIN_TO_ANOTHER_ACCOUNT)) {
                 clickLoginToAnotherAccount();
@@ -123,7 +123,8 @@ public class MessentPO extends AbstractPage {
     }
 
     public void clickToInstallApp(){
-//        scrollToEndOfPage();
+        sleepInSecond(5);
+        scrollToEndOfPage();
         waitToElementVisible(InstallAppUI.DYNAMIC_BUTTONS, "Install app");
         clickToDynamicButtons("Install app");
     }
@@ -210,6 +211,7 @@ public class MessentPO extends AbstractPage {
     }
 
     public void selectAppsMenu(){
+        sleepInSecond(5);
         waitToElementClickable(ShopifyPageUI.APPS_MENU);
         clickToElement(ShopifyPageUI.APPS_MENU);
     }
@@ -235,20 +237,23 @@ public class MessentPO extends AbstractPage {
     public void selectMessentInAppStore(){
         waitToElementVisible(ShopifyPageUI.MESSENT_APP_IN_APPSTORE);
         clickToElement(ShopifyPageUI.MESSENT_APP_IN_APPSTORE);
+        sleepInSecond(2);
     }
 
     public void clickToAddApp(){
         waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
         clickToElement(ShopifyPageUI.ADD_APP_BTN);
+        sleepInSecond(3);
     }
 
     public void clickToSearchBtn(){
+        sleepInSecond(3);
         waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
         clickToElement(ShopifyPageUI.SEARCH_BTN);
     }
 
     public boolean isRequiredUpgradePageDisplay(){
-        sleepInSecond(1);
+        sleepInSecond(3);
         return isElementDisplayed(ShopifyPageUI.UPGRADE_YOUR_ACCOUNT_PAGE);
     }
 
@@ -259,7 +264,8 @@ public class MessentPO extends AbstractPage {
     }
 
     public boolean isChoosePlanPageDisplay(){
-        sleepInSecond(1);
+        sleepInSecond(10);
         return isElementDisplayed("//h4[text()='Choose your plan']");
+        //return isElementDisplayed(ShopifyPageUI.CHOOSE_PLAN);
     }
 }

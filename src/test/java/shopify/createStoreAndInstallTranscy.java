@@ -27,7 +27,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
     private TranscyPO transcyPage;
-    String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password;
+    String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;
@@ -38,7 +38,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
     @Parameters("browser")
     @BeforeTest
     public void beforeTest() {
-        driver = getBrowserDriver("chrome");
+        driver = getBrowserDriver("firefox");
         abstractPage = new AbstractPage(driver);
 
         //Init fake library
@@ -53,8 +53,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
-
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 3)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -66,6 +65,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         firstName = faker.name().firstName();
         lastName = faker.name().lastName();
         password = faker.name().firstName() + randomNumber;
+        password_confirmation = password;
         city = faker.address().city();
         store_type = Constants.FREE_PLAN;
 
@@ -102,6 +102,13 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clickToCreateYourStoreButton();
         }
 
+        log.info("Step Create an account");
+        shopifyPage.inputToCreateAccount("first_name", firstName);
+        shopifyPage.inputToCreateAccount("last_name", lastName);
+        shopifyPage.inputToCreateAccount("password", password);
+        shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
+        shopifyPage.clickToCreateAccountButton();
+
         log.info("Step 04: Verify the user can create the store");
         verifyTrue(shopifyPage.isRegisterInfoAcceptable());
 
@@ -117,8 +124,8 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clickToNextButton();
 
         log.info("Step 06: Fill address");
-        shopifyPage.inputAddressTextboxes("firstName", firstName);
-        shopifyPage.inputAddressTextboxes("lastName", lastName);
+        //shopifyPage.inputAddressTextboxes("firstName", firstName);
+        //shopifyPage.inputAddressTextboxes("lastName", lastName);
         shopifyPage.inputAddressTextboxes("address1", address);
         shopifyPage.inputAddressTextboxes("city", city);
         shopifyPage.selectCountry(country);
@@ -153,7 +160,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         log.info("Step 09: Write data to the csv" + csvName);
         shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
-
+        
         //Create item
         log.info("Step 10: Add new product");
         shopifyPage.clickToProductMenu();

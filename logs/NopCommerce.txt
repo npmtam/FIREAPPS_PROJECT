@@ -1,48 +1,40 @@
-2020-07-14 13:07:36,529 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Clear test data
-2020-07-14 13:07:36,529 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:07:38,763 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:07:39,119 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:07:39,626 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
-2020-07-14 13:07:42,840 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
-2020-07-14 13:08:04,667 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
-2020-07-14 13:08:04,668 INFO  shopify.createStoreAndInstallTranscy - Step 05: Fill info at About yourself
-2020-07-14 13:08:05,075 INFO  shopify.createStoreAndInstallTranscy - Step 06: Fill address
-2020-07-14 13:08:18,384 INFO  shopify.createStoreAndInstallTranscy - Step 07: Verify the store has been created
-2020-07-14 13:08:24,803 INFO  shopify.createStoreAndInstallTranscy -  -------------------------- PASSED -------------------------- 
-2020-07-14 13:08:24,803 INFO  shopify.createStoreAndInstallTranscy - Step 08: Print store info
-2020-07-14 13:08:24,826 INFO  shopify.createStoreAndInstallTranscy - Step 09: Write data to the csv
-2020-07-14 13:08:24,826 INFO  shopify.createStoreAndInstallTranscy - Step 10: Add new product
-2020-07-14 13:09:05,095 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:09:06,153 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:09:11,405 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:09:12,994 INFO  shopify.createStoreAndInstallTranscy - Step 03: Press Create your store button
-2020-07-14 13:09:26,159 INFO  shopify.createStoreAndInstallTranscy - Step 04: Verify the user can create the store
-2020-07-14 13:09:56,363 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:09:56,965 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:10:02,156 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:10:32,393 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:10:32,881 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:10:38,023 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:11:08,410 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:11:08,875 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:11:14,025 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:11:44,420 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:11:44,903 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:11:50,061 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:12:20,309 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:12:20,774 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:12:25,924 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:12:56,114 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:12:56,595 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:13:01,741 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:13:32,238 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:13:32,758 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:13:37,885 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:14:08,220 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:14:08,684 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:14:13,812 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:14:44,110 INFO  shopify.createStoreAndInstallTranscy - Pre-condition: Access Shopify
-2020-07-14 13:14:44,549 INFO  shopify.createStoreAndInstallTranscy - Step 01: Press on Start free trial button
-2020-07-14 13:14:49,698 INFO  shopify.createStoreAndInstallTranscy - Step 02: Fill info to register
-2020-07-14 13:15:20,145 INFO  shopify.createStoreAndInstallTranscy - OS Name = windows 10
-2020-07-14 13:15:20,863 INFO  shopify.createStoreAndInstallTranscy - ----------------QUIT BROWSER SUCCESS-----------------
+2020-08-10 17:54:10,839 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Clear test data
+2020-08-10 17:54:10,910 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:13,321 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2020-08-10 17:54:14,443 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2020-08-10 17:54:24,053 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2020-08-10 17:54:29,403 INFO  shopify.createStoreAndInstallMessent - Step Create an account
+2020-08-10 17:54:35,925 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:35,939 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:35,958 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:35,972 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:35,981 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:35,996 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,013 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,025 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,036 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,049 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,064 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,077 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,099 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,155 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,176 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,188 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,202 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,212 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,225 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,233 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,244 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,253 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,262 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,272 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,293 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,305 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,314 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-10 17:54:36,325 INFO  shopify.createStoreAndInstallMessent - OS Name = windows 10
+2020-08-10 17:54:36,412 INFO  shopify.createStoreAndInstallMessent - Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7SROHNB', ip: '10.0.11.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15516, moz:profile: C:\Users\dangh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dfb81510-c2cb-4cd1-807d-b05df409210d

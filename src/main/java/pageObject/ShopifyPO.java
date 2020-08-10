@@ -32,6 +32,7 @@ public class ShopifyPO extends AbstractPage {
     public void inputToRegisterTextBoxes(String placeHolder, String value) {
         waitToElementVisible(ShopifyPageUI.REGISTER_TEXT_BOXES, placeHolder);
         sendKeyToElement(ShopifyPageUI.REGISTER_TEXT_BOXES, value, placeHolder);
+        sleepInSecond(3);
     }
 
     public void clickToCreateYourStoreButton() {
@@ -76,6 +77,20 @@ public class ShopifyPO extends AbstractPage {
             sendKeyToElement(ShopifyPageUI.ADDRESS_INFO_TEXTBOXES, textValue, nameValue);
         }
     }
+
+    public void inputToCreateAccount(String nameValue, String textValue){
+        if (isElementPresentInDOM(ShopifyPageUI.CREATE_ACCOUNT_TEXTBOXES, nameValue)) {
+            waitToElementVisible(ShopifyPageUI.CREATE_ACCOUNT_TEXTBOXES, nameValue);
+            sendKeyToElement(ShopifyPageUI.CREATE_ACCOUNT_TEXTBOXES, textValue, nameValue);
+        }
+    }
+
+    public void clickToCreateAccountButton(){
+        sleepInSecond(1);
+        waitToElementClickable(ShopifyPageUI.CREATE_ACCOUNT_BUTTON);
+        clickToElement(ShopifyPageUI.CREATE_ACCOUNT_BUTTON);
+    }
+
 
     public void clickToEnterMyStoreButton() {
         sleepInSecond(1);
@@ -130,6 +145,7 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public void clickToAppsMenu() {
+        sleepInSecond(5);
         waitToElementClickable(ShopifyPageUI.APPS_MENU);
         clickToElement(ShopifyPageUI.APPS_MENU);
     }
@@ -352,5 +368,16 @@ public class ShopifyPO extends AbstractPage {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void clickToThemesMenu(){
+        waitToElementClickable(ShopifyPageUI.ONLINE_STORE);
+        clickToElement(ShopifyPageUI.ONLINE_STORE);
+        sleepInSecond(3);
+    }
+
+    public void clickExploreFreeThemes(){
+        waitToElementClickable(ShopifyPageUI.EXPLORE_FREE_THEMES);
+        clickToElement(ShopifyPageUI.EXPLORE_FREE_THEMES);
     }
 }

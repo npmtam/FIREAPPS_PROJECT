@@ -123,7 +123,8 @@ public class TranscyPO extends AbstractPage {
     }
 
     public void clickToInstallApp(){
-//        scrollToEndOfPage();
+        sleepInSecond(5);
+        scrollToEndOfPage();
         waitToElementVisible(InstallAppUI.DYNAMIC_BUTTONS, "Install app");
         clickToDynamicButtons("Install app");
     }
@@ -215,7 +216,14 @@ public class TranscyPO extends AbstractPage {
     }
 
     public String getRandomKeyword(){
-        final String[] keywords = new String[]{"translate", "Translate", "translate"};
+        final String[] keywords = new String[]{"language", "Language", "language"};
+        Random random = new Random();
+        int index = random.nextInt(keywords.length);
+        return keywords[index];
+    }
+
+    public String searchOberlo(){
+        final String[] keywords = new String[]{"Oberlo", "oberlo"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -237,12 +245,19 @@ public class TranscyPO extends AbstractPage {
         clickToElement(ShopifyPageUI.TRANSCY_APP_IN_APPSTORE);
     }
 
+    public void selectOberloInAppStore(){
+        waitToElementVisible(ShopifyPageUI.OBERLO_APP_IN_APPSTORE);
+        clickToElement(ShopifyPageUI.OBERLO_APP_IN_APPSTORE);
+    }
+
     public void clickToAddApp(){
         waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
         clickToElement(ShopifyPageUI.ADD_APP_BTN);
+        sleepInSecond(3);
     }
 
     public void clickToSearchBtn(){
+        sleepInSecond(3);
         waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
         clickToElement(ShopifyPageUI.SEARCH_BTN);
     }
@@ -251,4 +266,6 @@ public class TranscyPO extends AbstractPage {
         sleepInSecond(1);
         return isElementDisplayed(ShopifyPageUI.UPGRADE_YOUR_ACCOUNT_PAGE);
     }
+
+
 }

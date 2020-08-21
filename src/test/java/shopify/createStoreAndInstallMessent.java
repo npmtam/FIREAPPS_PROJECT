@@ -55,7 +55,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 40)
+    @Test(invocationCount = 30)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -97,12 +97,12 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToCreateYourStoreButton();
         }
 
-        log.info("Step Create an account");
+        /*log.info("Step Create an account");
         shopifyPage.inputToCreateAccount("first_name", firstName);
         shopifyPage.inputToCreateAccount("last_name", lastName);
         shopifyPage.inputToCreateAccount("password", password);
         shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
-        shopifyPage.clickToCreateAccountButton();
+        shopifyPage.clickToCreateAccountButton();*/
 
         log.info("Step 04: Verify the user can create the store");
         verifyTrue(shopifyPage.isRegisterInfoAcceptable());
@@ -119,8 +119,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToNextButton();
 
         log.info("Step 06: Fill address");
-        //shopifyPage.inputAddressTextboxes("firstName", firstName);
-        //shopifyPage.inputAddressTextboxes("lastName", lastName);
+        shopifyPage.inputAddressTextboxes("firstName", firstName);
+        shopifyPage.inputAddressTextboxes("lastName", lastName);
         shopifyPage.inputAddressTextboxes("address1", address);
         shopifyPage.inputAddressTextboxes("city", city);
         shopifyPage.selectCountry(country);
@@ -275,7 +275,6 @@ public class createStoreAndInstallMessent extends AbstractTest {
        log.info("Random click choose plan free");
        messentPage.randomClickChoosePlanFree();
        shopifyPage.sWitchTab();
-
     }
 
 //    @Test

@@ -125,6 +125,7 @@ public class TranscyPO extends AbstractPage {
     public void clickToInstallApp(){
         sleepInSecond(5);
         scrollToEndOfPage();
+        sleepInSecond(3);
         waitToElementVisible(InstallAppUI.DYNAMIC_BUTTONS, "Install app");
         clickToDynamicButtons("Install app");
     }

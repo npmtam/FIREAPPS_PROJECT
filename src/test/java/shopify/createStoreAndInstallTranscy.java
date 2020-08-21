@@ -29,7 +29,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
     private ShopifyPO shopifyPage;
     private TranscyPO transcyPage;
     private OberloPO oberloPage;
-    String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
+    String url, email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;
@@ -55,7 +55,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
-    @Test(invocationCount = 9)
+    @Test(invocationCount = 4)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -163,8 +163,8 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
-        // Create item
-        /*log.info("Step 10: Add new product");
+       /* // Create item
+        log.info("Step 10: Add new product");
         shopifyPage.clickToProductMenu();
         shopifyPage.clickToAddProduct();
         shopifyPage.inputToProductName("Test");

@@ -49,9 +49,33 @@ public class ShopifyPageUI {
     public static final String UPGRADE_YOUR_ACCOUNT_PAGE = "//h1[text()='Upgrade your account']";
     public static final String SEARCH_BTN = "//button[@type='submit' and contains(@class, 'hero-search')]";
     public static final String CHOOSE_PLAN = "//h4[text()='Choose your plan']";
-    public static final String ONLINE_STORE = "//a[@href='/admin/themes?channel=true']";
+    public static final String CHOOSE_PLAN_FREE = "//div[@class='pricing-plan__content-scroll sticky-item']//div[1]//div[1]//form[1]//button[1]";
     public static final String OBERLO_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Oberlo')]";
-    public static final String EXPLORE_FREE_THEMES =  "//span[text()='Explore free themes']/ancestor::a";
+
+    //FREE SHOPIFY APP
+    public static final String PRODUCT_REVIEW_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Product Reviews')]";
+    public static final String KIT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Kit')]";
+    public static final String GOOGLE_CHANNEL_APP_IN_APPSTORE ="//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Google channel')]";
+    public static final String SHOPIFY_EMAIL_APP_IN_APPSTORE ="//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Email')]";
+    public static final String SHOPIFY_CHAT_APP_IN_APPSTORE ="//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Chat')]";
+    public static final String GEOLOCATION_IN_APPSTORE ="//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Geolocation')]";
+
+    //FREE OTHER APP
+    public static final String TRUSTEDSITE_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='TrustedSite')]";
+    public static final String FREE_TRUST_BADGE_IN_APPSTORE = "//h4[text()='Free Trust Badge']/ancestor::a";
+    public static final String SHIPPO_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Shippo')]";
+    public static final String PUSHOWL_WEB_PUSH_NOTIFICATION = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='PushOwl Web Push Notification')]";
+    public static final String ULTIMATE_TRUST_BADGES_FREE = "//h4[text()='Ultimate Trust Badges FREE!']/ancestor::a";
+    public static final String EASY_GDPR_COOKIE_BAR = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Easy GDPR + Cookie Bar')]";
+    public static final String FACEBOOK_AND_INSTAGRAM_AUTO_POST = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Facebook & Instagram Auto Post')]";
+    public static final String PARCELPANNEL_ORDER_TRACKING_PRO = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'ParcelPanel Order Tracking Pro')]";
+    public static final String WISHLIST_PLUS = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Wishlist Plus')]";
+    public static final String ULTIMATE_COUNTDOWN_TIMER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'ULTIMATE Countdown Timer')]";
+
+    //Themes
+    public static final String ONLINE_STORE_MENU = "//a[@href='/admin/themes?channel=true']";
+    public static final String EXPLORE_FREE_THEMES_BUTTON = "//div/div[1]/div/div[2]/div/div[2]";
+
 
     //Login
     public static final String LOGIN_BUTTON = "//a[@href='/login' and @class='marketing-nav__item marketing-nav__item--user']";
@@ -61,4 +85,31 @@ public class ShopifyPageUI {
     public static final String DYNAMIC_BUTTON = "//button[text()='%s']";
 
     public static final String DELETE_APP_CONFIRMATION_TEXT = "//section[contains(text(), 'By deleting origin-app-dev')]";
+
+    //Oberlo
+    public static final String NEW_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div[2]/div[2]/input";
+    public static final String CONFIRM_NEW_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div[2]/div[3]/input";
+    public static final String SAVE_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div[3]/button";
+    public static final String SEARCH_PRODUCT_MENU = "//span[contains(text(),'Search Products')]";
+    public static final String SEARCH_PRODUCT_TEXTBOX = "//*[@id=\"keywords\"]";
+    public static final String SEARCH_BUTTON ="//*[@id=\"page-content\"]/div/div[1]/div/div/div[2]/form/button";
+    public static final String CLICK_TO_ORDER_TEXT1 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT2 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT3 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT4 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT5 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT6 = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String ADD_PRODUCT1_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[2]/button";
+    public static final String ADD_PRODUCT2_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/button";
+    public static final String ADD_PRODUCT3_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[2]/button";
+    public static final String ADD_PRODUCT4_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[2]/button";
+    public static final String ADD_PRODUCT5_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[2]/button";
+    public static final String ADD_PRODUCT6_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[2]/button";
+    public static final String IMPORT_LIST = "//span[contains(text(),'Import List')]";
+    public static final String SELECT_ALL_PRODUCT_CHECKBOX ="//label[@class='bulk-actions__item']";
+    public static final String IMPORT_ALL_PRODUCT_TO_STORE = "//button[@class='btn bulk-actions__item'][contains(text(),'Import all to store')]";
+    public static final String PUSH_PRODUCTS ="//button[@class='btn btn-success']";
+    public static final String BACK_TO_SHOPIFY_ADMIN ="//span[contains(text(),'Shopify Admin')]";
+
+
 }

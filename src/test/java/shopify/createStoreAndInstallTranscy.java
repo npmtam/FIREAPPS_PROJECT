@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import pageObject.ShopifyPO;
 import pageObject.TranscyPO;
 import pageUI.ShopifyPageUI;
+import pageObject.OberloPO;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -27,6 +28,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
     private TranscyPO transcyPage;
+    private OberloPO oberloPage;
     String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
@@ -38,7 +40,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
     @Parameters("browser")
     @BeforeTest
     public void beforeTest() {
-        driver = getBrowserDriver("firefox");
+        driver = getBrowserDriver("chrome");
         abstractPage = new AbstractPage(driver);
 
         //Init fake library
@@ -53,7 +55,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 9)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -102,12 +104,12 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clickToCreateYourStoreButton();
         }
 
-        log.info("Step Create an account");
+       /* log.info("Step Create an account");
         shopifyPage.inputToCreateAccount("first_name", firstName);
         shopifyPage.inputToCreateAccount("last_name", lastName);
         shopifyPage.inputToCreateAccount("password", password);
         shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
-        shopifyPage.clickToCreateAccountButton();
+        shopifyPage.clickToCreateAccountButton();*/
 
         log.info("Step 04: Verify the user can create the store");
         verifyTrue(shopifyPage.isRegisterInfoAcceptable());
@@ -124,8 +126,8 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clickToNextButton();
 
         log.info("Step 06: Fill address");
-        //shopifyPage.inputAddressTextboxes("firstName", firstName);
-        //shopifyPage.inputAddressTextboxes("lastName", lastName);
+        shopifyPage.inputAddressTextboxes("firstName", firstName);
+        shopifyPage.inputAddressTextboxes("lastName", lastName);
         shopifyPage.inputAddressTextboxes("address1", address);
         shopifyPage.inputAddressTextboxes("city", city);
         shopifyPage.selectCountry(country);
@@ -153,24 +155,118 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         System.out.println("Country: " + country);
         System.out.println("Created time: " + dateTime);
 
-//        log.info("Step 09: Write data to the csv");
-//        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
-//        System.out.println("Written Data");
+        /*log.info("Step 09: Write data to the csv");
+        shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
+        System.out.println("Written Data");*/
 
         log.info("Step 09: Write data to the csv" + csvName);
         shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
-        
-        //Create item
-        log.info("Step 10: Add new product");
+
+        // Create item
+        /*log.info("Step 10: Add new product");
         shopifyPage.clickToProductMenu();
         shopifyPage.clickToAddProduct();
         shopifyPage.inputToProductName("Test");
         shopifyPage.clickToSaveProduct();
-
         log.info("Step 11: Verify the product has been added");
-        verifyTrue(shopifyPage.isPreviewProductButtonDisplayed());
+        verifyTrue(shopifyPage.isPreviewProductButtonDisplayed());*/
 
+        //INSTALL OBERLO APP
+        log.info("Step 12: Select Apps menu");
+        oberloPage = PageGeneratorManager.getOberloPO(driver);
+        oberloPage.selectAppsMenu();
+
+        log.info("Step 13: Visit Shopify App store");
+        oberloPage.clickToVisitShopifyAppStore();
+
+        log.info("Step 14: Search app Oberlo");
+        oberloPage.inputKeyword(oberloPage.searchOberlo());
+        oberloPage.clickToSearchBtn();
+
+        log.info("Step 15: Select Oberlo app");
+        oberloPage.selectOberloInAppStore();
+
+        log.info("Step 16: Add Oberlo app to store");
+        oberloPage.clickToAddApp();
+        oberloPage.clickToInstallApp();
+
+        log.info("Setup account password Oberlo");
+        oberloPage.inputToPassword("QA12345678");
+        oberloPage.inputToConfirmNewPassword( "QA12345678");
+        oberloPage.clickToSavePassword();
+
+        log.info("Search product Oberlo");
+        oberloPage.clickToSearchProduct();
+
+        log.info("Search random product");
+        oberloPage.inputNameProduct(oberloPage.searchProductOberlo());
+        oberloPage.clickToSearchProductBtn();
+
+        log.info("Add product to import list");
+        oberloPage.clickAddToImportList_1();
+        oberloPage.clickAddToImportList_2();
+        oberloPage.clickAddToImportList_3();
+        oberloPage.clickAddToImportList_4();
+        oberloPage.clickAddToImportList_5();
+        oberloPage.clickAddToImportList_6();
+
+        log.info("Import List product");
+        oberloPage.clickImportListMenu();
+        oberloPage.clickCheckboxAllProduct();
+        oberloPage.clickImportAllToStore();
+        oberloPage.clickToPushProduct();
+        shopifyPage.sWitchTab();
+
+        //BACK TO SHOPIFY AND CHOOSE THEMES
+        log.info("Setting Themes");
+        shopifyPage.clickToThemesMenu();
+        shopifyPage.clickExploreFreeThemes();
+        shopifyPage.clickSelectThemes();
+        shopifyPage.selectActionPublishTheme();
+
+       //ADD FREE SHOPIFY APP (RANDOM FROM LIST)
+        log.info("Step: Select Apps menu");
+        shopifyPage = PageGeneratorManager.getShopifyPage(driver);
+        shopifyPage.selectAppsMenu();
+
+        log.info("Step: Visit Shopify App store");
+        shopifyPage.clickToVisitShopifyAppStore();
+
+        log.info("Step: Search free Shopify app");
+        shopifyPage.inputKeyword(shopifyPage.searchFreeShopifyApp());
+        shopifyPage.clickToSearchBtn();
+
+        log.info("Step: Select app");
+        shopifyPage.selectFreeShopifyAppRandom();
+
+        log.info("Step: Add random app to store");
+        shopifyPage.clickToAddApp();
+        shopifyPage.clickToInstallApp();
+        shopifyPage.sWitchTab();
+
+
+        //ADD FREE OTHER APP (RAMDOM FROM LIST)
+        log.info("Step: Select Apps menu");
+        shopifyPage = PageGeneratorManager.getShopifyPage(driver);
+        shopifyPage.selectAppsMenu();
+
+        log.info("Step: Visit Shopify App store");
+        shopifyPage.clickToVisitShopifyAppStore();
+
+        log.info("Step: Search free Shopify app");
+        shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp());
+        shopifyPage.clickToSearchBtn();
+
+        log.info("Step: Select app");
+        shopifyPage.selectFreeOtherAppRandom();
+
+        log.info("Step: Add random app to store");
+        shopifyPage.clickToAddApp();
+        shopifyPage.clickToInstallApp();
+        shopifyPage.sWitchTab();
+
+//============================================================================//
         //Install Transcy app
         log.info("Step 12: Select Apps menu");
         transcyPage = PageGeneratorManager.getTranscyPage(driver);
@@ -192,8 +288,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step 17: Verify the required upgrade page display");
         verifyTrue(transcyPage.isRequiredUpgradePageDisplay());
-
-
+        shopifyPage.sWitchTab();
     }
 
 //    @Test

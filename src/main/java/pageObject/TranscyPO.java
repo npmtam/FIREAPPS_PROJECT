@@ -216,14 +216,7 @@ public class TranscyPO extends AbstractPage {
     }
 
     public String getRandomKeyword(){
-        final String[] keywords = new String[]{"language", "Language", "language"};
-        Random random = new Random();
-        int index = random.nextInt(keywords.length);
-        return keywords[index];
-    }
-
-    public String searchOberlo(){
-        final String[] keywords = new String[]{"Oberlo", "oberlo"};
+        final String[] keywords = new String[]{"multilingual", "Multilingual", "multilingual"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -232,9 +225,11 @@ public class TranscyPO extends AbstractPage {
     public void clickToVisitShopifyAppStore(){
         waitToElementClickable(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
         clickToElement(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
+        sleepInSecond(3);
     }
 
     public void inputKeyword(String keyword){
+        sleepInSecond(5);
         switchToWindowsByTitle("Shopify App Store: Ecommerce App Marketplace");
         waitToElementVisible(ShopifyPageUI.SEARCH_APPS_TEXTBOX);
         sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
@@ -245,10 +240,6 @@ public class TranscyPO extends AbstractPage {
         clickToElement(ShopifyPageUI.TRANSCY_APP_IN_APPSTORE);
     }
 
-    public void selectOberloInAppStore(){
-        waitToElementVisible(ShopifyPageUI.OBERLO_APP_IN_APPSTORE);
-        clickToElement(ShopifyPageUI.OBERLO_APP_IN_APPSTORE);
-    }
 
     public void clickToAddApp(){
         waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);

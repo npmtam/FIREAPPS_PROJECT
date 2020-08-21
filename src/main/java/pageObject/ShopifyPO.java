@@ -2,16 +2,20 @@ package pageObject;
 
 import commons.*;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import pageUI.InstallAppUI;
 import pageUI.ShopifyPageUI;
 
 import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class ShopifyPO extends AbstractPage {
     WebDriver driver;
@@ -32,10 +36,11 @@ public class ShopifyPO extends AbstractPage {
     public void inputToRegisterTextBoxes(String placeHolder, String value) {
         waitToElementVisible(ShopifyPageUI.REGISTER_TEXT_BOXES, placeHolder);
         sendKeyToElement(ShopifyPageUI.REGISTER_TEXT_BOXES, value, placeHolder);
-        sleepInSecond(3);
+        sleepInSecond(1);
     }
 
     public void clickToCreateYourStoreButton() {
+        sleepInSecond(3);
         waitToElementClickable(ShopifyPageUI.CREATE_YOUR_STORE_BUTTON);
         clickToElement(ShopifyPageUI.CREATE_YOUR_STORE_BUTTON);
         clickToElement(ShopifyPageUI.CREATE_YOUR_STORE_BUTTON);
@@ -371,13 +376,200 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public void clickToThemesMenu(){
-        waitToElementClickable(ShopifyPageUI.ONLINE_STORE);
-        clickToElement(ShopifyPageUI.ONLINE_STORE);
-        sleepInSecond(3);
+        driver.getWindowHandle();
+        waitToElementClickable(ShopifyPageUI.ONLINE_STORE_MENU);
+        clickToElement(ShopifyPageUI.ONLINE_STORE_MENU);
+        sleepInSecond(5);
     }
 
     public void clickExploreFreeThemes(){
-        waitToElementClickable(ShopifyPageUI.EXPLORE_FREE_THEMES);
-        clickToElement(ShopifyPageUI.EXPLORE_FREE_THEMES);
+        WebElement iFrame = driver.findElement(By.tagName("iframe"));
+        driver.switchTo().frame(iFrame);
+        driver.findElement(By.xpath("//button[@class='_1wLbD _1eWnt']")).click();
+        scrollToEndOfPage();
+        sleepInSecond(3);
     }
+
+    public void clickSelectThemes(){
+        sleepInSecond(3);
+        WebDriverWait waiter = new WebDriverWait(driver, 1000);
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame("app-modal-iframe");
+        driver.findElement(By.xpath("//span[contains(text(),'Boundless')]")).click();
+        sleepInSecond(5);
+        //click button Add to themes libary
+        waiter.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='_1wLbD _1eCDN']")));
+        driver.findElement(By.xpath("//button[@class='_1wLbD _1eCDN']")).click();
+    }
+
+    /*public void clickAddToThemeLibary(){
+        WebElement iFrame = driver.findElement(By.tagName("iframe"));
+        driver.switchTo().frame(iFrame);
+        driver.findElement(By.xpath("//button[@class='_1wLbD _1eCDN']")).click();
+        sleepInSecond(5);
+        driver.switchTo().defaultContent();
+    }*/
+
+    public void selectActionPublishTheme(){
+        sleepInSecond(10);
+        WebDriverWait waiter = new WebDriverWait(driver, 1000);
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame("app-iframe");
+        driver.findElement(By.xpath("//button[@class='_1wLbD _32TRG']//span[@class='_1GgwJ'][contains(text(),'Actions')]")).click();
+        waiter.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Publish')]")));
+        driver.findElement(By.xpath("//div[contains(text(),'Publish')]")).click();
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame("app-modal-iframe");
+        driver.findElement(By.xpath("//button[@class='_1wLbD _1eCDN']")).click();
+        driver.switchTo().defaultContent();
+        sleepInSecond(10);
+    }
+
+
+    //ADD FREE SHOPIFY APPS (RANDOM 1 APP FROM LIST)
+    public String searchFreeShopifyApp(){
+        final String[] keywords = new String[]{"Product Reviews", "Google Channel", "Kit", "Shopify Email", "Shopify Chat", "Geolocation"};
+        Random random = new Random();
+        int index = random.nextInt(keywords.length);
+        return keywords[index];
+    }
+
+    public String searchFreeOtherApp(){
+        final String[] keywords = new String[]{"TrustedSite", "Free Trust Badge", "Shippo", "PushOwl Web Push Notification", "Ultimate Trust Badges FREE!", "Easy GDPR + Cookie Bar", "Facebook & Instagram Auto Post", "ParcelPanel Order Tracking Pro", "Wishlist Plus"};
+        Random random = new Random();
+        int index = random.nextInt(keywords.length);
+        return keywords[index];
+    }
+
+
+    public void clickToDynamicButtons(String buttonText) {
+        waitToElementClickable(InstallAppUI.DYNAMIC_BUTTONS, buttonText);
+        clickToElement(InstallAppUI.DYNAMIC_BUTTONS, buttonText);
+    }
+
+    public void selectAppsMenu(){
+        driver.getCurrentUrl();
+        waitToElementClickable(ShopifyPageUI.APPS_MENU);
+        clickToElement(ShopifyPageUI.APPS_MENU);
+        sleepInSecond(5);
+    }
+
+
+    public void clickToVisitShopifyAppStore(){
+        waitToElementClickable(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
+        clickToElement(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
+        sleepInSecond(3);
+    }
+
+    public void clickToInstallApp(){
+        sleepInSecond(5);
+        scrollToEndOfPage();
+        if (isElementPresentInDOM(InstallAppUI.DYNAMIC_BUTTONS, "Install app")){
+            waitToElementVisible(InstallAppUI.DYNAMIC_BUTTONS, "Install app");
+            clickToDynamicButtons("Install app");
+        }
+        else {
+            waitToElementVisible(InstallAppUI.DYNAMIC_BUTTONS, "Add sales channel");
+            clickToDynamicButtons("Add sales channel");
+        }
+    }
+
+    public void inputKeyword(String keyword){
+        sleepInSecond(3);
+        switchToWindowsByTitle("Shopify App Store: Ecommerce App Marketplace");
+        waitToElementVisible(ShopifyPageUI.SEARCH_APPS_TEXTBOX);
+        sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
+    }
+
+    public void selectFreeShopifyAppRandom(){
+        if (isElementPresentInDOM(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.KIT_APP_IN_APPSTORE)){
+            waitToElementVisible(ShopifyPageUI.KIT_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.KIT_APP_IN_APPSTORE);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.GOOGLE_CHANNEL_APP_IN_APPSTORE)){
+            waitToElementVisible(ShopifyPageUI.GOOGLE_CHANNEL_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.GOOGLE_CHANNEL_APP_IN_APPSTORE);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.SHOPIFY_EMAIL_APP_IN_APPSTORE)){
+            waitToElementVisible(ShopifyPageUI.SHOPIFY_EMAIL_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.SHOPIFY_EMAIL_APP_IN_APPSTORE);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.SHOPIFY_CHAT_APP_IN_APPSTORE)){
+            waitToElementVisible(ShopifyPageUI.SHOPIFY_CHAT_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.SHOPIFY_CHAT_APP_IN_APPSTORE);
+        }
+        else {
+            waitToElementVisible(ShopifyPageUI.GEOLOCATION_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.GEOLOCATION_IN_APPSTORE);
+        }
+    }
+
+    public void selectFreeOtherAppRandom(){
+        if (isElementPresentInDOM(ShopifyPageUI.TRUSTEDSITE_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.TRUSTEDSITE_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.TRUSTEDSITE_IN_APPSTORE);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.FREE_TRUST_BADGE_IN_APPSTORE)){
+            waitToElementVisible(ShopifyPageUI.FREE_TRUST_BADGE_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.FREE_TRUST_BADGE_IN_APPSTORE);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.SHIPPO_IN_APPSTORE)){
+            waitToElementVisible(ShopifyPageUI.SHIPPO_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.SHIPPO_IN_APPSTORE);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.PUSHOWL_WEB_PUSH_NOTIFICATION)){
+            waitToElementVisible(ShopifyPageUI.PUSHOWL_WEB_PUSH_NOTIFICATION);
+            clickToElement(ShopifyPageUI.PUSHOWL_WEB_PUSH_NOTIFICATION);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE)){
+            waitToElementVisible(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
+            clickToElement(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.EASY_GDPR_COOKIE_BAR)){
+            waitToElementVisible(ShopifyPageUI.EASY_GDPR_COOKIE_BAR);
+            clickToElement(ShopifyPageUI.EASY_GDPR_COOKIE_BAR);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.FACEBOOK_AND_INSTAGRAM_AUTO_POST)){
+            waitToElementVisible(ShopifyPageUI.FACEBOOK_AND_INSTAGRAM_AUTO_POST);
+            clickToElement(ShopifyPageUI.FACEBOOK_AND_INSTAGRAM_AUTO_POST);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.PARCELPANNEL_ORDER_TRACKING_PRO)){
+            waitToElementVisible(ShopifyPageUI.PARCELPANNEL_ORDER_TRACKING_PRO);
+            clickToElement(ShopifyPageUI.PARCELPANNEL_ORDER_TRACKING_PRO);
+        }
+        else if (isElementPresentInDOM(ShopifyPageUI.WISHLIST_PLUS)){
+            waitToElementVisible(ShopifyPageUI.WISHLIST_PLUS);
+            clickToElement(ShopifyPageUI.WISHLIST_PLUS);
+        }
+        else {
+            isElementPresentInDOM(ShopifyPageUI.ULTIMATE_COUNTDOWN_TIMER);
+            waitToElementVisible(ShopifyPageUI.ULTIMATE_COUNTDOWN_TIMER);
+            clickToElement(ShopifyPageUI.ULTIMATE_COUNTDOWN_TIMER);
+        }
+    }
+
+    public void clickToAddApp(){
+        waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
+        clickToElement(ShopifyPageUI.ADD_APP_BTN);
+        sleepInSecond(3);
+    }
+
+    public void clickToSearchBtn(){
+        sleepInSecond(5);
+        waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
+        clickToElement(ShopifyPageUI.SEARCH_BTN);
+    }
+
+    public void sWitchTab(){
+        sleepInSecond(5);
+        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs2.get(1));
+        //driver.close();
+        driver.switchTo().window(tabs2.get(0));
+    }
+
 }

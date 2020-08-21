@@ -23,4 +23,6 @@ public class PageGeneratorManager {
     public static TranscyPO getTranscyPage(WebDriver driver){ return new TranscyPO(driver); }
 
     public static MessentPO getMessentPage(WebDriver driver){ return new MessentPO(driver); }
+
+    public static OberloPO getOberloPO(WebDriver driver) {return new OberloPO(driver); }
 }

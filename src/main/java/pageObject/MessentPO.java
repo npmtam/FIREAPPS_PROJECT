@@ -1,15 +1,20 @@
 package pageObject;
 
 import commons.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageUI.InstallAppUI;
 import pageUI.ShopifyPageUI;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class MessentPO extends AbstractPage {
     WebDriver driver;
@@ -211,7 +216,7 @@ public class MessentPO extends AbstractPage {
     }
 
     public void selectAppsMenu(){
-        sleepInSecond(5);
+        sleepInSecond(3);
         waitToElementClickable(ShopifyPageUI.APPS_MENU);
         clickToElement(ShopifyPageUI.APPS_MENU);
     }
@@ -226,9 +231,11 @@ public class MessentPO extends AbstractPage {
     public void clickToVisitShopifyAppStore(){
         waitToElementClickable(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
         clickToElement(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
+        sleepInSecond(3);
     }
 
     public void inputKeyword(String keyword){
+        sleepInSecond(5);
         switchToWindowsByTitle("Shopify App Store: Ecommerce App Marketplace");
         waitToElementVisible(ShopifyPageUI.SEARCH_APPS_TEXTBOX);
         sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
@@ -257,15 +264,27 @@ public class MessentPO extends AbstractPage {
         return isElementDisplayed(ShopifyPageUI.UPGRADE_YOUR_ACCOUNT_PAGE);
     }
 
-    public void cliclToLoadPageTwo() {
+    public void clickToLoadPageTwo() {
         String elementPage2 = "//div//a[@class='search-pagination__link' and text()='2']";
         waitToElementVisible(elementPage2);
         clickToElement(elementPage2);
     }
 
+
     public boolean isChoosePlanPageDisplay(){
-        sleepInSecond(10);
+        sleepInSecond(3);
         return isElementDisplayed("//h4[text()='Choose your plan']");
-        //return isElementDisplayed(ShopifyPageUI.CHOOSE_PLAN);
     }
+
+    public void randomClickChoosePlanFree(){
+        int code = (int) Math.floor(((Math.random() * 2) + 10));
+        int ramdomNo = code % 2;
+        if (ramdomNo == 0) {
+            driver.findElement(By.xpath("//*[@id=\"app-layout-master\"]/div/div[2]/div[2]/div[1]/div/div/div/div[1]/div/div[1]/div[1]/div[2]/div[1]/div/form/button")).click();
+        }
+        else {
+        }
+        sleepInSecond(3);
+    }
+
 }

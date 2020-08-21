@@ -1,23 +1,18 @@
-2020-08-21 16:36:38,643 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Clear test data
-2020-08-21 16:36:38,671 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-08-21 16:36:41,002 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-08-21 16:36:43,619 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-08-21 16:36:48,001 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-08-21 16:36:54,411 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify the user can create the store
-2020-08-21 16:37:17,922 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-08-21 16:37:17,926 INFO  shopify.createStoreAndInstallMessent - Step 05: Fill info at About yourself
-2020-08-21 16:37:18,997 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill address
-2020-08-21 16:37:34,816 INFO  shopify.createStoreAndInstallMessent - Step 07: Verify the store has been created
-2020-08-21 16:37:42,392 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-08-21 16:37:42,393 INFO  shopify.createStoreAndInstallMessent - Step 08: Print store info
-2020-08-21 16:37:42,441 INFO  shopify.createStoreAndInstallMessent - Step 09: Write data to the csv20200821_163638_Messent.csv
-2020-08-21 16:37:42,446 INFO  shopify.createStoreAndInstallMessent - Step 12: Select Apps menu
-2020-08-21 16:37:45,675 INFO  shopify.createStoreAndInstallMessent - Step 13: Visit Shopify App store
-2020-08-21 16:37:48,866 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-08-21 16:38:00,791 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-08-21 16:38:03,091 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-08-21 16:38:20,392 INFO  shopify.createStoreAndInstallMessent - Setup account password Oberlo
-2020-08-21 16:38:23,178 INFO  shopify.createStoreAndInstallMessent - Search product Oberlo
-2020-08-21 16:38:26,939 INFO  shopify.createStoreAndInstallMessent - Search random product
-2020-08-21 16:38:42,804 INFO  shopify.createStoreAndInstallMessent - Add product to import list
-2020-08-21 16:38:53,695 INFO  shopify.createStoreAndInstallMessent - Import List product
+2020-08-21 17:48:20,407 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Clear test data
+2020-08-21 17:48:20,438 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-08-21 17:48:22,889 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2020-08-21 17:48:25,389 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2020-08-21 17:48:29,509 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2020-08-21 17:48:38,015 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify the user can create the store
+2020-08-21 17:48:55,076 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-08-21 17:48:55,078 INFO  shopify.createStoreAndInstallMessent - Step 05: Fill info at About yourself
+2020-08-21 17:48:55,955 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill address
+2020-08-21 17:49:09,788 INFO  shopify.createStoreAndInstallMessent - Step 07: Verify the store has been created
+2020-08-21 17:49:20,124 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-08-21 17:49:20,124 INFO  shopify.createStoreAndInstallMessent - Step 08: Print store info
+2020-08-21 17:49:20,179 INFO  shopify.createStoreAndInstallMessent - Step 09: Write data to the csv20200821_174819_Messent.csv
+2020-08-21 17:49:20,185 INFO  shopify.createStoreAndInstallMessent - Step 12: Select Apps menu
+2020-08-21 17:49:23,501 INFO  shopify.createStoreAndInstallMessent - Step 13: Visit Shopify App store
+2020-08-21 17:49:26,690 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
+2020-08-21 17:49:39,223 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
+2020-08-21 17:49:41,511 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store

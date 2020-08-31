@@ -55,7 +55,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 30)
+    @Test(invocationCount = 7)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -70,6 +70,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         password_confirmation = password;
         city = faker.address().city();
         store_type = Constants.FREE_PLAN;
+
 
         email = firstName.toLowerCase() + "_" + lastName.toLowerCase() + "@mail.com";
         storeName = firstName + " " + lastName;
@@ -97,6 +98,16 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToCreateYourStoreButton();
         }
 
+        log.info("Step Verify Create an account");
+        boolean isInputToCreateAnAccount = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
+        if (isInputToCreateAnAccount) {
+            shopifyPage.inputToCreateAccount("first_name", firstName);
+            shopifyPage.inputToCreateAccount("last_name", lastName);
+            shopifyPage.inputToCreateAccount("password", password);
+            shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
+            shopifyPage.clickToCreateAccountButton();
+        }
+
         /*log.info("Step Create an account");
         shopifyPage.inputToCreateAccount("first_name", firstName);
         shopifyPage.inputToCreateAccount("last_name", lastName);
@@ -119,6 +130,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToNextButton();
 
         log.info("Step 06: Fill address");
+
         shopifyPage.inputAddressTextboxes("firstName", firstName);
         shopifyPage.inputAddressTextboxes("lastName", lastName);
         shopifyPage.inputAddressTextboxes("address1", address);
@@ -165,6 +177,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
         oberloPage.inputKeyword(oberloPage.searchOberlo());
         oberloPage.clickToSearchBtn();
 
+        log.info("Random delay");
+        shopifyPage.sleepRandomly();
+
         log.info("Step 15: Select Oberlo app");
         oberloPage.selectOberloInAppStore();
 
@@ -199,11 +214,11 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.sWitchTab();
 
         //BACK TO SHOPIFY AND CHOOSE THEMES
-        log.info("Setting Themes");
+        /*log.info("Setting Themes");
         shopifyPage.clickToThemesMenu();
         shopifyPage.clickExploreFreeThemes();
         shopifyPage.clickSelectThemes();
-        shopifyPage.selectActionPublishTheme();
+        shopifyPage.selectActionPublishTheme();*/
 
         //ADD FREE SHOPIFY APP (RANDOM FROM LIST)
         log.info("Step: Select Apps menu");
@@ -212,6 +227,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         log.info("Step: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
+
+        log.info("Random delay");
+        shopifyPage.sleepRandomly();
 
         log.info("Step: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeShopifyApp());
@@ -248,12 +266,15 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         //Install Messent app
         // pause code
-       log.info("Step 12: Select Apps menu");
+        log.info("Step 12: Select Apps menu");
         messentPage = PageGeneratorManager.getMessentPage(driver);
         messentPage.selectAppsMenu();
 
         log.info("Step 13: Visit Shopify App store");
         messentPage.clickToVisitShopifyAppStore();
+
+        log.info("Random delay");
+        shopifyPage.sleepRandomly();
 
         log.info("Step 14: Search app by keyword");
         messentPage.inputKeyword(messentPage.getRandomKeyword());

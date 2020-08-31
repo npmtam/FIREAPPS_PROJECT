@@ -2,7 +2,9 @@ package pageUI;
 
 public class ShopifyPageUI {
     //Register
-    public static final String START_FREE_TRIAL_BUTTON = "//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']";
+    //public static final String START_FREE_TRIAL_BUTTON = "//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']";
+    //shopify doi text button start free trial random
+    public static final String START_FREE_TRIAL_BUTTON = "//*[@id=\"Hero\"]/div[1]/div/div[2]/form/div/div/button";
     public static final String REGISTER_TEXT_BOXES = "//input[@placeholder='%s']";
     public static final String CREATE_YOUR_STORE_BUTTON = "//button[text()='Create your store']";
 
@@ -28,6 +30,9 @@ public class ShopifyPageUI {
     public static final String COUNTRY_DROPDOWN = "//select[@name='account_setup[country]']";
     public static final String STATES_DROPDOWN = "//select[@id='PolarisSelect3']";
     public static final String PROVINCE_DROPDOWN = "//select[@id='PolarisSelect2']";
+
+    //Create an account
+    public static final String TITLE_CREATE_AN_ACCOUNT = "//h1[text()='Create an account']";
 
     //Admin Page
     public static final String SELECT_PLAN_MSG = "//p[text()='Your trial just started']";

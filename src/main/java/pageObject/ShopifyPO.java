@@ -119,6 +119,11 @@ public class ShopifyPO extends AbstractPage {
         }
     }
 
+    /*public boolean isCreateAnAccount(){
+        return isElementDisplayed(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
+    }*/
+
+
     public void clickToLoginButton() {
         waitToElementClickable(ShopifyPageUI.LOGIN_BUTTON);
         clickToElement(ShopifyPageUI.LOGIN_BUTTON);
@@ -568,8 +573,25 @@ public class ShopifyPO extends AbstractPage {
         sleepInSecond(5);
         ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));
-        //driver.close();
+        driver.close();
         driver.switchTo().window(tabs2.get(0));
+        sleepInSecond(3);
+        /*String domain = driver.getCurrentUrl();
+        System.out.println(domain);*/
+    }
+
+    //random delay 30s- 50s
+    public void sleepRandomly() {
+        try {
+            Thread.sleep(getMillis());
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static long getMillis() {
+        return (long) (Math.random() * 20_000 + 30_000);
     }
 
 }

@@ -55,7 +55,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
-    @Test(invocationCount = 4)
+    @Test(invocationCount = 2)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -104,7 +104,17 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clickToCreateYourStoreButton();
         }
 
-       /* log.info("Step Create an account");
+        log.info("Step Verify Create an account");
+        boolean isInputToCreateAnAccount = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
+        if (isInputToCreateAnAccount) {
+            shopifyPage.inputToCreateAccount("first_name", firstName);
+            shopifyPage.inputToCreateAccount("last_name", lastName);
+            shopifyPage.inputToCreateAccount("password", password);
+            shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
+            shopifyPage.clickToCreateAccountButton();
+        }
+
+        /*log.info("Step Create an account");
         shopifyPage.inputToCreateAccount("first_name", firstName);
         shopifyPage.inputToCreateAccount("last_name", lastName);
         shopifyPage.inputToCreateAccount("password", password);
@@ -163,7 +173,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
-       /* // Create item
+        /* // Create item
         log.info("Step 10: Add new product");
         shopifyPage.clickToProductMenu();
         shopifyPage.clickToAddProduct();
@@ -183,6 +193,9 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         log.info("Step 14: Search app Oberlo");
         oberloPage.inputKeyword(oberloPage.searchOberlo());
         oberloPage.clickToSearchBtn();
+
+        log.info("Random delay");
+        shopifyPage.sleepRandomly();
 
         log.info("Step 15: Select Oberlo app");
         oberloPage.selectOberloInAppStore();
@@ -219,11 +232,15 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.sWitchTab();
 
         //BACK TO SHOPIFY AND CHOOSE THEMES
-        log.info("Setting Themes");
+        /*log.info("Setting Themes");
         shopifyPage.clickToThemesMenu();
         shopifyPage.clickExploreFreeThemes();
         shopifyPage.clickSelectThemes();
-        shopifyPage.selectActionPublishTheme();
+        shopifyPage.selectActionPublishTheme();*/
+
+        /*log.info("Random delay");
+        shopifyPage.sleepRandomly();*/
+
 
        //ADD FREE SHOPIFY APP (RANDOM FROM LIST)
         log.info("Step: Select Apps menu");
@@ -232,6 +249,9 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
+
+        log.info("Random delay");
+        shopifyPage.sleepRandomly();
 
         log.info("Step: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeShopifyApp());
@@ -242,9 +262,15 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step: Add random app to store");
         shopifyPage.clickToAddApp();
+
+        /*log.info("Random delay");
+        shopifyPage.sleepRandomly();*/
+
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
+        /*log.info("Random delay");
+        shopifyPage.sleepRandomly();*/
 
         //ADD FREE OTHER APP (RAMDOM FROM LIST)
         log.info("Step: Select Apps menu");

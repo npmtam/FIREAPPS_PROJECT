@@ -18,7 +18,7 @@ public class createStore extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
-    String  url, email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password;
+    String  email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;

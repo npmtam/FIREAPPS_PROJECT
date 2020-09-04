@@ -1,5 +1,6 @@
 commons\Constants.class
 pageUI\WebsiteUI.class
+pageUI\InstallAppUI.class
 commons\ExtentManager.class
 commons\StoresLink.class
 commons\PageGeneratorManager.class
@@ -9,6 +10,8 @@ pageObject\ShopifyPO.class
 pageObject\WebsitePO.class
 commons\ReadDataCSV.class
 commons\TestNGAppender.class
+pageObject\OberloPO.class
+pageObject\TranscyPO.class
 commons\AbstractPage.class
 pageObject\WhatNewPO.class
 commons\AbstractTest.class

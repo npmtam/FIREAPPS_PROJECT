@@ -119,10 +119,6 @@ public class ShopifyPO extends AbstractPage {
         }
     }
 
-    /*public boolean isCreateAnAccount(){
-        return isElementDisplayed(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
-    }*/
-
 
     public void clickToLoginButton() {
         waitToElementClickable(ShopifyPageUI.LOGIN_BUTTON);
@@ -440,7 +436,7 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public String searchFreeOtherApp(){
-        final String[] keywords = new String[]{"TrustedSite", "Free Trust Badge", "Shippo", "PushOwl Web Push Notification", "Ultimate Trust Badges FREE!", "Easy GDPR + Cookie Bar", "Facebook & Instagram Auto Post", "ParcelPanel Order Tracking Pro", "Wishlist Plus"};
+            final String[] keywords = new String[]{"TrustedSite", "Free Trust Badge", "Shippo", "PushOwl Web Push Notification", "Ultimate Trust Badges FREE!", "Easy GDPR + Cookie Bar", "Facebook & Instagram Auto Post", "ParcelPanel Order Tracking Pro", "Wishlist Plus"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -592,6 +588,15 @@ public class ShopifyPO extends AbstractPage {
 
     public static long getMillis() {
         return (long) (Math.random() * 20_000 + 30_000);
+    }
+
+    public void chooseAccount(){
+        sleepInSecond(2);
+        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs2.get(1));
+        isElementPresentInDOM(ShopifyPageUI.CHOOSE_ACCOUNT_SELECT);
+        waitToElementVisible(ShopifyPageUI.CHOOSE_ACCOUNT_SELECT);
+        clickToElement(ShopifyPageUI.CHOOSE_ACCOUNT_SELECT);
     }
 
 }

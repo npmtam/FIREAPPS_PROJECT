@@ -55,7 +55,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
-    @Test(invocationCount = 2)
+    @Test(invocationCount = 5)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -190,6 +190,9 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         log.info("Step 13: Visit Shopify App store");
         oberloPage.clickToVisitShopifyAppStore();
 
+        log.info("Step choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
+
         log.info("Step 14: Search app Oberlo");
         oberloPage.inputKeyword(oberloPage.searchOberlo());
         oberloPage.clickToSearchBtn();
@@ -250,6 +253,9 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         log.info("Step: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
+        log.info("Step choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
+
         log.info("Random delay");
         shopifyPage.sleepRandomly();
 
@@ -263,8 +269,8 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         log.info("Step: Add random app to store");
         shopifyPage.clickToAddApp();
 
-        /*log.info("Random delay");
-        shopifyPage.sleepRandomly();*/
+        log.info("Random delay");
+        shopifyPage.sleepRandomly();
 
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
@@ -279,6 +285,9 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
+
+        log.info("Step choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
 
         log.info("Step: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp());
@@ -300,6 +309,9 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step 13: Visit Shopify App store");
         transcyPage.clickToVisitShopifyAppStore();
+
+        log.info("Step choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
 
         log.info("Step 14: Search app by keyword");
         transcyPage.inputKeyword(transcyPage.getRandomKeyword());

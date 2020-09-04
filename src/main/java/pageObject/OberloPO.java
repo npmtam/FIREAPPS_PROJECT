@@ -166,7 +166,7 @@ public class OberloPO  extends AbstractPage {
     }
 
     public String searchProductOberlo(){
-        final String[] keywords = new String[]{"Phone", "Watch", "Computer", "Shose"};
+        final String[] keywords = new String[]{"Phone", "Watch", "Computer", "Shose", "Home", "Sport", "Office", "Electronic", "Lights", "Laptop"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];

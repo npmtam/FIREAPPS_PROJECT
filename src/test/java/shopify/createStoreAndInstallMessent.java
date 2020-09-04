@@ -6,6 +6,7 @@ import commons.AbstractTest;
 import commons.Constants;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -130,7 +131,6 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToNextButton();
 
         log.info("Step 06: Fill address");
-
         shopifyPage.inputAddressTextboxes("firstName", firstName);
         shopifyPage.inputAddressTextboxes("lastName", lastName);
         shopifyPage.inputAddressTextboxes("address1", address);
@@ -172,6 +172,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         log.info("Step 13: Visit Shopify App store");
         oberloPage.clickToVisitShopifyAppStore();
+
+        log.info("Step choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
 
         log.info("Step 14: Search app Oberlo");
         oberloPage.inputKeyword(oberloPage.searchOberlo());
@@ -231,6 +234,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
         log.info("Random delay");
         shopifyPage.sleepRandomly();
 
+        log.info("Step choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
+
         log.info("Step: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeShopifyApp());
         shopifyPage.clickToSearchBtn();
@@ -252,6 +258,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
         log.info("Step: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
+        log.info("Step choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
+
         log.info("Step: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp());
         shopifyPage.clickToSearchBtn();
@@ -272,6 +281,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         log.info("Step 13: Visit Shopify App store");
         messentPage.clickToVisitShopifyAppStore();
+
+        log.info("Step choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
 
         log.info("Random delay");
         shopifyPage.sleepRandomly();

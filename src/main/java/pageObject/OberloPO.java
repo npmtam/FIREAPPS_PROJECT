@@ -157,16 +157,52 @@ public class OberloPO  extends AbstractPage {
          sleepInSecond(1);
      }
 
+    //producT default 1
+    public void clickAddToImportList_Default1() {
+        waitToElementClickable(ShopifyPageUI.CLICK_TO_ORDER_TEXT_DEFAULT1);
+        clickToElement(ShopifyPageUI.CLICK_TO_ORDER_TEXT_DEFAULT1);
+        waitToElementClickable(ShopifyPageUI.ADD_PRODUCT_DEFAULT1_TO_IMPORT_LIST);
+        clickToElement(ShopifyPageUI.ADD_PRODUCT_DEFAULT1_TO_IMPORT_LIST);
+        sleepInSecond(1);
+    }
+
+    //producT default 2
+    public void clickAddToImportList_Default2() {
+        waitToElementClickable(ShopifyPageUI.CLICK_TO_ORDER_TEXT_DEFAULT2);
+        clickToElement(ShopifyPageUI.CLICK_TO_ORDER_TEXT_DEFAULT2);
+        waitToElementClickable(ShopifyPageUI.ADD_PRODUCT_DEFAULT2_TO_IMPORT_LIST);
+        clickToElement(ShopifyPageUI.ADD_PRODUCT_DEFAULT2_TO_IMPORT_LIST);
+        sleepInSecond(1);
+    }
+
+    //producT default 3
+    public void clickAddToImportList_Default3() {
+        waitToElementClickable(ShopifyPageUI.CLICK_TO_ORDER_TEXT_DEFAULT3);
+        clickToElement(ShopifyPageUI.CLICK_TO_ORDER_TEXT_DEFAULT3);
+        waitToElementClickable(ShopifyPageUI.ADD_PRODUCT_DEFAULT3_TO_IMPORT_LIST);
+        clickToElement(ShopifyPageUI.ADD_PRODUCT_DEFAULT3_TO_IMPORT_LIST);
+        sleepInSecond(1);
+    }
+
+    //producT default 4
+    public void clickAddToImportList_Default4() {
+        waitToElementClickable(ShopifyPageUI.CLICK_TO_ORDER_TEXT_DEFAULT4);
+        clickToElement(ShopifyPageUI.CLICK_TO_ORDER_TEXT_DEFAULT4);
+        waitToElementClickable(ShopifyPageUI.ADD_PRODUCT_DEFAULT4_TO_IMPORT_LIST);
+        clickToElement(ShopifyPageUI.ADD_PRODUCT_DEFAULT4_TO_IMPORT_LIST);
+        sleepInSecond(1);
+    }
+
 
     public void inputNameProduct(String keyword){
-        sleepInSecond(3);
+        sleepInSecond(6);
         switchToWindowsByTitle("AliExpress");
         waitToElementVisible(ShopifyPageUI.SEARCH_PRODUCT_TEXTBOX);
         sendKeyToElement(ShopifyPageUI.SEARCH_PRODUCT_TEXTBOX, keyword);
     }
 
     public String searchProductOberlo(){
-        final String[] keywords = new String[]{"Phone", "Watch", "Computer", "Shose", "Home", "Sport", "Office", "Electronic", "Lights", "Laptop"};
+        final String[] keywords = new String[]{"Phone", "Watch", "Shose", "Adidas"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -207,5 +243,9 @@ public class OberloPO  extends AbstractPage {
         clickToElement(ShopifyPageUI.BACK_TO_SHOPIFY_ADMIN);
         sleepInSecond(5);
     }*/
+
+    public void reloadPage(){
+        driver.navigate().refresh();
+    }
 
 }

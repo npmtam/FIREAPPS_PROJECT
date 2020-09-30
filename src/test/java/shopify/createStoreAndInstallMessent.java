@@ -56,7 +56,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 7)
+    @Test(invocationCount = 1)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -99,7 +99,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToCreateYourStoreButton();
         }
 
-        log.info("Step Verify Create an account");
+        log.info("Step 04: Verify Create an account");
         boolean isInputToCreateAnAccount = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
         if (isInputToCreateAnAccount) {
             shopifyPage.inputToCreateAccount("first_name", firstName);
@@ -116,10 +116,10 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
         shopifyPage.clickToCreateAccountButton();*/
 
-        log.info("Step 04: Verify the user can create the store");
+        log.info("Step 05: Verify the user can create the store");
         verifyTrue(shopifyPage.isRegisterInfoAcceptable());
 
-        log.info("Step 05: Fill info at About yourself");
+        log.info("Step 06: Fill info at About yourself");
         boolean isDropdownStepChanged = abstractPage.isElementPresentInDOM(ShopifyPageUI.DROPDOWN_SEEDING_QUESTION);
         if (isDropdownStepChanged) {
             shopifyPage.selectAlreadySellingDropdown(Constants.ALREADY_SELLING);
@@ -130,7 +130,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         }
         shopifyPage.clickToNextButton();
 
-        log.info("Step 06: Fill address");
+        log.info("Step 07: Fill address");
         shopifyPage.inputAddressTextboxes("firstName", firstName);
         shopifyPage.inputAddressTextboxes("lastName", lastName);
         shopifyPage.inputAddressTextboxes("address1", address);
@@ -144,11 +144,11 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.inputAddressTextboxes("phone", phoneNumber);
         shopifyPage.clickToEnterMyStoreButton();
 
-        log.info("Step 07: Verify the store has been created");
+        log.info("Step 08: Verify the store has been created");
         verifyTrue(shopifyPage.isTheStoreCreated());
         dateTime = shopifyPage.getCurrentDateTime();
 
-        log.info("Step 08: Print store info");
+        log.info("Step 09: Print store info");
         shopifyPage.printStoreURL();
         System.out.println("Account info:");
         System.out.println("Email: " + email);
@@ -160,28 +160,35 @@ public class createStoreAndInstallMessent extends AbstractTest {
         System.out.println("Country: " + country);
         System.out.println("Created time: " + dateTime);
 
-        log.info("Step 09: Write data to the csv" + csvName);
+        log.info("Step 10: Write data to the csv" + csvName);
         shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
         //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
         //INSTALL OBERLO APP
-        log.info("Step 12: Select Apps menu");
+        log.info("Step 11: Select Apps menu");
         oberloPage = PageGeneratorManager.getOberloPO(driver);
         oberloPage.selectAppsMenu();
 
-        log.info("Step 13: Visit Shopify App store");
+        log.info("Step 12: Visit Shopify App store");
         oberloPage.clickToVisitShopifyAppStore();
 
-        log.info("Step choose account to continue to shopify app");
-        shopifyPage.chooseAccount();
+        /*log.info("Step 13: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*/
+
+        log.info("Step 13: choose account to continue to shopify app");
+        shopifyPage.switchTabChooseAccount();
+        boolean isChooseAnAccountToShopifyAppStore = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CHOOSE_AN_ACCOUNT);
+        if (isChooseAnAccountToShopifyAppStore) {
+            shopifyPage.chooseAccount();
+        }
+
+        log.info("Random delay");
+        shopifyPage.sleepRandomly();
 
         log.info("Step 14: Search app Oberlo");
         oberloPage.inputKeyword(oberloPage.searchOberlo());
         oberloPage.clickToSearchBtn();
-
-        log.info("Random delay");
-        shopifyPage.sleepRandomly();
 
         log.info("Step 15: Select Oberlo app");
         oberloPage.selectOberloInAppStore();
@@ -190,26 +197,55 @@ public class createStoreAndInstallMessent extends AbstractTest {
         oberloPage.clickToAddApp();
         oberloPage.clickToInstallApp();
 
-        log.info("Setup account password Oberlo");
+        log.info("Step 17: Fill account password Oberlo");
         oberloPage.inputToPassword("QA12345678");
         oberloPage.inputToConfirmNewPassword( "QA12345678");
         oberloPage.clickToSavePassword();
 
-        log.info("Search product Oberlo");
+        //oberlo required login
+        shopifyPage.sWitchTab();
+        log.info("Step 11: Select Apps menu");
+        oberloPage = PageGeneratorManager.getOberloPO(driver);
+        oberloPage.selectAppsMenu();
+
+        log.info("Step 12: Visit Shopify App store");
+        oberloPage.clickToVisitShopifyAppStore();
+
+        log.info("Step 14: Search app Oberlo");
+        oberloPage.inputKeyword(oberloPage.searchOberlo());
+        oberloPage.clickToSearchBtn();
+        oberloPage.selectOberloInAppStore();
+        log.info("Step 16: Add Oberlo app to store");
+        oberloPage.clickToAddApp();
+
+
+
+
+        log.info("Step 18: Search product Oberlo");
         oberloPage.clickToSearchProduct();
 
-        log.info("Search random product");
+        /*//choose product default to import
+        log.info("Step 20: Add product to import list");
+        oberloPage.clickAddToImportList_Default1();
+        oberloPage.clickAddToImportList_Default1();
+        oberloPage.clickAddToImportList_Default1();
+        oberloPage.clickAddToImportList_Default1();
+        oberloPage.clickAddToImportList_Default1();
+        oberloPage.clickAddToImportList_Default1();*/
+
+        log.info("Step 19: Search random product");
         oberloPage.inputNameProduct(oberloPage.searchProductOberlo());
         oberloPage.clickToSearchProductBtn();
 
-        log.info("Add product to import list");
+        log.info("Step 20: Add product to import list");
         oberloPage.clickAddToImportList_1();
         oberloPage.clickAddToImportList_2();
         oberloPage.clickAddToImportList_3();
         oberloPage.clickAddToImportList_4();
         oberloPage.clickAddToImportList_5();
         oberloPage.clickAddToImportList_6();
-        log.info("Import List product");
+        
+        log.info("Step 21: Import List product");
         oberloPage.clickImportListMenu();
         oberloPage.clickCheckboxAllProduct();
         oberloPage.clickImportAllToStore();
@@ -224,90 +260,114 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.selectActionPublishTheme();*/
 
         //ADD FREE SHOPIFY APP (RANDOM FROM LIST)
-        log.info("Step: Select Apps menu");
+        log.info("Step 22: Select Apps menu");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.selectAppsMenu();
 
-        log.info("Step: Visit Shopify App store");
+        log.info("Step 23: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
         log.info("Random delay");
         shopifyPage.sleepRandomly();
 
-        log.info("Step choose account to continue to shopify app");
-        shopifyPage.chooseAccount();
+        /*log.info("Step 24 choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*/
 
-        log.info("Step: Search free Shopify app");
+        log.info("Step 25: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeShopifyApp());
         shopifyPage.clickToSearchBtn();
 
-        log.info("Step: Select app");
+        log.info("Step 26: Select app");
         shopifyPage.selectFreeShopifyAppRandom();
 
-        log.info("Step: Add random app to store");
+        log.info("Step 27: Add random app to store");
         shopifyPage.clickToAddApp();
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
 
-        //ADD FREE OTHER APP (RAMDOM FROM LIST)
-        log.info("Step: Select Apps menu");
+        //ADD FREE OTHER APP 1 (RAMDOM FROM LIST)
+        log.info("Step 28: Select Apps menu");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.selectAppsMenu();
 
-        log.info("Step: Visit Shopify App store");
+        log.info("Step 29: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
-        log.info("Step choose account to continue to shopify app");
-        shopifyPage.chooseAccount();
+        /*log.info("Step 30: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*/
 
-        log.info("Step: Search free Shopify app");
+        log.info("Step 31: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp());
         shopifyPage.clickToSearchBtn();
 
-        log.info("Step: Select app");
+        log.info("Step 32: Select app");
         shopifyPage.selectFreeOtherAppRandom();
 
-        log.info("Step: Add random app to store");
+        log.info("Step 33: Add random app to store");
+        shopifyPage.clickToAddApp();
+        shopifyPage.clickToInstallApp();
+        shopifyPage.sWitchTab();
+
+
+        //ADD FREE OTHER APP 2 (RAMDOM FROM LIST)
+        log.info("Step 34: Select Apps menu");
+        shopifyPage = PageGeneratorManager.getShopifyPage(driver);
+        shopifyPage.selectAppsMenu();
+
+        log.info("Step 35: Visit Shopify App store");
+        shopifyPage.clickToVisitShopifyAppStore();
+
+        /*log.info("Step 36: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*/
+
+        log.info("Step 37: Search free Shopify app");
+        shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp2());
+        shopifyPage.clickToSearchBtn();
+
+        log.info("Step 38: Select app");
+        shopifyPage.selectFreeOtherAppRanddom2();
+
+        log.info("Step 39: Add random app to store");
         shopifyPage.clickToAddApp();
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
         //Install Messent app
         // pause code
-        log.info("Step 12: Select Apps menu");
+       log.info("Step 40: Select Apps menu");
         messentPage = PageGeneratorManager.getMessentPage(driver);
         messentPage.selectAppsMenu();
 
-        log.info("Step 13: Visit Shopify App store");
+        log.info("Step 41: Visit Shopify App store");
         messentPage.clickToVisitShopifyAppStore();
 
-        log.info("Step choose account to continue to shopify app");
-        shopifyPage.chooseAccount();
+        /*log.info("Step 42: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*/
 
         log.info("Random delay");
         shopifyPage.sleepRandomly();
 
-        log.info("Step 14: Search app by keyword");
+        log.info("Step 43: Search app by keyword");
         messentPage.inputKeyword(messentPage.getRandomKeyword());
         messentPage.clickToSearchBtn();
 
         /*log.info("Step 14.1: Load page 2");
         messentPage.clickToLoadPageTwo();*/
 
-        log.info("Step 15: Select Messent app");
+        log.info("Step 44: Select Messent app");
         messentPage.selectMessentInAppStore();
 
-        log.info("Step 16: Add Messent app to store");
+        log.info("Step 45: Add Messent app to store");
         messentPage.clickToAddApp();
         messentPage.clickToInstallApp();
 
-        log.info("Step 17: Verify the choose plan page display");
+        log.info("Step 46: Verify the choose plan page display");
         verifyTrue(messentPage.isChoosePlanPageDisplay());
 
-       log.info("Random click choose plan free");
-       messentPage.randomClickChoosePlanFree();
-       shopifyPage.sWitchTab();
+        log.info("Random click choose plan free");
+        messentPage.randomClickChoosePlanFree();
+        shopifyPage.sWitchTab();
     }
 
 //    @Test

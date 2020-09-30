@@ -2,9 +2,9 @@ package pageUI;
 
 public class ShopifyPageUI {
     //Register
-    //public static final String START_FREE_TRIAL_BUTTON = "//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']";
+    public static final String START_FREE_TRIAL_BUTTON = "//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']";
     //shopify doi text button start free trial random
-    public static final String START_FREE_TRIAL_BUTTON = "//*[@id=\"Hero\"]/div[1]/div/div[2]/form/div/div/button";
+    //public static final String START_FREE_TRIAL_BUTTON = "//*[@id=\"Hero\"]/div[1]/div/div[2]/form/div/div/button";
     public static final String REGISTER_TEXT_BOXES = "//input[@placeholder='%s']";
     public static final String CREATE_YOUR_STORE_BUTTON = "//button[text()='Create your store']";
 
@@ -72,7 +72,7 @@ public class ShopifyPageUI {
     public static final String FREE_TRUST_BADGE_IN_APPSTORE = "//h4[text()='Free Trust Badge']/ancestor::a";
     public static final String SHIPPO_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Shippo')]";
     public static final String PUSHOWL_WEB_PUSH_NOTIFICATION = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='PushOwl Web Push Notification')]";
-    public static final String ULTIMATE_TRUST_BADGES_FREE = "//h4[text()='Ultimate Trust Badges FREE!']/ancestor::a";
+    public static final String ULTIMATE_TRUST_BADGES_FREE = "//h4[text()='Ultimate Trust Badges']/ancestor::a";
     public static final String EASY_GDPR_COOKIE_BAR = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Easy GDPR + Cookie Bar')]";
     public static final String FACEBOOK_AND_INSTAGRAM_AUTO_POST = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Facebook & Instagram Auto Post')]";
     public static final String PARCELPANNEL_ORDER_TRACKING_PRO = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'ParcelPanel Order Tracking Pro')]";
@@ -118,5 +118,14 @@ public class ShopifyPageUI {
     public static final String PUSH_PRODUCTS ="//button[@class='btn btn-success']";
     public static final String BACK_TO_SHOPIFY_ADMIN ="//span[contains(text(),'Shopify Admin')]";
 
+    //product default Oberlo
+    public static final String CLICK_TO_ORDER_TEXT_DEFAULT1 = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[1]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT_DEFAULT2 = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[2]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT_DEFAULT3 = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[3]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT_DEFAULT4 = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[4]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
+    public static final String ADD_PRODUCT_DEFAULT1_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[1]/div/div/div[2]/div/div[2]/button";
+    public static final String ADD_PRODUCT_DEFAULT2_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[2]/div/div/div[2]/div/div[2]/button";
+    public static final String ADD_PRODUCT_DEFAULT3_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[3]/div/div/div[2]/div/div[2]/button";
+    public static final String ADD_PRODUCT_DEFAULT4_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[4]/div/div/div[2]/div/div[2]/button";
 
 }

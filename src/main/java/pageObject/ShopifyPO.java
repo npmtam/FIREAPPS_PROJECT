@@ -436,7 +436,14 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public String searchFreeOtherApp(){
-            final String[] keywords = new String[]{"TrustedSite", "Free Trust Badge", "Shippo", "PushOwl Web Push Notification", "Ultimate Trust Badges FREE!", "Easy GDPR + Cookie Bar", "Facebook & Instagram Auto Post", "ParcelPanel Order Tracking Pro", "Wishlist Plus"};
+        final String[] keywords = new String[]{"TrustedSite", "Free Trust Badge", "Shippo", "PushOwl Web Push Notification", "Wishlist Plus"};
+        Random random = new Random();
+        int index = random.nextInt(keywords.length);
+        return keywords[index];
+    }
+
+    public String searchFreeOtherApp2(){
+        final String[] keywords = new String[]{"Easy GDPR + Cookie Bar", "Facebook & Instagram Auto Post", "ParcelPanel Order Tracking Pro", "Ultimate Trust Badges FREE!"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -509,28 +516,28 @@ public class ShopifyPO extends AbstractPage {
         }
     }
 
-    public void selectFreeOtherAppRandom(){
+    public void selectFreeOtherAppRandom() {
         if (isElementPresentInDOM(ShopifyPageUI.TRUSTEDSITE_IN_APPSTORE)) {
             waitToElementVisible(ShopifyPageUI.TRUSTEDSITE_IN_APPSTORE);
             clickToElement(ShopifyPageUI.TRUSTEDSITE_IN_APPSTORE);
-        }
-        else if (isElementPresentInDOM(ShopifyPageUI.FREE_TRUST_BADGE_IN_APPSTORE)){
+        } else if (isElementPresentInDOM(ShopifyPageUI.FREE_TRUST_BADGE_IN_APPSTORE)) {
             waitToElementVisible(ShopifyPageUI.FREE_TRUST_BADGE_IN_APPSTORE);
             clickToElement(ShopifyPageUI.FREE_TRUST_BADGE_IN_APPSTORE);
-        }
-        else if (isElementPresentInDOM(ShopifyPageUI.SHIPPO_IN_APPSTORE)){
+        } else if (isElementPresentInDOM(ShopifyPageUI.SHIPPO_IN_APPSTORE)) {
             waitToElementVisible(ShopifyPageUI.SHIPPO_IN_APPSTORE);
             clickToElement(ShopifyPageUI.SHIPPO_IN_APPSTORE);
-        }
-        else if (isElementPresentInDOM(ShopifyPageUI.PUSHOWL_WEB_PUSH_NOTIFICATION)){
+        } else if (isElementPresentInDOM(ShopifyPageUI.PUSHOWL_WEB_PUSH_NOTIFICATION)) {
             waitToElementVisible(ShopifyPageUI.PUSHOWL_WEB_PUSH_NOTIFICATION);
             clickToElement(ShopifyPageUI.PUSHOWL_WEB_PUSH_NOTIFICATION);
+        } else {
+            isElementPresentInDOM(ShopifyPageUI.WISHLIST_PLUS);
+            waitToElementVisible(ShopifyPageUI.WISHLIST_PLUS);
+            clickToElement(ShopifyPageUI.WISHLIST_PLUS);
         }
-        else if (isElementPresentInDOM(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE)){
-            waitToElementVisible(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
-            clickToElement(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
-        }
-        else if (isElementPresentInDOM(ShopifyPageUI.EASY_GDPR_COOKIE_BAR)){
+    }
+
+    public void selectFreeOtherAppRanddom2() {
+        if (isElementPresentInDOM(ShopifyPageUI.EASY_GDPR_COOKIE_BAR)){
             waitToElementVisible(ShopifyPageUI.EASY_GDPR_COOKIE_BAR);
             clickToElement(ShopifyPageUI.EASY_GDPR_COOKIE_BAR);
         }
@@ -542,9 +549,9 @@ public class ShopifyPO extends AbstractPage {
             waitToElementVisible(ShopifyPageUI.PARCELPANNEL_ORDER_TRACKING_PRO);
             clickToElement(ShopifyPageUI.PARCELPANNEL_ORDER_TRACKING_PRO);
         }
-        else if (isElementPresentInDOM(ShopifyPageUI.WISHLIST_PLUS)){
-            waitToElementVisible(ShopifyPageUI.WISHLIST_PLUS);
-            clickToElement(ShopifyPageUI.WISHLIST_PLUS);
+        else if (isElementPresentInDOM(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE)){
+            waitToElementVisible(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
+            clickToElement(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
         }
         else {
             isElementPresentInDOM(ShopifyPageUI.ULTIMATE_COUNTDOWN_TIMER);
@@ -552,6 +559,7 @@ public class ShopifyPO extends AbstractPage {
             clickToElement(ShopifyPageUI.ULTIMATE_COUNTDOWN_TIMER);
         }
     }
+
 
     public void clickToAddApp(){
         waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
@@ -576,7 +584,7 @@ public class ShopifyPO extends AbstractPage {
         System.out.println(domain);*/
     }
 
-    //random delay 30s- 50s
+    //random delay 30s- 80s
     public void sleepRandomly() {
         try {
             Thread.sleep(getMillis());
@@ -587,7 +595,7 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public static long getMillis() {
-        return (long) (Math.random() * 20_000 + 30_000);
+        return (long) (Math.random() * 30_000 + 50_000);
     }
 
     public void chooseAccount(){
@@ -597,6 +605,11 @@ public class ShopifyPO extends AbstractPage {
         isElementPresentInDOM(ShopifyPageUI.CHOOSE_ACCOUNT_SELECT);
         waitToElementVisible(ShopifyPageUI.CHOOSE_ACCOUNT_SELECT);
         clickToElement(ShopifyPageUI.CHOOSE_ACCOUNT_SELECT);
+    }
+
+    public void switchTabChooseAccount(){
+        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs2.get(1));
     }
 
 }

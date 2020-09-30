@@ -7,10 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="FIREAPPS_PROJECT" />
+        <module name="auto-install" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="auto-install" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

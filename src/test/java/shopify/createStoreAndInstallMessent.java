@@ -56,7 +56,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 4)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -123,8 +123,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         boolean isDropdownStepChanged = abstractPage.isElementPresentInDOM(ShopifyPageUI.DROPDOWN_SEEDING_QUESTION);
         if (isDropdownStepChanged) {
             shopifyPage.selectAlreadySellingDropdown(Constants.ALREADY_SELLING);
-            shopifyPage.selectCurrentRevenueDropdown(Constants.CURRENT_REVENUE);
-            shopifyPage.selectIndustryDropdown(industry);
+            /*shopifyPage.selectCurrentRevenueDropdown(Constants.CURRENT_REVENUE);
+            shopifyPage.selectIndustryDropdown(industry);*/
         } else {
             shopifyPage.selectDescribesDropdown(1);
         }
@@ -183,8 +183,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
             shopifyPage.chooseAccount();
         }
 
-        log.info("Random delay");
-        shopifyPage.sleepRandomly();
+        /*log.info("Random delay");
+        shopifyPage.sleepRandomly();*/
 
         log.info("Step 14: Search app Oberlo");
         oberloPage.inputKeyword(oberloPage.searchOberlo());

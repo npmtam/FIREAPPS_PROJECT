@@ -94,28 +94,33 @@ public class ShopifyPageUI {
     public static final String DELETE_APP_CONFIRMATION_TEXT = "//section[contains(text(), 'By deleting origin-app-dev')]";
 
     //Oberlo
-    public static final String NEW_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div[2]/div[2]/input";
-    public static final String CONFIRM_NEW_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div[2]/div[3]/input";
-    public static final String SAVE_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div[3]/button";
-    public static final String SEARCH_PRODUCT_MENU = "//span[contains(text(),'Search Products')]";
-    public static final String SEARCH_PRODUCT_TEXTBOX = "//*[@id=\"keywords\"]";
-    public static final String SEARCH_BUTTON ="//*[@id=\"page-content\"]/div/div[1]/div/div/div[2]/form/button";
-    public static final String CLICK_TO_ORDER_TEXT1 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT2 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT3 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT4 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT5 ="//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT6 = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";
-    public static final String ADD_PRODUCT1_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[2]/button";
-    public static final String ADD_PRODUCT2_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/button";
-    public static final String ADD_PRODUCT3_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[2]/button";
-    public static final String ADD_PRODUCT4_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[2]/button";
-    public static final String ADD_PRODUCT5_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[2]/button";
-    public static final String ADD_PRODUCT6_TO_IMPORT_LIST ="//*[@id='page-content']/div/div[3]/div/div/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[2]/button";
+    //public static final String NEW_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div[2]/div[2]/input";
+    //public static final String CONFIRM_NEW_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div[2]/div[3]/input";
+    //public static final String SAVE_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div[3]/button";
+    public static final String NEW_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input";
+    public static final String CONFIRM_NEW_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[2]/div[3]/div[1]/input";
+    public static final String SAVE_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[3]/button/span";
+    public static final String SEARCH_PRODUCT_MENU = "//span[contains(text(),'Find products')]";
+    //public static final String SEARCH_PRODUCT_TEXTBOX = "//*[@id=\"keywords\"]";
+    public static final String SEARCH_PRODUCT_TEXTBOX = "//input[@id='keywords']";
+    public static final String SEARCH_BUTTON ="//span[contains(text(),'Search')]";
+    public static final String CLICK_TO_ORDER_TEXT1 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT2 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT3 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT4 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT5 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT6 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String ADD_PRODUCT1_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT2_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT3_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT4_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT5_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT6_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[2]/button/span[2]";
     public static final String IMPORT_LIST = "//span[contains(text(),'Import List')]";
-    public static final String SELECT_ALL_PRODUCT_CHECKBOX ="//label[@class='bulk-actions__item']";
-    public static final String IMPORT_ALL_PRODUCT_TO_STORE = "//button[@class='btn bulk-actions__item'][contains(text(),'Import all to store')]";
-    public static final String PUSH_PRODUCTS ="//button[@class='btn btn-success']";
+    //public static final String SELECT_ALL_PRODUCT_CHECKBOX ="//label[@class='bulk-actions__item btn-basic']";
+    public static final String SELECT_ALL_PRODUCT_CHECKBOX ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[3]/div[2]/div/label";
+    public static final String IMPORT_ALL_PRODUCT_TO_STORE = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[3]/div[2]/div/button[1]";
+    public static final String PUSH_PRODUCTS ="//span[contains(text(),'Yes')]";
     public static final String BACK_TO_SHOPIFY_ADMIN ="//span[contains(text(),'Shopify Admin')]";
 
     //product default Oberlo

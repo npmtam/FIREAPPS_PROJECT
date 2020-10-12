@@ -54,24 +54,29 @@ public class ShopifyPO extends AbstractPage {
     public void selectAlreadySellingDropdown(String item) {
         waitToElementVisible(ShopifyPageUI.DROPDOWN_SEEDING_QUESTION);
         selectItemInDropdown(ShopifyPageUI.DROPDOWN_SEEDING_QUESTION, item);
+        sleepInSecond(2);
     }
 
     public void selectCurrentRevenueDropdown(String item) {
+        sleepInSecond(3);
         waitToElementVisible(ShopifyPageUI.DROPDOWN_BUSINESS_REVENUE);
         selectItemInDropdown(ShopifyPageUI.DROPDOWN_BUSINESS_REVENUE, item);
     }
 
     public void selectIndustryDropdown(String item) {
+        sleepInSecond(3);
         waitToElementVisible(ShopifyPageUI.DROPDOWN_STORE_INDUSTRY);
         selectItemInDropdown(ShopifyPageUI.DROPDOWN_STORE_INDUSTRY, item);
     }
 
     public void selectDescribesDropdown(int index) {
+        sleepInSecond(3);
         waitToElementVisible(ShopifyPageUI.DROPDOWN_DESCRIBES);
         selectItemInDropdownByIndex(ShopifyPageUI.DROPDOWN_DESCRIBES, index);
     }
 
     public void clickToNextButton() {
+        sleepInSecond(3);
         waitToElementClickable(ShopifyPageUI.NEXT_BUTTON);
         clickToElement(ShopifyPageUI.NEXT_BUTTON);
     }

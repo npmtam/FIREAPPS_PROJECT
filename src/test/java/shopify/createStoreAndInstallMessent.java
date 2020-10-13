@@ -56,7 +56,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 4)
+    @Test(invocationCount = 15)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -83,6 +83,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         driver.get(Constants.URL);
 
         log.info("Step 01: Press on Start free trial button");
+        shopifyPage.switchToFirstWindow();
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clickToStartFreeTrialBtn();
 
@@ -202,7 +203,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         oberloPage.inputToConfirmNewPassword( "QA12345678");
         oberloPage.clickToSavePassword();
 
-        //oberlo required login
+        //By pass step login app Oberlo
         shopifyPage.sWitchTab();
         log.info("Step 11: Select Apps menu");
         oberloPage = PageGeneratorManager.getOberloPO(driver);
@@ -218,20 +219,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         log.info("Step 16: Add Oberlo app to store");
         oberloPage.clickToAddApp();
 
-
-
-
         log.info("Step 18: Search product Oberlo");
         oberloPage.clickToSearchProduct();
-
-        /*//choose product default to import
-        log.info("Step 20: Add product to import list");
-        oberloPage.clickAddToImportList_Default1();
-        oberloPage.clickAddToImportList_Default1();
-        oberloPage.clickAddToImportList_Default1();
-        oberloPage.clickAddToImportList_Default1();
-        oberloPage.clickAddToImportList_Default1();
-        oberloPage.clickAddToImportList_Default1();*/
 
         log.info("Step 19: Search random product");
         oberloPage.inputNameProduct(oberloPage.searchProductOberlo());
@@ -286,7 +275,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.sWitchTab();
 
 
-        //ADD FREE OTHER APP 1 (RAMDOM FROM LIST)
+        //ADD FREE OTHER APP 1 (RANDOM FROM LIST)
         log.info("Step 28: Select Apps menu");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.selectAppsMenu();
@@ -309,8 +298,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
-
-        //ADD FREE OTHER APP 2 (RAMDOM FROM LIST)
+        //ADD FREE OTHER APP 2 (RANDOM FROM LIST)
         log.info("Step 34: Select Apps menu");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.selectAppsMenu();

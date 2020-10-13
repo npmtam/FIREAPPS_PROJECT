@@ -585,8 +585,6 @@ public class ShopifyPO extends AbstractPage {
         driver.close();
         driver.switchTo().window(tabs2.get(0));
         sleepInSecond(3);
-        /*String domain = driver.getCurrentUrl();
-        System.out.println(domain);*/
     }
 
     //random delay 30s- 80s
@@ -615,6 +613,14 @@ public class ShopifyPO extends AbstractPage {
     public void switchTabChooseAccount(){
         ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));
+    }
+
+    public void switchToFirstWindow(){
+        Set<String> handlesSet = driver.getWindowHandles();
+        List<String> handlesList = new ArrayList<String>(handlesSet);
+        //driver.switchTo().window(handlesList.get(1));
+        //driver.close();
+        driver.switchTo().window(handlesList.get(0));
     }
 
 }

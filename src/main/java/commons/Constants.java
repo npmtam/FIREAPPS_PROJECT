@@ -55,8 +55,6 @@ public class Constants {
 
 
 
-
-
     //WEBSITE CHECK FUNCTIONS
     public static final String WEBSITE_URL = "https://beta.fireapps.io";
     public static final String WEBSITE_HOME_BUTTON = "Home";

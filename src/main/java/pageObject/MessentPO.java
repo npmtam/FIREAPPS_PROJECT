@@ -1,4 +1,4 @@
-    package pageObject;
+package pageObject;
 
 import commons.*;
 import org.openqa.selenium.By;
@@ -127,7 +127,7 @@ public class MessentPO extends AbstractPage {
         }
     }
 
-    public void clickToInstallApp(){
+    public void clickToInstallApp() {
         sleepInSecond(5);
         scrollToEndOfPage();
         waitToElementVisible(InstallAppUI.DYNAMIC_BUTTONS, "Install app");
@@ -215,51 +215,51 @@ public class MessentPO extends AbstractPage {
         }
     }
 
-    public void selectAppsMenu(){
+    public void selectAppsMenu() {
         sleepInSecond(3);
         waitToElementClickable(ShopifyPageUI.APPS_MENU);
         clickToElement(ShopifyPageUI.APPS_MENU);
     }
 
-    public String getRandomKeyword(){
+    public String getRandomKeyword() {
         final String[] keywords = new String[]{"sms", "Sms", "SMS"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
     }
 
-    public void clickToVisitShopifyAppStore(){
+    public void clickToVisitShopifyAppStore() {
         waitToElementClickable(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
         clickToElement(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
         sleepInSecond(3);
     }
 
-    public void inputKeyword(String keyword){
+    public void inputKeyword(String keyword) {
         sleepInSecond(5);
         switchToWindowsByTitle("Shopify App Store: Ecommerce App Marketplace");
         waitToElementVisible(ShopifyPageUI.SEARCH_APPS_TEXTBOX);
         sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
     }
 
-    public void selectMessentInAppStore(){
+    public void selectMessentInAppStore() {
         waitToElementVisible(ShopifyPageUI.MESSENT_APP_IN_APPSTORE);
         clickToElement(ShopifyPageUI.MESSENT_APP_IN_APPSTORE);
         sleepInSecond(2);
     }
 
-    public void clickToAddApp(){
+    public void clickToAddApp() {
         waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
         clickToElement(ShopifyPageUI.ADD_APP_BTN);
         sleepInSecond(3);
     }
 
-    public void clickToSearchBtn(){
+    public void clickToSearchBtn() {
         sleepInSecond(3);
         waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
         clickToElement(ShopifyPageUI.SEARCH_BTN);
     }
 
-    public boolean isRequiredUpgradePageDisplay(){
+    public boolean isRequiredUpgradePageDisplay() {
         sleepInSecond(3);
         return isElementDisplayed(ShopifyPageUI.UPGRADE_YOUR_ACCOUNT_PAGE);
     }
@@ -271,18 +271,17 @@ public class MessentPO extends AbstractPage {
     }
 
 
-    public boolean isChoosePlanPageDisplay(){
+    public boolean isChoosePlanPageDisplay() {
         sleepInSecond(3);
         return isElementDisplayed("//h4[text()='Choose your plan']");
     }
 
-    public void randomClickChoosePlanFree(){
+    public void randomClickChoosePlanFree() {
         int code = (int) Math.floor(((Math.random() * 2) + 10));
         int ramdomNo = code % 2;
         if (ramdomNo == 0) {
             driver.findElement(By.xpath("//*[@id=\"app-layout-master\"]/div/div[2]/div[2]/div[1]/div/div/div/div[1]/div/div[1]/div[1]/div[2]/div[1]/div/form/button")).click();
-        }
-        else {
+        } else {
         }
         sleepInSecond(3);
     }

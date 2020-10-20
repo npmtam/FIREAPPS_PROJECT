@@ -34,7 +34,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
     boolean isStoreNameExisted;
     public int randomNumber;
     Faker faker;
-    public  String csvName;
+    public String csvName;
 
 
     @Parameters("browser")
@@ -55,6 +55,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
+
     @Test(invocationCount = 12)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
@@ -101,7 +102,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         if (isStoreNameExisted) {
             shopifyPage.inputToRegisterTextBoxes("Your store name", storeNameBackup);
         } else {
-        shopifyPage.clickToCreateYourStoreButton();
+            shopifyPage.clickToCreateYourStoreButton();
         }
 
         log.info("Step 04: Verify Create an account");
@@ -110,7 +111,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
             shopifyPage.inputToCreateAccount("first_name", firstName);
             shopifyPage.inputToCreateAccount("last_name", lastName);
             shopifyPage.inputToCreateAccount("password", password);
-            shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
+            shopifyPage.inputToCreateAccount("password_confirmation", password_confirmation);
             shopifyPage.clickToCreateAccountButton();
         }
 
@@ -209,7 +210,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step 17: Fill account password Oberlo");
         oberloPage.inputToPassword("QA12345678");
-        oberloPage.inputToConfirmNewPassword( "QA12345678");
+        oberloPage.inputToConfirmNewPassword("QA12345678");
         oberloPage.clickToSavePassword();
 
         //oberlo required login
@@ -262,7 +263,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.sleepRandomly();*/
 
 
-       //ADD FREE SHOPIFY APP (RANDOM FROM LIST)
+        //ADD FREE SHOPIFY APP (RANDOM FROM LIST)
         log.info("Step 22: Select Apps menu");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.selectAppsMenu();
@@ -358,21 +359,21 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
 //============================================================================//
         //Install Transcy app
-        log.info("Step 40: Select Apps menu");
+        /*log.info("Step 40: Select Apps menu");
         transcyPage = PageGeneratorManager.getTranscyPage(driver);
         transcyPage.selectAppsMenu();
 
         log.info("Step 41: Visit Shopify App store");
         transcyPage.clickToVisitShopifyAppStore();
 
-        /*log.info("Step 42: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
+        *//*log.info("Step 42: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*//*
 
-        /*log.info("Step 42: choose account to continue to shopify app");
+        *//*log.info("Step 42: choose account to continue to shopify app");
         shopifyPage.switchTab();
         if (isChooseAnAccountToShopifyAppStore) {
             shopifyPage.chooseAccount();
-        }*/
+        }*//*
 
         log.info("Step 43: Search app by keyword");
         transcyPage.inputKeyword(transcyPage.getRandomKeyword());
@@ -387,11 +388,11 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step 46: Verify the required upgrade page display");
         verifyTrue(transcyPage.isRequiredUpgradePageDisplay());
-        shopifyPage.sWitchTab();
+        shopifyPage.sWitchTab();*/
     }
 
-//    @Test
-    public void TC02_ReadAndInstallTranscy(){
+    //    @Test
+    public void TC02_ReadAndInstallTranscy() {
         log.info("Read data from CSV file and install Transcy app depends on Store Type column");
         transcyPage = PageGeneratorManager.getTranscyPage(driver);
         transcyPage.readDataCsv();

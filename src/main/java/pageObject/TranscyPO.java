@@ -122,7 +122,7 @@ public class TranscyPO extends AbstractPage {
         }
     }
 
-    public void clickToInstallApp(){
+    public void clickToInstallApp() {
         sleepInSecond(5);
         scrollToEndOfPage();
         sleepInSecond(3);
@@ -211,50 +211,50 @@ public class TranscyPO extends AbstractPage {
         }
     }
 
-    public void selectAppsMenu(){
+    public void selectAppsMenu() {
         waitToElementClickable(ShopifyPageUI.APPS_MENU);
         clickToElement(ShopifyPageUI.APPS_MENU);
     }
 
-    public String getRandomKeyword(){
+    public String getRandomKeyword() {
         final String[] keywords = new String[]{"translation", "Translation", "translation"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
     }
 
-    public void clickToVisitShopifyAppStore(){
+    public void clickToVisitShopifyAppStore() {
         waitToElementClickable(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
         clickToElement(ShopifyPageUI.VISIT_SHOPIFY_APP_STORE_BTN);
         sleepInSecond(3);
     }
 
-    public void inputKeyword(String keyword){
+    public void inputKeyword(String keyword) {
         sleepInSecond(5);
         switchToWindowsByTitle("Shopify App Store: Ecommerce App Marketplace");
         waitToElementVisible(ShopifyPageUI.SEARCH_APPS_TEXTBOX);
         sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
     }
 
-    public void selectTranscyInAppStore(){
+    public void selectTranscyInAppStore() {
         waitToElementVisible(ShopifyPageUI.TRANSCY_APP_IN_APPSTORE);
         clickToElement(ShopifyPageUI.TRANSCY_APP_IN_APPSTORE);
     }
 
 
-    public void clickToAddApp(){
+    public void clickToAddApp() {
         waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
         clickToElement(ShopifyPageUI.ADD_APP_BTN);
         sleepInSecond(3);
     }
 
-    public void clickToSearchBtn(){
+    public void clickToSearchBtn() {
         sleepInSecond(3);
         waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
         clickToElement(ShopifyPageUI.SEARCH_BTN);
     }
 
-    public boolean isRequiredUpgradePageDisplay(){
+    public boolean isRequiredUpgradePageDisplay() {
         sleepInSecond(1);
         return isElementDisplayed(ShopifyPageUI.UPGRADE_YOUR_ACCOUNT_PAGE);
     }

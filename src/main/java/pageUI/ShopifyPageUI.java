@@ -62,10 +62,10 @@ public class ShopifyPageUI {
     //FREE SHOPIFY APP
     public static final String PRODUCT_REVIEW_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Product Reviews')]";
     public static final String KIT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Kit')]";
-    public static final String GOOGLE_CHANNEL_APP_IN_APPSTORE ="//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Google channel')]";
-    public static final String SHOPIFY_EMAIL_APP_IN_APPSTORE ="//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Email')]";
-    public static final String SHOPIFY_CHAT_APP_IN_APPSTORE ="//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Chat')]";
-    public static final String GEOLOCATION_IN_APPSTORE ="//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Geolocation')]";
+    public static final String GOOGLE_CHANNEL_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Google channel')]";
+    public static final String SHOPIFY_EMAIL_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Email')]";
+    public static final String SHOPIFY_CHAT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Chat')]";
+    public static final String GEOLOCATION_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Geolocation')]";
 
     //FREE OTHER APP
     public static final String TRUSTEDSITE_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='TrustedSite ‑ Trust Badges')]";
@@ -97,31 +97,31 @@ public class ShopifyPageUI {
     //public static final String NEW_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div[2]/div[2]/input";
     //public static final String CONFIRM_NEW_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div[2]/div[3]/input";
     //public static final String SAVE_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div[3]/button";
-    public static final String NEW_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input";
+    public static final String NEW_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input";
     public static final String CONFIRM_NEW_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[2]/div[3]/div[1]/input";
-    public static final String SAVE_PASSWORD ="//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[3]/button/span";
+    public static final String SAVE_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[3]/button/span";
     public static final String SEARCH_PRODUCT_MENU = "//span[contains(text(),'Find products')]";
     //public static final String SEARCH_PRODUCT_TEXTBOX = "//*[@id=\"keywords\"]";
     public static final String SEARCH_PRODUCT_TEXTBOX = "//input[@id='keywords']";
-    public static final String SEARCH_BUTTON ="//span[contains(text(),'Search')]";
-    public static final String CLICK_TO_ORDER_TEXT1 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT2 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT3 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT4 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT5 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
-    public static final String CLICK_TO_ORDER_TEXT6 ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
-    public static final String ADD_PRODUCT1_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[2]/button/span[2]";
-    public static final String ADD_PRODUCT2_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/button/span[2]";
-    public static final String ADD_PRODUCT3_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[2]/button/span[2]";
-    public static final String ADD_PRODUCT4_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[2]/button/span[2]";
-    public static final String ADD_PRODUCT5_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[2]/button/span[2]";
-    public static final String ADD_PRODUCT6_TO_IMPORT_LIST ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String SEARCH_BUTTON = "//span[contains(text(),'Search')]";
+    public static final String CLICK_TO_ORDER_TEXT1 = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT2 = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT3 = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT4 = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT5 = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String CLICK_TO_ORDER_TEXT6 = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[1]/div[3]/div[3]/div[1]";
+    public static final String ADD_PRODUCT1_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[1]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT2_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT3_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[3]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT4_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[4]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT5_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[5]/div/div/div[2]/div/div[2]/button/span[2]";
+    public static final String ADD_PRODUCT6_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[2]/button/span[2]";
     public static final String IMPORT_LIST = "//span[contains(text(),'Import List')]";
     //public static final String SELECT_ALL_PRODUCT_CHECKBOX ="//label[@class='bulk-actions__item btn-basic']";
-    public static final String SELECT_ALL_PRODUCT_CHECKBOX ="//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[3]/div[2]/div/label";
+    public static final String SELECT_ALL_PRODUCT_CHECKBOX = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[3]/div[2]/div/label";
     public static final String IMPORT_ALL_PRODUCT_TO_STORE = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[3]/div[2]/div/button[1]";
-    public static final String PUSH_PRODUCTS ="//span[contains(text(),'Yes')]";
-    public static final String BACK_TO_SHOPIFY_ADMIN ="//span[contains(text(),'Shopify Admin')]";
+    public static final String PUSH_PRODUCTS = "//span[contains(text(),'Yes')]";
+    public static final String BACK_TO_SHOPIFY_ADMIN = "//span[contains(text(),'Shopify Admin')]";
 
     //product default Oberlo
     public static final String CLICK_TO_ORDER_TEXT_DEFAULT1 = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[1]/div/div/div[2]/div/div[1]/div[3]/div[4]/div[1]";

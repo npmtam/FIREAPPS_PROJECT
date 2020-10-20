@@ -56,7 +56,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 15)
+    @Test(invocationCount = 3)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -97,7 +97,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         if (isStoreNameExisted) {
             shopifyPage.inputToRegisterTextBoxes("Your store name", storeNameBackup);
         } else {
-        shopifyPage.clickToCreateYourStoreButton();
+            shopifyPage.clickToCreateYourStoreButton();
         }
 
         log.info("Step 04: Verify Create an account");
@@ -106,7 +106,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
             shopifyPage.inputToCreateAccount("first_name", firstName);
             shopifyPage.inputToCreateAccount("last_name", lastName);
             shopifyPage.inputToCreateAccount("password", password);
-            shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
+            shopifyPage.inputToCreateAccount("password_confirmation", password_confirmation);
             shopifyPage.clickToCreateAccountButton();
         }
 
@@ -200,7 +200,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         log.info("Step 17: Fill account password Oberlo");
         oberloPage.inputToPassword("QA12345678");
-        oberloPage.inputToConfirmNewPassword( "QA12345678");
+        oberloPage.inputToConfirmNewPassword("QA12345678");
         oberloPage.clickToSavePassword();
 
         //By pass step login app Oberlo
@@ -233,7 +233,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         oberloPage.clickAddToImportList_4();
         oberloPage.clickAddToImportList_5();
         oberloPage.clickAddToImportList_6();
-        
+
         log.info("Step 21: Import List product");
         oberloPage.clickImportListMenu();
         oberloPage.clickCheckboxAllProduct();
@@ -321,17 +321,17 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
-        //Install Messent app
+        /*//Install Messent app
         // pause code
-       log.info("Step 40: Select Apps menu");
+        log.info("Step 40: Select Apps menu");
         messentPage = PageGeneratorManager.getMessentPage(driver);
         messentPage.selectAppsMenu();
 
         log.info("Step 41: Visit Shopify App store");
         messentPage.clickToVisitShopifyAppStore();
 
-        /*log.info("Step 42: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
+        *//*log.info("Step 42: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*//*
 
         log.info("Random delay");
         shopifyPage.sleepRandomly();
@@ -341,7 +341,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         messentPage.clickToSearchBtn();
 
         /*log.info("Step 14.1: Load page 2");
-        messentPage.clickToLoadPageTwo();*/
+        messentPage.clickToLoadPageTwo();
 
         log.info("Step 44: Select Messent app");
         messentPage.selectMessentInAppStore();
@@ -355,11 +355,11 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         log.info("Random click choose plan free");
         messentPage.randomClickChoosePlanFree();
-        shopifyPage.sWitchTab();
+        shopifyPage.sWitchTab();*/
     }
 
-//    @Test
-    public void TC02_ReadAndInstallTranscy(){
+    //    @Test
+    public void TC02_ReadAndInstallTranscy() {
         log.info("Read data from CSV file and install Messent app depends on Store Type column");
         messentPage = PageGeneratorManager.getMessentPage(driver);
         messentPage.readDataCsv();

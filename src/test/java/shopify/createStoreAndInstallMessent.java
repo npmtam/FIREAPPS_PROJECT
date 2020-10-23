@@ -5,6 +5,7 @@ import commons.AbstractPage;
 import commons.AbstractTest;
 import commons.Constants;
 import commons.PageGeneratorManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
@@ -56,7 +57,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 65)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -102,6 +103,12 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         log.info("Step 04: Verify Create an account");
         boolean isInputToCreateAnAccount = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
+
+        // enable Create account button
+        abstractPage.enableCreateAccountButton();
+        /*JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.getElementsByClassName('captcha__submit')[0].removeAttribute('disabled')");*/
+
         if (isInputToCreateAnAccount) {
             shopifyPage.inputToCreateAccount("first_name", firstName);
             shopifyPage.inputToCreateAccount("last_name", lastName);
@@ -321,7 +328,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
-        /*//Install Messent app
+        //Install Messent app
         // pause code
         log.info("Step 40: Select Apps menu");
         messentPage = PageGeneratorManager.getMessentPage(driver);
@@ -330,8 +337,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         log.info("Step 41: Visit Shopify App store");
         messentPage.clickToVisitShopifyAppStore();
 
-        *//*log.info("Step 42: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*//*
+        /*log.info("Step 42: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*/
 
         log.info("Random delay");
         shopifyPage.sleepRandomly();
@@ -341,7 +348,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         messentPage.clickToSearchBtn();
 
         /*log.info("Step 14.1: Load page 2");
-        messentPage.clickToLoadPageTwo();
+        messentPage.clickToLoadPageTwo();*/
 
         log.info("Step 44: Select Messent app");
         messentPage.selectMessentInAppStore();
@@ -353,9 +360,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
         log.info("Step 46: Verify the choose plan page display");
         verifyTrue(messentPage.isChoosePlanPageDisplay());
 
-        log.info("Random click choose plan free");
-        messentPage.randomClickChoosePlanFree();
-        shopifyPage.sWitchTab();*/
+       /* log.info("Random click choose plan free");
+        messentPage.randomClickChoosePlanFree();*/
+        shopifyPage.sWitchTab();
     }
 
     //    @Test

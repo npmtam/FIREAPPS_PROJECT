@@ -359,21 +359,21 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
 //============================================================================//
         //Install Transcy app
-        /*log.info("Step 40: Select Apps menu");
+        log.info("Step 40: Select Apps menu");
         transcyPage = PageGeneratorManager.getTranscyPage(driver);
         transcyPage.selectAppsMenu();
 
         log.info("Step 41: Visit Shopify App store");
         transcyPage.clickToVisitShopifyAppStore();
 
-        *//*log.info("Step 42: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*//*
+        log.info("Step 42: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();
 
-        *//*log.info("Step 42: choose account to continue to shopify app");
+       /* log.info("Step 42: choose account to continue to shopify app");
         shopifyPage.switchTab();
         if (isChooseAnAccountToShopifyAppStore) {
             shopifyPage.chooseAccount();
-        }*//*
+        }*/
 
         log.info("Step 43: Search app by keyword");
         transcyPage.inputKeyword(transcyPage.getRandomKeyword());
@@ -388,7 +388,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step 46: Verify the required upgrade page display");
         verifyTrue(transcyPage.isRequiredUpgradePageDisplay());
-        shopifyPage.sWitchTab();*/
+        shopifyPage.sWitchTab();
     }
 
     //    @Test

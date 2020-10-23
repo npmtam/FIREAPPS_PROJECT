@@ -588,7 +588,7 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public static long getMillis() {
-        return (long) (Math.random() * 30_000 + 50_000);
+        return (long) (Math.random() * 10_000 + 30_000);
     }
 
     public void chooseAccount() {

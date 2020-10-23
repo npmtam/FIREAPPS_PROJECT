@@ -273,7 +273,7 @@ public class MessentPO extends AbstractPage {
 
     public boolean isChoosePlanPageDisplay() {
         sleepInSecond(3);
-        return isElementDisplayed("//h4[text()='Choose your plan']");
+        return isElementDisplayed("//h3[text()='Super Deal for Holiday Season']");
     }
 
     public void randomClickChoosePlanFree() {

@@ -371,6 +371,11 @@ public class AbstractPage {
         return actualText.equals(expectedResult);
     }
 
+    public void enableCreateAccountButton(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.getElementsByClassName('captcha__submit')[0].removeAttribute('disabled')");
+    }
+
     public boolean isElementEquals(String locator, String expectedResult, String... values) {
         locator = String.format(locator, (Object[]) values);
         element = driver.findElement(By.xpath(locator));

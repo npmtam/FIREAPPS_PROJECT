@@ -1,514 +1,136 @@
-2020-10-23 15:03:11,368 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Clear test data
-2020-10-23 15:03:11,383 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:03:13,837 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:03:14,038 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:03:18,102 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:03:24,326 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:03:31,707 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 15:03:45,440 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:03:45,442 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 15:03:50,694 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 15:04:06,689 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 15:04:14,930 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:04:14,931 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 15:04:14,961 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 15:04:14,966 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:04:18,120 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:04:21,254 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 15:04:32,809 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:04:43,025 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 15:04:44,233 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:05:07,676 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 15:05:18,105 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:05:21,202 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:05:24,322 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:05:38,221 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:05:44,356 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 15:05:47,602 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 15:06:02,951 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 15:06:12,821 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 15:06:41,500 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 15:06:46,585 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 15:06:49,679 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:07:22,571 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 15:07:34,179 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 15:07:44,507 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 15:08:16,760 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 15:08:21,846 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 15:08:24,931 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 15:08:36,667 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 15:08:50,526 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 15:09:36,235 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 15:09:41,308 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 15:09:44,397 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 15:09:56,020 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 15:09:57,572 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 15:10:27,220 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 15:10:30,294 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 15:10:33,384 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:11:12,436 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
-2020-10-23 15:11:24,001 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
-2020-10-23 15:11:27,292 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
-2020-10-23 15:11:57,241 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
-2020-10-23 15:12:00,281 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:12:08,327 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:12:09,475 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:12:09,796 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:12:13,193 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:12:19,358 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:12:25,783 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 15:12:41,115 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:12:41,115 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 15:12:46,359 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 15:13:02,125 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 15:13:10,385 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:13:10,385 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 15:13:10,408 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 15:13:10,409 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:13:13,555 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:13:16,667 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 15:13:21,762 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:13:31,389 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 15:13:32,756 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:13:49,223 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 15:13:57,950 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:14:01,045 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:14:04,152 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:14:17,007 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:14:22,404 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 15:14:25,596 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 15:14:40,197 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 15:14:49,571 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 15:15:18,081 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 15:15:23,160 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 15:15:26,246 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:16:03,748 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 15:16:16,096 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 15:16:17,053 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 15:16:51,961 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 15:16:57,050 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 15:17:00,142 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 15:17:11,905 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 15:17:23,903 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 15:17:52,445 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 15:17:57,512 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 15:18:00,602 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 15:18:12,141 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 15:18:14,059 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 15:18:45,690 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 15:18:48,767 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 15:18:51,858 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:19:25,930 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
-2020-10-23 15:19:37,345 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
-2020-10-23 15:19:41,222 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
-2020-10-23 15:19:56,207 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
-2020-10-23 15:19:59,261 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:20:07,334 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:20:08,253 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:20:08,539 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:20:11,927 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:20:18,090 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:20:24,612 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 15:20:38,991 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:20:38,992 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 15:20:44,219 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 15:20:54,254 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 15:21:24,320 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:21:24,969 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:21:25,275 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:21:28,643 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:21:34,791 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:21:40,030 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 15:21:53,829 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:21:53,829 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 15:21:59,056 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 15:22:11,904 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 15:22:19,187 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:22:19,188 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 15:22:19,212 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 15:22:19,213 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:22:22,362 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:22:25,474 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 15:22:30,549 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:22:39,890 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 15:22:41,090 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:22:59,938 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 15:23:08,782 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:23:11,869 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:23:14,978 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:23:27,325 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:23:33,509 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 15:23:36,415 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 15:23:52,064 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 15:24:01,023 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 15:24:29,247 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 15:24:34,328 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 15:24:37,412 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:25:10,820 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 15:25:22,378 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 15:25:26,992 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 15:25:52,801 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 15:25:57,876 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 15:26:00,962 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 15:26:12,560 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 15:26:25,934 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 15:26:59,507 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 15:27:04,575 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 15:27:07,662 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 15:27:20,523 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 15:27:24,771 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 15:28:07,074 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 15:28:10,139 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 15:28:13,230 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:28:44,898 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
-2020-10-23 15:28:56,362 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
-2020-10-23 15:28:59,663 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
-2020-10-23 15:29:17,531 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
-2020-10-23 15:29:20,556 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:29:28,632 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:29:29,585 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:29:29,848 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:29:33,246 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:29:39,448 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:29:42,489 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:29:42,992 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:29:43,259 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:29:46,684 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:29:52,893 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:29:55,910 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:29:56,406 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:29:56,674 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:30:00,061 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:30:06,204 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:30:09,249 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:30:09,677 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:30:09,937 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:30:13,266 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:30:19,429 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:30:22,486 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:30:23,004 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:30:23,280 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:30:26,639 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:30:32,795 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:30:35,867 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:30:36,412 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:30:36,699 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:30:40,079 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:30:46,209 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:30:49,233 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:30:49,696 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:30:49,958 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:30:53,283 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:30:59,441 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:31:02,529 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:31:03,285 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:31:03,547 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:31:06,946 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:31:13,152 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:31:19,250 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 15:31:33,814 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:31:33,814 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 15:31:39,043 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 15:31:48,983 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 15:31:57,359 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:31:57,359 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 15:31:57,382 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 15:31:57,383 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:32:00,503 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:32:03,612 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 15:32:08,719 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:32:17,977 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 15:32:19,863 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:32:38,574 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 15:33:00,297 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:33:03,379 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:33:06,484 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:33:19,701 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:33:26,704 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 15:33:29,890 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 15:33:45,319 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 15:33:53,680 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 15:34:22,159 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 15:34:27,236 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 15:34:30,320 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:35:00,523 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 15:35:12,098 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 15:35:28,326 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 15:35:56,170 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 15:36:01,233 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 15:36:04,330 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 15:36:16,655 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 15:36:24,118 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 15:36:54,448 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 15:36:59,515 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 15:37:02,600 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 15:37:14,058 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 15:37:15,047 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 15:37:44,917 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 15:37:47,991 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 15:37:51,079 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:38:30,183 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
-2020-10-23 15:38:41,628 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
-2020-10-23 15:38:45,108 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
-2020-10-23 15:38:59,148 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
-2020-10-23 15:39:02,173 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:39:10,241 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:39:11,405 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:39:11,676 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:39:15,083 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:39:21,222 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:39:26,992 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 15:39:42,840 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:39:42,840 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 15:39:48,060 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 15:40:00,839 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 15:40:07,775 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:40:07,775 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 15:40:07,798 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 15:40:07,798 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:40:10,930 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:40:14,039 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 15:40:19,084 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:40:28,383 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 15:40:29,577 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:40:46,293 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 15:40:54,978 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:40:58,069 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:41:01,177 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:41:13,465 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:41:19,012 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 15:41:22,205 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 15:41:37,538 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 15:41:45,493 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 15:42:13,813 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 15:42:18,888 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 15:42:21,967 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:42:58,156 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 15:43:09,825 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 15:43:10,762 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 15:43:44,451 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 15:43:49,520 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 15:43:52,602 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 15:44:04,154 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 15:44:05,717 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 15:44:36,608 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 15:44:41,678 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 15:44:44,758 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 15:44:56,534 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 15:45:04,287 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 15:45:30,019 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 15:45:33,075 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 15:45:36,162 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:46:12,611 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
-2020-10-23 15:46:24,652 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
-2020-10-23 15:46:27,698 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
-2020-10-23 15:46:43,210 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
-2020-10-23 15:46:46,243 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:46:54,313 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:46:55,462 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:46:55,704 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:46:59,105 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:47:05,331 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:47:11,083 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 15:47:26,398 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:47:26,398 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 15:47:31,665 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 15:47:44,543 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 15:47:50,973 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:47:50,973 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 15:47:50,995 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 15:47:50,995 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:47:54,136 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:47:57,257 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 15:48:02,324 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:48:11,703 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 15:48:12,841 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:48:29,868 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 15:48:38,676 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:48:41,764 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:48:44,870 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:48:57,183 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:49:03,289 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 15:49:06,549 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 15:49:21,042 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 15:49:30,108 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 15:49:58,681 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 15:50:03,753 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 15:50:06,836 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:50:40,721 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 15:50:53,108 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 15:51:03,701 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 15:51:32,911 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 15:51:37,983 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 15:51:41,073 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 15:51:52,458 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 15:52:05,945 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 15:52:46,188 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 15:52:51,257 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 15:52:54,339 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 15:53:06,007 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 15:53:10,212 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 15:53:40,397 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 15:53:43,496 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 15:53:46,580 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:54:26,506 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
-2020-10-23 15:54:38,348 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
-2020-10-23 15:54:41,771 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
-2020-10-23 15:54:56,093 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
-2020-10-23 15:54:59,118 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:55:07,181 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:55:08,142 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:55:08,335 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:55:11,772 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:55:17,920 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:55:25,430 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 15:55:25,937 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 15:55:26,241 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 15:55:29,617 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 15:55:35,795 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 15:55:40,992 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 15:55:57,624 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:55:57,624 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 15:56:02,850 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 15:56:15,619 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 15:56:21,949 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 15:56:21,949 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 15:56:21,971 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 15:56:21,972 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:56:25,116 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:56:28,228 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 15:56:33,311 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:56:42,593 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 15:56:43,625 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:57:01,657 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 15:57:10,405 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 15:57:13,492 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 15:57:16,609 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 15:57:29,600 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 15:57:34,969 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 15:57:38,102 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 15:57:53,601 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 15:58:01,752 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 15:58:30,200 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 15:58:35,279 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 15:58:38,362 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 15:59:09,582 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 15:59:21,146 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 15:59:28,542 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 15:59:56,517 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 16:00:01,596 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 16:00:04,689 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 16:00:16,159 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 16:00:23,499 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 16:00:52,713 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 16:00:57,780 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 16:01:00,859 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 16:01:12,482 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 16:01:19,964 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 16:01:49,535 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 16:01:52,624 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 16:01:55,711 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 16:02:31,021 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
-2020-10-23 16:02:42,576 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
-2020-10-23 16:02:45,907 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
-2020-10-23 16:03:02,003 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
-2020-10-23 16:03:05,029 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 16:03:13,102 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 16:03:13,932 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 16:03:14,384 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 16:03:17,898 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 16:03:24,048 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 16:03:30,771 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 16:03:45,807 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 16:03:45,807 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 16:03:51,088 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 16:04:04,026 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 16:04:11,090 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 16:04:11,090 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 16:04:11,119 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 16:04:11,120 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 16:04:14,272 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 16:04:17,393 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 16:04:22,433 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 16:04:32,433 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 16:04:33,495 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 16:04:51,498 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 16:05:00,109 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 16:05:03,198 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 16:05:06,311 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 16:05:18,957 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 16:05:25,494 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 16:05:28,889 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 16:05:44,929 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 16:05:55,265 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 16:06:23,938 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 16:06:29,026 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 16:06:32,134 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 16:07:04,328 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 16:07:16,093 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 16:07:32,339 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 16:08:03,864 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 16:08:08,946 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 16:08:12,069 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 16:08:23,403 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 16:08:33,921 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 16:09:01,227 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 16:09:06,297 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 16:09:09,387 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 16:09:21,156 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 16:09:22,205 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 16:09:51,731 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 16:09:54,797 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 16:09:57,896 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 16:10:35,869 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
-2020-10-23 16:10:47,306 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
-2020-10-23 16:10:51,434 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
-2020-10-23 16:11:07,952 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
-2020-10-23 16:11:10,978 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 16:11:19,056 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
-2020-10-23 16:11:20,202 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
-2020-10-23 16:11:20,491 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
-2020-10-23 16:11:23,950 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
-2020-10-23 16:11:30,105 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
-2020-10-23 16:11:35,836 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
-2020-10-23 16:11:49,278 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 16:11:49,278 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
-2020-10-23 16:11:54,501 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
-2020-10-23 16:12:07,382 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
-2020-10-23 16:12:14,756 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
-2020-10-23 16:12:14,756 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
-2020-10-23 16:12:14,780 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201023_150311_Messent.csv
-2020-10-23 16:12:14,781 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 16:12:17,908 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 16:12:21,030 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
-2020-10-23 16:12:26,106 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 16:12:35,540 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
-2020-10-23 16:12:36,699 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 16:12:53,290 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
-2020-10-23 16:13:01,820 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
-2020-10-23 16:13:04,930 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
-2020-10-23 16:13:08,042 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
-2020-10-23 16:13:20,412 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
-2020-10-23 16:13:26,161 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
-2020-10-23 16:13:29,344 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
-2020-10-23 16:13:44,748 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
-2020-10-23 16:13:53,351 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
-2020-10-23 16:14:22,035 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
-2020-10-23 16:14:27,117 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
-2020-10-23 16:14:30,226 INFO  shopify.createStoreAndInstallMessent - Random delay
-2020-10-23 16:15:10,013 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
-2020-10-23 16:15:21,507 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
-2020-10-23 16:15:29,051 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
-2020-10-23 16:15:59,605 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
-2020-10-23 16:16:04,676 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
-2020-10-23 16:16:07,769 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
-2020-10-23 16:16:19,235 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
-2020-10-23 16:16:23,617 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
-2020-10-23 16:16:54,281 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
-2020-10-23 16:16:59,354 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
-2020-10-23 16:17:02,460 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
-2020-10-23 16:17:14,186 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
-2020-10-23 16:17:24,900 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
-2020-10-23 16:17:50,306 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
-2020-10-23 16:17:53,373 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
-2020-10-23 16:17:56,466 INFO  shopify.createStoreAndInstallMessent - Random delay
+2020-10-27 09:07:58,662 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Clear test data
+2020-10-27 09:07:58,679 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-10-27 09:08:06,402 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2020-10-27 09:08:06,568 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2020-10-27 09:08:10,115 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2020-10-27 09:08:16,329 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2020-10-27 09:08:23,413 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2020-10-27 09:08:39,474 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-10-27 09:08:39,476 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2020-10-27 09:08:44,921 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2020-10-27 09:08:58,053 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2020-10-27 09:09:05,532 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-10-27 09:09:05,533 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2020-10-27 09:09:05,575 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201027_090758_Messent.csv
+2020-10-27 09:09:05,583 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
+2020-10-27 09:09:08,782 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
+2020-10-27 09:09:11,927 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
+2020-10-27 09:09:20,790 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
+2020-10-27 09:09:30,609 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
+2020-10-27 09:09:32,017 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
+2020-10-27 09:09:49,075 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
+2020-10-27 09:10:02,309 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
+2020-10-27 09:10:05,406 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
+2020-10-27 09:10:08,571 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
+2020-10-27 09:10:21,865 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
+2020-10-27 09:10:27,612 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
+2020-10-27 09:10:30,952 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
+2020-10-27 09:10:45,420 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
+2020-10-27 09:10:54,770 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
+2020-10-27 09:11:22,920 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
+2020-10-27 09:11:28,011 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
+2020-10-27 09:11:31,126 INFO  shopify.createStoreAndInstallMessent - Random delay
+2020-10-27 09:12:07,687 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
+2020-10-27 09:12:20,316 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
+2020-10-27 09:12:30,909 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
+2020-10-27 09:13:00,272 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
+2020-10-27 09:13:05,342 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
+2020-10-27 09:13:08,442 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
+2020-10-27 09:13:20,351 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
+2020-10-27 09:13:34,744 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
+2020-10-27 09:14:18,252 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
+2020-10-27 09:14:23,325 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
+2020-10-27 09:14:26,429 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
+2020-10-27 09:14:39,071 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
+2020-10-27 09:14:46,546 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
+2020-10-27 09:15:17,538 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
+2020-10-27 09:15:20,618 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
+2020-10-27 09:15:23,712 INFO  shopify.createStoreAndInstallMessent - Random delay
+2020-10-27 09:15:57,071 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
+2020-10-27 09:16:08,875 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
+2020-10-27 09:16:12,907 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
+2020-10-27 09:16:37,679 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
+2020-10-27 09:16:40,731 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-10-27 09:16:48,803 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-10-27 09:16:50,274 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2020-10-27 09:16:50,624 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2020-10-27 09:16:54,070 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2020-10-27 09:17:00,203 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2020-10-27 09:17:07,154 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2020-10-27 09:17:22,530 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-10-27 09:17:22,530 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2020-10-27 09:17:27,825 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2020-10-27 09:17:40,727 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2020-10-27 09:17:48,857 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-10-27 09:17:48,858 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2020-10-27 09:17:48,881 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201027_090758_Messent.csv
+2020-10-27 09:17:48,882 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
+2020-10-27 09:17:52,003 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
+2020-10-27 09:17:55,132 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
+2020-10-27 09:18:00,211 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
+2020-10-27 09:18:09,606 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
+2020-10-27 09:18:10,591 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
+2020-10-27 09:18:44,614 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
+2020-10-27 09:18:53,106 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
+2020-10-27 09:18:56,215 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
+2020-10-27 09:18:59,348 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
+2020-10-27 09:19:12,056 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
+2020-10-27 09:19:24,910 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
+2020-10-27 09:19:29,097 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
+2020-10-27 09:19:43,669 INFO  shopify.createStoreAndInstallMessent - Step 20: Add product to import list
+2020-10-27 09:19:53,026 INFO  shopify.createStoreAndInstallMessent - Step 21: Import List product
+2020-10-27 09:20:22,023 INFO  shopify.createStoreAndInstallMessent - Step 22: Select Apps menu
+2020-10-27 09:20:27,097 INFO  shopify.createStoreAndInstallMessent - Step 23: Visit Shopify App store
+2020-10-27 09:20:30,191 INFO  shopify.createStoreAndInstallMessent - Random delay
+2020-10-27 09:21:04,369 INFO  shopify.createStoreAndInstallMessent - Step 25: Search free Shopify app
+2020-10-27 09:21:15,822 INFO  shopify.createStoreAndInstallMessent - Step 26: Select app
+2020-10-27 09:21:32,218 INFO  shopify.createStoreAndInstallMessent - Step 27: Add random app to store
+2020-10-27 09:22:01,930 INFO  shopify.createStoreAndInstallMessent - Step 28: Select Apps menu
+2020-10-27 09:22:06,994 INFO  shopify.createStoreAndInstallMessent - Step 29: Visit Shopify App store
+2020-10-27 09:22:10,092 INFO  shopify.createStoreAndInstallMessent - Step 31: Search free Shopify app
+2020-10-27 09:22:21,984 INFO  shopify.createStoreAndInstallMessent - Step 32: Select app
+2020-10-27 09:22:26,974 INFO  shopify.createStoreAndInstallMessent - Step 33: Add random app to store
+2020-10-27 09:22:52,567 INFO  shopify.createStoreAndInstallMessent - Step 34: Select Apps menu
+2020-10-27 09:22:57,634 INFO  shopify.createStoreAndInstallMessent - Step 35: Visit Shopify App store
+2020-10-27 09:23:00,722 INFO  shopify.createStoreAndInstallMessent - Step 37: Search free Shopify app
+2020-10-27 09:23:12,436 INFO  shopify.createStoreAndInstallMessent - Step 38: Select app
+2020-10-27 09:23:20,256 INFO  shopify.createStoreAndInstallMessent - Step 39: Add random app to store
+2020-10-27 09:23:50,674 INFO  shopify.createStoreAndInstallMessent - Step 40: Select Apps menu
+2020-10-27 09:23:53,740 INFO  shopify.createStoreAndInstallMessent - Step 41: Visit Shopify App store
+2020-10-27 09:23:56,845 INFO  shopify.createStoreAndInstallMessent - Random delay
+2020-10-27 09:24:36,264 INFO  shopify.createStoreAndInstallMessent - Step 43: Search app by keyword
+2020-10-27 09:24:47,783 INFO  shopify.createStoreAndInstallMessent - Step 44: Select Messent app
+2020-10-27 09:24:51,414 INFO  shopify.createStoreAndInstallMessent - Step 45: Add Messent app to store
+2020-10-27 09:25:04,798 INFO  shopify.createStoreAndInstallMessent - Step 46: Verify the choose plan page display
+2020-10-27 09:25:07,831 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-10-27 09:25:15,908 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-10-27 09:25:17,710 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2020-10-27 09:25:17,920 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2020-10-27 09:25:21,387 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2020-10-27 09:25:27,555 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2020-10-27 09:25:34,468 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2020-10-27 09:25:50,333 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-10-27 09:25:50,333 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2020-10-27 09:25:55,577 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2020-10-27 09:26:08,418 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2020-10-27 09:26:16,259 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2020-10-27 09:26:16,259 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2020-10-27 09:26:16,282 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20201027_090758_Messent.csv
+2020-10-27 09:26:16,283 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
+2020-10-27 09:26:19,434 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
+2020-10-27 09:26:22,557 INFO  shopify.createStoreAndInstallMessent - Step 13: choose account to continue to shopify app
+2020-10-27 09:26:27,613 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
+2020-10-27 09:26:37,117 INFO  shopify.createStoreAndInstallMessent - Step 15: Select Oberlo app
+2020-10-27 09:26:38,333 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
+2020-10-27 09:26:56,590 INFO  shopify.createStoreAndInstallMessent - Step 17: Fill account password Oberlo
+2020-10-27 09:27:05,264 INFO  shopify.createStoreAndInstallMessent - Step 11: Select Apps menu
+2020-10-27 09:27:08,366 INFO  shopify.createStoreAndInstallMessent - Step 12: Visit Shopify App store
+2020-10-27 09:27:11,475 INFO  shopify.createStoreAndInstallMessent - Step 14: Search app Oberlo
+2020-10-27 09:27:25,813 INFO  shopify.createStoreAndInstallMessent - Step 16: Add Oberlo app to store
+2020-10-27 09:27:31,601 INFO  shopify.createStoreAndInstallMessent - Step 18: Search product Oberlo
+2020-10-27 09:27:34,962 INFO  shopify.createStoreAndInstallMessent - Step 19: Search random product
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      2020-10-27 09:07:52,457 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-10-27 09:07:56,465 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-10-27 09:08:00,486 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-10-27 09:08:04,518 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2020-10-27 09:08:08,540 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify

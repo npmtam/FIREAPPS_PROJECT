@@ -108,6 +108,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         log.info("Step 04: Verify Create an account");
         boolean isInputToCreateAnAccount = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
         if (isInputToCreateAnAccount) {
+            abstractPage.enableCreateAccountButton();
             shopifyPage.inputToCreateAccount("first_name", firstName);
             shopifyPage.inputToCreateAccount("last_name", lastName);
             shopifyPage.inputToCreateAccount("password", password);

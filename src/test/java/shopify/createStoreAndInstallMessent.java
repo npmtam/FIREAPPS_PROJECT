@@ -105,9 +105,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         boolean isInputToCreateAnAccount = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
 
         // enable Create account button
-
-        /*JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("document.getElementsByClassName('captcha__submit')[0].removeAttribute('disabled')");*/
+        //avascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("document.getElementsByClassName('captcha__submit')[0].removeAttribute('disabled')");
 
         if (isInputToCreateAnAccount) {
             abstractPage.enableCreateAccountButton();

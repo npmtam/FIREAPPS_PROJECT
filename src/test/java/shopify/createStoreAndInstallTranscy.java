@@ -89,6 +89,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         driver.get(Constants.URL);
 
         log.info("Step 01: Press on Start free trial button");
+        shopifyPage.switchToFirstWindow();
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clickToStartFreeTrialBtn();
 

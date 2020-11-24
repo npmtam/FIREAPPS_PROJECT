@@ -170,6 +170,11 @@ public class AbstractPage {
         jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 
+    public void scrollPage(){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollBy(0,350)");
+    }
+
     public void selectItemInCustomDropdown(String parentLocator, String allItemsLocator, String expectedItem) {
         jsExecutor = (JavascriptExecutor) driver;
         waitExplicit = new WebDriverWait(driver, longTimeout);

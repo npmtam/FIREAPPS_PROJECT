@@ -57,7 +57,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 65)
+    @Test(invocationCount = 40)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -103,11 +103,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
 
         log.info("Step 04: Verify Create an account");
         boolean isInputToCreateAnAccount = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
-
         // enable Create account button
-        //avascriptExecutor js = (JavascriptExecutor) driver;
-        //js.executeScript("document.getElementsByClassName('captcha__submit')[0].removeAttribute('disabled')");
-
         if (isInputToCreateAnAccount) {
             abstractPage.enableCreateAccountButton();
             shopifyPage.inputToCreateAccount("first_name", firstName);

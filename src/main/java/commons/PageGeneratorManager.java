@@ -25,4 +25,6 @@ public class PageGeneratorManager {
     public static MessentPO getMessentPage(WebDriver driver){ return new MessentPO(driver); }
 
     public static OberloPO getOberloPO(WebDriver driver) {return new OberloPO(driver); }
+
+    public static SwiftPO getSwiftPage(WebDriver driver) {return new SwiftPO(driver); }
 }

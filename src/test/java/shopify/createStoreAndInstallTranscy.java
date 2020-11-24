@@ -56,7 +56,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 12)
+    @Test(invocationCount = 2)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -368,8 +368,8 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         log.info("Step 41: Visit Shopify App store");
         transcyPage.clickToVisitShopifyAppStore();
 
-        log.info("Step 42: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();
+        /*log.info("Step 42: choose account to continue to shopify app");
+        shopifyPage.chooseAccount();*/
 
        /* log.info("Step 42: choose account to continue to shopify app");
         shopifyPage.switchTab();

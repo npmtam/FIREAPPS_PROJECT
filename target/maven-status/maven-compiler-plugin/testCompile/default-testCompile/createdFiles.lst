@@ -1,6 +1,7 @@
 cucumberOptions\CucumberTestRunner.class
 shopify\createStoreAndInstallTranscy.class
 shopify\installTranscyApp.class
+shopify\createStoreAndInstallSwift.class
 shopify\createStoreAndInstallMessent.class
 cucumberOptions\Hooks.class
 shopify\createStore.class

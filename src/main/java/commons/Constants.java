@@ -9,6 +9,7 @@ public class Constants {
 
     static String rootFolder = System.getProperty("user.dir");
     public static final String URL = "https://shopify.com/";
+    public static final String URL_APP = "https://app.shopify.com/";
     public static final String ORIGINAL_URL = "https://origin-dev.fireapps.io/install";
     public static final String TRANSCY_URL = "https://translate-dev.fireapps.io/install";
     public static final String WELCOME_TRANSCY_URL = "https://translate-dev.fireapps.io/onboarding/welcome";

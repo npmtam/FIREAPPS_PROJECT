@@ -17,6 +17,11 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class ShopifyPO extends AbstractPage {
     WebDriver driver;
     public String storeURL;
@@ -96,7 +101,7 @@ public class ShopifyPO extends AbstractPage {
     }
 
     public void clickToCreateAccountButton() {
-        sleepInSecond(1);
+        sleepInSecond(3);
         waitToElementClickable(ShopifyPageUI.CREATE_ACCOUNT_BUTTON);
         clickToElement(ShopifyPageUI.CREATE_ACCOUNT_BUTTON);
     }
@@ -211,6 +216,52 @@ public class ShopifyPO extends AbstractPage {
                 fileWriter.append(storeValues.getCity());
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getCountry());
+                fileWriter.append(Constants.COMMA_DELIMITER);
+                fileWriter.append(storeValues.getDateTime());
+            }
+
+            fileWriter.append(Constants.NEW_LINE_SEPARATOR);
+
+            System.out.println("CSV file was created successfully !!");
+        } catch (Exception e) {
+            System.out.println("Error in CsvFileWriter !!");
+            e.printStackTrace();
+        } finally {
+            try {
+                fileWriter.flush();
+                fileWriter.close();
+            } catch (IOException e) {
+                System.out.println("Error while flushing/closing fileWriter !!");
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+
+    public void writeCsvFileKeywordSearch(String fileName, String keyword, String dateTime) throws IOException {
+        Keyword data = new Keyword(keyword, dateTime);
+
+        List<Keyword> keywords = new ArrayList<>();
+        keywords.add(data);
+        File src = new File(System.getProperty("user.dir") + "/src/test/resources/templateStoreData.csv");
+        File dest = new File(fileName);
+
+        if (!dest.exists()) {
+            FileUtils.copyFile(src, dest);
+        }
+
+        FileWriter fileWriter = null;
+        try {
+            fileWriter = new FileWriter(fileName, true);
+            //Write the CSV file Header
+//            fileWriter.append(Constants.FILE_HEADER);
+            //Add a new line separator after the header
+//            fileWriter.append(Constants.NEW_LINE_SEPARATOR);
+
+            //Write new data objects list to the CSV file
+            for (Keyword storeValues :keywords) {
+                fileWriter.append(storeValues.getKeyword());
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getDateTime());
             }
@@ -612,5 +663,6 @@ public class ShopifyPO extends AbstractPage {
         //driver.close();
         driver.switchTo().window(handlesList.get(0));
     }
+
 
 }

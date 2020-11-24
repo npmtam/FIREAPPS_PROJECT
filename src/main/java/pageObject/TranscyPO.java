@@ -217,7 +217,7 @@ public class TranscyPO extends AbstractPage {
     }
 
     public String getRandomKeyword() {
-        final String[] keywords = new String[]{"Translate", "translate", "translate"};
+        final String[] keywords = new String[]{"currency", "Currency", "currency"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];

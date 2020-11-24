@@ -52,12 +52,14 @@ public class ShopifyPageUI {
     public static final String SEARCH_APPS_TEXTBOX = "//input[@type='search' and contains(@class, 'hero')]";
     public static final String TRANSCY_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Transcy')]";
     public static final String MESSENT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Messent')]";
+    public static final String SWIFT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Swift ‑ Page Speed Optimizer')]";
     public static final String ADD_APP_BTN = "//input[@value='Add app']";
     public static final String UPGRADE_YOUR_ACCOUNT_PAGE = "//h1[text()='Upgrade your account']";
     public static final String SEARCH_BTN = "//button[@type='submit' and contains(@class, 'hero-search')]";
     public static final String CHOOSE_PLAN = "//h4[text()='Choose your plan']";
     public static final String CHOOSE_PLAN_FREE = "//div[@class='pricing-plan__content-scroll sticky-item']//div[1]//div[1]//form[1]//button[1]";
     public static final String OBERLO_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Oberlo')]";
+    public static final String SHOW_FULL_DESCRIPTION_BTN = "//button[contains(text(),'Show full description')]";
 
     //FREE SHOPIFY APP
     public static final String PRODUCT_REVIEW_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Product Reviews')]";

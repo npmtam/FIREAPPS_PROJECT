@@ -24,7 +24,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.lang.Thread;
 
-public class createStoreAndInstallSwift extends AbstractTest {
+public class SearchKeywordSwift extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
@@ -58,7 +58,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 5)
+    @Test(invocationCount = 1)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();

@@ -1,33 +1,8 @@
-2020-11-24 14:33:46,216 INFO  shopify.createStoreAndInstallSwift - Pre-condition: Clear test data
-2020-11-24 14:33:46,261 INFO  shopify.createStoreAndInstallSwift - Step 01:   
-2020-11-24 14:33:46,265 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-2020-11-24 14:33:49,159 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-2020-11-24 14:33:54,374 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-2020-11-24 14:33:54,374 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-2020-11-24 14:33:59,076 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
-2020-11-24 14:35:18,500 INFO  shopify.createStoreAndInstallSwift - Step 01:   
-2020-11-24 14:35:18,502 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-2020-11-24 14:35:20,077 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-2020-11-24 14:35:25,252 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-2020-11-24 14:35:25,252 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-2020-11-24 14:35:29,569 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
-2020-11-24 14:36:49,383 INFO  shopify.createStoreAndInstallSwift - Step 01:   
-2020-11-24 14:36:49,384 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-2020-11-24 14:36:50,633 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-2020-11-24 14:36:55,792 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-2020-11-24 14:36:55,792 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-2020-11-24 14:36:59,962 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
-2020-11-24 14:38:26,431 INFO  shopify.createStoreAndInstallSwift - Step 01:   
-2020-11-24 14:38:26,434 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-2020-11-24 14:38:29,346 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-2020-11-24 14:38:34,531 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-2020-11-24 14:38:34,531 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-2020-11-24 14:38:38,802 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
-2020-11-24 14:39:35,014 INFO  shopify.createStoreAndInstallSwift - Step 01:   
-2020-11-24 14:39:35,014 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-2020-11-24 14:39:36,561 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-2020-11-24 14:39:41,741 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-2020-11-24 14:39:41,742 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-2020-11-24 14:39:46,303 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
-2020-11-24 14:41:09,247 INFO  shopify.createStoreAndInstallSwift - OS Name = windows 10
-2020-11-24 14:41:10,009 INFO  shopify.createStoreAndInstallSwift - ----------------QUIT BROWSER SUCCESS-----------------
+2020-11-24 15:32:07,361 INFO  shopify.SearchKeywordSwift - Pre-condition: Clear test data
+2020-11-24 15:32:07,371 INFO  shopify.SearchKeywordSwift - Step 01: Pre-condition: Access App Store Shopify
+2020-11-24 15:32:13,102 INFO  shopify.SearchKeywordSwift - Step 02: Search keyword swift
+2020-11-24 15:32:18,299 INFO  shopify.SearchKeywordSwift - Step 03: Print store info
+2020-11-24 15:32:18,299 INFO  shopify.SearchKeywordSwift - Step 04: Write data to the csv20201124_153207_Swift.csv
+2020-11-24 15:32:22,497 INFO  shopify.SearchKeywordSwift - Step 05: Click choose app Swift
+2020-11-24 15:33:41,209 INFO  shopify.SearchKeywordSwift - OS Name = windows 10
+2020-11-24 15:33:41,973 INFO  shopify.SearchKeywordSwift - ----------------QUIT BROWSER SUCCESS-----------------

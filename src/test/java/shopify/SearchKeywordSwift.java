@@ -58,7 +58,7 @@ public class SearchKeywordSwift extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 10)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();

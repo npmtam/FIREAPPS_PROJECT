@@ -221,7 +221,7 @@ public class SwiftPO extends AbstractPage {
     }
 
     public String getRandomKeyword() {
-        final String[] keywords = new String[]{"Page Speed", "Store Speed", "Site Speed"};
+        final String[] keywords = new String[]{"Page Speed", "Page Speed", "Page Speed"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -251,10 +251,17 @@ public class SwiftPO extends AbstractPage {
         clickToElement(ShopifyPageUI.SWIFT_APP_IN_APPSTORE);
         sleepInSecond(3);
         scrollPage();
-        sleepInSecond(15);
+        sleepInSecond(30);
         scrollPage();
         sleepInSecond(5);
     }
+
+    public void selectSwiftAppInAppStore() {
+        waitToElementVisible(ShopifyPageUI.SWIFT_APP_IN_APPSTORE);
+        clickToElement(ShopifyPageUI.SWIFT_APP_IN_APPSTORE);
+        sleepInSecond(3);
+    }
+
 
     public void clickToAddApp() {
         waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
@@ -267,6 +274,7 @@ public class SwiftPO extends AbstractPage {
         waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
         clickToElement(ShopifyPageUI.SEARCH_BTN);
     }
+
 
     public boolean isRequiredUpgradePageDisplay() {
         sleepInSecond(3);
@@ -282,7 +290,7 @@ public class SwiftPO extends AbstractPage {
 
     public boolean isChoosePlanPageDisplay() {
         sleepInSecond(3);
-        return isElementDisplayed("//h3[text()='Super Deal for Holiday Season']");
+        return isElementDisplayed("//button[@type='button' and contains(@class, 'submit-button a-btn a-btn-primary a-btn-background-ghost')]");
     }
 
     public void randomClickChoosePlanFree() {

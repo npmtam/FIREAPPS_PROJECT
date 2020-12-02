@@ -1,8 +1,55 @@
-2020-11-24 15:32:07,361 INFO  shopify.SearchKeywordSwift - Pre-condition: Clear test data
-2020-11-24 15:32:07,371 INFO  shopify.SearchKeywordSwift - Step 01: Pre-condition: Access App Store Shopify
-2020-11-24 15:32:13,102 INFO  shopify.SearchKeywordSwift - Step 02: Search keyword swift
-2020-11-24 15:32:18,299 INFO  shopify.SearchKeywordSwift - Step 03: Print store info
-2020-11-24 15:32:18,299 INFO  shopify.SearchKeywordSwift - Step 04: Write data to the csv20201124_153207_Swift.csv
-2020-11-24 15:32:22,497 INFO  shopify.SearchKeywordSwift - Step 05: Click choose app Swift
-2020-11-24 15:33:41,209 INFO  shopify.SearchKeywordSwift - OS Name = windows 10
-2020-11-24 15:33:41,973 INFO  shopify.SearchKeywordSwift - ----------------QUIT BROWSER SUCCESS-----------------
+2020-12-01 11:44:17,112 INFO  shopify.createStoreAndInstallSwift - Pre-condition: Clear test data
+2020-12-01 11:44:17,124 INFO  shopify.createStoreAndInstallSwift - Pre-condition: Access Shopify
+2020-12-01 11:44:24,047 INFO  shopify.createStoreAndInstallSwift - Step 01: Press on Start free trial button
+2020-12-01 11:44:24,190 INFO  shopify.createStoreAndInstallSwift - Step 02: Fill info to register
+2020-12-01 11:44:27,602 INFO  shopify.createStoreAndInstallSwift - Step 03: Press Create your store button
+2020-12-01 11:44:33,843 INFO  shopify.createStoreAndInstallSwift - Step 04: Verify Create an account
+2020-12-01 11:44:36,930 INFO  shopify.createStoreAndInstallSwift - Step 05: Verify the user can create the store
+2020-12-01 11:44:49,120 INFO  shopify.createStoreAndInstallSwift -  -------------------------- PASSED -------------------------- 
+2020-12-01 11:44:49,122 INFO  shopify.createStoreAndInstallSwift - Step 06: Fill info at About yourself
+2020-12-01 11:44:54,344 INFO  shopify.createStoreAndInstallSwift - Step 07: Fill address
+2020-12-01 11:45:07,189 INFO  shopify.createStoreAndInstallSwift - Step 08: Verify the store has been created
+2020-12-01 11:45:11,238 INFO  shopify.createStoreAndInstallSwift -  -------------------------- PASSED -------------------------- 
+2020-12-01 11:45:11,239 INFO  shopify.createStoreAndInstallSwift - Step 09: Print store info
+2020-12-01 11:45:11,283 INFO  shopify.createStoreAndInstallSwift - Step 10: Write data to the csv20201201_114416_Messent.csv
+2020-12-01 11:45:11,287 INFO  shopify.createStoreAndInstallSwift - Step 11: Select Apps menu
+2020-12-01 11:45:14,405 INFO  shopify.createStoreAndInstallSwift - Step 12: Visit Shopify App store
+2020-12-01 11:45:17,530 INFO  shopify.createStoreAndInstallSwift - Step 13: choose account to continue to shopify app
+2020-12-01 11:45:25,902 INFO  shopify.createStoreAndInstallSwift - Step 14: Search app Oberlo
+2020-12-01 11:45:35,238 INFO  shopify.createStoreAndInstallSwift - Step 15: Select Oberlo app
+2020-12-01 11:45:36,294 INFO  shopify.createStoreAndInstallSwift - Step 16: Add Oberlo app to store
+2020-12-01 11:45:54,257 INFO  shopify.createStoreAndInstallSwift - Step 17: Fill account password Oberlo
+2020-12-01 11:46:02,686 INFO  shopify.createStoreAndInstallSwift - Step 11: Select Apps menu
+2020-12-01 11:46:05,760 INFO  shopify.createStoreAndInstallSwift - Step 12: Visit Shopify App store
+2020-12-01 11:46:08,842 INFO  shopify.createStoreAndInstallSwift - Step 14: Search app Oberlo
+2020-12-01 11:46:21,041 INFO  shopify.createStoreAndInstallSwift - Step 16: Add Oberlo app to store
+2020-12-01 11:46:27,705 INFO  shopify.createStoreAndInstallSwift - Step 18: Search product Oberlo
+2020-12-01 11:46:31,612 INFO  shopify.createStoreAndInstallSwift - Step 19: Search random product
+2020-12-01 11:46:47,072 INFO  shopify.createStoreAndInstallSwift - Step 20: Add product to import list
+2020-12-01 11:46:55,455 INFO  shopify.createStoreAndInstallSwift - Step 21: Import List product
+2020-12-01 11:47:24,999 INFO  shopify.createStoreAndInstallSwift - Step 22: Select Apps menu
+2020-12-01 11:47:30,086 INFO  shopify.createStoreAndInstallSwift - Step 23: Visit Shopify App store
+2020-12-01 11:47:33,187 INFO  shopify.createStoreAndInstallSwift - Random delay
+2020-12-01 11:48:09,545 INFO  shopify.createStoreAndInstallSwift - Step 25: Search free Shopify app
+2020-12-01 11:48:21,768 INFO  shopify.createStoreAndInstallSwift - Step 26: Select app
+2020-12-01 11:48:32,275 INFO  shopify.createStoreAndInstallSwift - Step 27: Add random app to store
+2020-12-01 11:48:58,865 INFO  shopify.createStoreAndInstallSwift - Step 28: Select Apps menu
+2020-12-01 11:49:03,952 INFO  shopify.createStoreAndInstallSwift - Step 29: Visit Shopify App store
+2020-12-01 11:49:07,042 INFO  shopify.createStoreAndInstallSwift - Step 31: Search free Shopify app
+2020-12-01 11:49:18,547 INFO  shopify.createStoreAndInstallSwift - Step 32: Select app
+2020-12-01 11:49:22,776 INFO  shopify.createStoreAndInstallSwift - Step 33: Add random app to store
+2020-12-01 11:49:48,851 INFO  shopify.createStoreAndInstallSwift - Step 34: Select Apps menu
+2020-12-01 11:49:53,933 INFO  shopify.createStoreAndInstallSwift - Step 35: Visit Shopify App store
+2020-12-01 11:49:57,016 INFO  shopify.createStoreAndInstallSwift - Step 37: Search free Shopify app
+2020-12-01 11:50:08,836 INFO  shopify.createStoreAndInstallSwift - Step 38: Select app
+2020-12-01 11:50:13,013 INFO  shopify.createStoreAndInstallSwift - Step 39: Add random app to store
+2020-12-01 11:51:06,179 INFO  shopify.createStoreAndInstallSwift - Step 40: Select Apps menu
+2020-12-01 11:51:09,249 INFO  shopify.createStoreAndInstallSwift - Step 41: Visit Shopify App store
+2020-12-01 11:51:12,337 INFO  shopify.createStoreAndInstallSwift - Random delay
+2020-12-01 11:51:42,743 INFO  shopify.createStoreAndInstallSwift - Step 43: Search app by keyword
+2020-12-01 11:51:54,194 INFO  shopify.createStoreAndInstallSwift - Step 44: Select Swift app
+2020-12-01 11:51:58,211 INFO  shopify.createStoreAndInstallSwift - Step 45: Add Swift app to store
+2020-12-01 11:52:11,007 INFO  shopify.createStoreAndInstallSwift - Step 46: Verify the choose plan page display
+2020-12-01 11:52:14,040 INFO  shopify.createStoreAndInstallSwift -  -------------------------- PASSED -------------------------- 
+2020-12-01 11:52:22,126 INFO  shopify.createStoreAndInstallSwift - OS Name = windows 10
+2020-12-01 11:52:22,914 INFO  shopify.createStoreAndInstallSwift - ----------------QUIT BROWSER SUCCESS-----------------

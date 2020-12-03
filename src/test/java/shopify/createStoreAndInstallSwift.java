@@ -56,7 +56,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 10)
+    @Test(invocationCount = 2)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -339,7 +339,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
         shopifyPage.sleepRandomly();
 
         log.info("Step 43: Search app by keyword");
-        SwiftPage.inputKeyword(SwiftPage.getRandomKeyword());
+        SwiftPage.inputKeyword(SwiftPage.getRandomKeywordForInstall());
         SwiftPage.clickToSearchBtn();
 
         /*log.info("Step 14.1: Load page 2");
@@ -359,7 +359,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
     }
 
     //    @Test
-    public void TC02_ReadAndInstallTranscy() {
+    public void TC02_ReadAndInstallSwift() {
         log.info("Read data from CSV file and install Swift app depends on Store Type column");
         SwiftPage = PageGeneratorManager.getSwiftPage(driver);
         SwiftPage.readDataCsv();

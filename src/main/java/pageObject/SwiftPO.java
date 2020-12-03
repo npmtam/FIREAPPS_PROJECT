@@ -227,6 +227,13 @@ public class SwiftPO extends AbstractPage {
         return keywords[index];
     }
 
+    public String getRandomKeywordForInstall() {
+        final String[] keywords = new String[]{"Speed", "Speed", "Speed"};
+        Random random = new Random();
+        int index = random.nextInt(keywords.length);
+        return keywords[index];
+    }
+
     public String getCurrentDateTime() {
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Calendar calobj = Calendar.getInstance();

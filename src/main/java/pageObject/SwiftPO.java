@@ -221,7 +221,7 @@ public class SwiftPO extends AbstractPage {
     }
 
     public String getRandomKeyword() {
-        final String[] keywords = new String[]{"Page Speed", "Page Speed", "Page Speed"};
+        final String[] keywords = new String[]{"website Speed", "website Speed", "website Speed"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];

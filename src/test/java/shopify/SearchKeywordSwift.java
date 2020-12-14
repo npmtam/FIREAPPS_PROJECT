@@ -58,7 +58,7 @@ public class SearchKeywordSwift extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 10)
+    @Test(invocationCount = 1)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -102,6 +102,7 @@ public class SearchKeywordSwift extends AbstractTest {
         shopifyPage.writeCsvFileKeywordSearch(System.getProperty("user.dir") + "/src/test/resources/" + csvName, keyword, dateTime);
 
         swiftPage.clickToSearchBtn();
+//        swiftPage.scrollPage();
 
         log.info("Step 05: Click choose app Swift");
         swiftPage.selectSwiftInAppStore();

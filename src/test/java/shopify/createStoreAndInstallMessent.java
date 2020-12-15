@@ -343,7 +343,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         messentPage.inputKeyword(messentPage.getRandomKeyword());
         messentPage.clickToSearchBtn();
 
-        /*log.info("Step 14.1: Load page 2");
+       /* log.info("Step 14.1: Load page 2");
         messentPage.clickToLoadPageTwo();*/
 
         log.info("Step 44: Select Messent app");

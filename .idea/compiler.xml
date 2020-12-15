@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="FIREAPPS_PROJECT" />
         <module name="auto-install" />
+        <module name="Auto_chatalyst" />
       </profile>
     </annotationProcessing>
   </component>

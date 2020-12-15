@@ -1,8 +1,31 @@
-2020-12-11 15:21:44,243 INFO  shopify.SearchKeywordSwift - Pre-condition: Clear test data
-2020-12-11 15:21:44,255 INFO  shopify.SearchKeywordSwift - Step 01: Pre-condition: Access App Store Shopify
-2020-12-11 15:21:49,600 INFO  shopify.SearchKeywordSwift - Step 02: Search keyword swift
-2020-12-11 15:21:54,797 INFO  shopify.SearchKeywordSwift - Step 03: Print store info
-2020-12-11 15:21:54,797 INFO  shopify.SearchKeywordSwift - Step 04: Write data to the csv20201211_152144_Swift.csv
-2020-12-11 15:21:59,007 INFO  shopify.SearchKeywordSwift - Step 05: Click choose app Swift
-2020-12-11 15:22:00,186 INFO  shopify.SearchKeywordSwift - OS Name = windows 10
-2020-12-11 15:22:00,973 INFO  shopify.SearchKeywordSwift - ----------------QUIT BROWSER SUCCESS-----------------
+2020-12-15 15:42:59,351 INFO  shopify.SearchKeywordChatalyst - Pre-condition: Clear test data
+2020-12-15 15:42:59,361 INFO  shopify.SearchKeywordChatalyst - Step 01: Pre-condition: Access App Store Shopify
+2020-12-15 15:43:02,187 INFO  shopify.SearchKeywordChatalyst - Step 02: Search keyword chatalyst
+2020-12-15 15:43:05,361 INFO  shopify.SearchKeywordChatalyst - Step 03: Print store info
+2020-12-15 15:43:05,361 INFO  shopify.SearchKeywordChatalyst - Step 04: Write data to the csv20201215_154259_Chatalyst.csv
+2020-12-15 15:43:09,769 INFO  shopify.SearchKeywordChatalyst - Step 06: Click choose app Chatalyst
+2020-12-15 15:44:01,912 INFO  shopify.SearchKeywordChatalyst - Step 01: Pre-condition: Access App Store Shopify
+2020-12-15 15:44:03,611 INFO  shopify.SearchKeywordChatalyst - Step 02: Search keyword chatalyst
+2020-12-15 15:44:06,772 INFO  shopify.SearchKeywordChatalyst - Step 03: Print store info
+2020-12-15 15:44:06,772 INFO  shopify.SearchKeywordChatalyst - Step 04: Write data to the csv20201215_154259_Chatalyst.csv
+2020-12-15 15:44:11,971 INFO  shopify.SearchKeywordChatalyst - Step 06: Click choose app Chatalyst
+2020-12-15 15:44:54,090 INFO  shopify.SearchKeywordChatalyst - Step 01: Pre-condition: Access App Store Shopify
+2020-12-15 15:44:55,409 INFO  shopify.SearchKeywordChatalyst - Step 02: Search keyword chatalyst
+2020-12-15 15:44:58,548 INFO  shopify.SearchKeywordChatalyst - Step 03: Print store info
+2020-12-15 15:44:58,548 INFO  shopify.SearchKeywordChatalyst - Step 04: Write data to the csv20201215_154259_Chatalyst.csv
+2020-12-15 15:45:02,924 INFO  shopify.SearchKeywordChatalyst - Step 06: Click choose app Chatalyst
+2020-12-15 15:45:50,736 INFO  shopify.SearchKeywordChatalyst - Step 01: Pre-condition: Access App Store Shopify
+2020-12-15 15:45:52,368 INFO  shopify.SearchKeywordChatalyst - Step 02: Search keyword chatalyst
+2020-12-15 15:45:55,506 INFO  shopify.SearchKeywordChatalyst - Step 03: Print store info
+2020-12-15 15:45:55,506 INFO  shopify.SearchKeywordChatalyst - Step 04: Write data to the csv20201215_154259_Chatalyst.csv
+2020-12-15 15:45:59,712 INFO  shopify.SearchKeywordChatalyst - Step 06: Click choose app Chatalyst
+2020-12-15 15:46:47,517 INFO  shopify.SearchKeywordChatalyst - Step 01: Pre-condition: Access App Store Shopify
+2020-12-15 15:46:48,885 INFO  shopify.SearchKeywordChatalyst - Step 02: Search keyword chatalyst
+2020-12-15 15:46:52,044 INFO  shopify.SearchKeywordChatalyst - Step 03: Print store info
+2020-12-15 15:46:52,045 INFO  shopify.SearchKeywordChatalyst - Step 04: Write data to the csv20201215_154259_Chatalyst.csv
+2020-12-15 15:46:56,332 INFO  shopify.SearchKeywordChatalyst - Step 06: Click choose app Chatalyst
+2020-12-15 15:47:43,166 INFO  shopify.SearchKeywordChatalyst - Step 01: Pre-condition: Access App Store Shopify
+2020-12-15 15:47:44,635 INFO  shopify.SearchKeywordChatalyst - Step 02: Search keyword chatalyst
+2020-12-15 15:47:47,795 INFO  shopify.SearchKeywordChatalyst - Step 03: Print store info
+2020-12-15 15:47:47,795 INFO  shopify.SearchKeywordChatalyst - Step 04: Write data to the csv20201215_154259_Chatalyst.csv
+2020-12-15 15:47:52,064 INFO  shopify.SearchKeywordChatalyst - Step 06: Click choose app Chatalyst

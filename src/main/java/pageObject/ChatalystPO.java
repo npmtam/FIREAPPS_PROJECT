@@ -221,7 +221,7 @@ public class ChatalystPO extends AbstractPage {
     }
 
     public String getRandomKeyword() {
-        final String[] keywords = new String[]{"zendesk", "zendesk", "zendesk"};
+        final String[] keywords = new String[]{"live chat", "live chat", "live chat"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -253,11 +253,11 @@ public class ChatalystPO extends AbstractPage {
         sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
     }
 
- /*   public void clickToLoadPageTwo() {
-        String elementPage2 = "//div//a[@class='search-pagination__link' and text()='2']";
+    public void clickToLoadPageTwo() {
+        String elementPage2 = "//div//a[@class='search-pagination__link' and text()='5']";
         waitToElementVisible(elementPage2);
         clickToElement(elementPage2);
-    }*/
+    }
 
     public void selectChatalystInAppStore() {
         waitToElementVisible(ShopifyPageUI.CHATALYST_APP_IN_APPSTORE);
@@ -311,7 +311,7 @@ public class ChatalystPO extends AbstractPage {
     }
 
     public void clickShowFullDescription() {
-        sleepInSecond(3);
+        sleepInSecond(2);
         waitToElementVisible(ShopifyPageUI.SHOW_FULL_DESCRIPTION_BTN);
         clickToElement(ShopifyPageUI.SHOW_FULL_DESCRIPTION_BTN);
         sleepInSecond(10);

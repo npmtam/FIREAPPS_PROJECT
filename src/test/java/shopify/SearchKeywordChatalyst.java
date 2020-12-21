@@ -58,7 +58,7 @@ public class SearchKeywordChatalyst extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 30)
+    @Test(invocationCount = 3)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -104,8 +104,8 @@ public class SearchKeywordChatalyst extends AbstractTest {
         chatalystPage.clickToSearchBtn();
 //        ChatalystPage.scrollPage();
 
-        /* log.info("Step 05: Load page 2");
-        chatalystPage.clickToLoadPageTwo();*/
+         log.info("Step 05: Load page 2");
+        chatalystPage.clickToLoadPageTwo();
 
         log.info("Step 06: Click choose app Chatalyst");
         chatalystPage.selectChatalystInAppStore();

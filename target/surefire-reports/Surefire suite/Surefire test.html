@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 24 14:33:38 ICT 2020</td>
+<td>Started on:</td><td>Sun Dec 27 10:21:07 ICT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>451 seconds (451416 ms)</td>
+<tr><td>Total time:</td><td>224 seconds (224577 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,30 +76,58 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore()'><b>TC01_CreateShopifyStore</b><br>Test class: shopify.createStoreAndInstallSwift<br/>
-<a href="#Output-1641587857" onClick='toggleBox("Output-1641587857", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-284399568" onClick='toggleBox("Output-284399568", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1641587857" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1641587857">
-2020-11-24 14:38:26,431 INFO  shopify.createStoreAndInstallSwift - Step 01:   
+<a href="#Output-284399568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-284399568">
+2020-12-27 10:21:14,104 INFO  shopify.createStoreAndInstallSwift - Pre-condition: Access Shopify
 <br/>
-2020-11-24 14:38:26,434 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
+2020-12-27 10:22:17,438 INFO  shopify.createStoreAndInstallSwift - Step 01: Press on Start free trial button
 <br/>
-2020-11-24 14:38:29,346 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
+2020-12-27 10:22:17,596 INFO  shopify.createStoreAndInstallSwift - Step 02: Fill info to register
 <br/>
-2020-11-24 14:38:34,531 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
+2020-12-27 10:22:21,146 INFO  shopify.createStoreAndInstallSwift - Step 03: Press Create your store button
 <br/>
-2020-11-24 14:38:34,531 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
+2020-12-27 10:22:27,366 INFO  shopify.createStoreAndInstallSwift - Step 04: Verify Create an account
 <br/>
-2020-11-24 14:38:38,802 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
+2020-12-27 10:22:30,529 INFO  shopify.createStoreAndInstallSwift - Step 05: Verify the user can create the store
+<br/>
+2020-12-27 10:22:44,699 INFO  shopify.createStoreAndInstallSwift -  -------------------------- PASSED -------------------------- 
+<br/>
+2020-12-27 10:22:44,700 INFO  shopify.createStoreAndInstallSwift - Step 06: Fill info at About yourself
+<br/>
+2020-12-27 10:22:50,010 INFO  shopify.createStoreAndInstallSwift - Step 07: Fill address
+<br/>
+2020-12-27 10:23:03,077 INFO  shopify.createStoreAndInstallSwift - Step 08: Verify the store has been created
+<br/>
+2020-12-27 10:23:07,912 INFO  shopify.createStoreAndInstallSwift -  -------------------------- PASSED -------------------------- 
+<br/>
+2020-12-27 10:23:07,913 INFO  shopify.createStoreAndInstallSwift - Step 09: Print store info
+<br/>
+2020-12-27 10:23:07,941 INFO  shopify.createStoreAndInstallSwift - Step 10: Write data to the csv20201227_102113_Swift.csv
+<br/>
+2020-12-27 10:23:07,948 INFO  shopify.createStoreAndInstallSwift - Step 11: Select Apps menu
+<br/>
+2020-12-27 10:23:11,073 INFO  shopify.createStoreAndInstallSwift - Step 12: Visit Shopify App store
+<br/>
+2020-12-27 10:23:14,204 INFO  shopify.createStoreAndInstallSwift - Step 13: choose account to continue to shopify app
+<br/>
+2020-12-27 10:23:23,365 INFO  shopify.createStoreAndInstallSwift - Step 14: Search app Oberlo
+<br/>
+2020-12-27 10:23:32,573 INFO  shopify.createStoreAndInstallSwift - Step 15: Select Oberlo app
+<br/>
+2020-12-27 10:23:33,810 INFO  shopify.createStoreAndInstallSwift - Step 16: Add Oberlo app to store
+<br/>
+2020-12-27 10:23:50,593 INFO  shopify.createStoreAndInstallSwift - Step 17: Fill account password Oberlo
 <br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[contains(text(),&apos;Show full description&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
-	at pageObject.SwiftPO.clickShowFullDescription(SwiftPO.java:300)
-	at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:113)
+	at pageObject.OberloPO.inputToPassword(OberloPO.java:87)
+	at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:204)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -107,15 +135,15 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Show full description&apos;)]&quot;}
-  (Session info: chrome=87.0.4280.66)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input&quot;}
+  (Session info: chrome=87.0.4280.88)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;10.10.15.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49202}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e054d5aa3137679eb57358fb5a5976d0
-*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Show full description&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b8884cc51312e518256cf257dc224dd
+*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -130,13 +158,13 @@ Session ID: e054d5aa3137679eb57358fb5a5976d0
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 31 more
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641587857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1641587857'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[contains(text(),&apos;Show full description&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace284399568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace284399568'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
-	at pageObject.SwiftPO.clickShowFullDescription(SwiftPO.java:300)
-	at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:113)
+	at pageObject.OberloPO.inputToPassword(OberloPO.java:87)
+	at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:204)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,15 +193,15 @@ Session ID: e054d5aa3137679eb57358fb5a5976d0
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Show full description&apos;)]&quot;}
-  (Session info: chrome=87.0.4280.66)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input&quot;}
+  (Session info: chrome=87.0.4280.88)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;10.10.15.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49202}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e054d5aa3137679eb57358fb5a5976d0
-*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Show full description&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b8884cc51312e518256cf257dc224dd
+*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -194,108 +222,126 @@ Session ID: e054d5aa3137679eb57358fb5a5976d0
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 31 more
 </pre></div></td>
-<td>68</td>
-<td>shopify.createStoreAndInstallSwift@313ac989</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>186</td>
+<td>shopify.createStoreAndInstallSwift@4562e04d</td></tr>
 <tr>
 <td title='shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore()'><b>TC01_CreateShopifyStore</b><br>Test class: shopify.createStoreAndInstallSwift<br/>
-<a href="#Output-1706459316" onClick='toggleBox("Output-1706459316", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1919573610" onClick='toggleBox("Output-1919573610", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1706459316" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1706459316">
-2020-11-24 14:33:46,261 INFO  shopify.createStoreAndInstallSwift - Step 01:   
+<a href="#Output-1919573610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1919573610">
+2020-12-27 10:24:20,656 INFO  shopify.createStoreAndInstallSwift - Pre-condition: Access Shopify
 <br/>
-2020-11-24 14:33:46,265 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-<br/>
-2020-11-24 14:33:49,159 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-<br/>
-2020-11-24 14:33:54,374 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-<br/>
-2020-11-24 14:33:54,374 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-<br/>
-2020-11-24 14:33:59,076 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
+2020-12-27 10:24:21,459 INFO  shopify.createStoreAndInstallSwift - Step 01: Press on Start free trial button
 <br/>
 </div>
 </td>
-<td></td>
-<td>92</td>
-<td>shopify.createStoreAndInstallSwift@313ac989</td></tr>
-<tr>
-<td title='shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore()'><b>TC01_CreateShopifyStore</b><br>Test class: shopify.createStoreAndInstallSwift<br/>
-<a href="#Output-1284634047" onClick='toggleBox("Output-1284634047", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1284634047" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1284634047">
-2020-11-24 14:35:18,500 INFO  shopify.createStoreAndInstallSwift - Step 01:   
-<br/>
-2020-11-24 14:35:18,502 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-<br/>
-2020-11-24 14:35:20,077 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-<br/>
-2020-11-24 14:35:25,252 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-<br/>
-2020-11-24 14:35:25,252 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-<br/>
-2020-11-24 14:35:29,569 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
-<br/>
-</div>
-</td>
-<td></td>
-<td>90</td>
-<td>shopify.createStoreAndInstallSwift@313ac989</td></tr>
-<tr>
-<td title='shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore()'><b>TC01_CreateShopifyStore</b><br>Test class: shopify.createStoreAndInstallSwift<br/>
-<a href="#Output-108849833" onClick='toggleBox("Output-108849833", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-108849833" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-108849833">
-2020-11-24 14:36:49,383 INFO  shopify.createStoreAndInstallSwift - Step 01:   
-<br/>
-2020-11-24 14:36:49,384 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-<br/>
-2020-11-24 14:36:50,633 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-<br/>
-2020-11-24 14:36:55,792 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-<br/>
-2020-11-24 14:36:55,792 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-<br/>
-2020-11-24 14:36:59,962 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
-<br/>
-</div>
-</td>
-<td></td>
-<td>97</td>
-<td>shopify.createStoreAndInstallSwift@313ac989</td></tr>
-<tr>
-<td title='shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore()'><b>TC01_CreateShopifyStore</b><br>Test class: shopify.createStoreAndInstallSwift<br/>
-<a href="#Output-75249006" onClick='toggleBox("Output-75249006", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-75249006" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-75249006">
-2020-11-24 14:39:35,014 INFO  shopify.createStoreAndInstallSwift - Step 01:   
-<br/>
-2020-11-24 14:39:35,014 INFO  shopify.createStoreAndInstallSwift - Step 01: Pre-condition: Access App Store Shopify
-<br/>
-2020-11-24 14:39:36,561 INFO  shopify.createStoreAndInstallSwift - Step 02: Search keyword swift
-<br/>
-2020-11-24 14:39:41,741 INFO  shopify.createStoreAndInstallSwift - Step 03: Print store info
-<br/>
-2020-11-24 14:39:41,742 INFO  shopify.createStoreAndInstallSwift - Step 04: Write data to the csv20201124_143346_Swift.csv
-<br/>
-2020-11-24 14:39:46,303 INFO  shopify.createStoreAndInstallSwift - Step 05: Click choose app Swift
-<br/>
-</div>
-</td>
-<td></td>
-<td>94</td>
-<td>shopify.createStoreAndInstallSwift@313ac989</td></tr>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)
+	at pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)
+	at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:88)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b8884cc51312e518256cf257dc224dd
+*** Element info: {Using=xpath, value=//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1919573610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1919573610'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)
+	at pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)
+	at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b8884cc51312e518256cf257dc224dd
+*** Element info: {Using=xpath, value=//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+</pre></div></td>
+<td>30</td>
+<td>shopify.createStoreAndInstallSwift@4562e04d</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,6 +1,8 @@
+shopify\SearchKeywordSwift.class
 cucumberOptions\CucumberTestRunner.class
 shopify\createStoreAndInstallTranscy.class
 shopify\createStoreAndInstallMessent.class
+shopify\SearchKeywordChatalyst.class
 cucumberOptions\Hooks.class
 shopify\reactionRate.class
 fireappsIO\functionWhatsNewPage.class
@@ -13,5 +15,6 @@ shopify\createStore.class
 shopify\Main.class
 fireappsIO\functionBlogPage.class
 fireappsIO\functionsShopifyApps.class
+shopify\createStoreAndInstallChatalyst.class
 shopify\changePlan.class
 shopify\installOriginApp.class

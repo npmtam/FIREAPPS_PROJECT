@@ -1,5 +1,7 @@
 package pageUI;
 
+//import com.sun.org.apache.bcel.internal.generic.PUSH;
+
 public class ShopifyPageUI {
     //Register
     public static final String START_FREE_TRIAL_BUTTON = "//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']";
@@ -40,6 +42,7 @@ public class ShopifyPageUI {
     public static final String SELECT_PLAN_MSG = "//p[text()='Your trial just started']";
     public static final String STORE_NAME_LABEL = "//div[@class='_1lIG3']//span[text()='%s']";
     public static final String APPS_MENU = "//a[@href='/admin/apps']";
+    public static final String DISCOUNTS_MENU = "//a[@href='/admin/discounts']";
     public static final String DELETE_ORIGINAL = "//button[@aria-label='Delete origin-app-dev']";
     public static final String CONFIRM_DELETE_ORIGINAL = "//div[@class='_1fyLs']//span[text()='Delete']";
     public static final String DELETE_SUCCESS_MESSAGE = "//div[@id='Banner1Content']";
@@ -52,8 +55,8 @@ public class ShopifyPageUI {
     public static final String SEARCH_APPS_TEXTBOX = "//input[@type='search' and contains(@class, 'hero')]";
     public static final String TRANSCY_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Transcy')]";
     public static final String MESSENT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Messent')]";
+    public static final String CHATALYST_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Chatalyst Customer Support')]";
     public static final String SWIFT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Swift ‑ Page Speed Optimizer')]";
-    public static final String CHATALYST_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Chatalyst Customer Service')]";
     public static final String ADD_APP_BTN = "//input[@value='Add app']";
     public static final String UPGRADE_YOUR_ACCOUNT_PAGE = "//h1[text()='Upgrade your account']";
     public static final String SEARCH_BTN = "//button[@type='submit' and contains(@class, 'hero-search')]";
@@ -61,17 +64,25 @@ public class ShopifyPageUI {
     public static final String CHOOSE_PLAN_FREE = "//div[@class='pricing-plan__content-scroll sticky-item']//div[1]//div[1]//form[1]//button[1]";
     public static final String OBERLO_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Oberlo')]";
     public static final String SHOW_FULL_DESCRIPTION_BTN = "//button[contains(text(),'Show full description')]";
+    public static final String CREATE_DISCOUNT_BTN = "//span[contains(text(),'Create discount code')]";
+
+    //CREATE DISCOUNT CODE
+    public static final String DISCOUNT_CODE_TEXTBOX = "//input[@placeholder='e.g. SPRINGSALE']";
+    public static final String DISCOUNT_VALUE_TEXTBOX = "//input[@id='percentageValueField']";
+    public static final String USAGE_LIMITS_CHECKBOX = "//span[contains(text(),'Limit to one use per customer')]";
+    public static final String SAVE_DISSCOUNT_CODE_BTN = "//span[contains(text(),'Save discount code')]";
 
     //FREE SHOPIFY APP
     public static final String PRODUCT_REVIEW_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Product Reviews')]";
     public static final String KIT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Kit')]";
     public static final String GOOGLE_CHANNEL_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Google channel')]";
     public static final String SHOPIFY_EMAIL_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Email')]";
-    public static final String SHOPIFY_CHAT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Chat')]";
+    //public static final String SHOPIFY_CHAT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Chat')]";
     public static final String GEOLOCATION_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Geolocation')]";
+    public static final String FACEBOOK_CHANNEL_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Facebook channel')]";
 
     //FREE OTHER APP
-    public static final String TRUSTEDSITE_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='TrustedSite Certification')]";
+    public static final String TRUSTEDSITE_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='TrustedSite - Trust Badges')]";
     public static final String FREE_TRUST_BADGE_IN_APPSTORE = "//h4[text()='Free Trust Badge']/ancestor::a";
     public static final String SHIPPO_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Shippo')]";
     public static final String PUSHOWL_WEB_PUSH_NOTIFICATION = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='PushOwl Web Push Notification')]";
@@ -81,6 +92,16 @@ public class ShopifyPageUI {
     public static final String PARCELPANNEL_ORDER_TRACKING_PRO = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'ParcelPanel Order Tracking Pro')]";
     public static final String WISHLIST_PLUS = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Wishlist Plus')]";
     public static final String ULTIMATE_COUNTDOWN_TIMER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'ULTIMATE Countdown Timer')]";
+    public static final String FREE_TRUST_BADGE_MASTER = "//h4[contains(text(), 'Free Trust Badge Master')]";
+    public static final String VIDEOFY_PRODUCT_VIDEO_MAKER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Videofy ‑ Product Video Maker')]";
+    public static final String SUPER_EFFECTS_HOLIDAY_BOOST = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Super Effects ‑ Holiday Boost')]";
+    public static final String MASSFULFILL = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'MassFulfill')]";
+    public static final String SPIN_WHEEL_POP_UPS_EMAIL_POPUP = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Spin Wheel Pop ups Email Popup')]";
+    public static final String VIDEO_AD_MACHINE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Video Ad Machine')]";
+    public static final String REVEAL_RFM_CUSTOMER_TAGS = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Reveal: RFM Customer Tags')]";
+    public static final String THANK_YOU_EMAIL_MARKETING_TOOL = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Thank You Email Marketing Tool')]";
+    public static final String MULTI_PIXELS_FOR_FACEBOOK = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi Pixels For Facebook')]";
+
 
     //Themes
     public static final String ONLINE_STORE_MENU = "//a[@href='/admin/themes?channel=true']";
@@ -104,6 +125,12 @@ public class ShopifyPageUI {
     public static final String CONFIRM_NEW_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[2]/div[3]/div[1]/input";
     public static final String SAVE_PASSWORD = "//*[@id=\"app\"]/div/div[4]/div/div/div/div/div[3]/button/span";
     public static final String SEARCH_PRODUCT_MENU = "//span[contains(text(),'Find products')]";
+    public static final String CONNECT_OBERLO_WITH_SHOPIFY = "//h2[contains(text(),'Connect Oberlo with Shopify')]";
+    public static final String CLICK_TO_CREATE_NEW_OBERLO_ACCOUNT = "//span[contains(text(),'Create new Oberlo account')]";
+    public static final String INPUT_EMAIL_OBERLO = "//input[@name='email']";
+    public static final String INPUT_PASSWORD_OBERLO ="//input[@name='password']";
+    public static final String CLICK_TO_CREATE_FREE_ACCOUTN_BUTTON = "//span[contains(text(),'Create free account')]";
+
     //public static final String SEARCH_PRODUCT_TEXTBOX = "//*[@id=\"keywords\"]";
     public static final String SEARCH_PRODUCT_TEXTBOX = "//input[@id='keywords']";
     public static final String SEARCH_BUTTON = "//span[contains(text(),'Search')]";

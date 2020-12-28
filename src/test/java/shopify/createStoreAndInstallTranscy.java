@@ -212,7 +212,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
 
         log.info("Step 17: Fill account password Oberlo");
         oberloPage.inputToPassword("QA12345678");
-        oberloPage.inputToConfirmNewPassword("QA12345678");
+        //oberloPage.inputToConfirmNewPassword("QA12345678");
         oberloPage.clickToSavePassword();
 
         //oberlo required login
@@ -352,7 +352,7 @@ public class createStoreAndInstallTranscy extends AbstractTest {
         shopifyPage.clickToSearchBtn();
 
         log.info("Step 38: Select app");
-        shopifyPage.selectFreeOtherAppRanddom2();
+        shopifyPage.selectFreeOtherAppRandom2();
 
         log.info("Step 39: Add random app to store 2");
         shopifyPage.clickToAddApp();

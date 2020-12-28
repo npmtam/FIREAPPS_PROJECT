@@ -221,7 +221,7 @@ public class ChatalystPO extends AbstractPage {
     }
 
     public String getRandomKeyword() {
-        final String[] keywords = new String[]{"live chat", "live chat", "live chat"};
+        final String[] keywords = new String[]{"Chatalyst", "Chatalyst", "Chatalyst"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -269,7 +269,7 @@ public class ChatalystPO extends AbstractPage {
         sleepInSecond(5);
     }
 
-    public void selectSwiftAppInAppStore() {
+    public void clickToChatalystAppInAppStore() {
         waitToElementVisible(ShopifyPageUI.CHATALYST_APP_IN_APPSTORE);
         clickToElement(ShopifyPageUI.CHATALYST_APP_IN_APPSTORE);
         sleepInSecond(3);

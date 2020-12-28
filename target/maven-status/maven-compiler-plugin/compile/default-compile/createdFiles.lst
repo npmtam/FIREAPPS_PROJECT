@@ -6,8 +6,9 @@ pageObject\WebsitePO.class
 commons\ReadDataCSV.class
 commons\TestNGAppender.class
 pageObject\OberloPO.class
-commons\AbstractTest.class
+commons\Keyword.class
 commons\ExtentManager$1.class
+pageObject\ChatalystPO.class
 pageUI\WhatNewPageUI.class
 pageObject\MessentPO.class
 commons\VerificationFailures.class
@@ -21,3 +22,4 @@ commons\AbstractPage.class
 pageObject\WhatNewPO.class
 pageUI\ShopifyPageUI.class
 commons\ExtentReportListener.class
+pageObject\SwiftPO.class

@@ -1,12 +1,19 @@
 package pageObject;
 
+import com.github.javafaker.Faker;
 import commons.*;
+import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageUI.InstallAppUI;
 import pageUI.ShopifyPageUI;
+
+import javax.swing.plaf.PanelUI;
+import java.util.UUID;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -83,19 +90,38 @@ public class OberloPO extends AbstractPage {
         clickToElement(ShopifyPageUI.SEARCH_BTN);
     }
 
-    public void inputToPassword(String password_oberlo) {
-        waitToElementVisible(ShopifyPageUI.NEW_PASSWORD);
-        sendKeyToElement(ShopifyPageUI.NEW_PASSWORD, password_oberlo);
-    }
+    /* public void inputToPassword(String password_oberlo) {
+         waitToElementVisible(ShopifyPageUI.NEW_PASSWORD);
+         sendKeyToElement(ShopifyPageUI.NEW_PASSWORD, password_oberlo);
+     }
 
-    public void inputToConfirmNewPassword(String confirm_password_oberlo) {
-        waitToElementVisible(ShopifyPageUI.CONFIRM_NEW_PASSWORD);
-        sendKeyToElement(ShopifyPageUI.CONFIRM_NEW_PASSWORD, confirm_password_oberlo);
-    }
-
+     public void inputToConfirmNewPassword(String confirm_password_oberlo) {
+         waitToElementVisible(ShopifyPageUI.CONFIRM_NEW_PASSWORD);
+         sendKeyToElement(ShopifyPageUI.CONFIRM_NEW_PASSWORD, confirm_password_oberlo);
+     }
+ */
     public void clickToSavePassword() {
         waitToElementVisible(ShopifyPageUI.SAVE_PASSWORD);
         clickToElement(ShopifyPageUI.SAVE_PASSWORD);
+    }
+
+   /* public void clickToClosePopup() {
+        sleepInSecond(3);
+        WebDriverWait waiter = new WebDriverWait(driver, 1000);
+        //driver.switchTo().defaultContent();
+        driver.switchTo().frame("intercom-modal-frame");
+        driver.findElement(By.xpath("//span[contains(text(),'Boundless')]")).click();
+        sleepInSecond(5);
+        //click button Add to themes libary
+        waiter.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='_1wLbD _1eCDN']")));
+        driver.findElement(By.xpath("//button[@class='_1wLbD _1eCDN']")).click();
+    }*/
+
+    public void clickToClosePopup(){
+        sleepInSecond(3);
+        driver.switchTo().frame("intercom-modal-frame");
+        driver.findElement(By.xpath("//*[@id=\"intercom-container\"]/div/span/div/div/div/div[2]/div/div/span")).click();
+        driver.switchTo().defaultContent();
     }
 
     public void clickToSearchProduct() {
@@ -238,6 +264,32 @@ public class OberloPO extends AbstractPage {
         clickToElement(ShopifyPageUI.PUSH_PRODUCTS);
         sleepInSecond(8);
     }
+
+    public void clickToCreateNewOberloAccount(){
+        waitToElementVisible(ShopifyPageUI.CONNECT_OBERLO_WITH_SHOPIFY);
+        clickToElement(ShopifyPageUI.CLICK_TO_CREATE_NEW_OBERLO_ACCOUNT);
+    }
+
+    public void inputToEmail(String email_oberlo) {
+        sleepInSecond(2);
+        waitToElementVisible(ShopifyPageUI.INPUT_EMAIL_OBERLO);
+        sendKeyToElement(ShopifyPageUI.INPUT_EMAIL_OBERLO, email_oberlo);
+    }
+
+    public void inputToPassword(String password_oberlo) {
+        sleepInSecond(2);
+        waitToElementVisible(ShopifyPageUI.INPUT_PASSWORD_OBERLO);
+        sendKeyToElement(ShopifyPageUI.INPUT_PASSWORD_OBERLO, password_oberlo);
+    }
+
+    public void clickToCreateFreeAccount(){
+        waitToElementClickable(ShopifyPageUI.CLICK_TO_CREATE_FREE_ACCOUTN_BUTTON);
+        clickToElement(ShopifyPageUI.CLICK_TO_CREATE_FREE_ACCOUTN_BUTTON);
+    }
+   /* public void inputToPassword(String password_oberlo) {
+        waitToElementVisible(ShopifyPageUI.NEW_PASSWORD);
+        sendKeyToElement(ShopifyPageUI.NEW_PASSWORD, password_oberlo);
+    }*/
 
    /* public void clickBackShopifyAdmin(){
         waitToElementVisible(ShopifyPageUI.BACK_TO_SHOPIFY_ADMIN);

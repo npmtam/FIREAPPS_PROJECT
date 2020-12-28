@@ -31,37 +31,29 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">224.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">284.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Surefire test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">shopify.createStoreAndInstallSwift</td><td><a href="#m1"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">2</td><td>1609039274098</td><td class="numi">217427</td></tr><tr class="failedodd"><td><a href="#m2"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">2</td><td>1609039274098</td><td class="numi">217427</td></tr>
+<tr class="failedodd"><td rowspan="5">shopify.createStoreAndInstallChatalyst</td><td><a href="#m1"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr><tr class="failedodd"><td><a href="#m2"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr><tr class="failedodd"><td><a href="#m3"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr><tr class="failedodd"><td><a href="#m4"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr><tr class="failedodd"><td><a href="#m5"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr>
 </table>
 <h1>Surefire test</h1>
-<h2 id="m1">shopify.createStoreAndInstallSwift:TC01_CreateShopifyStore</h2>
+<h2 id="m1">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
 <div style="padding-left:3em">
 <h3>Test Messages</h3>
-2020-12-27 10:24:20,656 INFO  shopify.createStoreAndInstallSwift - Pre-condition: Access Shopify
+2020-12-27 18:03:46,007 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 <br/>
-2020-12-27 10:24:21,459 INFO  shopify.createStoreAndInstallSwift - Step 01: Press on Start free trial button
+2020-12-27 18:03:46,864 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 <br/>
 <h3>Failure</h3>
-<p>Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;] (tried for 30 second(s) with 500 milliseconds interval)</p>
-org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-<br/>at commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)
-<br/>at pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)
-<br/>at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:88)
-<br/>29 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]&quot;}
+<p>chrome not reachable
   (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5b8884cc51312e518256cf257dc224dd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c86a7b8f131fb54541863c7790c42560
 *** Element info: {Using=xpath, value=//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]}</p>
 java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -85,70 +77,23 @@ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 <br/>at commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)
 <br/>at pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)
-<br/>at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:88)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:89)
 <br/>29 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">shopify.createStoreAndInstallSwift:TC01_CreateShopifyStore</h2>
+<h2 id="m2">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
 <div style="padding-left:3em">
 <h3>Test Messages</h3>
-2020-12-27 10:21:14,104 INFO  shopify.createStoreAndInstallSwift - Pre-condition: Access Shopify
-<br/>
-2020-12-27 10:22:17,438 INFO  shopify.createStoreAndInstallSwift - Step 01: Press on Start free trial button
-<br/>
-2020-12-27 10:22:17,596 INFO  shopify.createStoreAndInstallSwift - Step 02: Fill info to register
-<br/>
-2020-12-27 10:22:21,146 INFO  shopify.createStoreAndInstallSwift - Step 03: Press Create your store button
-<br/>
-2020-12-27 10:22:27,366 INFO  shopify.createStoreAndInstallSwift - Step 04: Verify Create an account
-<br/>
-2020-12-27 10:22:30,529 INFO  shopify.createStoreAndInstallSwift - Step 05: Verify the user can create the store
-<br/>
-2020-12-27 10:22:44,699 INFO  shopify.createStoreAndInstallSwift -  -------------------------- PASSED -------------------------- 
-<br/>
-2020-12-27 10:22:44,700 INFO  shopify.createStoreAndInstallSwift - Step 06: Fill info at About yourself
-<br/>
-2020-12-27 10:22:50,010 INFO  shopify.createStoreAndInstallSwift - Step 07: Fill address
-<br/>
-2020-12-27 10:23:03,077 INFO  shopify.createStoreAndInstallSwift - Step 08: Verify the store has been created
-<br/>
-2020-12-27 10:23:07,912 INFO  shopify.createStoreAndInstallSwift -  -------------------------- PASSED -------------------------- 
-<br/>
-2020-12-27 10:23:07,913 INFO  shopify.createStoreAndInstallSwift - Step 09: Print store info
-<br/>
-2020-12-27 10:23:07,941 INFO  shopify.createStoreAndInstallSwift - Step 10: Write data to the csv20201227_102113_Swift.csv
-<br/>
-2020-12-27 10:23:07,948 INFO  shopify.createStoreAndInstallSwift - Step 11: Select Apps menu
-<br/>
-2020-12-27 10:23:11,073 INFO  shopify.createStoreAndInstallSwift - Step 12: Visit Shopify App store
-<br/>
-2020-12-27 10:23:14,204 INFO  shopify.createStoreAndInstallSwift - Step 13: choose account to continue to shopify app
-<br/>
-2020-12-27 10:23:23,365 INFO  shopify.createStoreAndInstallSwift - Step 14: Search app Oberlo
-<br/>
-2020-12-27 10:23:32,573 INFO  shopify.createStoreAndInstallSwift - Step 15: Select Oberlo app
-<br/>
-2020-12-27 10:23:33,810 INFO  shopify.createStoreAndInstallSwift - Step 16: Add Oberlo app to store
-<br/>
-2020-12-27 10:23:50,593 INFO  shopify.createStoreAndInstallSwift - Step 17: Fill account password Oberlo
+2020-12-27 18:04:27,172 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 <br/>
 <h3>Failure</h3>
-<p>Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input (tried for 30 second(s) with 500 milliseconds interval)</p>
-org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-<br/>at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
-<br/>at pageObject.OberloPO.inputToPassword(OberloPO.java:87)
-<br/>at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:204)
-<br/>29 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input&quot;}
+<p>chrome not reachable
   (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5b8884cc51312e518256cf257dc224dd
-*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[4]/div/div/div/div/div[2]/div[2]/div[1]/input}</p>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c86a7b8f131fb54541863c7790c42560</p>
 java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -160,16 +105,120 @@ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
 <br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 <br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-<br/>at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
-<br/>at pageObject.OberloPO.inputToPassword(OberloPO.java:87)
-<br/>at shopify.createStoreAndInstallSwift.TC01_CreateShopifyStore(createStoreAndInstallSwift.java:204)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
+<br/>29 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+2020-12-27 18:04:39,199 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+<br/>
+<h3>Failure</h3>
+<p>chrome not reachable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c86a7b8f131fb54541863c7790c42560</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
+<br/>29 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+2020-12-27 18:00:15,888 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+<br/>
+2020-12-27 18:00:20,193 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+<br/>
+2020-12-27 18:00:20,408 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+<br/>
+2020-12-27 18:00:23,953 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+<br/>
+2020-12-27 18:00:30,160 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+<br/>
+2020-12-27 18:00:33,356 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+<br/>
+2020-12-27 18:00:48,059 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+<br/>
+2020-12-27 18:00:48,060 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+<br/>
+2020-12-27 18:00:53,371 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+<br/>
+2020-12-27 18:01:09,216 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+<br/>
+2020-12-27 18:01:15,486 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+<br/>
+2020-12-27 18:01:15,487 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+<br/>
+2020-12-27 18:01:15,517 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20201227_180015_Swift.csv
+<br/>
+2020-12-27 18:01:15,523 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+<br/>
+2020-12-27 18:01:18,686 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+<br/>
+2020-12-27 18:01:21,829 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+<br/>
+2020-12-27 18:01:30,945 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+<br/>
+2020-12-27 18:01:40,391 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+<br/>
+2020-12-27 18:01:41,492 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+<br/>
+2020-12-27 18:02:01,265 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+<br/>
+<h3>Failure</h3>
+<p>No frame element found by name or id intercom-modal-frame
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+<br/>at pageObject.OberloPO.clickToClosePopup(OberloPO.java:122)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:207)
+<br/>29 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+2020-12-27 18:04:15,141 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+<br/>
+<h3>Failure</h3>
+<p>chrome not reachable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c86a7b8f131fb54541863c7790c42560</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
 <br/>29 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>

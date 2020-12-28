@@ -5,32 +5,32 @@ import commons.AbstractPage;
 import commons.AbstractTest;
 import commons.Constants;
 import commons.PageGeneratorManager;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObject.ShopifyPO;
-import pageObject.MessentPO;
+import pageObject.ChatalystPO;
 import pageUI.ShopifyPageUI;
 import pageObject.OberloPO;
 
+import java.io.FileReader;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Random;
+import java.lang.Thread;
 
-public class createStoreAndInstallMessent extends AbstractTest {
+public class createStoreAndInstallChatalyst extends AbstractTest{
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
-    private MessentPO messentPage;
+    private ChatalystPO chatalystPage;
     private OberloPO oberloPage;
-    String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
+    String url, email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;
@@ -44,12 +44,12 @@ public class createStoreAndInstallMessent extends AbstractTest {
         driver = getBrowserDriver("chrome");
         abstractPage = new AbstractPage(driver);
 
-        DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
-        Date date = new Date();
-        csvName = dateFormat.format(date) + "_Messent.csv";
-
         //Init fake library
         faker = new Faker(new Locale("en-US"));
+
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
+        Date date = new Date();
+        csvName = dateFormat.format(date) + "_Swift.csv";
 
         //Clear data before test
         log.info("Pre-condition: Clear test data");
@@ -57,7 +57,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 40)
+    @Test(invocationCount = 5)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -177,18 +177,12 @@ public class createStoreAndInstallMessent extends AbstractTest {
         log.info("Step 12: Visit Shopify App store");
         oberloPage.clickToVisitShopifyAppStore();
 
-        /*log.info("Step 13: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
-
         log.info("Step 13: choose account to continue to shopify app");
         shopifyPage.switchTabChooseAccount();
         boolean isChooseAnAccountToShopifyAppStore = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CHOOSE_AN_ACCOUNT);
         if (isChooseAnAccountToShopifyAppStore) {
             shopifyPage.chooseAccount();
         }
-
-        /*log.info("Random delay");
-        shopifyPage.sleepRandomly();*/
 
         log.info("Step 14: Search app Oberlo");
         oberloPage.inputKeyword(oberloPage.searchOberlo());
@@ -201,41 +195,16 @@ public class createStoreAndInstallMessent extends AbstractTest {
         oberloPage.clickToAddApp();
         oberloPage.clickToInstallApp();
 
-        /*log.info("Step 17: Fill account password Oberlo");
-        oberloPage.inputToPassword("QA12345678");
-        oberloPage.inputToConfirmNewPassword("QA12345678");
-        oberloPage.clickToSavePassword();*/
-
-        //By pass step login app Oberlo
-        /*shopifyPage.sWitchTab();
-        log.info("Step 11: Select Apps menu");
-        oberloPage = PageGeneratorManager.getOberloPO(driver);
-        oberloPage.selectAppsMenu();
-
-        log.info("Step 12: Visit Shopify App store");
-        oberloPage.clickToVisitShopifyAppStore();
-
-        log.info("Step 14: Search app Oberlo");
-        oberloPage.inputKeyword(oberloPage.searchOberlo());
-        oberloPage.clickToSearchBtn();
-        oberloPage.selectOberloInAppStore();
-        log.info("Step 16: Add Oberlo app to store");
-        oberloPage.clickToAddApp();*/
-
         log.info("Step create new account oberlo");
         oberloPage.clickToCreateNewOberloAccount();
-       /* Random randomGenerator = new Random();
-        int randomInt = randomGenerator.nextInt(1000);*/
-        oberloPage.clickToCreateFreeAccount();
-        oberloPage.inputToEmail("12ee@gmail.com");
-        oberloPage.clickToCreateFreeAccount();
+        Random randomGenerator = new Random();
+        int randomInt = randomGenerator.nextInt(1000);
+        oberloPage.inputToEmail("username"+ randomInt + "@mail.com");
         oberloPage.inputToPassword("QA12345678");
         oberloPage.clickToCreateFreeAccount();
 
-        /*shopifyPage.inputToRegisterTextBoxes("Email address", email);
-        shopifyPage.inputToRegisterTextBoxes("Password", password);*/
-
-
+        shopifyPage.sleepRandomly();
+        oberloPage.clickToClosePopup();
         log.info("Step 18: Search product Oberlo");
         oberloPage.clickToSearchProduct();
 
@@ -274,9 +243,9 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToVisitShopifyAppStore();
 
         log.info("Random delay");
-        shopifyPage.sleepRandomly();
+        //shopifyPage.sleepRandomly();
 
-        /*log.info("Step 24 choose account to continue to shopify app");
+       /* log.info("Step 24 choose account to continue to shopify app");
         shopifyPage.chooseAccount();*/
 
         log.info("Step 25: Search free Shopify app");
@@ -323,8 +292,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
         log.info("Step 35: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
-        /*log.info("Step 36: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
+        //log.info("Step 36: choose account to continue to shopify app");
+        //shopifyPage.chooseAccount();
 
         log.info("Step 37: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp2());
@@ -338,48 +307,64 @@ public class createStoreAndInstallMessent extends AbstractTest {
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
-        //Install Messent app
-        // pause code
-        log.info("Step 40: Select Apps menu");
-        messentPage = PageGeneratorManager.getMessentPage(driver);
-        messentPage.selectAppsMenu();
+        log.info("Step 40 : Select Discount menu");
+        shopifyPage.clickTodDiscountsMenu();
+        shopifyPage.clickCreateDiscountCode();
 
-        log.info("Step 41: Visit Shopify App store");
-        messentPage.clickToVisitShopifyAppStore();
+        log.info("Step 41: Input random code name");
+        shopifyPage.inputKeywordCodeName(shopifyPage.inputCodeName());
 
-        /*log.info("Step 42: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
+        log.info("Step 42: Input random discount value");
+        shopifyPage.inputKeywordCodeValue(shopifyPage.inputDiscountValue());
 
-        log.info("Random delay");
+        log.info("Step 43: Check Limit to one use per customer");
+        shopifyPage.scrollPage();
+        shopifyPage.sleepRandomly();
+        shopifyPage.checkToUsageLimits();
+        shopifyPage.sleepRandomly();
+        shopifyPage.clickToSave();
         shopifyPage.sleepRandomly();
 
-        log.info("Step 43: Search app by keyword");
-        messentPage.inputKeyword(messentPage.getRandomKeyword());
-        messentPage.clickToSearchBtn();
+        //Install Swift app
+        // pause code
+        log.info("Step 44: Select Apps menu");
+        chatalystPage = PageGeneratorManager.getChatalystPage(driver);
+        chatalystPage.selectAppsMenu();
+
+        log.info("Step 45: Visit Shopify App store");
+        chatalystPage.clickToVisitShopifyAppStore();
+
+        //log.info("Step 42: choose account to continue to shopify app");
+        //shopifyPage.chooseAccount();
+
+        //log.info("Random delay");
+        //shopifyPage.sleepRandomly();
+
+        log.info("Step 46: Search app by keyword");
+        chatalystPage.inputKeyword(chatalystPage.getRandomKeyword());
+        chatalystPage.clickToSearchBtn();
 
         /*log.info("Step 14.1: Load page 2");
         messentPage.clickToLoadPageTwo();*/
 
-        log.info("Step 44: Select Messent app");
-        messentPage.selectMessentInAppStore();
+        log.info("Step 47: Select Swift app");
+        chatalystPage.clickToChatalystAppInAppStore();
 
-        log.info("Step 45: Add Messent app to store");
-        messentPage.clickToAddApp();
-        messentPage.clickToInstallApp();
+        log.info("Step 48: Add Swift app to store");
+        //chatalystPage.clickToAddApp();
+        //chatalystPage.clickToInstallApp();
 
-        log.info("Step 46: Verify the choose plan page display");
-        verifyTrue(messentPage.isChoosePlanPageDisplay());
+        /*log.info("Step 46: Verify the choose plan page display");
+        verifyTrue(chatalystPage.isChoosePlanPageDisplay());*/
 
-       /* log.info("Random click choose plan free");
-        messentPage.randomClickChoosePlanFree();*/
         shopifyPage.sWitchTab();
     }
 
     //    @Test
     public void TC02_ReadAndInstallTranscy() {
         log.info("Read data from CSV file and install Messent app depends on Store Type column");
-        messentPage = PageGeneratorManager.getMessentPage(driver);
-        messentPage.readDataCsv();
+        chatalystPage = PageGeneratorManager.getChatalystPage(driver);
+        chatalystPage.readDataCsv();
     }
 
     @AfterClass

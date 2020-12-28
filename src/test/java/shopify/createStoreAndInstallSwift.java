@@ -10,26 +10,28 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObject.MessentPO;
-import pageObject.OberloPO;
 import pageObject.ShopifyPO;
 import pageObject.SwiftPO;
 import pageUI.ShopifyPageUI;
+import pageObject.OberloPO;
 
+import java.io.FileReader;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Random;
+import java.lang.Thread;
 
 public class createStoreAndInstallSwift extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
-    private SwiftPO SwiftPage;
+    private SwiftPO swiftPage;
     private OberloPO oberloPage;
-    String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
+    String url, email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
+    //String keyword, dateTime;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;
@@ -43,12 +45,12 @@ public class createStoreAndInstallSwift extends AbstractTest {
         driver = getBrowserDriver("chrome");
         abstractPage = new AbstractPage(driver);
 
+        //Init fake library
+        faker = new Faker(new Locale("en-US"));
+
         DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
         Date date = new Date();
         csvName = dateFormat.format(date) + "_Swift.csv";
-
-        //Init fake library
-        faker = new Faker(new Locale("en-US"));
 
         //Clear data before test
         log.info("Pre-condition: Clear test data");
@@ -56,7 +58,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
         shopifyPage.clearStoreData(Constants.WRITE_CSV_FILE_PATH);
     }
 
-    @Test(invocationCount = 2)
+    @Test(invocationCount = 5)
     public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
@@ -176,8 +178,6 @@ public class createStoreAndInstallSwift extends AbstractTest {
         log.info("Step 12: Visit Shopify App store");
         oberloPage.clickToVisitShopifyAppStore();
 
-        /*log.info("Step 13: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
 
         log.info("Step 13: choose account to continue to shopify app");
         shopifyPage.switchTabChooseAccount();
@@ -185,9 +185,6 @@ public class createStoreAndInstallSwift extends AbstractTest {
         if (isChooseAnAccountToShopifyAppStore) {
             shopifyPage.chooseAccount();
         }
-
-        /*log.info("Random delay");
-        shopifyPage.sleepRandomly();*/
 
         log.info("Step 14: Search app Oberlo");
         oberloPage.inputKeyword(oberloPage.searchOberlo());
@@ -200,27 +197,16 @@ public class createStoreAndInstallSwift extends AbstractTest {
         oberloPage.clickToAddApp();
         oberloPage.clickToInstallApp();
 
-        log.info("Step 17: Fill account password Oberlo");
+        log.info("Step create new account oberlo");
+        oberloPage.clickToCreateNewOberloAccount();
+        Random randomGenerator = new Random();
+        int randomInt = randomGenerator.nextInt(1000);
+        oberloPage.inputToEmail("username"+ randomInt + "@mail.com");
         oberloPage.inputToPassword("QA12345678");
-        oberloPage.inputToConfirmNewPassword("QA12345678");
-        oberloPage.clickToSavePassword();
+        oberloPage.clickToCreateFreeAccount();
 
-        //By pass step login app Oberlo
-        shopifyPage.sWitchTab();
-        log.info("Step 11: Select Apps menu");
-        oberloPage = PageGeneratorManager.getOberloPO(driver);
-        oberloPage.selectAppsMenu();
-
-        log.info("Step 12: Visit Shopify App store");
-        oberloPage.clickToVisitShopifyAppStore();
-
-        log.info("Step 14: Search app Oberlo");
-        oberloPage.inputKeyword(oberloPage.searchOberlo());
-        oberloPage.clickToSearchBtn();
-        oberloPage.selectOberloInAppStore();
-        log.info("Step 16: Add Oberlo app to store");
-        oberloPage.clickToAddApp();
-
+        shopifyPage.sleepRandomly();
+        oberloPage.clickToClosePopup();
         log.info("Step 18: Search product Oberlo");
         oberloPage.clickToSearchProduct();
 
@@ -259,9 +245,9 @@ public class createStoreAndInstallSwift extends AbstractTest {
         shopifyPage.clickToVisitShopifyAppStore();
 
         log.info("Random delay");
-        shopifyPage.sleepRandomly();
+        //shopifyPage.sleepRandomly();
 
-        /*log.info("Step 24 choose account to continue to shopify app");
+       /* log.info("Step 24 choose account to continue to shopify app");
         shopifyPage.chooseAccount();*/
 
         log.info("Step 25: Search free Shopify app");
@@ -308,61 +294,79 @@ public class createStoreAndInstallSwift extends AbstractTest {
         log.info("Step 35: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
-        /*log.info("Step 36: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
+        //log.info("Step 36: choose account to continue to shopify app");
+        //shopifyPage.chooseAccount();
 
         log.info("Step 37: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp2());
         shopifyPage.clickToSearchBtn();
 
         log.info("Step 38: Select app");
-        shopifyPage.selectFreeOtherAppRanddom2();
+        shopifyPage.selectFreeOtherAppRandom2();
 
         log.info("Step 39: Add random app to store");
         shopifyPage.clickToAddApp();
         shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
-        //Install Swift app
-        // pause code
-        log.info("Step 40: Select Apps menu");
-        SwiftPage = PageGeneratorManager.getSwiftPage(driver);
-        SwiftPage.selectAppsMenu();
+        log.info("Step 40 : Select Discount menu");
+        shopifyPage.clickTodDiscountsMenu();
+        shopifyPage.clickCreateDiscountCode();
 
-        log.info("Step 41: Visit Shopify App store");
-        SwiftPage.clickToVisitShopifyAppStore();
+        log.info("Step 41: Input random code name");
+        shopifyPage.inputKeywordCodeName(shopifyPage.inputCodeName());
 
-        /*log.info("Step 42: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
+        log.info("Step 42: Input random discount value");
+        shopifyPage.inputKeywordCodeValue(shopifyPage.inputDiscountValue());
 
-        log.info("Random delay");
+        log.info("Step 43: Check Limit to one use per customer");
+        shopifyPage.scrollPage();
+        shopifyPage.sleepRandomly();
+        shopifyPage.checkToUsageLimits();
+        shopifyPage.sleepRandomly();
+        shopifyPage.clickToSave();
         shopifyPage.sleepRandomly();
 
-        log.info("Step 43: Search app by keyword");
-        SwiftPage.inputKeyword(SwiftPage.getRandomKeywordForInstall());
-        SwiftPage.clickToSearchBtn();
+        //Install Swift app
+        // pause code
+        log.info("Step 44: Select Apps menu");
+        swiftPage = PageGeneratorManager.getSwiftPage(driver);
+        swiftPage.selectAppsMenu();
+
+        log.info("Step 45: Visit Shopify App store");
+        swiftPage.clickToVisitShopifyAppStore();
+
+        //log.info("Step 42: choose account to continue to shopify app");
+        //shopifyPage.chooseAccount();
+
+        //log.info("Random delay");
+        //shopifyPage.sleepRandomly();
+
+        log.info("Step 46: Search app by keyword");
+        swiftPage.inputKeyword(swiftPage.getRandomKeyword());
+        swiftPage.clickToSearchBtn();
 
         /*log.info("Step 14.1: Load page 2");
-        SwiftPage.clickToLoadPageTwo();*/
+        messentPage.clickToLoadPageTwo();*/
 
-        log.info("Step 44: Select Swift app");
-        SwiftPage.selectSwiftAppInAppStore();
+        log.info("Step 47: Select Swift app");
+        swiftPage.clickChooseSwiftInAppStore();
 
-        log.info("Step 45: Add Swift app to store");
-        SwiftPage.clickToAddApp();
-        SwiftPage.clickToInstallApp();
+        log.info("Step 48: Add Swift app to store");
+        swiftPage.clickToAddApp();
+        swiftPage.clickToInstallApp();
 
         log.info("Step 46: Verify the choose plan page display");
-        verifyTrue(SwiftPage.isChoosePlanPageDisplay());
+        verifyTrue(swiftPage.isChoosePlanPageDisplay());
 
         shopifyPage.sWitchTab();
     }
 
     //    @Test
-    public void TC02_ReadAndInstallSwift() {
-        log.info("Read data from CSV file and install Swift app depends on Store Type column");
-        SwiftPage = PageGeneratorManager.getSwiftPage(driver);
-        SwiftPage.readDataCsv();
+    public void TC02_ReadAndInstallTranscy() {
+        log.info("Read data from CSV file and install Messent app depends on Store Type column");
+        swiftPage = PageGeneratorManager.getSwiftPage(driver);
+        swiftPage.readDataCsv();
     }
 
     @AfterClass

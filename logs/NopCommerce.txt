@@ -1,28 +1,21 @@
-2020-12-27 18:00:15,870 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
-2020-12-27 18:00:15,888 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2020-12-27 18:00:20,193 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2020-12-27 18:00:20,408 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2020-12-27 18:00:23,953 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-2020-12-27 18:00:30,160 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-2020-12-27 18:00:33,356 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-2020-12-27 18:00:48,059 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2020-12-27 18:00:48,060 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-2020-12-27 18:00:53,371 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-2020-12-27 18:01:09,216 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-2020-12-27 18:01:15,486 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2020-12-27 18:01:15,487 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-2020-12-27 18:01:15,517 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20201227_180015_Swift.csv
-2020-12-27 18:01:15,523 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-2020-12-27 18:01:18,686 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-2020-12-27 18:01:21,829 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-2020-12-27 18:01:30,945 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-2020-12-27 18:01:40,391 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-2020-12-27 18:01:41,492 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-2020-12-27 18:02:01,265 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-2020-12-27 18:03:46,007 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2020-12-27 18:03:46,864 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2020-12-27 18:04:15,141 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2020-12-27 18:04:27,172 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2020-12-27 18:04:39,199 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2020-12-27 18:04:51,217 INFO  shopify.createStoreAndInstallChatalyst - OS Name = windows 10
-2020-12-27 18:04:52,053 INFO  shopify.createStoreAndInstallChatalyst - ----------------QUIT BROWSER SUCCESS-----------------
+2020-12-30 14:27:57,548 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
+2020-12-30 14:27:57,568 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2020-12-30 14:28:01,554 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2020-12-30 14:28:01,717 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2020-12-30 14:28:05,197 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2020-12-30 14:28:11,402 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2020-12-30 14:28:14,434 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2020-12-30 14:28:29,647 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2020-12-30 14:28:29,649 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2020-12-30 14:28:34,970 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+2020-12-30 14:28:47,863 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+2020-12-30 14:28:52,815 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2020-12-30 14:28:52,815 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+2020-12-30 14:28:52,841 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20201230_142757_Swift.csv
+2020-12-30 14:28:52,848 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+2020-12-30 14:28:55,972 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+2020-12-30 14:28:59,087 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+2020-12-30 14:29:07,433 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+2020-12-30 14:29:16,828 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+2020-12-30 14:29:17,878 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+2020-12-30 14:29:34,664 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo

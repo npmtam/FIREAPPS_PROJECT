@@ -270,10 +270,16 @@ public class OberloPO extends AbstractPage {
         clickToElement(ShopifyPageUI.CLICK_TO_CREATE_NEW_OBERLO_ACCOUNT);
     }
 
-    public void inputToEmail(String email_oberlo) {
+    /*public void inputToEmail(String email_oberlo) {
         sleepInSecond(2);
         waitToElementVisible(ShopifyPageUI.INPUT_EMAIL_OBERLO);
         sendKeyToElement(ShopifyPageUI.INPUT_EMAIL_OBERLO, email_oberlo);
+    }*/
+
+    public void inputToEmailObelo(String placeHolder, String value) {
+        waitToElementVisible(ShopifyPageUI.INPUT_EMAIL_OBERLO, placeHolder);
+        sendKeyToElement(ShopifyPageUI.INPUT_EMAIL_OBERLO, value, placeHolder);
+        sleepInSecond(1);
     }
 
     public void inputToPassword(String password_oberlo) {

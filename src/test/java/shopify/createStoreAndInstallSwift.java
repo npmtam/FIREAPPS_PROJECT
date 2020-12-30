@@ -199,9 +199,10 @@ public class createStoreAndInstallSwift extends AbstractTest {
 
         log.info("Step create new account oberlo");
         oberloPage.clickToCreateNewOberloAccount();
-        Random randomGenerator = new Random();
-        int randomInt = randomGenerator.nextInt(1000);
-        oberloPage.inputToEmail("username"+ randomInt + "@mail.com");
+        //Random randomGenerator = new Random();
+        //int randomInt = randomGenerator.nextInt(1000);
+        //oberloPage.inputToEmail("username"+ randomInt + "@mail.com");
+        oberloPage.inputToEmailObelo("email oberlo", email);
         oberloPage.inputToPassword("QA12345678");
         oberloPage.clickToCreateFreeAccount();
 

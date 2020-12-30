@@ -227,7 +227,8 @@ public class createStoreAndInstallMessent extends AbstractTest {
        /* Random randomGenerator = new Random();
         int randomInt = randomGenerator.nextInt(1000);*/
         oberloPage.clickToCreateFreeAccount();
-        oberloPage.inputToEmail("12ee@gmail.com");
+        //oberloPage.inputToEmail("12ee@gmail.com");
+        oberloPage.inputToEmailObelo("email oberlo", email);
         oberloPage.clickToCreateFreeAccount();
         oberloPage.inputToPassword("QA12345678");
         oberloPage.clickToCreateFreeAccount();

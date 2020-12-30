@@ -27,6 +27,7 @@ public class ShopifyPageUI {
     public static final String CREATE_ACCOUNT_BUTTON = "//button[text()='Create account']";
     public static final String TITLE_CHOOSE_AN_ACCOUNT = "//h1[text()='Choose an account']";
     public static final String CHOOSE_ACCOUNT_SELECT = "//div[@class='main-card-section']//a[last()-1]";
+    public static final String CONTINUE_BUTTON = "//button[text()='Continue']";
 
     //Address info
     public static final String ADDRESS_INFO_TEXTBOXES = "//input[@name='account_setup[%s]']";
@@ -37,6 +38,7 @@ public class ShopifyPageUI {
 
     //Create an account
     public static final String TITLE_CREATE_AN_ACCOUNT = "//h1[text()='Create an account']";
+    public static final String TITLE_TOO_MANY_REQUEST = "//h1[text()='Too Many Requests']";
 
     //Admin Page
     public static final String SELECT_PLAN_MSG = "//p[text()='Your trial just started']";

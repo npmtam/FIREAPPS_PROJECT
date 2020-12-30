@@ -101,6 +101,13 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
             shopifyPage.clickToCreateYourStoreButton();
         }
 
+        log.info("Too many requets");
+        boolean isTooManyRequest = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_TOO_MANY_REQUEST);
+        if (isTooManyRequest) {
+            abstractPage.enableCreateAccountButton();
+            shopifyPage.clickToContinueButton();
+        }
+
         log.info("Step 04: Verify Create an account");
         boolean isInputToCreateAnAccount = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CREATE_AN_ACCOUNT);
         // enable Create account button

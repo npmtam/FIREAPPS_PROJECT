@@ -106,6 +106,11 @@ public class ShopifyPO extends AbstractPage {
         clickToElement(ShopifyPageUI.CREATE_ACCOUNT_BUTTON);
     }
 
+    public void clickToContinueButton() {
+        sleepInSecond(5);
+        waitToElementClickable(ShopifyPageUI.CONTINUE_BUTTON);
+        clickToElement(ShopifyPageUI.CONTINUE_BUTTON);
+    }
 
     public void clickToEnterMyStoreButton() {
         sleepInSecond(1);

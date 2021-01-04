@@ -359,8 +359,8 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         chatalystPage.clickToChatalystAppInAppStore();
 
         log.info("Step 48: Add Swift app to store");
-        //chatalystPage.clickToAddApp();
-        //chatalystPage.clickToInstallApp();
+        chatalystPage.clickToAddApp();
+        chatalystPage.clickToInstallApp();
 
         /*log.info("Step 46: Verify the choose plan page display");
         verifyTrue(chatalystPage.isChoosePlanPageDisplay());*/
@@ -369,7 +369,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
     }
 
     //    @Test
-    public void TC02_ReadAndInstallTranscy() {
+    public void TC02_ReadAndInstallChatalyst() {
         log.info("Read data from CSV file and install Messent app depends on Store Type column");
         chatalystPage = PageGeneratorManager.getChatalystPage(driver);
         chatalystPage.readDataCsv();

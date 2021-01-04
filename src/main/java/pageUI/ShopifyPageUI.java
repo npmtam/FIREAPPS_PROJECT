@@ -95,7 +95,7 @@ public class ShopifyPageUI {
     public static final String WISHLIST_PLUS = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Wishlist Plus')]";
     public static final String ULTIMATE_COUNTDOWN_TIMER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'ULTIMATE Countdown Timer')]";
     public static final String FREE_TRUST_BADGE_MASTER = "//h4[contains(text(), 'Free Trust Badge Master')]";
-    public static final String VIDEOFY_PRODUCT_VIDEO_MAKER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Videofy ‑ Product Video Maker')]";
+    public static final String VIDEOFY_PRODUCT_VIDEO_MAKER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Vimeo Create ‑ Video Maker')]";
     public static final String SUPER_EFFECTS_HOLIDAY_BOOST = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Super Effects ‑ Holiday Boost')]";
     public static final String MASSFULFILL = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'MassFulfill')]";
     public static final String SPIN_WHEEL_POP_UPS_EMAIL_POPUP = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Spin Wheel Pop ups Email Popup')]";

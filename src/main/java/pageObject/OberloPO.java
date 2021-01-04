@@ -89,6 +89,13 @@ public class OberloPO extends AbstractPage {
         waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
         clickToElement(ShopifyPageUI.SEARCH_BTN);
     }
+     //when page app store shopify is not found
+
+    public void clickToSearchAppBtn() {
+        sleepInSecond(5);
+        waitToElementVisible(ShopifyPageUI.SEARCH_BTN_SHOPIFY_APP_STORE_BTN);
+        clickToElement(ShopifyPageUI.SEARCH_BTN_SHOPIFY_APP_STORE_BTN);
+    }
 
     /* public void inputToPassword(String password_oberlo) {
          waitToElementVisible(ShopifyPageUI.NEW_PASSWORD);
@@ -229,7 +236,7 @@ public class OberloPO extends AbstractPage {
     }
 
     public String searchProductOberlo() {
-        final String[] keywords = new String[]{"Phone", "Watch", "Shose", "Adidas"};
+        final String[] keywords = new String[]{"Phone", "Watch", "Shoes", "Adidas"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];

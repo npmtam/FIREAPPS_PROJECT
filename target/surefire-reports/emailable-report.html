@@ -31,29 +31,39 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">284.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">5</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">1,778.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Surefire test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="5">shopify.createStoreAndInstallChatalyst</td><td><a href="#m1"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr><tr class="failedodd"><td><a href="#m2"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr><tr class="failedodd"><td><a href="#m3"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr><tr class="failedodd"><td><a href="#m4"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr><tr class="failedodd"><td><a href="#m5"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">5</td><td>1609066815884</td><td class="numi">275332</td></tr>
+<tr class="failedodd"><td rowspan="5">shopify.createStoreAndInstallChatalyst</td><td><a href="#m1"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">2</td><td>1609746128474</td><td class="numi">155682</td></tr><tr class="failedodd"><td><a href="#m2"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">2</td><td>1609746128474</td><td class="numi">155682</td></tr><tr class="failedodd"><td><a href="#m3"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">2</td><td>1609746128474</td><td class="numi">155682</td></tr><tr class="failedodd"><td><a href="#m4"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">2</td><td>1609746128474</td><td class="numi">155682</td></tr><tr class="failedodd"><td><a href="#m5"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">2</td><td>1609746128474</td><td class="numi">155682</td></tr>
+<tr><th colspan="4">Surefire test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">shopify.createStoreAndInstallChatalyst</td><td><a href="#m6"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">3</td><td>1609744513260</td><td class="numi">1615213</td></tr><tr class="passedodd"><td><a href="#m7"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">3</td><td>1609744513260</td><td class="numi">1615213</td></tr><tr class="passedodd"><td><a href="#m8"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">3</td><td>1609744513260</td><td class="numi">1615213</td></tr><tr class="passedodd"><td><a href="#m9"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">3</td><td>1609744513260</td><td class="numi">1615213</td></tr><tr class="passedodd"><td><a href="#m10"><b>TC01_CreateShopifyStore</b>  </a></td><td class="numi">3</td><td>1609744513260</td><td class="numi">1615213</td></tr>
 </table>
 <h1>Surefire test</h1>
 <h2 id="m1">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
 <div style="padding-left:3em">
 <h3>Test Messages</h3>
-2020-12-27 18:03:46,007 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-04 14:44:13,346 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 <br/>
-2020-12-27 18:03:46,864 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-04 14:44:13,975 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 <br/>
 <h3>Failure</h3>
-<p>chrome not reachable
+<p>Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;] (tried for 30 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)
+<br/>at pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)
+<br/>29 lines not shown
+<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]&quot;}
   (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c86a7b8f131fb54541863c7790c42560
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
 *** Element info: {Using=xpath, value=//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]}</p>
 java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -77,23 +87,70 @@ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 <br/>at commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)
 <br/>at pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)
-<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:89)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)
 <br/>29 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
 <div style="padding-left:3em">
 <h3>Test Messages</h3>
-2020-12-27 18:04:27,172 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-04 14:42:08,476 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+<br/>
+2021-01-04 14:42:09,338 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+<br/>
+2021-01-04 14:42:09,713 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+<br/>
+2021-01-04 14:42:13,184 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+<br/>
+2021-01-04 14:42:22,525 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+<br/>
+2021-01-04 14:42:25,537 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+<br/>
+2021-01-04 14:42:35,048 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+<br/>
+2021-01-04 14:42:35,049 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+<br/>
+2021-01-04 14:42:40,298 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+<br/>
+2021-01-04 14:42:53,299 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+<br/>
+2021-01-04 14:42:59,178 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+<br/>
+2021-01-04 14:42:59,178 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+<br/>
+2021-01-04 14:42:59,209 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
+<br/>
+2021-01-04 14:42:59,210 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+<br/>
+2021-01-04 14:43:02,333 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+<br/>
+2021-01-04 14:43:05,462 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+<br/>
+2021-01-04 14:43:13,630 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+<br/>
+2021-01-04 14:43:22,954 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+<br/>
+2021-01-04 14:43:24,024 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+<br/>
+2021-01-04 14:43:43,268 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
 <br/>
 <h3>Failure</h3>
-<p>chrome not reachable
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)] (tried for 30 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
+<br/>at pageObject.OberloPO.clickToCreateNewOberloAccount(OberloPO.java:276)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:215)
+<br/>29 lines not shown
+<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)]&quot;}
   (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c86a7b8f131fb54541863c7790c42560</p>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
+*** Element info: {Using=xpath, value=//h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)]}</p>
 java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -105,121 +162,323 @@ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
 <br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 <br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+<br/>at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
+<br/>at pageObject.OberloPO.clickToCreateNewOberloAccount(OberloPO.java:276)
+<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:215)
 <br/>29 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
 <div style="padding-left:3em">
-<h3>Test Messages</h3>
-2020-12-27 18:04:39,199 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-04 14:33:04,274 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 <br/>
-<h3>Failure</h3>
-<p>chrome not reachable
-  (Session info: chrome=87.0.4280.88)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c86a7b8f131fb54541863c7790c42560</p>
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
-<br/>29 lines not shown
+2021-01-04 14:33:05,200 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+<br/>
+2021-01-04 14:33:07,453 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+<br/>
+2021-01-04 14:33:10,848 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+<br/>
+2021-01-04 14:33:20,144 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+<br/>
+2021-01-04 14:33:23,204 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+<br/>
+2021-01-04 14:33:33,241 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+<br/>
+2021-01-04 14:33:33,241 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+<br/>
+2021-01-04 14:33:38,501 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+<br/>
+2021-01-04 14:33:51,457 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+<br/>
+2021-01-04 14:33:58,817 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+<br/>
+2021-01-04 14:33:58,817 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+<br/>
+2021-01-04 14:33:58,841 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
+<br/>
+2021-01-04 14:33:58,842 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+<br/>
+2021-01-04 14:34:01,973 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+<br/>
+2021-01-04 14:34:05,092 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+<br/>
+2021-01-04 14:34:13,225 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+<br/>
+2021-01-04 14:34:22,808 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+<br/>
+2021-01-04 14:34:24,809 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+<br/>
+2021-01-04 14:34:40,066 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+<br/>
+2021-01-04 14:35:27,571 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
+<br/>
+2021-01-04 14:35:31,270 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
+<br/>
+2021-01-04 14:35:48,297 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
+<br/>
+2021-01-04 14:35:56,377 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
+<br/>
+2021-01-04 14:36:25,596 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
+<br/>
+2021-01-04 14:36:30,682 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
+<br/>
+2021-01-04 14:36:33,790 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+<br/>
+2021-01-04 14:36:33,790 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
+<br/>
+2021-01-04 14:36:45,489 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
+<br/>
+2021-01-04 14:36:47,292 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
+<br/>
+2021-01-04 14:37:19,967 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
+<br/>
+2021-01-04 14:37:25,034 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
+<br/>
+2021-01-04 14:37:28,175 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
+<br/>
+2021-01-04 14:37:39,892 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
+<br/>
+2021-01-04 14:37:49,949 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
+<br/>
+2021-01-04 14:38:17,253 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
+<br/>
+2021-01-04 14:38:22,316 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
+<br/>
+2021-01-04 14:38:25,416 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
+<br/>
+2021-01-04 14:38:37,832 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
+<br/>
+2021-01-04 14:38:43,530 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
+<br/>
+2021-01-04 14:39:16,591 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
+<br/>
+2021-01-04 14:39:24,876 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
+<br/>
+2021-01-04 14:39:28,048 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
+<br/>
+2021-01-04 14:39:31,197 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
+<br/>
+2021-01-04 14:41:39,610 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
+<br/>
+2021-01-04 14:41:42,778 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
+<br/>
+2021-01-04 14:41:45,887 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
+<br/>
+2021-01-04 14:41:55,816 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
+<br/>
+2021-01-04 14:42:00,401 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+<br/>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m4">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
 <div style="padding-left:3em">
-<h3>Test Messages</h3>
-2020-12-27 18:00:15,888 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-04 14:15:13,263 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 <br/>
-2020-12-27 18:00:20,193 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-04 14:15:17,491 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 <br/>
-2020-12-27 18:00:20,408 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-04 14:15:17,677 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
 <br/>
-2020-12-27 18:00:23,953 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2021-01-04 14:15:21,264 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
 <br/>
-2020-12-27 18:00:30,160 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2021-01-04 14:15:30,545 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
 <br/>
-2020-12-27 18:00:33,356 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2021-01-04 14:15:33,601 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
 <br/>
-2020-12-27 18:00:48,059 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-04 14:15:46,158 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 <br/>
-2020-12-27 18:00:48,060 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2021-01-04 14:15:46,159 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
 <br/>
-2020-12-27 18:00:53,371 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+2021-01-04 14:15:51,445 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 <br/>
-2020-12-27 18:01:09,216 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+2021-01-04 14:16:04,423 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
 <br/>
-2020-12-27 18:01:15,486 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-04 14:16:14,038 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 <br/>
-2020-12-27 18:01:15,487 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+2021-01-04 14:16:14,038 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
 <br/>
-2020-12-27 18:01:15,517 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20201227_180015_Swift.csv
+2021-01-04 14:16:14,066 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
 <br/>
-2020-12-27 18:01:15,523 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+2021-01-04 14:16:14,072 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
 <br/>
-2020-12-27 18:01:18,686 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+2021-01-04 14:16:17,295 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
 <br/>
-2020-12-27 18:01:21,829 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+2021-01-04 14:16:20,437 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
 <br/>
-2020-12-27 18:01:30,945 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+2021-01-04 14:16:32,139 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
 <br/>
-2020-12-27 18:01:40,391 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+2021-01-04 14:16:41,521 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
 <br/>
-2020-12-27 18:01:41,492 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+2021-01-04 14:16:42,931 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
 <br/>
-2020-12-27 18:02:01,265 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+2021-01-04 14:17:00,352 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
 <br/>
-<h3>Failure</h3>
-<p>No frame element found by name or id intercom-modal-frame
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: unknown</p>
-org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
-<br/>at pageObject.OberloPO.clickToClosePopup(OberloPO.java:122)
-<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:207)
-<br/>29 lines not shown
+2021-01-04 14:17:39,581 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
+<br/>
+2021-01-04 14:17:43,660 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
+<br/>
+2021-01-04 14:18:00,398 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
+<br/>
+2021-01-04 14:18:08,378 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
+<br/>
+2021-01-04 14:18:37,811 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
+<br/>
+2021-01-04 14:18:42,920 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
+<br/>
+2021-01-04 14:18:46,029 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+<br/>
+2021-01-04 14:18:46,029 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
+<br/>
+2021-01-04 14:18:57,549 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
+<br/>
+2021-01-04 14:19:02,047 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
+<br/>
+2021-01-04 14:19:28,408 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
+<br/>
+2021-01-04 14:19:33,494 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
+<br/>
+2021-01-04 14:19:36,593 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
+<br/>
+2021-01-04 14:19:48,335 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
+<br/>
+2021-01-04 14:19:59,536 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
+<br/>
+2021-01-04 14:20:27,199 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
+<br/>
+2021-01-04 14:20:32,269 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
+<br/>
+2021-01-04 14:20:35,364 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
+<br/>
+2021-01-04 14:20:46,947 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
+<br/>
+2021-01-04 14:20:54,434 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
+<br/>
+2021-01-04 14:21:21,035 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
+<br/>
+2021-01-04 14:21:29,286 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
+<br/>
+2021-01-04 14:21:32,468 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
+<br/>
+2021-01-04 14:21:35,590 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
+<br/>
+2021-01-04 14:23:36,368 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
+<br/>
+2021-01-04 14:23:39,542 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
+<br/>
+2021-01-04 14:23:42,652 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
+<br/>
+2021-01-04 14:23:52,180 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
+<br/>
+2021-01-04 14:23:56,102 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+<br/>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m5">shopify.createStoreAndInstallChatalyst:TC01_CreateShopifyStore</h2>
 <div style="padding-left:3em">
-<h3>Test Messages</h3>
-2020-12-27 18:04:15,141 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-04 14:24:04,190 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 <br/>
-<h3>Failure</h3>
-<p>chrome not reachable
-  (Session info: chrome=87.0.4280.88)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c86a7b8f131fb54541863c7790c42560</p>
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-<br/>at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
-<br/>29 lines not shown
+2021-01-04 14:24:05,572 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+<br/>
+2021-01-04 14:24:06,168 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+<br/>
+2021-01-04 14:24:09,593 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+<br/>
+2021-01-04 14:24:18,852 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+<br/>
+2021-01-04 14:24:21,875 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+<br/>
+2021-01-04 14:24:30,930 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+<br/>
+2021-01-04 14:24:30,930 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+<br/>
+2021-01-04 14:24:36,206 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+<br/>
+2021-01-04 14:24:52,071 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+<br/>
+2021-01-04 14:24:58,263 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+<br/>
+2021-01-04 14:24:58,263 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+<br/>
+2021-01-04 14:24:58,297 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
+<br/>
+2021-01-04 14:24:58,298 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+<br/>
+2021-01-04 14:25:01,410 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+<br/>
+2021-01-04 14:25:04,534 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+<br/>
+2021-01-04 14:25:12,641 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+<br/>
+2021-01-04 14:25:23,139 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+<br/>
+2021-01-04 14:25:24,441 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+<br/>
+2021-01-04 14:25:39,172 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+<br/>
+2021-01-04 14:26:24,844 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
+<br/>
+2021-01-04 14:26:29,659 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
+<br/>
+2021-01-04 14:26:46,773 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
+<br/>
+2021-01-04 14:26:55,063 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
+<br/>
+2021-01-04 14:27:26,112 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
+<br/>
+2021-01-04 14:27:31,208 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
+<br/>
+2021-01-04 14:27:34,308 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+<br/>
+2021-01-04 14:27:34,308 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
+<br/>
+2021-01-04 14:27:45,783 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
+<br/>
+2021-01-04 14:28:02,294 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
+<br/>
+2021-01-04 14:28:29,638 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
+<br/>
+2021-01-04 14:28:34,711 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
+<br/>
+2021-01-04 14:28:37,811 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
+<br/>
+2021-01-04 14:28:49,150 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
+<br/>
+2021-01-04 14:29:02,757 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
+<br/>
+2021-01-04 14:29:39,612 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
+<br/>
+2021-01-04 14:29:44,673 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
+<br/>
+2021-01-04 14:29:47,771 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
+<br/>
+2021-01-04 14:29:59,537 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
+<br/>
+2021-01-04 14:30:01,229 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
+<br/>
+2021-01-04 14:30:28,844 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
+<br/>
+2021-01-04 14:30:37,119 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
+<br/>
+2021-01-04 14:30:40,290 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
+<br/>
+2021-01-04 14:30:43,427 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
+<br/>
+2021-01-04 14:32:36,747 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
+<br/>
+2021-01-04 14:32:39,902 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
+<br/>
+2021-01-04 14:32:43,014 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
+<br/>
+2021-01-04 14:32:52,348 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
+<br/>
+2021-01-04 14:32:56,222 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+<br/>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

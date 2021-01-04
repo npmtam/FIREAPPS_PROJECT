@@ -75,7 +75,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
         store_type = Constants.FREE_PLAN;
 
 
-        email = firstName.toLowerCase() + "_" + lastName.toLowerCase() + "@mail.com";
+        email = firstName.toLowerCase() + "_" + lastName.replaceAll("'", "").toLowerCase() + "@mail.com";
         storeName = firstName + " " + lastName;
         storeNameBackup = faker.name().fullName() + country;
         phoneNumber = Constants.PHONE_NUMBER + abstractPage.randomNumber(Constants.RAMDOM_BOUND);
@@ -86,6 +86,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
 
         log.info("Step 01: Press on Start free trial button");
         shopifyPage.switchToFirstWindow();
+        shopifyPage.closeTabToTheRight();
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.clickToStartFreeTrialBtn();
 
@@ -102,9 +103,9 @@ public class createStoreAndInstallSwift extends AbstractTest {
             shopifyPage.clickToCreateYourStoreButton();
         }
 
-        log.info("Too many requets");
         boolean isTooManyRequest = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_TOO_MANY_REQUEST);
         if (isTooManyRequest) {
+            log.info("Too many requets");
             abstractPage.enableCreateAccountButton();
             shopifyPage.clickToContinueButton();
         }
@@ -191,6 +192,13 @@ public class createStoreAndInstallSwift extends AbstractTest {
         boolean isChooseAnAccountToShopifyAppStore = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CHOOSE_AN_ACCOUNT);
         if (isChooseAnAccountToShopifyAppStore) {
             shopifyPage.chooseAccount();
+        }
+
+        boolean isPageNotFound = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
+        if (isPageNotFound){
+            shopifyPage.searchAppInShopifyAppStore();
+            oberloPage.inputKeyword(oberloPage.searchOberlo());
+            oberloPage.clickToSearchAppBtn();
         }
 
         log.info("Step 14: Search app Oberlo");

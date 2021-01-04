@@ -13,6 +13,7 @@ public class ShopifyPageUI {
     //Error Msg
     public static final String ERR_NAME_EXISTS = "//span[contains(text(), 'A store with that name already exists')]";
     public static final String ERR_ZIP_CODE = "//div[@id='PolarisTextField8Error']";
+    public static final String ERR_PAGE_NOT_FOUND = "//h3[contains(text(),'The page youʼre looking for canʼt be found')]";
 
     //Tell us a little about yourself
     public static final String TITLE_MORE_INFO = "//h1[text()='Tell us a little about yourself']";
@@ -67,6 +68,8 @@ public class ShopifyPageUI {
     public static final String OBERLO_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Oberlo')]";
     public static final String SHOW_FULL_DESCRIPTION_BTN = "//button[contains(text(),'Show full description')]";
     public static final String CREATE_DISCOUNT_BTN = "//span[contains(text(),'Create discount code')]";
+    public static final String SEARCH_SHOPIFY_APP_STORE_BTN = "//*[@id=\"ShopifyMainNav\"]/button[1]";
+    public static final String SEARCH_BTN_SHOPIFY_APP_STORE_BTN = "//body/div[@id='UiSearchNavbar']/div[1]/div[1]/form[1]/label[1]/button[1]/*[1]";
 
     //CREATE DISCOUNT CODE
     public static final String DISCOUNT_CODE_TEXTBOX = "//input[@placeholder='e.g. SPRINGSALE']";

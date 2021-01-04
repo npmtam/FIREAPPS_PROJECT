@@ -8,6 +8,7 @@ import commons.PageGeneratorManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -41,6 +42,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
     @Parameters("browser")
     @BeforeTest
     public void beforeTest() {
+
         driver = getBrowserDriver("chrome");
         abstractPage = new AbstractPage(driver);
 

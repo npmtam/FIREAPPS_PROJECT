@@ -725,5 +725,22 @@ public class ShopifyPO extends AbstractPage {
         driver.switchTo().window(handlesList.get(0));
     }
 
+    public void closeTabToTheRight(){
+        String originalHandle = driver.getWindowHandle();
+        //Do something to open new tabs
+        for(String handle : driver.getWindowHandles()) {
+            if (!handle.equals(originalHandle)) {
+                driver.switchTo().window(handle);
+                driver.close();
+            }
+        }
+        driver.switchTo().window(originalHandle);
+    }
+
+    public void searchAppInShopifyAppStore(){
+        sleepInSecond(3);
+        waitToElementClickable(ShopifyPageUI.SEARCH_SHOPIFY_APP_STORE_BTN);
+        clickToElement(ShopifyPageUI.SEARCH_SHOPIFY_APP_STORE_BTN);
+    }
 
 }

@@ -73,6 +73,7 @@ public class OberloPO extends AbstractPage {
         sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
     }
 
+
     public void selectOberloInAppStore() {
         waitToElementVisible(ShopifyPageUI.OBERLO_APP_IN_APPSTORE);
         clickToElement(ShopifyPageUI.OBERLO_APP_IN_APPSTORE);
@@ -95,6 +96,13 @@ public class OberloPO extends AbstractPage {
         sleepInSecond(5);
         waitToElementVisible(ShopifyPageUI.SEARCH_BTN_SHOPIFY_APP_STORE_BTN);
         clickToElement(ShopifyPageUI.SEARCH_BTN_SHOPIFY_APP_STORE_BTN);
+    }
+
+    public void inputKeywordOberlo(String keyword) {
+        sleepInSecond(3);
+        //switchToWindowsByTitle("Shopify App Store: Ecommerce App Marketplace");
+        waitToElementVisible(ShopifyPageUI.SEARCH_APP_OBERLO_TEXTBOX);
+        sendKeyToElement(ShopifyPageUI.SEARCH_APP_OBERLO_TEXTBOX, keyword);
     }
 
     /* public void inputToPassword(String password_oberlo) {

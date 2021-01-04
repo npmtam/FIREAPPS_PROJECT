@@ -1,172 +1,73 @@
-2021-01-04 14:15:13,241 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
-2021-01-04 14:15:13,263 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-04 14:15:17,491 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-04 14:15:17,677 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2021-01-04 14:15:21,264 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-2021-01-04 14:15:30,545 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-2021-01-04 14:15:33,601 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-2021-01-04 14:15:46,158 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-04 14:15:46,159 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-2021-01-04 14:15:51,445 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-2021-01-04 14:16:04,423 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-2021-01-04 14:16:14,038 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-04 14:16:14,038 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-2021-01-04 14:16:14,066 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
-2021-01-04 14:16:14,072 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-2021-01-04 14:16:17,295 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-2021-01-04 14:16:20,437 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-2021-01-04 14:16:32,139 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-2021-01-04 14:16:41,521 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-2021-01-04 14:16:42,931 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-2021-01-04 14:17:00,352 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-2021-01-04 14:17:39,581 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
-2021-01-04 14:17:43,660 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
-2021-01-04 14:18:00,398 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
-2021-01-04 14:18:08,378 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
-2021-01-04 14:18:37,811 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
-2021-01-04 14:18:42,920 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
-2021-01-04 14:18:46,029 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-2021-01-04 14:18:46,029 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
-2021-01-04 14:18:57,549 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
-2021-01-04 14:19:02,047 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
-2021-01-04 14:19:28,408 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
-2021-01-04 14:19:33,494 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
-2021-01-04 14:19:36,593 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
-2021-01-04 14:19:48,335 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
-2021-01-04 14:19:59,536 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
-2021-01-04 14:20:27,199 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
-2021-01-04 14:20:32,269 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
-2021-01-04 14:20:35,364 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
-2021-01-04 14:20:46,947 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
-2021-01-04 14:20:54,434 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
-2021-01-04 14:21:21,035 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
-2021-01-04 14:21:29,286 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
-2021-01-04 14:21:32,468 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
-2021-01-04 14:21:35,590 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
-2021-01-04 14:23:36,368 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
-2021-01-04 14:23:39,542 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
-2021-01-04 14:23:42,652 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
-2021-01-04 14:23:52,180 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
-2021-01-04 14:23:56,102 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
-2021-01-04 14:24:04,190 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-04 14:24:05,572 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-04 14:24:06,168 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2021-01-04 14:24:09,593 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-2021-01-04 14:24:18,852 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-2021-01-04 14:24:21,875 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-2021-01-04 14:24:30,930 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-04 14:24:30,930 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-2021-01-04 14:24:36,206 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-2021-01-04 14:24:52,071 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-2021-01-04 14:24:58,263 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-04 14:24:58,263 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-2021-01-04 14:24:58,297 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
-2021-01-04 14:24:58,298 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-2021-01-04 14:25:01,410 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-2021-01-04 14:25:04,534 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-2021-01-04 14:25:12,641 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-2021-01-04 14:25:23,139 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-2021-01-04 14:25:24,441 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-2021-01-04 14:25:39,172 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-2021-01-04 14:26:24,844 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
-2021-01-04 14:26:29,659 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
-2021-01-04 14:26:46,773 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
-2021-01-04 14:26:55,063 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
-2021-01-04 14:27:26,112 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
-2021-01-04 14:27:31,208 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
-2021-01-04 14:27:34,308 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-2021-01-04 14:27:34,308 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
-2021-01-04 14:27:45,783 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
-2021-01-04 14:28:02,294 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
-2021-01-04 14:28:29,638 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
-2021-01-04 14:28:34,711 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
-2021-01-04 14:28:37,811 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
-2021-01-04 14:28:49,150 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
-2021-01-04 14:29:02,757 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
-2021-01-04 14:29:39,612 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
-2021-01-04 14:29:44,673 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
-2021-01-04 14:29:47,771 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
-2021-01-04 14:29:59,537 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
-2021-01-04 14:30:01,229 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
-2021-01-04 14:30:28,844 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
-2021-01-04 14:30:37,119 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
-2021-01-04 14:30:40,290 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
-2021-01-04 14:30:43,427 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
-2021-01-04 14:32:36,747 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
-2021-01-04 14:32:39,902 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
-2021-01-04 14:32:43,014 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
-2021-01-04 14:32:52,348 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
-2021-01-04 14:32:56,222 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
-2021-01-04 14:33:04,274 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-04 14:33:05,200 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-04 14:33:07,453 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2021-01-04 14:33:10,848 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-2021-01-04 14:33:20,144 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-2021-01-04 14:33:23,204 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-2021-01-04 14:33:33,241 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-04 14:33:33,241 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-2021-01-04 14:33:38,501 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-2021-01-04 14:33:51,457 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-2021-01-04 14:33:58,817 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-04 14:33:58,817 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-2021-01-04 14:33:58,841 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
-2021-01-04 14:33:58,842 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-2021-01-04 14:34:01,973 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-2021-01-04 14:34:05,092 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-2021-01-04 14:34:13,225 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-2021-01-04 14:34:22,808 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-2021-01-04 14:34:24,809 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-2021-01-04 14:34:40,066 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-2021-01-04 14:35:27,571 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
-2021-01-04 14:35:31,270 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
-2021-01-04 14:35:48,297 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
-2021-01-04 14:35:56,377 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
-2021-01-04 14:36:25,596 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
-2021-01-04 14:36:30,682 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
-2021-01-04 14:36:33,790 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-2021-01-04 14:36:33,790 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
-2021-01-04 14:36:45,489 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
-2021-01-04 14:36:47,292 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
-2021-01-04 14:37:19,967 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
-2021-01-04 14:37:25,034 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
-2021-01-04 14:37:28,175 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
-2021-01-04 14:37:39,892 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
-2021-01-04 14:37:49,949 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
-2021-01-04 14:38:17,253 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
-2021-01-04 14:38:22,316 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
-2021-01-04 14:38:25,416 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
-2021-01-04 14:38:37,832 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
-2021-01-04 14:38:43,530 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
-2021-01-04 14:39:16,591 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
-2021-01-04 14:39:24,876 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
-2021-01-04 14:39:28,048 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
-2021-01-04 14:39:31,197 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
-2021-01-04 14:41:39,610 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
-2021-01-04 14:41:42,778 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
-2021-01-04 14:41:45,887 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
-2021-01-04 14:41:55,816 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
-2021-01-04 14:42:00,401 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
-2021-01-04 14:42:08,476 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-04 14:42:09,338 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-04 14:42:09,713 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2021-01-04 14:42:13,184 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-2021-01-04 14:42:22,525 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-2021-01-04 14:42:25,537 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-2021-01-04 14:42:35,048 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-04 14:42:35,049 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-2021-01-04 14:42:40,298 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-2021-01-04 14:42:53,299 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-2021-01-04 14:42:59,178 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-04 14:42:59,178 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-2021-01-04 14:42:59,209 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
-2021-01-04 14:42:59,210 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-2021-01-04 14:43:02,333 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-2021-01-04 14:43:05,462 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-2021-01-04 14:43:13,630 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-2021-01-04 14:43:22,954 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-2021-01-04 14:43:24,024 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-2021-01-04 14:43:43,268 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-2021-01-04 14:44:13,346 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-04 14:44:13,975 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-04 14:44:44,159 INFO  shopify.createStoreAndInstallChatalyst - OS Name = windows 10
-2021-01-04 14:44:45,108 INFO  shopify.createStoreAndInstallChatalyst - ----------------QUIT BROWSER SUCCESS-----------------
+2021-01-04 15:57:55,311 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
+2021-01-04 15:57:55,330 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-04 15:57:58,896 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-04 15:57:59,077 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-04 15:58:02,675 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2021-01-04 15:58:12,094 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2021-01-04 15:58:15,161 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2021-01-04 15:58:26,874 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-04 15:58:26,875 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2021-01-04 15:58:32,260 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+2021-01-04 15:58:45,294 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+2021-01-04 15:58:50,230 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-04 15:58:50,231 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+2021-01-04 15:58:50,257 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_155755_Swift.csv
+2021-01-04 15:58:50,262 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+2021-01-04 15:58:53,379 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+2021-01-04 15:58:56,504 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+2021-01-04 15:59:05,742 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+2021-01-04 15:59:18,161 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+2021-01-04 15:59:19,266 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+2021-01-04 15:59:37,921 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+2021-01-04 16:00:19,157 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
+2021-01-04 16:00:23,304 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
+2021-01-04 16:00:39,792 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
+2021-01-04 16:00:47,487 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
+2021-01-04 16:01:16,879 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
+2021-01-04 16:01:22,018 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
+2021-01-04 16:01:25,140 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+2021-01-04 16:01:25,140 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
+2021-01-04 16:01:37,337 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
+2021-01-04 16:01:45,331 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
+2021-01-04 16:02:16,998 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
+2021-01-04 16:02:22,105 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
+2021-01-04 16:02:25,210 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
+2021-01-04 16:02:36,845 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
+2021-01-04 16:02:41,124 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
+2021-01-04 16:03:03,749 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
+2021-01-04 16:03:08,819 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
+2021-01-04 16:03:11,920 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
+2021-01-04 16:03:23,474 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
+2021-01-04 16:03:37,228 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
+2021-01-04 16:04:15,866 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
+2021-01-04 16:04:24,129 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
+2021-01-04 16:04:27,330 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
+2021-01-04 16:04:30,463 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
+2021-01-04 16:06:25,097 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
+2021-01-04 16:06:28,345 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
+2021-01-04 16:06:31,572 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
+2021-01-04 16:06:41,661 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
+2021-01-04 16:06:45,579 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+2021-01-04 16:06:45,579 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Verify the choose plan page display
+2021-01-04 16:07:18,631 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-04 16:07:19,532 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-04 16:07:49,704 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-04 16:07:50,385 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-04 16:07:50,828 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-04 16:07:54,239 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2021-01-04 16:08:03,470 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2021-01-04 16:08:08,921 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2021-01-04 16:08:24,618 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-04 16:08:24,618 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2021-01-04 16:08:29,870 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+2021-01-04 16:08:42,772 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+2021-01-04 16:08:49,748 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-04 16:08:49,748 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+2021-01-04 16:08:49,772 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_155755_Swift.csv
+2021-01-04 16:08:49,773 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+2021-01-04 16:08:52,902 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+2021-01-04 16:08:56,017 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+2021-01-04 16:09:01,115 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+2021-01-04 16:09:13,897 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+2021-01-04 16:09:14,913 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+2021-01-04 16:09:38,221 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify

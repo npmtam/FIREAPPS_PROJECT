@@ -194,16 +194,19 @@ public class createStoreAndInstallSwift extends AbstractTest {
             shopifyPage.chooseAccount();
         }
 
+        log.info("Step 14: Search app Oberlo");
         boolean isPageNotFound = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
         if (isPageNotFound){
             shopifyPage.searchAppInShopifyAppStore();
-            oberloPage.inputKeyword(oberloPage.searchOberlo());
+            oberloPage.inputKeywordOberlo(oberloPage.searchOberlo());
             oberloPage.clickToSearchAppBtn();
+        }else {
+            oberloPage.inputKeyword(oberloPage.searchOberlo());
+            oberloPage.clickToSearchBtn();
         }
 
-        log.info("Step 14: Search app Oberlo");
-        oberloPage.inputKeyword(oberloPage.searchOberlo());
-        oberloPage.clickToSearchBtn();
+        //oberloPage.inputKeyword(oberloPage.searchOberlo());
+        //oberloPage.clickToSearchBtn();
 
         log.info("Step 15: Select Oberlo app");
         oberloPage.selectOberloInAppStore();

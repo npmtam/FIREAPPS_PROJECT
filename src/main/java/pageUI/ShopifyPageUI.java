@@ -70,6 +70,7 @@ public class ShopifyPageUI {
     public static final String CREATE_DISCOUNT_BTN = "//span[contains(text(),'Create discount code')]";
     public static final String SEARCH_SHOPIFY_APP_STORE_BTN = "//*[@id=\"ShopifyMainNav\"]/button[1]";
     public static final String SEARCH_BTN_SHOPIFY_APP_STORE_BTN = "//body/div[@id='UiSearchNavbar']/div[1]/div[1]/form[1]/label[1]/button[1]/*[1]";
+    public static final String SEARCH_APP_OBERLO_TEXTBOX = "//*[@id=\"UiSearchSuggestionForm\"]/label/input";
 
     //CREATE DISCOUNT CODE
     public static final String DISCOUNT_CODE_TEXTBOX = "//input[@placeholder='e.g. SPRINGSALE']";

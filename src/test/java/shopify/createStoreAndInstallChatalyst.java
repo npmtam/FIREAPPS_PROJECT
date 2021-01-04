@@ -193,16 +193,19 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
             shopifyPage.chooseAccount();
         }
 
+        log.info("Step 14: Search app Oberlo");
         boolean isPageNotFound = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
         if (isPageNotFound){
             shopifyPage.searchAppInShopifyAppStore();
-            oberloPage.inputKeyword(oberloPage.searchOberlo());
+            oberloPage.inputKeywordOberlo(oberloPage.searchOberlo());
             oberloPage.clickToSearchAppBtn();
+        }else {
+            oberloPage.inputKeyword(oberloPage.searchOberlo());
+            oberloPage.clickToSearchBtn();
         }
 
-        log.info("Step 14: Search app Oberlo");
-        oberloPage.inputKeyword(oberloPage.searchOberlo());
-        oberloPage.clickToSearchBtn();
+        //oberloPage.inputKeyword(oberloPage.searchOberlo());
+        //oberloPage.clickToSearchBtn();
 
         log.info("Step 15: Select Oberlo app");
         oberloPage.selectOberloInAppStore();
@@ -262,8 +265,8 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         log.info("Random delay");
         //shopifyPage.sleepRandomly();
 
-       /* log.info("Step 24 choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
+        //log.info("Step 24 choose account to continue to shopify app");
+        //shopifyPage.chooseAccount();
 
         log.info("Step 25: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeShopifyApp());
@@ -286,8 +289,8 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         log.info("Step 29: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
-        /*log.info("Step 30: choose account to continue to shopify app");
-        shopifyPage.chooseAccount();*/
+        //log.info("Step 30: choose account to continue to shopify app");
+        //shopifyPage.chooseAccount();
 
         log.info("Step 31: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp());
@@ -361,18 +364,18 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         chatalystPage.inputKeyword(chatalystPage.getRandomKeyword());
         chatalystPage.clickToSearchBtn();
 
-        /*log.info("Step 14.1: Load page 2");
-        messentPage.clickToLoadPageTwo();*/
+        //log.info("Step 14.1: Load page 2");
+        //messentPage.clickToLoadPageTwo();
 
         log.info("Step 47: Select Swift app");
         chatalystPage.clickToChatalystAppInAppStore();
 
         log.info("Step 48: Add Swift app to store");
-        chatalystPage.clickToAddApp();
-        chatalystPage.clickToInstallApp();
+        //chatalystPage.clickToAddApp();
+        //chatalystPage.clickToInstallApp();
 
-        /*log.info("Step 46: Verify the choose plan page display");
-        verifyTrue(chatalystPage.isChoosePlanPageDisplay());*/
+        log.info("Step 46: Verify the choose plan page display");
+        verifyTrue(chatalystPage.isChoosePlanPageDisplay());
 
         shopifyPage.sWitchTab();
     }

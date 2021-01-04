@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
@@ -118,11 +123,6 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
@@ -156,12 +156,13 @@
                   <a name="TC01_CreateShopifyStore">
                   </a> <!-- TC01_CreateShopifyStore -->
                   <span class="method-name">TC01_CreateShopifyStore</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)
-	at pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchFrameException: No frame element found by name or id intercom-modal-frame
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at pageObject.OberloPO.clickToClosePopup(OberloPO.java:137)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:224)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -169,37 +170,13 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+... Removed 21 stack frames<br/> org.openqa.selenium.NoSuchFrameException: No frame element found by name or id intercom-modal-frame
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
-*** Element info: {Using=xpath, value=//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-... Removed 26 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)
-	at pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at pageObject.OberloPO.clickToClosePopup(OberloPO.java:137)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:224)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -228,37 +205,7 @@ Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
-*** Element info: {Using=xpath, value=//ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br>commons.AbstractPage.waitToElementClickable(AbstractPage.java:363)<br>pageObject.ShopifyPO.clickToStartFreeTrialBtn(ShopifyPO.java:37)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+"</b><br>org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)<br>pageObject.OberloPO.clickToClosePopup(OberloPO.java:137)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:224)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -267,12 +214,17 @@ Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
                   <a name="TC01_CreateShopifyStore">
                   </a> <!-- TC01_CreateShopifyStore -->
                   <span class="method-name">TC01_CreateShopifyStore</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name=&apos;account_setup[firstName]&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f7c1e12b05a5b2abd908e14220899a04
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
-	at pageObject.OberloPO.clickToCreateNewOberloAccount(OberloPO.java:276)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:215)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:350)
+	at pageObject.ShopifyPO.inputAddressTextboxes(ShopifyPO.java:91)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:147)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -280,35 +232,17 @@ Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+... Removed 21 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name=&apos;account_setup[firstName]&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
-*** Element info: {Using=xpath, value=//h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-... Removed 26 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f7c1e12b05a5b2abd908e14220899a04
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
-	at pageObject.OberloPO.clickToCreateNewOberloAccount(OberloPO.java:276)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:215)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:350)
+	at pageObject.ShopifyPO.inputAddressTextboxes(ShopifyPO.java:91)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:147)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -337,35 +271,69 @@ Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)]&quot;}
-  (Session info: chrome=87.0.4280.88)
+"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br>commons.AbstractPage.waitToElementVisible(AbstractPage.java:350)<br>pageObject.ShopifyPO.inputAddressTextboxes(ShopifyPO.java:91)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:147)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01_CreateShopifyStore">
+                  </a> <!-- TC01_CreateShopifyStore -->
+                  <span class="method-name">TC01_CreateShopifyStore</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Réunion
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
-*** Element info: {Using=xpath, value=//h2[contains(text(),&apos;Connect Oberlo with Shopify&apos;)]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br>commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)<br>pageObject.OberloPO.clickToCreateNewOberloAccount(OberloPO.java:276)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:215)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at commons.AbstractPage.selectItemInDropdown(AbstractPage.java:127)
+	at pageObject.ShopifyPO.selectCountry(ShopifyPO.java:352)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:151)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 21 stack frames<br/> org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Réunion
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at commons.AbstractPage.selectItemInDropdown(AbstractPage.java:127)
+	at pageObject.ShopifyPO.selectCountry(ShopifyPO.java:352)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)<br>commons.AbstractPage.selectItemInDropdown(AbstractPage.java:127)<br>pageObject.ShopifyPO.selectCountry(ShopifyPO.java:352)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:151)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -377,13 +345,6 @@ Session ID: 45e1e7a7bee498cf38066d50f7f6f7bb
               <span class="class-name">shopify.createStoreAndInstallChatalyst</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC01_CreateShopifyStore">
-                  </a> <!-- TC01_CreateShopifyStore -->
-                  <span class="method-name">TC01_CreateShopifyStore</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TC01_CreateShopifyStore">
@@ -455,28 +416,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC01_CreateShopifyStore')
 data.setCell(0, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(0, 3, 544202);
+data.setCell(0, 3, 523897);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC01_CreateShopifyStore')
 data.setCell(1, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(1, 3, 540084);
+data.setCell(1, 3, 511726);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC01_CreateShopifyStore')
 data.setCell(2, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(2, 3, 530925);
+data.setCell(2, 3, 192960);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TC01_CreateShopifyStore')
 data.setCell(3, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(3, 3, 124860);
+data.setCell(3, 3, 66904);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TC01_CreateShopifyStore')
 data.setCell(4, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(4, 3, 30811);
+data.setCell(4, 3, 65628);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 minutes</span>
+              <span class="suite-total-time">Total running time: 22 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -490,363 +451,297 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 14:33:04,274 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+                <span class="reporter-method-output">2021-01-04 15:20:47,775 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:05,200 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+                <span class="reporter-method-output">2021-01-04 15:20:48,900 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:07,453 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+                <span class="reporter-method-output">2021-01-04 15:20:49,147 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:10,848 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+                <span class="reporter-method-output">2021-01-04 15:20:52,568 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:20,144 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+                <span class="reporter-method-output">2021-01-04 15:21:01,769 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:23,204 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+                <span class="reporter-method-output">2021-01-04 15:21:04,782 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:33,241 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-04 15:21:15,570 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:33,241 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+                <span class="reporter-method-output">2021-01-04 15:21:15,570 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:38,501 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+                <span class="reporter-method-output">2021-01-04 15:21:20,840 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:51,457 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+                <span class="reporter-method-output">2021-01-04 15:21:30,766 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:58,817 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-04 15:21:35,770 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:58,817 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+                <span class="reporter-method-output">2021-01-04 15:21:35,770 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:58,841 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
+                <span class="reporter-method-output">2021-01-04 15:21:35,795 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_150951_Swift.csv
 </span>
-                <span class="reporter-method-output">2021-01-04 14:33:58,842 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:21:35,796 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:34:01,973 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:21:38,937 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:34:05,092 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+                <span class="reporter-method-output">2021-01-04 15:21:42,054 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:34:13,225 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+                <span class="reporter-method-output">2021-01-04 15:21:50,174 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
 </span>
-                <span class="reporter-method-output">2021-01-04 14:34:22,808 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+                <span class="reporter-method-output">2021-01-04 15:21:59,679 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:34:24,809 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+                <span class="reporter-method-output">2021-01-04 15:22:00,752 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:34:40,066 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+                <span class="reporter-method-output">2021-01-04 15:22:16,417 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
 </span>
-                <span class="reporter-method-output">2021-01-04 14:35:27,571 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
+                <span class="reporter-method-output">2021-01-04 15:22:57,940 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
 </span>
-                <span class="reporter-method-output">2021-01-04 14:35:31,270 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
+                <span class="reporter-method-output">2021-01-04 15:23:02,807 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
 </span>
-                <span class="reporter-method-output">2021-01-04 14:35:48,297 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
+                <span class="reporter-method-output">2021-01-04 15:23:20,571 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
 </span>
-                <span class="reporter-method-output">2021-01-04 14:35:56,377 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
+                <span class="reporter-method-output">2021-01-04 15:23:28,356 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
 </span>
-                <span class="reporter-method-output">2021-01-04 14:36:25,596 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:23:57,304 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:36:30,682 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:24:02,377 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:36:33,790 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+                <span class="reporter-method-output">2021-01-04 15:24:05,534 INFO  shopify.createStoreAndInstallChatalyst - Random delay
 </span>
-                <span class="reporter-method-output">2021-01-04 14:36:33,790 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
+                <span class="reporter-method-output">2021-01-04 15:24:05,534 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:36:45,489 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
+                <span class="reporter-method-output">2021-01-04 15:24:17,368 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:36:47,292 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
+                <span class="reporter-method-output">2021-01-04 15:24:27,963 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:37:19,967 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:24:55,815 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:37:25,034 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:25:00,881 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:37:28,175 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
+                <span class="reporter-method-output">2021-01-04 15:25:03,964 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:37:39,892 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
+                <span class="reporter-method-output">2021-01-04 15:25:15,564 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:37:49,949 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
+                <span class="reporter-method-output">2021-01-04 15:25:24,261 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:38:17,253 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:25:50,379 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:38:22,316 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:25:55,457 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:38:25,416 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
+                <span class="reporter-method-output">2021-01-04 15:25:58,571 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:38:37,832 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
+                <span class="reporter-method-output">2021-01-04 15:26:10,362 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:38:43,530 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
+                <span class="reporter-method-output">2021-01-04 15:26:11,319 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:39:16,591 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
+                <span class="reporter-method-output">2021-01-04 15:26:37,972 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:39:24,876 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
+                <span class="reporter-method-output">2021-01-04 15:26:46,258 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
 </span>
-                <span class="reporter-method-output">2021-01-04 14:39:28,048 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
+                <span class="reporter-method-output">2021-01-04 15:26:49,473 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
 </span>
-                <span class="reporter-method-output">2021-01-04 14:39:31,197 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
+                <span class="reporter-method-output">2021-01-04 15:26:52,610 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
 </span>
-                <span class="reporter-method-output">2021-01-04 14:41:39,610 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:28:51,464 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:41:42,778 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:28:54,606 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:41:45,887 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
+                <span class="reporter-method-output">2021-01-04 15:28:57,712 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
 </span>
-                <span class="reporter-method-output">2021-01-04 14:41:55,816 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
+                <span class="reporter-method-output">2021-01-04 15:29:06,965 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:00,401 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+                <span class="reporter-method-output">2021-01-04 15:29:11,430 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 14:15:13,263 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+                <span class="reporter-method-output">2021-01-04 15:12:03,877 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
-                <span class="reporter-method-output">2021-01-04 14:15:17,491 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+                <span class="reporter-method-output">2021-01-04 15:12:04,504 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 </span>
-                <span class="reporter-method-output">2021-01-04 14:15:17,677 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+                <span class="reporter-method-output">2021-01-04 15:12:04,889 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
 </span>
-                <span class="reporter-method-output">2021-01-04 14:15:21,264 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+                <span class="reporter-method-output">2021-01-04 15:12:08,349 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
 </span>
-                <span class="reporter-method-output">2021-01-04 14:15:30,545 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+                <span class="reporter-method-output">2021-01-04 15:12:17,612 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
 </span>
-                <span class="reporter-method-output">2021-01-04 14:15:33,601 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+                <span class="reporter-method-output">2021-01-04 15:12:20,686 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:15:46,158 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-04 15:12:31,660 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 14:15:46,159 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+                <span class="reporter-method-output">2021-01-04 15:12:31,660 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
 </span>
-                <span class="reporter-method-output">2021-01-04 14:15:51,445 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+                <span class="reporter-method-output">2021-01-04 15:12:37,003 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:04,423 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+                <span class="reporter-method-output">2021-01-04 15:12:49,893 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:14,038 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-04 15:12:56,893 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:14,038 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+                <span class="reporter-method-output">2021-01-04 15:12:56,893 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:14,066 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
+                <span class="reporter-method-output">2021-01-04 15:12:56,919 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_150951_Swift.csv
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:14,072 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:12:56,923 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:17,295 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:13:00,040 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:20,437 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+                <span class="reporter-method-output">2021-01-04 15:13:03,163 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:32,139 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+                <span class="reporter-method-output">2021-01-04 15:13:17,002 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:41,521 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+                <span class="reporter-method-output">2021-01-04 15:13:26,512 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:16:42,931 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+                <span class="reporter-method-output">2021-01-04 15:13:27,603 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:17:00,352 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+                <span class="reporter-method-output">2021-01-04 15:13:44,957 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
 </span>
-                <span class="reporter-method-output">2021-01-04 14:17:39,581 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
+                <span class="reporter-method-output">2021-01-04 15:14:25,519 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
 </span>
-                <span class="reporter-method-output">2021-01-04 14:17:43,660 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
+                <span class="reporter-method-output">2021-01-04 15:14:31,362 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
 </span>
-                <span class="reporter-method-output">2021-01-04 14:18:00,398 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
+                <span class="reporter-method-output">2021-01-04 15:14:48,920 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
 </span>
-                <span class="reporter-method-output">2021-01-04 14:18:08,378 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
+                <span class="reporter-method-output">2021-01-04 15:14:56,811 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
 </span>
-                <span class="reporter-method-output">2021-01-04 14:18:37,811 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:15:27,763 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:18:42,920 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:15:32,851 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:18:46,029 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+                <span class="reporter-method-output">2021-01-04 15:15:35,966 INFO  shopify.createStoreAndInstallChatalyst - Random delay
 </span>
-                <span class="reporter-method-output">2021-01-04 14:18:46,029 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
+                <span class="reporter-method-output">2021-01-04 15:15:35,967 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:18:57,549 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
+                <span class="reporter-method-output">2021-01-04 15:15:48,195 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:19:02,047 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
+                <span class="reporter-method-output">2021-01-04 15:15:56,334 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:19:28,408 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:16:27,516 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:19:33,494 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:16:32,585 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:19:36,593 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
+                <span class="reporter-method-output">2021-01-04 15:16:35,681 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:19:48,335 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
+                <span class="reporter-method-output">2021-01-04 15:16:47,283 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:19:59,536 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
+                <span class="reporter-method-output">2021-01-04 15:16:48,750 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:20:27,199 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:17:17,031 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:20:32,269 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:17:22,097 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:20:35,364 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
+                <span class="reporter-method-output">2021-01-04 15:17:25,180 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:20:46,947 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
+                <span class="reporter-method-output">2021-01-04 15:17:36,572 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:20:54,434 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
+                <span class="reporter-method-output">2021-01-04 15:17:40,969 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:21:21,035 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
+                <span class="reporter-method-output">2021-01-04 15:18:13,533 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:21:29,286 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
+                <span class="reporter-method-output">2021-01-04 15:18:21,760 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
 </span>
-                <span class="reporter-method-output">2021-01-04 14:21:32,468 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
+                <span class="reporter-method-output">2021-01-04 15:18:24,926 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
 </span>
-                <span class="reporter-method-output">2021-01-04 14:21:35,590 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
+                <span class="reporter-method-output">2021-01-04 15:18:28,046 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
 </span>
-                <span class="reporter-method-output">2021-01-04 14:23:36,368 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:20:18,600 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:23:39,542 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:20:21,769 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:23:42,652 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
+                <span class="reporter-method-output">2021-01-04 15:20:24,871 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
 </span>
-                <span class="reporter-method-output">2021-01-04 14:23:52,180 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
+                <span class="reporter-method-output">2021-01-04 15:20:34,149 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:23:56,102 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+                <span class="reporter-method-output">2021-01-04 15:20:39,696 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 14:24:04,190 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+                <span class="reporter-method-output">2021-01-04 15:29:19,501 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:05,572 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+                <span class="reporter-method-output">2021-01-04 15:29:20,675 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:06,168 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+                <span class="reporter-method-output">2021-01-04 15:29:20,952 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:09,593 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+                <span class="reporter-method-output">2021-01-04 15:29:24,413 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:18,852 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+                <span class="reporter-method-output">2021-01-04 15:29:33,707 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:21,875 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+                <span class="reporter-method-output">2021-01-04 15:29:36,773 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:30,930 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-04 15:29:46,883 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:30,930 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+                <span class="reporter-method-output">2021-01-04 15:29:46,883 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:36,206 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+                <span class="reporter-method-output">2021-01-04 15:29:52,154 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:52,071 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+                <span class="reporter-method-output">2021-01-04 15:30:05,038 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:58,263 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-04 15:30:10,131 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:58,263 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+                <span class="reporter-method-output">2021-01-04 15:30:10,131 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:58,297 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
+                <span class="reporter-method-output">2021-01-04 15:30:10,153 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_150951_Swift.csv
 </span>
-                <span class="reporter-method-output">2021-01-04 14:24:58,298 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+                <span class="reporter-method-output">2021-01-04 15:30:10,154 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 14:25:01,410 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-04 15:30:13,271 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:25:04,534 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+                <span class="reporter-method-output">2021-01-04 15:30:16,380 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:25:12,641 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+                <span class="reporter-method-output">2021-01-04 15:30:25,231 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
 </span>
-                <span class="reporter-method-output">2021-01-04 14:25:23,139 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+                <span class="reporter-method-output">2021-01-04 15:30:34,842 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
 </span>
-                <span class="reporter-method-output">2021-01-04 14:25:24,441 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+                <span class="reporter-method-output">2021-01-04 15:30:36,767 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:25:39,172 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 14:26:24,844 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 14:26:29,659 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
-</span>
-                <span class="reporter-method-output">2021-01-04 14:26:46,773 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
-</span>
-                <span class="reporter-method-output">2021-01-04 14:26:55,063 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
-</span>
-                <span class="reporter-method-output">2021-01-04 14:27:26,112 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 14:27:31,208 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:27:34,308 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-</span>
-                <span class="reporter-method-output">2021-01-04 14:27:34,308 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:27:45,783 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:28:02,294 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:28:29,638 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 14:28:34,711 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:28:37,811 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:28:49,150 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:29:02,757 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:29:39,612 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 14:29:44,673 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:29:47,771 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:29:59,537 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:30:01,229 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:30:28,844 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
-</span>
-                <span class="reporter-method-output">2021-01-04 14:30:37,119 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
-</span>
-                <span class="reporter-method-output">2021-01-04 14:30:40,290 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
-</span>
-                <span class="reporter-method-output">2021-01-04 14:30:43,427 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
-</span>
-                <span class="reporter-method-output">2021-01-04 14:32:36,747 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 14:32:39,902 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:32:43,014 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
-</span>
-                <span class="reporter-method-output">2021-01-04 14:32:52,348 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:32:56,222 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+                <span class="reporter-method-output">2021-01-04 15:30:53,894 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 14:44:13,346 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+                <span class="reporter-method-output">2021-01-04 15:09:51,338 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
-                <span class="reporter-method-output">2021-01-04 14:44:13,975 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+                <span class="reporter-method-output">2021-01-04 15:09:53,248 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+</span>
+                <span class="reporter-method-output">2021-01-04 15:09:53,934 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+</span>
+                <span class="reporter-method-output">2021-01-04 15:09:57,616 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+</span>
+                <span class="reporter-method-output">2021-01-04 15:10:07,231 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+</span>
+                <span class="reporter-method-output">2021-01-04 15:10:10,341 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+</span>
+                <span class="reporter-method-output">2021-01-04 15:10:22,748 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">2021-01-04 15:10:22,750 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+</span>
+                <span class="reporter-method-output">2021-01-04 15:10:27,942 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 14:42:08,476 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+                <span class="reporter-method-output">2021-01-04 15:10:58,245 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:09,338 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+                <span class="reporter-method-output">2021-01-04 15:11:00,098 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:09,713 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+                <span class="reporter-method-output">2021-01-04 15:11:00,278 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:13,184 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+                <span class="reporter-method-output">2021-01-04 15:11:03,782 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:22,525 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+                <span class="reporter-method-output">2021-01-04 15:11:13,070 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:25,537 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+                <span class="reporter-method-output">2021-01-04 15:11:16,131 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:35,048 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-04 15:11:27,143 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:35,049 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+                <span class="reporter-method-output">2021-01-04 15:11:27,143 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
 </span>
-                <span class="reporter-method-output">2021-01-04 14:42:40,298 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-</span>
-                <span class="reporter-method-output">2021-01-04 14:42:53,299 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-</span>
-                <span class="reporter-method-output">2021-01-04 14:42:59,178 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-</span>
-                <span class="reporter-method-output">2021-01-04 14:42:59,178 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-</span>
-                <span class="reporter-method-output">2021-01-04 14:42:59,209 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_141513_Swift.csv
-</span>
-                <span class="reporter-method-output">2021-01-04 14:42:59,210 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 14:43:02,333 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:43:05,462 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:43:13,630 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 14:43:22,954 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-</span>
-                <span class="reporter-method-output">2021-01-04 14:43:24,024 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 14:43:43,268 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+                <span class="reporter-method-output">2021-01-04 15:11:32,442 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -871,32 +766,34 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">6416 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">537342 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">1077427 ms</span>
+                <span class="method-start">6497 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">1621630 ms</span>
+                <span class="method-start">73406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC01_CreateShopifyStore</span>
+                <span class="method-start">139036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC01_CreateShopifyStore</span>
+                <span class="method-start">662934 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">1746501 ms</span>
+                <span class="method-start">1174660 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">1777314 ms</span>
+                <span class="method-start">1367621 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

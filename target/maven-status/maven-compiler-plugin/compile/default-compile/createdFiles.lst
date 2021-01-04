@@ -7,6 +7,7 @@ commons\ReadDataCSV.class
 commons\TestNGAppender.class
 pageObject\OberloPO.class
 commons\Keyword.class
+commons\AbstractTest.class
 commons\ExtentManager$1.class
 pageObject\ChatalystPO.class
 pageUI\WhatNewPageUI.class

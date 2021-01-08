@@ -32,6 +32,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
     private OberloPO oberloPage;
     String url, email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
     //String keyword, dateTime;
+    String status;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;
@@ -377,6 +378,7 @@ public class createStoreAndInstallSwift extends AbstractTest {
 
         log.info("Step 46: Verify the choose plan page display");
         verifyTrue(swiftPage.isChoosePlanPageDisplay());
+        
 
         shopifyPage.sWitchTab();
 

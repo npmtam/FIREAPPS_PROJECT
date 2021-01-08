@@ -49,7 +49,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
 
         DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
         Date date = new Date();
-        csvName = dateFormat.format(date) + "_Swift.csv";
+        csvName = dateFormat.format(date) + "_Chatalyst.csv";
 
         //Clear data before test
         log.info("Pre-condition: Clear test data");
@@ -371,8 +371,8 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         chatalystPage.clickToChatalystAppInAppStore();
 
         log.info("Step 48: Add Swift app to store");
-        //chatalystPage.clickToAddApp();
-        //chatalystPage.clickToInstallApp();
+        chatalystPage.clickToAddApp();
+        chatalystPage.clickToInstallApp();
 
         log.info("Step 46: Verify the choose plan page display");
         verifyTrue(chatalystPage.isChoosePlanPageDisplay());

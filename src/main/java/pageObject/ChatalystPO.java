@@ -3,6 +3,7 @@ package pageObject;
 import commons.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageUI.InstallAppUI;
 import pageUI.ShopifyPageUI;
@@ -221,7 +222,7 @@ public class ChatalystPO extends AbstractPage {
     }
 
     public String getRandomKeyword() {
-        final String[] keywords = new String[]{"Chatalyst", "Chatalyst", "Chatalyst"};
+        final String[] keywords = new String[]{"live chat", "Chatalyst"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -273,6 +274,14 @@ public class ChatalystPO extends AbstractPage {
         waitToElementVisible(ShopifyPageUI.CHATALYST_APP_IN_APPSTORE);
         clickToElement(ShopifyPageUI.CHATALYST_APP_IN_APPSTORE);
         sleepInSecond(3);
+    }
+
+    public void clickToURLAppChatalyst() {
+        driver.findElement(By.xpath(".//a[contains(@href,'apps.shopify.com/chatalyst')]")).click();
+        List<WebElement> linksList = driver.findElements(By.xpath(".//a[contains(@href,'apps.shopify.com/chatalyst')]"));
+        for (WebElement webElement : linksList){
+            webElement.click();
+        }
     }
 
 

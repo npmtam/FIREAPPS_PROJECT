@@ -3,6 +3,7 @@ package pageObject;
 import commons.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageUI.InstallAppUI;
 import pageUI.ShopifyPageUI;
@@ -255,6 +256,14 @@ public class SwiftPO extends AbstractPage {
         sleepInSecond(15);
         scrollPage();
         sleepInSecond(5);
+    }
+
+    public void clickToURLAppSwift() {
+        driver.findElement(By.xpath(".//a[contains(@href,'apps.shopify.com/swift')]")).click();
+        List<WebElement> linksList = driver.findElements(By.xpath(".//a[contains(@href,'apps.shopify.com/swift')]"));
+        for (WebElement webElement : linksList){
+            webElement.click();
+        }
     }
 
     public void clickChooseSwiftInAppStore() {

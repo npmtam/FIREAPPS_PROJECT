@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -114,26 +114,17 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="shopify.createStoreAndInstallChatalyst" class="method navigator-link" hash-for-method="TC01_CreateShopifyStore">TC01_CreateShopifyStore</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -156,13 +147,23 @@
                   <a name="TC01_CreateShopifyStore">
                   </a> <!-- TC01_CreateShopifyStore -->
                   <span class="method-name">TC01_CreateShopifyStore</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchFrameException: No frame element found by name or id intercom-modal-frame
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
-	at pageObject.OberloPO.clickToClosePopup(OberloPO.java:137)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:224)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at commons.AbstractPage.scrollToEndOfPage(AbstractPage.java:170)
+	at pageObject.ChatalystPO.clickToInstallApp(ChatalystPO.java:132)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:376)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -170,13 +171,28 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-... Removed 21 stack frames<br/> org.openqa.selenium.NoSuchFrameException: No frame element found by name or id intercom-modal-frame
+... Removed 26 stack frames<br/> org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
-	at pageObject.OberloPO.clickToClosePopup(OberloPO.java:137)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:224)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at commons.AbstractPage.scrollToEndOfPage(AbstractPage.java:170)
+	at pageObject.ChatalystPO.clickToInstallApp(ChatalystPO.java:132)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:376)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -205,7 +221,7 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-"</b><br>org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)<br>pageObject.OberloPO.clickToClosePopup(OberloPO.java:137)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:224)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+"</b><br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)<br>commons.AbstractPage.scrollToEndOfPage(AbstractPage.java:170)<br>pageObject.ChatalystPO.clickToInstallApp(ChatalystPO.java:132)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:376)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -214,17 +230,21 @@ Driver info: driver.version: unknown
                   <a name="TC01_CreateShopifyStore">
                   </a> <!-- TC01_CreateShopifyStore -->
                   <span class="method-name">TC01_CreateShopifyStore</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name=&apos;account_setup[firstName]&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f7c1e12b05a5b2abd908e14220899a04
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:350)
-	at pageObject.ShopifyPO.inputAddressTextboxes(ShopifyPO.java:91)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:147)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -232,17 +252,26 @@ Session ID: f7c1e12b05a5b2abd908e14220899a04
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-... Removed 21 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name=&apos;account_setup[firstName]&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 26 stack frames<br/> org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f7c1e12b05a5b2abd908e14220899a04
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:350)
-	at pageObject.ShopifyPO.inputAddressTextboxes(ShopifyPO.java:91)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:147)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -271,7 +300,7 @@ Session ID: f7c1e12b05a5b2abd908e14220899a04
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br>commons.AbstractPage.waitToElementVisible(AbstractPage.java:350)<br>pageObject.ShopifyPO.inputAddressTextboxes(ShopifyPO.java:91)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:147)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+"</b><br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -280,15 +309,21 @@ Session ID: f7c1e12b05a5b2abd908e14220899a04
                   <a name="TC01_CreateShopifyStore">
                   </a> <!-- TC01_CreateShopifyStore -->
                   <span class="method-name">TC01_CreateShopifyStore</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Réunion
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at commons.AbstractPage.selectItemInDropdown(AbstractPage.java:127)
-	at pageObject.ShopifyPO.selectCountry(ShopifyPO.java:352)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:151)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -296,15 +331,26 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-... Removed 21 stack frames<br/> org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Réunion
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+... Removed 26 stack frames<br/> org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at commons.AbstractPage.selectItemInDropdown(AbstractPage.java:127)
-	at pageObject.ShopifyPO.selectCountry(ShopifyPO.java:352)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:151)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -333,34 +379,170 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-"</b><br>org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)<br>commons.AbstractPage.selectItemInDropdown(AbstractPage.java:127)<br>pageObject.ShopifyPO.selectCountry(ShopifyPO.java:352)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:151)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+"</b><br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01_CreateShopifyStore">
+                  </a> <!-- TC01_CreateShopifyStore -->
+                  <span class="method-name">TC01_CreateShopifyStore</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 26 stack frames<br/> org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01_CreateShopifyStore">
+                  </a> <!-- TC01_CreateShopifyStore -->
+                  <span class="method-name">TC01_CreateShopifyStore</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 26 stack frames<br/> org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2626b6ba80c14af07df3d5b183944d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)<br>shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">shopify.createStoreAndInstallChatalyst</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC01_CreateShopifyStore">
-                  </a> <!-- TC01_CreateShopifyStore -->
-                  <span class="method-name">TC01_CreateShopifyStore</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC01_CreateShopifyStore">
-                  </a> <!-- TC01_CreateShopifyStore -->
-                  <span class="method-name">TC01_CreateShopifyStore</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -416,28 +598,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC01_CreateShopifyStore')
 data.setCell(0, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(0, 3, 523897);
+data.setCell(0, 3, 144591);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC01_CreateShopifyStore')
 data.setCell(1, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(1, 3, 511726);
+data.setCell(1, 3, 2020);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC01_CreateShopifyStore')
 data.setCell(2, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(2, 3, 192960);
+data.setCell(2, 3, 2011);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TC01_CreateShopifyStore')
 data.setCell(3, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(3, 3, 66904);
+data.setCell(3, 3, 2011);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TC01_CreateShopifyStore')
 data.setCell(4, 2, 'shopify.createStoreAndInstallChatalyst')
-data.setCell(4, 3, 65628);
+data.setCell(4, 3, 2009);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -451,297 +633,69 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 15:20:47,775 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+                <span class="reporter-method-output">2021-01-11 15:52:06,060 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
-                <span class="reporter-method-output">2021-01-04 15:20:48,900 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+                <span class="reporter-method-output">2021-01-11 15:52:10,031 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 </span>
-                <span class="reporter-method-output">2021-01-04 15:20:49,147 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+                <span class="reporter-method-output">2021-01-11 15:52:10,210 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
 </span>
-                <span class="reporter-method-output">2021-01-04 15:20:52,568 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+                <span class="reporter-method-output">2021-01-11 15:52:13,692 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:01,769 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+                <span class="reporter-method-output">2021-01-11 15:52:23,215 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:04,782 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+                <span class="reporter-method-output">2021-01-11 15:52:26,234 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:15,570 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-11 15:52:40,102 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:15,570 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+                <span class="reporter-method-output">2021-01-11 15:52:40,103 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:20,840 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+                <span class="reporter-method-output">2021-01-11 15:52:45,516 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:30,766 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+                <span class="reporter-method-output">2021-01-11 15:53:01,850 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:35,770 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">2021-01-11 15:53:09,956 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:35,770 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+                <span class="reporter-method-output">2021-01-11 15:53:09,957 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:35,795 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_150951_Swift.csv
+                <span class="reporter-method-output">2021-01-11 15:53:09,984 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210111_155206_Chatalyst.csv
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:35,796 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+                <span class="reporter-method-output">2021-01-11 15:53:09,992 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:38,937 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+                <span class="reporter-method-output">2021-01-11 15:53:13,141 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:42,054 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+                <span class="reporter-method-output">2021-01-11 15:53:17,188 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:50,174 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+                <span class="reporter-method-output">2021-01-11 15:53:29,080 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Chatalyst app
 </span>
-                <span class="reporter-method-output">2021-01-04 15:21:59,679 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:22:00,752 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:22:16,417 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 15:22:57,940 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 15:23:02,807 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
-</span>
-                <span class="reporter-method-output">2021-01-04 15:23:20,571 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
-</span>
-                <span class="reporter-method-output">2021-01-04 15:23:28,356 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
-</span>
-                <span class="reporter-method-output">2021-01-04 15:23:57,304 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:24:02,377 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:24:05,534 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-</span>
-                <span class="reporter-method-output">2021-01-04 15:24:05,534 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:24:17,368 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:24:27,963 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:24:55,815 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:25:00,881 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:25:03,964 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:25:15,564 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:25:24,261 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:25:50,379 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:25:55,457 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:25:58,571 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:26:10,362 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:26:11,319 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:26:37,972 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:26:46,258 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
-</span>
-                <span class="reporter-method-output">2021-01-04 15:26:49,473 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
-</span>
-                <span class="reporter-method-output">2021-01-04 15:26:52,610 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
-</span>
-                <span class="reporter-method-output">2021-01-04 15:28:51,464 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:28:54,606 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:28:57,712 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:06,965 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:11,430 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+                <span class="reporter-method-output">2021-01-11 15:54:00,013 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Chatalyst app to store
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 15:12:03,877 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:04,504 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:04,889 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:08,349 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:17,612 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:20,686 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:31,660 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:31,660 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:37,003 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:49,893 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:56,893 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:56,893 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:56,919 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_150951_Swift.csv
-</span>
-                <span class="reporter-method-output">2021-01-04 15:12:56,923 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:13:00,040 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:13:03,163 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:13:17,002 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 15:13:26,512 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:13:27,603 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:13:44,957 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 15:14:25,519 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 15:14:31,362 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
-</span>
-                <span class="reporter-method-output">2021-01-04 15:14:48,920 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
-</span>
-                <span class="reporter-method-output">2021-01-04 15:14:56,811 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
-</span>
-                <span class="reporter-method-output">2021-01-04 15:15:27,763 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:15:32,851 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:15:35,966 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-</span>
-                <span class="reporter-method-output">2021-01-04 15:15:35,967 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:15:48,195 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:15:56,334 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:16:27,516 INFO  shopify.createStoreAndInstallChatalyst - Step 28: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:16:32,585 INFO  shopify.createStoreAndInstallChatalyst - Step 29: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:16:35,681 INFO  shopify.createStoreAndInstallChatalyst - Step 31: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:16:47,283 INFO  shopify.createStoreAndInstallChatalyst - Step 32: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:16:48,750 INFO  shopify.createStoreAndInstallChatalyst - Step 33: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:17:17,031 INFO  shopify.createStoreAndInstallChatalyst - Step 34: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:17:22,097 INFO  shopify.createStoreAndInstallChatalyst - Step 35: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:17:25,180 INFO  shopify.createStoreAndInstallChatalyst - Step 37: Search free Shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:17:36,572 INFO  shopify.createStoreAndInstallChatalyst - Step 38: Select app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:17:40,969 INFO  shopify.createStoreAndInstallChatalyst - Step 39: Add random app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:18:13,533 INFO  shopify.createStoreAndInstallChatalyst - Step 40 : Select Discount menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:18:21,760 INFO  shopify.createStoreAndInstallChatalyst - Step 41: Input random code name
-</span>
-                <span class="reporter-method-output">2021-01-04 15:18:24,926 INFO  shopify.createStoreAndInstallChatalyst - Step 42: Input random discount value
-</span>
-                <span class="reporter-method-output">2021-01-04 15:18:28,046 INFO  shopify.createStoreAndInstallChatalyst - Step 43: Check Limit to one use per customer
-</span>
-                <span class="reporter-method-output">2021-01-04 15:20:18,600 INFO  shopify.createStoreAndInstallChatalyst - Step 44: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:20:21,769 INFO  shopify.createStoreAndInstallChatalyst - Step 45: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:20:24,871 INFO  shopify.createStoreAndInstallChatalyst - Step 46: Search app by keyword
-</span>
-                <span class="reporter-method-output">2021-01-04 15:20:34,149 INFO  shopify.createStoreAndInstallChatalyst - Step 47: Select Swift app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:20:39,696 INFO  shopify.createStoreAndInstallChatalyst - Step 48: Add Swift app to store
+                <span class="reporter-method-output">2021-01-11 15:54:36,687 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 15:29:19,501 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:20,675 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:20,952 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:24,413 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:33,707 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:36,773 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:46,883 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:46,883 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-</span>
-                <span class="reporter-method-output">2021-01-04 15:29:52,154 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:05,038 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:10,131 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:10,131 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:10,153 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210104_150951_Swift.csv
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:10,154 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:13,271 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:16,380 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:25,231 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:34,842 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:36,767 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:30:53,894 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+                <span class="reporter-method-output">2021-01-11 15:54:32,665 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 15:09:51,338 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-</span>
-                <span class="reporter-method-output">2021-01-04 15:09:53,248 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-</span>
-                <span class="reporter-method-output">2021-01-04 15:09:53,934 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-</span>
-                <span class="reporter-method-output">2021-01-04 15:09:57,616 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-</span>
-                <span class="reporter-method-output">2021-01-04 15:10:07,231 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-</span>
-                <span class="reporter-method-output">2021-01-04 15:10:10,341 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:10:22,748 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-</span>
-                <span class="reporter-method-output">2021-01-04 15:10:22,750 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-</span>
-                <span class="reporter-method-output">2021-01-04 15:10:27,942 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+                <span class="reporter-method-output">2021-01-11 15:54:34,679 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TC01_CreateShopifyStore</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">2021-01-04 15:10:58,245 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-</span>
-                <span class="reporter-method-output">2021-01-04 15:11:00,098 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-</span>
-                <span class="reporter-method-output">2021-01-04 15:11:00,278 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-</span>
-                <span class="reporter-method-output">2021-01-04 15:11:03,782 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-</span>
-                <span class="reporter-method-output">2021-01-04 15:11:13,070 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-</span>
-                <span class="reporter-method-output">2021-01-04 15:11:16,131 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-</span>
-                <span class="reporter-method-output">2021-01-04 15:11:27,143 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-</span>
-                <span class="reporter-method-output">2021-01-04 15:11:27,143 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-</span>
-                <span class="reporter-method-output">2021-01-04 15:11:32,442 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+                <span class="reporter-method-output">2021-01-11 15:54:30,654 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -769,31 +723,35 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">6497 ms</span>
+                <span class="method-start">6127 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">73406 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">139036 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">662934 ms</span>
+                <span class="method-start">150723 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC01_CreateShopifyStore</span>
-                <span class="method-start">1174660 ms</span>
+                <span class="method-start">152735 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC01_CreateShopifyStore</span>
+                <span class="method-start">154747 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC01_CreateShopifyStore</span>
+                <span class="method-start">156757 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">1367621 ms</span>
+                <span class="method-start">158780 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -367,15 +367,16 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         //log.info("Step 14.1: Load page 2");
         //messentPage.clickToLoadPageTwo();
 
-        log.info("Step 47: Select Swift app");
-        chatalystPage.clickToChatalystAppInAppStore();
+        log.info("Step 47: Select Chatalyst app");
+        //chatalystPage.clickToChatalystAppInAppStore();
+        chatalystPage.clickToURLAppChatalyst();
 
-        log.info("Step 48: Add Swift app to store");
+        log.info("Step 48: Add Chatalyst app to store");
         chatalystPage.clickToAddApp();
         chatalystPage.clickToInstallApp();
 
-        log.info("Step 46: Verify the choose plan page display");
-        verifyTrue(chatalystPage.isChoosePlanPageDisplay());
+        //log.info("Step 49: Verify the choose plan page display");
+        //verifyTrue(chatalystPage.isChoosePlanPageDisplay());
 
         shopifyPage.sWitchTab();
     }

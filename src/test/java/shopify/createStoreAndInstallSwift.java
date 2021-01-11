@@ -370,15 +370,15 @@ public class createStoreAndInstallSwift extends AbstractTest {
         messentPage.clickToLoadPageTwo();*/
 
         log.info("Step 47: Select Swift app");
-        swiftPage.clickChooseSwiftInAppStore();
+        //swiftPage.clickChooseSwiftInAppStore();
+        swiftPage.clickToURLAppSwift();
 
         log.info("Step 48: Add Swift app to store");
         swiftPage.clickToAddApp();
         swiftPage.clickToInstallApp();
 
-        log.info("Step 46: Verify the choose plan page display");
+        log.info("Step 49: Verify the choose plan page display");
         verifyTrue(swiftPage.isChoosePlanPageDisplay());
-        
 
         shopifyPage.sWitchTab();
 

@@ -66,6 +66,8 @@ public class ShopifyPageUI {
     public static final String CHOOSE_PLAN = "//h4[text()='Choose your plan']";
     public static final String CHOOSE_PLAN_FREE = "//div[@class='pricing-plan__content-scroll sticky-item']//div[1]//div[1]//form[1]//button[1]";
     public static final String OBERLO_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Oberlo')]";
+    public static final String MULTI_IMPORTER_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multichannel Importer')]";
+    public static final String SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Syncee ‑ Global Dropshipping')]";
     public static final String SHOW_FULL_DESCRIPTION_BTN = "//button[contains(text(),'Show full description')]";
     public static final String CREATE_DISCOUNT_BTN = "//span[contains(text(),'Create discount code')]";
     public static final String SEARCH_SHOPIFY_APP_STORE_BTN = "//*[@id=\"ShopifyMainNav\"]/button[1]";

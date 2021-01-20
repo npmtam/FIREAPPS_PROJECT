@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import pageObject.MultiImporterPO;
 import pageObject.ShopifyPO;
 import pageObject.ChatalystPO;
 import pageUI.ShopifyPageUI;
@@ -30,6 +31,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
     private ShopifyPO shopifyPage;
     private ChatalystPO chatalystPage;
     private OberloPO oberloPage;
+    private MultiImporterPO multiImporterPage;
     String url, email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
@@ -178,7 +180,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
-        //INSTALL OBERLO APP
+       /* //INSTALL OBERLO APP
         log.info("Step 11: Select Apps menu");
         oberloPage = PageGeneratorManager.getOberloPO(driver);
         oberloPage.selectAppsMenu();
@@ -245,6 +247,41 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         oberloPage.clickCheckboxAllProduct();
         oberloPage.clickImportAllToStore();
         oberloPage.clickToPushProduct();
+        shopifyPage.sWitchTab();*/
+
+        //Install app MultiImporter
+        log.info("Step 11: Select Apps menu");
+        multiImporterPage = PageGeneratorManager.getMultiImporterPage(driver);
+        multiImporterPage.selectAppsMenu();
+
+        log.info("Step 12: Visit Shopify App store");
+        multiImporterPage.clickToVisitShopifyAppStore();
+
+        log.info("Step 13: choose account to continue to shopify app");
+        shopifyPage.switchTabChooseAccount();
+        boolean isChooseAnAccountToShopifyAppStore = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CHOOSE_AN_ACCOUNT);
+        if (isChooseAnAccountToShopifyAppStore) {
+            shopifyPage.chooseAccount();
+        }
+
+        log.info("Step 14: Search app Multi Importer");
+        boolean isPageNotFound = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
+        if (isPageNotFound){
+            shopifyPage.searchAppInShopifyAppStore();
+            multiImporterPage.inputKeywordMultiImporter(multiImporterPage.searchMultiImporter());
+            multiImporterPage.clickToSearchAppBtn();
+        }else {
+            multiImporterPage.inputKeyword(multiImporterPage.searchMultiImporter());
+            multiImporterPage.clickToSearchBtn();
+        }
+
+        log.info("Step 15: Select Multi Importer app");
+        multiImporterPage.selectMultiImporterInAppStore();
+
+        log.info("Step 16: Add Multi Importer app to store");
+        multiImporterPage.clickToAddApp();
+        multiImporterPage.clickToInstallApp();
+
         shopifyPage.sWitchTab();
 
         //BACK TO SHOPIFY AND CHOOSE THEMES

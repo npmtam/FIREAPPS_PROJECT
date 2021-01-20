@@ -26,6 +26,10 @@ public class PageGeneratorManager {
 
     public static OberloPO getOberloPO(WebDriver driver) {return new OberloPO(driver); }
 
+    public static MultiImporterPO getMultiImporterPage(WebDriver driver) {return new MultiImporterPO(driver); }
+
+    public static SynceeDropshippingPO getSynceeDropshippingPage(WebDriver driver) {return new SynceeDropshippingPO(driver); }
+
     public static SwiftPO getSwiftPage(WebDriver driver) {return new SwiftPO(driver); }
 
     public static ChatalystPO getChatalystPage(WebDriver driver) {return new ChatalystPO(driver); }

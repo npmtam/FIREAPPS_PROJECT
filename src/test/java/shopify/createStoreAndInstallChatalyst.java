@@ -10,11 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObject.MultiImporterPO;
-import pageObject.ShopifyPO;
-import pageObject.ChatalystPO;
+import pageObject.*;
 import pageUI.ShopifyPageUI;
-import pageObject.OberloPO;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -32,6 +29,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
     private ChatalystPO chatalystPage;
     private OberloPO oberloPage;
     private MultiImporterPO multiImporterPage;
+    private SynceeDropshippingPO synceeDropshippingPage;
     String url, email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password, password_confirmation;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
@@ -249,13 +247,48 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         oberloPage.clickToPushProduct();
         shopifyPage.sWitchTab();*/
 
-        //Install app MultiImporter
+//        Install app MultiImporter
+//        log.info("Step 11: Select Apps menu");
+//        multiImporterPage = PageGeneratorManager.getMultiImporterPage(driver);
+//        multiImporterPage.selectAppsMenu();
+//
+//        log.info("Step 12: Visit Shopify App store");
+//        multiImporterPage.clickToVisitShopifyAppStore();
+//
+//        log.info("Step 13: choose account to continue to shopify app");
+//        shopifyPage.switchTabChooseAccount();
+//        boolean isChooseAnAccountToShopifyAppStore = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CHOOSE_AN_ACCOUNT);
+//        if (isChooseAnAccountToShopifyAppStore) {
+//            shopifyPage.chooseAccount();
+//        }
+//
+//        log.info("Step 14: Search app Multi Importer");
+//        boolean isPageNotFound = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
+//        if (isPageNotFound){
+//            shopifyPage.searchAppInShopifyAppStore();
+//            multiImporterPage.inputKeywordMultiImporter(multiImporterPage.searchMultiImporter());
+//            multiImporterPage.clickToSearchAppBtn();
+//        }else {
+//            multiImporterPage.inputKeyword(multiImporterPage.searchMultiImporter());
+//            multiImporterPage.clickToSearchBtn();
+//        }
+//
+//        log.info("Step 15: Select Multi Importer app");
+//        multiImporterPage.selectMultiImporterInAppStore();
+//
+//        log.info("Step 16: Add Multi Importer app to store");
+//        multiImporterPage.clickToAddApp();
+//        multiImporterPage.clickToInstallApp();
+//
+//        shopifyPage.sWitchTab();
+
+        //Install app  Syncee - Global Dropshipping
         log.info("Step 11: Select Apps menu");
-        multiImporterPage = PageGeneratorManager.getMultiImporterPage(driver);
-        multiImporterPage.selectAppsMenu();
+        synceeDropshippingPage = PageGeneratorManager.getSynceeDropshippingPage(driver);
+        synceeDropshippingPage.selectAppsMenu();
 
         log.info("Step 12: Visit Shopify App store");
-        multiImporterPage.clickToVisitShopifyAppStore();
+        synceeDropshippingPage.clickToVisitShopifyAppStore();
 
         log.info("Step 13: choose account to continue to shopify app");
         shopifyPage.switchTabChooseAccount();
@@ -264,23 +297,23 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
             shopifyPage.chooseAccount();
         }
 
-        log.info("Step 14: Search app Multi Importer");
+        log.info("Step 14: Search app Syncee - Global Dropshipping");
         boolean isPageNotFound = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
         if (isPageNotFound){
             shopifyPage.searchAppInShopifyAppStore();
-            multiImporterPage.inputKeywordMultiImporter(multiImporterPage.searchMultiImporter());
-            multiImporterPage.clickToSearchAppBtn();
+            synceeDropshippingPage.inputKeywordSynceeGlobalDropshipping(synceeDropshippingPage.searchSynceeDropshipping());
+            synceeDropshippingPage.clickToSearchAppBtn();
         }else {
-            multiImporterPage.inputKeyword(multiImporterPage.searchMultiImporter());
-            multiImporterPage.clickToSearchBtn();
+            synceeDropshippingPage.inputKeyword(synceeDropshippingPage.searchSynceeDropshipping());
+            synceeDropshippingPage.clickToSearchBtn();
         }
 
-        log.info("Step 15: Select Multi Importer app");
-        multiImporterPage.selectMultiImporterInAppStore();
+        log.info("Step 15: Select Syncee - Global Dropshipping app");
+        synceeDropshippingPage.selectSynceeGlobalDropshippingInAppStore();
 
-        log.info("Step 16: Add Multi Importer app to store");
-        multiImporterPage.clickToAddApp();
-        multiImporterPage.clickToInstallApp();
+        log.info("Step 16: Add Syncee - Global Dropshipping app to store");
+        synceeDropshippingPage.clickToAddApp();
+        synceeDropshippingPage.clickToInstallApp();
 
         shopifyPage.sWitchTab();
 

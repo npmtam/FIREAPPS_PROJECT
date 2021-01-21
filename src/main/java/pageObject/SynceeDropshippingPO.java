@@ -44,8 +44,8 @@ public class SynceeDropshippingPO extends AbstractPage {
         sleepInSecond(3);
     }
 
-    public String searchMultiImporter() {
-        final String[] keywords = new String[]{"Multichannel Importer", "Multichannel Importer"};
+    public String searchSynceeDropshipping() {
+        final String[] keywords = new String[]{"Syncee - Global Dropshipping", "Syncee - Global Dropshipping"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -73,13 +73,32 @@ public class SynceeDropshippingPO extends AbstractPage {
 
 
     public void selectSynceeGlobalDropshippingInAppStore() {
-        waitToElementVisible(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE);
-        clickToElement(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE);
+        waitToElementVisible(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE);
+        clickToElement(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE);
     }
 
     public void clickToAddApp() {
         waitToElementClickable(ShopifyPageUI.ADD_APP_BTN);
         clickToElement(ShopifyPageUI.ADD_APP_BTN);
         sleepInSecond(3);
+    }
+
+    public void clickToSearchBtn() {
+        sleepInSecond(5);
+        waitToElementVisible(ShopifyPageUI.SEARCH_BTN);
+        clickToElement(ShopifyPageUI.SEARCH_BTN);
+    }
+
+    public void clickToSearchAppBtn() {
+        sleepInSecond(5);
+        waitToElementVisible(ShopifyPageUI.SEARCH_BTN_SHOPIFY_APP_STORE_BTN);
+        clickToElement(ShopifyPageUI.SEARCH_BTN_SHOPIFY_APP_STORE_BTN);
+    }
+
+    public void inputKeywordSynceeGlobalDropshipping(String keyword) {
+        sleepInSecond(3);
+        //switchToWindowsByTitle("Shopify App Store: Ecommerce App Marketplace");
+        waitToElementVisible(ShopifyPageUI.SEARCH_APP_OBERLO_TEXTBOX);
+        sendKeyToElement(ShopifyPageUI.SEARCH_APP_OBERLO_TEXTBOX, keyword);
     }
 }

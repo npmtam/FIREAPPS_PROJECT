@@ -5,12 +5,14 @@ C:\FIREAPPS\auto-install\auto-install\src\main\java\commons\ExtentReportListener
 C:\FIREAPPS\auto-install\auto-install\src\main\java\pageUI\WhatNewPageUI.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\pageObject\ShopifyPO.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\pageUI\WebsiteUI.java
+C:\FIREAPPS\auto-install\auto-install\src\main\java\pageObject\SynceeDropshippingPO.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\pageObject\WhatNewPO.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\commons\ExtentManager.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\commons\ReadDataCSV.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\commons\AbstractTest.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\pageUI\InstallAppUI.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\commons\PageGeneratorManager.java
+C:\FIREAPPS\auto-install\auto-install\src\main\java\pageObject\MultiImporterPO.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\pageObject\TranscyPO.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\commons\MethodListener.java
 C:\FIREAPPS\auto-install\auto-install\src\main\java\commons\Keyword.java

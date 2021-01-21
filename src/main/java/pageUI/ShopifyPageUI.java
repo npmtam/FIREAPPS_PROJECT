@@ -170,5 +170,7 @@ public class ShopifyPageUI {
     public static final String ADD_PRODUCT_DEFAULT2_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[2]/div/div/div[2]/div/div[2]/button";
     public static final String ADD_PRODUCT_DEFAULT3_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[3]/div/div/div[2]/div/div[2]/button";
     public static final String ADD_PRODUCT_DEFAULT4_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[3]/div/div/div/div/div[2]/div[1]/div/div/ul/li[4]/div/div/div[2]/div/div[2]/button";
+    public static final String TITLE_REGISTER_OBERLO = "//h2[contains(text(),'Tell us a little about yourself')]";
+    public static final String CLICK_TO_SKIP_BTN = "//span[contains(text(),'Skip')]";
 
 }

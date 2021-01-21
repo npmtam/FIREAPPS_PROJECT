@@ -178,7 +178,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
         System.out.println("Written Data");
 
-       /* //INSTALL OBERLO APP
+       ///INSTALL OBERLO APP
         log.info("Step 11: Select Apps menu");
         oberloPage = PageGeneratorManager.getOberloPO(driver);
         oberloPage.selectAppsMenu();
@@ -223,6 +223,8 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         oberloPage.inputToPassword("QA12345678");
         oberloPage.clickToCreateFreeAccount();
 
+        oberloPage.clickToSkipButton();
+
         shopifyPage.sleepRandomly();
         oberloPage.clickToClosePopup();
         log.info("Step 18: Search product Oberlo");
@@ -245,7 +247,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         oberloPage.clickCheckboxAllProduct();
         oberloPage.clickImportAllToStore();
         oberloPage.clickToPushProduct();
-        shopifyPage.sWitchTab();*/
+        shopifyPage.sWitchTab();
 
 //        Install app MultiImporter
 //        log.info("Step 11: Select Apps menu");
@@ -283,7 +285,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
 //        shopifyPage.sWitchTab();
 
         //Install app  Syncee - Global Dropshipping
-        log.info("Step 11: Select Apps menu");
+        /*log.info("Step 11: Select Apps menu");
         synceeDropshippingPage = PageGeneratorManager.getSynceeDropshippingPage(driver);
         synceeDropshippingPage.selectAppsMenu();
 
@@ -315,7 +317,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         synceeDropshippingPage.clickToAddApp();
         synceeDropshippingPage.clickToInstallApp();
 
-        shopifyPage.sWitchTab();
+        shopifyPage.sWitchTab();*/
 
         //BACK TO SHOPIFY AND CHOOSE THEMES
         /*log.info("Setting Themes");

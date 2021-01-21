@@ -120,6 +120,12 @@ public class OberloPO extends AbstractPage {
         clickToElement(ShopifyPageUI.SAVE_PASSWORD);
     }
 
+    public void clickToSkipButton() {
+        sleepInSecond(3);
+        waitToElementClickable(ShopifyPageUI.CLICK_TO_SKIP_BTN);
+        clickToElement(ShopifyPageUI.CLICK_TO_SKIP_BTN);
+    }
+
    /* public void clickToClosePopup() {
         sleepInSecond(3);
         WebDriverWait waiter = new WebDriverWait(driver, 1000);

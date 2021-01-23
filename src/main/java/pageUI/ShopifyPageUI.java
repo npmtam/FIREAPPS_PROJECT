@@ -73,6 +73,10 @@ public class ShopifyPageUI {
     public static final String SEARCH_SHOPIFY_APP_STORE_BTN = "//*[@id=\"ShopifyMainNav\"]/button[1]";
     public static final String SEARCH_BTN_SHOPIFY_APP_STORE_BTN = "//body/div[@id='UiSearchNavbar']/div[1]/div[1]/form[1]/label[1]/button[1]/*[1]";
     public static final String SEARCH_APP_OBERLO_TEXTBOX = "//*[@id=\"UiSearchSuggestionForm\"]/label/input";
+    public static final String SPOCKET_DROPSHIPPING_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Spocket ‑ US & EU Dropshipping')]";
+    public static final String DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'DSers‑AliExpress Dropshipping')]";
+    public static final String CJDROPSHIPPING = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'CJDropshipping')]";
+
 
     //CREATE DISCOUNT CODE
     public static final String DISCOUNT_CODE_TEXTBOX = "//input[@placeholder='e.g. SPRINGSALE']";
@@ -80,7 +84,7 @@ public class ShopifyPageUI {
     public static final String USAGE_LIMITS_CHECKBOX = "//span[contains(text(),'Limit to one use per customer')]";
     public static final String SAVE_DISSCOUNT_CODE_BTN = "//span[contains(text(),'Save discount code')]";
 
-    //FREE SHOPIFY APP
+    //FREE SHOPIFY APP - XPATH
     public static final String PRODUCT_REVIEW_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Product Reviews')]";
     public static final String KIT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Kit')]";
     public static final String GOOGLE_CHANNEL_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Google channel')]";
@@ -88,6 +92,14 @@ public class ShopifyPageUI {
     //public static final String SHOPIFY_CHAT_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Shopify Chat')]";
     public static final String GEOLOCATION_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Geolocation')]";
     public static final String FACEBOOK_CHANNEL_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Facebook channel')]";
+
+    //FREE SHOPIFY APP - URL
+    public static final String URL_PRODUCT_REVIEW_APP_IN_APPSTORE = ".//a[contains(@href,'apps.shopify.com/product-reviews?surface_detail=product+review')]";
+    public static final String URL_KIT_APP_IN_APPSTORE = ".//a[contains(@href,'apps.shopify.com/kit?surface_detail=kit')]";
+    public static final String URL_GOOGLE_CHANNEL_APP_IN_APPSTORE = ".//a[contains(@href,'apps.shopify.com/google?surface_detail=google+channel')]";
+    public static final String URL_SHOPIFY_EMAIL_APP_IN_APPSTORE = ".//a[contains(@href,'apps.shopify.com/shopify-email?surface_detail=shopily+email')]";
+    public static final String URL_GEOLOCATION_IN_APPSTORE = ".//a[contains(@href,'apps.shopify.com/geolocation?surface_detail=geolocation')]";
+    public static final String URL_FACEBOOK_CHANNEL_APP_IN_APPSTORE = ".//a[contains(@href,'apps.shopify.com/facebook?surface_detail=facebook+channel')]";
 
     //FREE OTHER APP
     public static final String TRUSTEDSITE_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='TrustedSite - Trust Badges')]";

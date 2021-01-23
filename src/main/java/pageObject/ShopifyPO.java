@@ -3,10 +3,8 @@ package pageObject;
 import commons.*;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageUI.InstallAppUI;
@@ -490,11 +488,52 @@ public class ShopifyPO extends AbstractPage {
 
     //ADD FREE SHOPIFY APPS (RANDOM 1 APP FROM LIST)
     public String searchFreeShopifyApp() {
-        final String[] keywords = new String[]{"Facebook channel","Product Reviews", "Google Channel", "Kit", "Shopify Email", "Geolocation"};
+        String[] keywords = new String[]{"Facebook channel","Product Reviews", "Google Channel", "Kit", "Shopify Email", "Geolocation"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
     }
+
+
+    public String searchImportProductApp() {
+        String[] keywords = new String[]{"Multichannel Importer","Syncee Global Dropshipping", "Spocket Dropshipping", "DSers AliExpress Dropshipping", "CJDropshipping"};
+        Random random = new Random();
+        int index = random.nextInt(keywords.length);
+        return keywords[index];
+    }
+
+    public void selectImportProductAppRandom() {
+            if (isElementPresentInDOM(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE)) {
+                waitToElementVisible(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE);
+                clickToElement(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE);
+                clickToAddApp();
+                clickToInstallApp();
+            } else if (isElementPresentInDOM(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE)) {
+                waitToElementVisible(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE);
+                clickToElement(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE);
+                clickToAddApp();
+                clickToInstallApp();
+            } else if (isElementPresentInDOM(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE)) {
+                waitToElementVisible(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE);
+                clickToElement(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE);
+                clickToAddApp();
+                clickToInstallApp();
+            } else if (isElementPresentInDOM(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE)) {
+                waitToElementVisible(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE);
+                clickToElement(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE);
+                clickToAddApp();
+                clickToInstallApp();
+            } else if (isElementPresentInDOM(ShopifyPageUI.CJDROPSHIPPING)) {
+                waitToElementVisible(ShopifyPageUI.CJDROPSHIPPING);
+                clickToElement(ShopifyPageUI.CJDROPSHIPPING);
+                clickToAddApp();
+                clickToInstallApp();
+            }
+            else {
+
+        }
+    }
+
 
     public String searchFreeOtherApp() {
         final String[] keywords = new String[]{"Free Trust Badge Master", "vimeo create - video marker", "Super Effects & Holiday Boost", "MassFulfill", "Thank You Email Marketing Tool"};
@@ -619,11 +658,35 @@ public class ShopifyPO extends AbstractPage {
         } else if (isElementPresentInDOM(ShopifyPageUI.FACEBOOK_CHANNEL_APP_IN_APPSTORE)) {
             waitToElementVisible(ShopifyPageUI.FACEBOOK_CHANNEL_APP_IN_APPSTORE);
             clickToElement(ShopifyPageUI.FACEBOOK_CHANNEL_APP_IN_APPSTORE);
-        } else {
+        } else if (isElementPresentInDOM(ShopifyPageUI.GEOLOCATION_IN_APPSTORE)) {
             waitToElementVisible(ShopifyPageUI.GEOLOCATION_IN_APPSTORE);
             clickToElement(ShopifyPageUI.GEOLOCATION_IN_APPSTORE);
+        } else {
+
         }
+
     }
+
+    /*public void selectFreeShopifyAppRandomByURL(){
+        if (isElementPresentInDOM(ShopifyPageUI.URL_PRODUCT_REVIEW_APP_IN_APPSTORE)){
+            waitToElementVisible(ShopifyPageUI.URL_KIT_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.URL_KIT_APP_IN_APPSTORE);
+        } else if (isElementPresentInDOM(ShopifyPageUI.URL_KIT_APP_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.URL_KIT_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.URL_KIT_APP_IN_APPSTORE);
+        } else if (isElementPresentInDOM(ShopifyPageUI.URL_GOOGLE_CHANNEL_APP_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.URL_GOOGLE_CHANNEL_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.URL_GOOGLE_CHANNEL_APP_IN_APPSTORE);
+        } else if (isElementPresentInDOM(ShopifyPageUI.URL_SHOPIFY_EMAIL_APP_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.URL_SHOPIFY_EMAIL_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.URL_SHOPIFY_EMAIL_APP_IN_APPSTORE);
+        } else if (isElementPresentInDOM(ShopifyPageUI.URL_GEOLOCATION_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.URL_GEOLOCATION_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.URL_GEOLOCATION_IN_APPSTORE);
+        } else {
+            waitToElementVisible(ShopifyPageUI.URL_FACEBOOK_CHANNEL_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.URL_FACEBOOK_CHANNEL_APP_IN_APPSTORE);
+        }*/
 
     //Free Other Apps (List 1)
     public void selectFreeOtherAppRandom() {
@@ -660,10 +723,11 @@ public class ShopifyPO extends AbstractPage {
         } else if (isElementPresentInDOM(ShopifyPageUI.MULTI_PIXELS_FOR_FACEBOOK)) {
             waitToElementVisible(ShopifyPageUI.MULTI_PIXELS_FOR_FACEBOOK);
             clickToElement(ShopifyPageUI.MULTI_PIXELS_FOR_FACEBOOK);
-        } else {
-            isElementPresentInDOM(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
+        } else if ( isElementPresentInDOM(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE)){
             waitToElementVisible(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
             clickToElement(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
+        } else{
+
         }
     }
 

@@ -1,10 +1,8 @@
 package stepDefinitions;
 
-import com.sun.org.apache.xalan.internal.res.XSLTErrorResources;
 import commons.AbstractPage;
 import commons.AbstractTest;
 import commons.Constants;
-import commons.PageGeneratorManager;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

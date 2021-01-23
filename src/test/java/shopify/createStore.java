@@ -10,6 +10,7 @@ import org.testng.annotations.*;
 import pageObject.ShopifyPO;
 import pageUI.ShopifyPageUI;
 
+import java.io.IOException;
 import java.util.Locale;
 import java.util.Random;
 
@@ -17,7 +18,7 @@ public class createStore extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
-    String email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password;
+    String  email, storeName, phoneNumber, store_type, dateTime, country, city, address, firstName, lastName, password;
     private String storeNameBackup, industry;
     boolean isStoreNameExisted;
     public int randomNumber;
@@ -35,7 +36,7 @@ public class createStore extends AbstractTest {
     }
 
     @Test(invocationCount = 1)
-    public void TC01_CreateShopifyStore() {
+    public void TC01_CreateShopifyStore() throws IOException {
         //Init data
         Random random = new Random();
         randomNumber = random.nextInt(99);

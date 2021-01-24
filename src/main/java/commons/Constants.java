@@ -9,10 +9,11 @@ public class Constants {
 
     static String rootFolder = System.getProperty("user.dir");
     public static final String URL = "https://shopify.com/";
+    public static final String URL_APP = "https://app.shopify.com/";
     public static final String ORIGINAL_URL = "https://origin-dev.fireapps.io/install";
     public static final String TRANSCY_URL = "https://translate-dev.fireapps.io/install";
     public static final String WELCOME_TRANSCY_URL = "https://translate-dev.fireapps.io/onboarding/welcome";
-    public static final int RAMDOM_BOUND = 10;
+    public static final int RAMDOM_BOUND = 10000000;
 
     //REGISTER
     public static final String SHOPIFY_PASSWORD = "Abc123";
@@ -27,7 +28,7 @@ public class Constants {
 //    public static final String ADDRESS = faker.address().streetAddress();
 //    public static final String CITY = "Da Nang";
     public static final String ZIPCODE = "55000";
-    public static String PHONE_NUMBER = "098877678";
+    public static String PHONE_NUMBER = "098";
 
     //WRITE DATA
     public static final String WRITE_CSV_FILE_PATH = rootFolder + "/src/test/resources/storeData.csv";
@@ -52,8 +53,6 @@ public class Constants {
 
     //DELETE APP
     public static final String DELETE_SUCCESS_MESSAGE = "You successfully deleted origin-app-dev.";
-
-
 
 
 

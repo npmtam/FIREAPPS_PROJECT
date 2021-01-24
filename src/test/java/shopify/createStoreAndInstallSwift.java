@@ -361,8 +361,6 @@ public class createStoreAndInstallSwift extends AbstractTest {
         //log.info("Step 42: choose account to continue to shopify app");
         //shopifyPage.chooseAccount();
 
-        //log.info("Random delay");
-        //shopifyPage.sleepRandomly();
 
         log.info("Step 46: Search app by keyword");
         swiftPage.inputKeyword(swiftPage.getRandomKeyword());

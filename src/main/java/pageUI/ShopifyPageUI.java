@@ -78,6 +78,7 @@ public class ShopifyPageUI {
     public static final String CJDROPSHIPPING = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'CJDropshipping')]";
 
 
+
     //CREATE DISCOUNT CODE
     public static final String DISCOUNT_CODE_TEXTBOX = "//input[@placeholder='e.g. SPRINGSALE']";
     public static final String DISCOUNT_VALUE_TEXTBOX = "//input[@id='percentageValueField']";

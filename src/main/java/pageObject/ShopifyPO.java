@@ -114,7 +114,7 @@ public class ShopifyPO extends AbstractPage {
         sleepInSecond(1);
         waitToElementClickable(ShopifyPageUI.ENTER_MY_STORE_BUTTON);
         clickToElement(ShopifyPageUI.ENTER_MY_STORE_BUTTON);
-        sleepInSecond(1);
+        sleepInSecond(2);
         if (isElementPresentInDOM(ShopifyPageUI.ERR_ZIP_CODE)) {
             inputAddressTextboxes("zip", "2020");
         }

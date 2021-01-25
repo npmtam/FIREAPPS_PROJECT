@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2021-01-23 17:23:37,954 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
 2021-01-23 17:23:37,968 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 2021-01-23 17:23:42,159 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
@@ -27,3 +28,42 @@
 2021-01-23 17:26:44,529 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 2021-01-23 17:26:44,534 INFO  shopify.createStoreAndInstallChatalyst - OS Name = windows 10
 2021-01-23 17:26:45,355 INFO  shopify.createStoreAndInstallChatalyst - ----------------QUIT BROWSER SUCCESS-----------------
+=======
+2021-01-23 17:21:11,678 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
+2021-01-23 17:21:11,694 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-23 17:21:16,477 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-23 17:21:16,630 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-23 17:21:20,079 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2021-01-23 17:21:29,381 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2021-01-23 17:21:32,429 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2021-01-23 17:21:41,858 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-23 17:21:41,860 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2021-01-23 17:21:47,114 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+2021-01-23 17:22:03,718 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+2021-01-23 17:22:03,743 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-23 17:22:03,743 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+2021-01-23 17:22:03,766 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210123_172111_Chatalyst.csv
+2021-01-23 17:22:03,770 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+2021-01-23 17:22:06,894 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+2021-01-23 17:22:10,002 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+2021-01-23 17:22:17,143 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+2021-01-23 17:22:29,437 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+2021-01-23 17:22:30,691 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+2021-01-23 17:22:46,043 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+2021-01-23 17:23:38,898 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
+2021-01-23 17:23:43,150 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
+2021-01-23 17:23:58,206 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
+2021-01-23 17:24:05,640 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
+2021-01-23 17:24:34,382 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
+2021-01-23 17:24:39,455 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
+2021-01-23 17:24:42,552 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+2021-01-23 17:24:42,552 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
+2021-01-23 17:24:54,035 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
+2021-01-23 17:25:16,823 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
+2021-01-23 17:25:46,885 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-23 17:25:49,877 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-23 17:26:20,042 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-23 17:26:20,606 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-23 17:26:21,021 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-23 17:26:24,403 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+>>>>>>> c611adfb1db109e04502d372a1dc5c3da159d7fd

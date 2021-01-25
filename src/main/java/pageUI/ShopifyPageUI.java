@@ -108,7 +108,6 @@ public class ShopifyPageUI {
     public static final String SHIPPO_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Shippo')]";
     public static final String PUSHOWL_WEB_PUSH_NOTIFICATION = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='PushOwl Web Push Notification')]";
     public static final String ULTIMATE_TRUST_BADGES_FREE = "//h4[text()='Ultimate Trust Badges']/ancestor::a";
-    public static final String EASY_GDPR_COOKIE_BAR = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Easy GDPR + Cookie Bar')]";
     public static final String FACEBOOK_AND_INSTAGRAM_AUTO_POST = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[(text()='Facebook & Instagram Auto Post')]";
     public static final String PARCELPANNEL_ORDER_TRACKING_PRO = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'ParcelPanel Order Tracking Pro')]";
     public static final String WISHLIST_PLUS = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Wishlist Plus')]";
@@ -117,11 +116,36 @@ public class ShopifyPageUI {
     public static final String VIDEOFY_PRODUCT_VIDEO_MAKER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Vimeo Create ‑ Video Maker')]";
     public static final String SUPER_EFFECTS_HOLIDAY_BOOST = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Super Effects ‑ Holiday Boost')]";
     public static final String MASSFULFILL = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'MassFulfill')]";
-    public static final String SPIN_WHEEL_POP_UPS_EMAIL_POPUP = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Spin Wheel Pop ups Email Popup')]";
-    public static final String VIDEO_AD_MACHINE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Video Ad Machine')]";
     public static final String REVEAL_RFM_CUSTOMER_TAGS = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Reveal: RFM Customer Tags')]";
     public static final String THANK_YOU_EMAIL_MARKETING_TOOL = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Thank You Email Marketing Tool')]";
+
+    public static final String CONTACT_FORM_BUILDER_FREE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Contact Form Builder ‑ FREE')]";
+    public static final String MULTI_ANNOUNCEMENT_BAR_TIMER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi‑Announcement Bar + Timer')]";
+    public static final String SEARCH_PRODUCT_FILTER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Search & Product Filter')]";
+    public static final String ULTIMATE_GDPR_EU_COOKIE_BANNER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Ultimate GDPR EU Cookie Banner')]";
+    public static final String AVADA_SIZE_CHART_FREE = "//h4[contains(text(), 'AVADA Size Chart FREE!')]";
+    public static final String URGENCY_PACK_ULTIMATE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Urgency Pack Ultimate')]";
+    public static final String POPUP_EMAIL_EXIIT_POPUPS = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Pop Up, Email & Exit Pop Ups')]";
+    public static final String EASY_GDPR_COOKIE_BAR = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Easy GDPR + Cookie Bar')]";
+
+    public static final String SPIN_WHEEL_POP_UPS_EMAIL_POPUP = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Spin Wheel Pop ups Email Popup')]";
+    public static final String VIDEO_AD_MACHINE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Video Ad Machine')]";
     public static final String MULTI_PIXELS_FOR_FACEBOOK = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi Pixels For Facebook')]";
+    public static final String SMART_PUSH_MARKETING_WEBPUSH = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Smart Push Marketing ‑ WebPush')]";
+    public static final String FORM_BUILDER_WITH_FILE_UPLOAD = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Form Builder with File Upload')]";
+    public static final String STORE_IMPORTER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Store Importer')]";
+    public static final String BULK_DISCOUNTS_NOW = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Bulk Discounts Now')]";
+    public static final String COUNTDOWN_ANNOUNCEMENT_BAR = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Countdown + Announcement Bar')]";
+    public static final String PUSHDADDY_COUNTDOWN_TIMER = "//h4[contains(text(), 'Pushdaddy Countdown Timer')]";
+    public static final String WHATSAPP_CHAT_CART_RECOVERY = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'WhatsApp Chat + Cart Recovery')]";
+
+    public static final String PRIVY_POPUPS = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi Pixels For Facebook')]";
+    public static final String FREE_SHIPPING_BAR = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Free Shipping Bar')]";
+    public static final String BEST_CURRENCY_CONVERTER = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi Pixels For Facebook')]";
+    public static final String MAILCHIMP_FORMS_BY_MAILMUNCH = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi Pixels For Facebook')]";
+    public static final String PLUG_IN_SEO = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi Pixels For Facebook')]";
+    public static final String SMILE_REWARDS_LOYALTY = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi Pixels For Facebook')]";
+    public static final String RYVIU_PRODUCT_REVIEW_APP_UGC = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Multi Pixels For Facebook')]";
 
 
     //Themes

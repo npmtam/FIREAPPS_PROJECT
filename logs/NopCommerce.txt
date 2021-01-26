@@ -1,69 +1,346 @@
-<<<<<<< HEAD
-2021-01-23 17:23:37,954 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
-2021-01-23 17:23:37,968 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 17:23:42,159 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-23 17:23:42,312 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2021-01-23 17:23:45,772 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-2021-01-23 17:23:55,046 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-2021-01-23 17:23:58,103 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-2021-01-23 17:24:08,200 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-23 17:24:08,204 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-2021-01-23 17:24:13,476 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-2021-01-23 17:24:27,018 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-2021-01-23 17:24:27,044 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-23 17:24:27,044 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-2021-01-23 17:24:27,068 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Select Apps menu
-2021-01-23 17:24:32,193 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Visit Shopify App store
-2021-01-23 17:24:35,316 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-2021-01-23 17:24:42,869 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Search free Shopify app
-2021-01-23 17:24:52,357 INFO  shopify.createStoreAndInstallChatalyst - Step 13: Select app
-2021-01-23 17:25:22,892 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Add random app to store
-2021-01-23 17:25:30,990 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Apps menu
-2021-01-23 17:25:34,100 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Visit Shopify App store
-2021-01-23 17:25:37,220 INFO  shopify.createStoreAndInstallChatalyst - Step 17: choose account to continue to shopify app
-2021-01-23 17:26:12,328 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 17:26:14,189 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-23 17:26:44,517 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 17:26:44,522 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 17:26:44,529 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 17:26:44,534 INFO  shopify.createStoreAndInstallChatalyst - OS Name = windows 10
-2021-01-23 17:26:45,355 INFO  shopify.createStoreAndInstallChatalyst - ----------------QUIT BROWSER SUCCESS-----------------
-=======
-2021-01-23 17:21:11,678 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
-2021-01-23 17:21:11,694 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 17:21:16,477 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-23 17:21:16,630 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2021-01-23 17:21:20,079 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-2021-01-23 17:21:29,381 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-2021-01-23 17:21:32,429 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-2021-01-23 17:21:41,858 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-23 17:21:41,860 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-2021-01-23 17:21:47,114 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-2021-01-23 17:22:03,718 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-2021-01-23 17:22:03,743 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-23 17:22:03,743 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-2021-01-23 17:22:03,766 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210123_172111_Chatalyst.csv
-2021-01-23 17:22:03,770 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-2021-01-23 17:22:06,894 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-2021-01-23 17:22:10,002 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-2021-01-23 17:22:17,143 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-2021-01-23 17:22:29,437 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-2021-01-23 17:22:30,691 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-2021-01-23 17:22:46,043 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-2021-01-23 17:23:38,898 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search product Oberlo
-2021-01-23 17:23:43,150 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Search random product
-2021-01-23 17:23:58,206 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add product to import list
-2021-01-23 17:24:05,640 INFO  shopify.createStoreAndInstallChatalyst - Step 21: Import List product
-2021-01-23 17:24:34,382 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
-2021-01-23 17:24:39,455 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
-2021-01-23 17:24:42,552 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-2021-01-23 17:24:42,552 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
-2021-01-23 17:24:54,035 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
-2021-01-23 17:25:16,823 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
-2021-01-23 17:25:46,885 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 17:25:49,877 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-23 17:26:20,042 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 17:26:20,606 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-23 17:26:21,021 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2021-01-23 17:26:24,403 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
->>>>>>> c611adfb1db109e04502d372a1dc5c3da159d7fd
+2021-01-25 16:22:04,358 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Clear test data
+2021-01-25 16:22:04,396 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:22:08,431 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:22:08,662 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:22:12,155 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:22:18,338 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:22:21,413 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:22:34,515 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:22:34,517 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:22:39,789 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:22:58,894 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:22:58,925 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:22:58,926 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:22:58,949 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:22:58,956 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:23:02,337 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:23:05,781 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:23:05,784 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:23:06,643 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:23:07,081 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:23:10,574 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:23:17,524 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:23:21,205 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:23:38,014 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:23:38,014 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:23:47,376 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:24:05,236 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:24:05,265 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:24:05,265 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:24:05,286 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:24:05,286 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:24:08,179 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:24:11,547 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:24:11,549 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:24:12,350 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:24:12,715 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:24:16,167 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:24:22,382 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:24:25,427 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:24:39,310 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:24:39,310 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:24:44,621 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:25:04,644 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:25:04,676 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:25:04,676 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:25:04,706 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:25:04,707 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:25:08,379 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:25:13,036 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:25:13,041 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:25:13,914 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:25:14,321 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:25:17,742 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:25:23,946 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:25:27,008 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:25:40,327 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:25:40,327 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:25:45,612 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:26:02,174 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:26:02,200 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:26:02,200 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:26:02,221 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:26:02,222 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:26:05,151 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:26:08,554 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:26:08,555 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:26:09,337 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:26:09,694 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:26:13,156 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:26:19,344 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:26:22,368 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:26:34,626 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:26:34,626 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:26:39,873 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:26:57,126 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:26:57,152 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:26:57,152 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:26:57,173 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:26:57,174 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:27:00,660 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:27:04,181 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:27:04,185 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:27:05,108 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:27:05,611 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:27:09,078 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:27:15,215 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:27:18,272 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:27:32,243 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:27:32,243 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:27:37,536 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:27:57,120 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:27:57,158 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:27:57,158 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:27:57,189 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:27:57,190 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:28:00,636 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:28:04,163 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:28:04,165 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:28:04,913 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:28:05,322 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:28:08,728 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:28:14,881 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:28:17,920 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:28:30,144 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:28:30,144 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:28:39,429 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:28:56,419 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:28:56,467 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:28:56,468 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:28:56,504 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:28:56,504 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:29:01,195 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:29:04,936 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:29:04,937 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:29:05,750 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:29:05,984 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:29:36,140 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:29:36,664 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:29:36,763 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:30:07,250 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:30:07,922 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:30:08,021 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:30:38,376 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:30:39,002 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:30:39,722 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:30:43,333 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:30:49,484 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:30:58,490 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:31:11,324 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:31:11,324 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:31:16,599 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:31:32,892 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:31:32,914 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:31:32,915 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:31:32,936 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:31:32,937 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:31:35,796 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:31:40,855 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:31:40,856 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:31:42,716 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:31:42,849 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:31:46,286 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:31:47,420 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:31:50,453 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:32:20,536 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:32:21,077 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:32:21,428 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:32:24,869 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:32:31,064 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:32:38,979 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:32:54,054 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:32:54,055 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:32:59,311 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:33:13,360 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:33:25,375 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:33:25,375 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:33:25,401 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:33:25,402 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:33:30,112 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:33:33,614 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:33:33,616 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:33:34,627 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:33:35,083 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:33:38,544 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:33:44,727 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:33:53,172 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:34:05,625 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:34:05,626 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:34:10,944 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:34:27,951 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:34:27,977 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:34:27,977 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:34:27,998 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:34:28,000 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:34:30,833 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:34:34,084 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:34:34,085 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:34:34,839 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:34:35,231 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:34:38,642 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:34:44,814 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:34:53,045 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:35:08,219 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:35:08,220 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:35:13,516 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:35:33,486 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:35:33,510 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:35:33,510 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:35:33,532 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:35:33,533 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:35:37,701 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:35:43,076 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:35:43,078 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:35:43,837 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:35:44,193 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:35:47,668 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:35:53,867 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:36:01,976 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:36:15,141 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:36:15,141 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:36:20,412 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:36:38,365 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:36:38,391 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:36:38,391 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:36:38,412 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:36:38,412 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:36:41,301 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:36:44,758 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:36:44,760 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:36:45,536 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:36:45,929 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:36:49,340 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:36:55,498 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:37:03,522 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:37:20,212 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:37:20,212 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:37:25,527 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:37:41,982 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:37:42,014 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:37:42,014 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:37:42,040 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:37:42,040 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:37:45,210 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:37:49,463 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:37:49,464 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:37:51,858 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:37:52,006 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:37:55,465 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:38:01,608 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:38:09,346 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:38:23,492 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:38:23,492 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:38:28,780 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:38:45,122 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:38:45,144 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:38:45,144 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:38:45,163 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:38:45,165 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:38:48,057 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:38:51,368 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:38:51,370 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:38:52,291 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:38:52,697 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:38:56,159 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:39:02,314 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:39:10,727 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:39:26,051 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:39:26,052 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:39:31,325 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:39:45,335 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:39:45,360 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:39:45,361 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:39:45,385 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:39:45,385 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:39:48,269 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:39:51,610 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:39:51,612 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:39:52,605 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:39:53,059 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:39:56,681 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:40:02,869 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:40:10,763 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:40:26,841 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:40:26,841 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:40:36,198 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:40:53,773 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:40:53,802 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:40:53,802 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:40:53,821 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:40:53,821 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:40:57,687 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:41:01,478 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:41:01,479 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:41:02,181 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:41:02,284 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:41:07,701 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:41:13,847 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:41:17,311 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:41:47,388 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:41:48,405 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:41:48,509 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:41:51,951 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:41:58,111 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:42:06,303 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:42:21,382 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:42:21,383 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:42:26,657 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:42:45,764 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:42:45,809 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:42:45,810 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:42:45,832 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:42:45,832 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:42:49,237 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:42:52,951 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:42:52,952 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:42:53,828 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:42:54,278 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:42:57,777 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:43:03,982 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:43:12,073 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:43:27,832 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:43:27,832 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:43:33,098 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:43:41,381 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:43:56,970 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:43:56,970 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:43:56,996 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:43:56,997 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:44:00,194 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:44:04,812 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:44:04,814 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:44:05,645 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:44:06,025 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:44:09,473 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:44:15,626 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:44:23,692 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:44:36,985 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:44:36,985 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:44:42,245 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:44:58,864 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:44:58,899 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:44:58,899 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:44:58,940 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:44:58,944 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:45:01,937 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:45:05,520 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:45:05,521 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:45:06,874 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:45:07,063 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:45:15,297 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button
+2021-01-25 16:45:21,437 INFO  shopify.createStoreAndInstallMessent - Step 04: Verify Create an account
+2021-01-25 16:45:29,397 INFO  shopify.createStoreAndInstallMessent - Step 05: Verify the user can create the store
+2021-01-25 16:45:45,766 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:45:45,766 INFO  shopify.createStoreAndInstallMessent - Step 06: Fill info at About yourself
+2021-01-25 16:45:50,999 INFO  shopify.createStoreAndInstallMessent - Step 07: Fill address
+2021-01-25 16:46:09,867 INFO  shopify.createStoreAndInstallMessent - Step 08: Verify the store has been created
+2021-01-25 16:46:09,901 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:46:09,901 INFO  shopify.createStoreAndInstallMessent - Step 09: Print store info
+2021-01-25 16:46:09,927 INFO  shopify.createStoreAndInstallMessent - Step 10: Write data to the csv20210125_162204_Messent.csv
+2021-01-25 16:46:09,928 INFO  shopify.createStoreAndInstallMessent - Step 10: Add new product
+2021-01-25 16:46:13,261 INFO  shopify.createStoreAndInstallMessent - Step 11: Verify the product has been added
+2021-01-25 16:46:17,940 INFO  shopify.createStoreAndInstallMessent -  -------------------------- PASSED -------------------------- 
+2021-01-25 16:46:17,941 INFO  shopify.createStoreAndInstallMessent - Pre-condition: Access Shopify
+2021-01-25 16:46:19,061 INFO  shopify.createStoreAndInstallMessent - Step 01: Press on Start free trial button
+2021-01-25 16:46:19,500 INFO  shopify.createStoreAndInstallMessent - Step 02: Fill info to register
+2021-01-25 16:46:22,930 INFO  shopify.createStoreAndInstallMessent - Step 03: Press Create your store button

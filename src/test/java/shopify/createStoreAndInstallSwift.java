@@ -174,6 +174,12 @@ public class createStoreAndInstallSwift extends AbstractTest {
         System.out.println("Country: " + country);
         System.out.println("Created time: " + dateTime);
 
+        log.info("Step 49: Write data to the csv" + csvName);
+        shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
+        //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
+        System.out.println("Written Data");
+
+
         /*log.info("Step 10: Write data to the csv" + csvName);
         shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
         //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
@@ -375,11 +381,6 @@ public class createStoreAndInstallSwift extends AbstractTest {
 
         log.info("Step 48: Add Swift app to store");
         swiftPage.clickToAddApp();
-
-        log.info("Step 49: Write data to the csv" + csvName);
-        shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
-        //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
-        System.out.println("Written Data");
 
         log.info("Step 50: Install app");
         swiftPage.clickToInstallApp();

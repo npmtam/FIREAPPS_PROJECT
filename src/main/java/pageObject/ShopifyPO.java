@@ -241,7 +241,6 @@ public class ShopifyPO extends AbstractPage {
     }
 
 
-
     public void writeCsvFileKeywordSearch(String fileName, String keyword, String dateTime) throws IOException {
         Keyword data = new Keyword(keyword, dateTime);
 
@@ -263,7 +262,7 @@ public class ShopifyPO extends AbstractPage {
 //            fileWriter.append(Constants.NEW_LINE_SEPARATOR);
 
             //Write new data objects list to the CSV file
-            for (Keyword storeValues :keywords) {
+            for (Keyword storeValues : keywords) {
                 fileWriter.append(storeValues.getKeyword());
                 fileWriter.append(Constants.COMMA_DELIMITER);
                 fileWriter.append(storeValues.getDateTime());
@@ -488,12 +487,8 @@ public class ShopifyPO extends AbstractPage {
 
     //ADD FREE SHOPIFY APPS (RANDOM 1 APP FROM LIST)
     public String searchFreeShopifyApp() {
-<<<<<<< HEAD
-        String[] keywords = new String[]{"Facebook channel","Product Reviews", "Google Channel", "Kit", "Shopify Email", "Geolocation"};
-=======
         sleepInSecond(2);
-        final String[] keywords = new String[]{"Facebook channel","Product Reviews", "Google Channel", "Kit", "Shopify Email", "Geolocation"};
->>>>>>> c611adfb1db109e04502d372a1dc5c3da159d7fd
+        final String[] keywords = new String[]{"Facebook channel", "Product Reviews", "Google Channel", "Kit", "Shopify Email", "Geolocation"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
@@ -501,40 +496,39 @@ public class ShopifyPO extends AbstractPage {
 
 
     public String searchImportProductApp() {
-        String[] keywords = new String[]{"Multichannel Importer","Syncee Global Dropshipping", "Spocket Dropshipping", "DSers AliExpress Dropshipping", "CJDropshipping"};
+        String[] keywords = new String[]{"Multichannel Importer", "Syncee Global Dropshipping", "Spocket Dropshipping", "DSers AliExpress Dropshipping", "CJDropshipping"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
     }
 
     public void selectImportProductAppRandom() {
-            if (isElementPresentInDOM(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE)) {
-                waitToElementVisible(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE);
-                clickToElement(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE);
-                clickToAddApp();
-                clickToInstallApp();
-            } else if (isElementPresentInDOM(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE)) {
-                waitToElementVisible(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE);
-                clickToElement(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE);
-                clickToAddApp();
-                clickToInstallApp();
-            } else if (isElementPresentInDOM(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE)) {
-                waitToElementVisible(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE);
-                clickToElement(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE);
-                clickToAddApp();
-                clickToInstallApp();
-            } else if (isElementPresentInDOM(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE)) {
-                waitToElementVisible(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE);
-                clickToElement(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE);
-                clickToAddApp();
-                clickToInstallApp();
-            } else if (isElementPresentInDOM(ShopifyPageUI.CJDROPSHIPPING)) {
-                waitToElementVisible(ShopifyPageUI.CJDROPSHIPPING);
-                clickToElement(ShopifyPageUI.CJDROPSHIPPING);
-                clickToAddApp();
-                clickToInstallApp();
-            }
-            else {
+        if (isElementPresentInDOM(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.MULTI_IMPORTER_APP_IN_APPSTORE);
+            clickToAddApp();
+            clickToInstallApp();
+        } else if (isElementPresentInDOM(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.SYNCEE_GLOBAL_DROPSHIPPING_APP_IN_APPSTORE);
+            clickToAddApp();
+            clickToInstallApp();
+        } else if (isElementPresentInDOM(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.SPOCKET_DROPSHIPPING_APP_IN_APPSTORE);
+            clickToAddApp();
+            clickToInstallApp();
+        } else if (isElementPresentInDOM(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE)) {
+            waitToElementVisible(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE);
+            clickToElement(ShopifyPageUI.DSER_ALIEXPRESS_DROPSHIPPING_APP_IN_APPSTORE);
+            clickToAddApp();
+            clickToInstallApp();
+        } else if (isElementPresentInDOM(ShopifyPageUI.CJDROPSHIPPING)) {
+            waitToElementVisible(ShopifyPageUI.CJDROPSHIPPING);
+            clickToElement(ShopifyPageUI.CJDROPSHIPPING);
+            clickToAddApp();
+            clickToInstallApp();
+        } else {
 
         }
     }
@@ -598,7 +592,7 @@ public class ShopifyPO extends AbstractPage {
         sendKeyToElement(ShopifyPageUI.DISCOUNT_VALUE_TEXTBOX, keyword);
     }
 
-    public String inputCodeName(){
+    public String inputCodeName() {
         final String[] keywords = new String[]{"HOLIDAY", "BACK2SCHOOL", "FESTIVE", "SPRINGDEAL", "FREESHIP", "BOOST SALES", "WELCOME", "DISCOUNT",
                 "GIFTGUIDE", "NEW ARRIVAL", "MYSTERY", "GIFT", "BIRTHDAY", "BESTSELLING", "DISTRIBUTE", "LIMITED", "HAPPYDAY", "LOVE", "FLASHDEAL", "VALENTINE",
                 "FORMOM", "FORDAD", "DAYOFF", "HAPPYHOURS", "HAPPYWEEK"};
@@ -607,17 +601,17 @@ public class ShopifyPO extends AbstractPage {
         return keywords[index];
     }
 
-    public String inputDiscountValue(){
+    public String inputDiscountValue() {
         final String[] keywords = new String[]{"5", "10", "15", "20", "8", "12", "17", "7", "25", "22"};
         Random random = new Random();
         int index = random.nextInt(keywords.length);
         return keywords[index];
     }
 
-    public void checkToUsageLimits(){
+    public void checkToUsageLimits() {
         sleepInSecond(5);
         scrollPage();
-        if (!isElementSelected(ShopifyPageUI.USAGE_LIMITS_CHECKBOX)){
+        if (!isElementSelected(ShopifyPageUI.USAGE_LIMITS_CHECKBOX)) {
             clickToElement(ShopifyPageUI.USAGE_LIMITS_CHECKBOX);
         }
     }
@@ -654,8 +648,15 @@ public class ShopifyPO extends AbstractPage {
         sendKeyToElement(ShopifyPageUI.SEARCH_APPS_TEXTBOX, keyword);
     }
 
+
     //Free Shopify Apps
     public void selectFreeShopifyAppRandom() {
+        if(isElementPresentInDOM(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE)){
+                waitToElementVisible(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE);
+                clickToElement(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE);
+                clickToAddApp();
+                clickToInstallApp();
+        }
         if (isElementPresentInDOM(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE)) {
             waitToElementVisible(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE);
             clickToElement(ShopifyPageUI.PRODUCT_REVIEW_APP_IN_APPSTORE);
@@ -679,23 +680,16 @@ public class ShopifyPO extends AbstractPage {
         } else if (isElementPresentInDOM(ShopifyPageUI.FACEBOOK_CHANNEL_APP_IN_APPSTORE)) {
             waitToElementVisible(ShopifyPageUI.FACEBOOK_CHANNEL_APP_IN_APPSTORE);
             clickToElement(ShopifyPageUI.FACEBOOK_CHANNEL_APP_IN_APPSTORE);
-<<<<<<< HEAD
+            clickToAddApp();
+            clickToInstallApp();
         } else if (isElementPresentInDOM(ShopifyPageUI.GEOLOCATION_IN_APPSTORE)) {
             waitToElementVisible(ShopifyPageUI.GEOLOCATION_IN_APPSTORE);
             clickToElement(ShopifyPageUI.GEOLOCATION_IN_APPSTORE);
+            clickToAddApp();
+            clickToInstallApp();
         } else {
 
-=======
-            clickToAddApp();
-            clickToInstallApp();
-        } else {
-            waitToElementVisible(ShopifyPageUI.GEOLOCATION_IN_APPSTORE);
-            clickToElement(ShopifyPageUI.GEOLOCATION_IN_APPSTORE);
-            clickToAddApp();
-            clickToInstallApp();
->>>>>>> c611adfb1db109e04502d372a1dc5c3da159d7fd
         }
-
     }
 
     /*public void selectFreeShopifyAppRandomByURL(){
@@ -766,12 +760,13 @@ public class ShopifyPO extends AbstractPage {
             clickToElement(ShopifyPageUI.THANK_YOU_EMAIL_MARKETING_TOOL);
             clickToAddApp();
             clickToInstallApp();
-        } else {
-            isElementPresentInDOM(ShopifyPageUI.MASSFULFILL);
+        } else if (isElementPresentInDOM(ShopifyPageUI.MASSFULFILL)) {
             waitToElementVisible(ShopifyPageUI.MASSFULFILL);
             clickToElement(ShopifyPageUI.MASSFULFILL);
             clickToAddApp();
             clickToInstallApp();
+        } else {
+
         }
     }
 
@@ -790,13 +785,11 @@ public class ShopifyPO extends AbstractPage {
         } else if (isElementPresentInDOM(ShopifyPageUI.MULTI_PIXELS_FOR_FACEBOOK)) {
             waitToElementVisible(ShopifyPageUI.MULTI_PIXELS_FOR_FACEBOOK);
             clickToElement(ShopifyPageUI.MULTI_PIXELS_FOR_FACEBOOK);
-<<<<<<< HEAD
-        } else if ( isElementPresentInDOM(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE)){
+            clickToAddApp();
+            clickToInstallApp();
+        } else if (isElementPresentInDOM(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE)) {
             waitToElementVisible(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
             clickToElement(ShopifyPageUI.ULTIMATE_TRUST_BADGES_FREE);
-        } else{
-
-=======
             clickToAddApp();
             clickToInstallApp();
         } else if (isElementPresentInDOM(ShopifyPageUI.SMART_PUSH_MARKETING_WEBPUSH)) {
@@ -829,13 +822,13 @@ public class ShopifyPO extends AbstractPage {
             clickToElement(ShopifyPageUI.PUSHDADDY_COUNTDOWN_TIMER);
             clickToAddApp();
             clickToInstallApp();
-        } else {
-            isElementPresentInDOM(ShopifyPageUI.WHATSAPP_CHAT_CART_RECOVERY);
+        } else if (isElementPresentInDOM(ShopifyPageUI.WHATSAPP_CHAT_CART_RECOVERY)) {
             waitToElementVisible(ShopifyPageUI.WHATSAPP_CHAT_CART_RECOVERY);
             clickToElement(ShopifyPageUI.WHATSAPP_CHAT_CART_RECOVERY);
             clickToAddApp();
             clickToInstallApp();
->>>>>>> c611adfb1db109e04502d372a1dc5c3da159d7fd
+        } else {
+
         }
     }
 
@@ -897,10 +890,10 @@ public class ShopifyPO extends AbstractPage {
         driver.switchTo().window(handlesList.get(0));
     }
 
-    public void closeTabToTheRight(){
+    public void closeTabToTheRight() {
         String originalHandle = driver.getWindowHandle();
         //Do something to open new tabs
-        for(String handle : driver.getWindowHandles()) {
+        for (String handle : driver.getWindowHandles()) {
             if (!handle.equals(originalHandle)) {
                 driver.switchTo().window(handle);
                 driver.close();
@@ -909,7 +902,7 @@ public class ShopifyPO extends AbstractPage {
         driver.switchTo().window(originalHandle);
     }
 
-    public void searchAppInShopifyAppStore(){
+    public void searchAppInShopifyAppStore() {
         sleepInSecond(3);
         waitToElementClickable(ShopifyPageUI.SEARCH_SHOPIFY_APP_STORE_BTN);
         clickToElement(ShopifyPageUI.SEARCH_SHOPIFY_APP_STORE_BTN);

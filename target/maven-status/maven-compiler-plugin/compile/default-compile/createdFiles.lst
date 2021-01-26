@@ -1,5 +1,4 @@
 pageUI\InstallAppUI.class
-commons\ExtentManager.class
 commons\StoresLink.class
 pageObject\OriginalPO.class
 pageObject\WebsitePO.class
@@ -8,12 +7,10 @@ commons\TestNGAppender.class
 pageObject\OberloPO.class
 commons\Keyword.class
 commons\AbstractTest.class
-commons\ExtentManager$1.class
 pageObject\ChatalystPO.class
 pageUI\WhatNewPageUI.class
 pageObject\MessentPO.class
 commons\VerificationFailures.class
-commons\Constants.class
 pageUI\WebsiteUI.class
 pageObject\MultiImporterPO.class
 commons\PageGeneratorManager.class

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="shopify.createStoreAndInstallChatalyst" time="124.437" tests="5" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="shopify.createStoreAndInstallChatalyst" time="1,830.428" tests="5" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="14.0.2+12-46"/>
@@ -60,116 +60,105 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="116.873">
-    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //input[@value=&apos;Add app&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@value='Add app'] (tried for 30 second(s) with 500 milliseconds interval)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:202)
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="267.955">
+    <failure message="No frame element found by name or id intercom-modal-frame&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchFrameException">org.openqa.selenium.NoSuchFrameException: 
+No frame element found by name or id intercom-modal-frame
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:245)
+</failure>
+    <system-out><![CDATA[2021-01-25 10:07:23,451 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
+2021-01-25 10:07:23,467 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-25 10:07:27,566 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-25 10:07:27,803 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-25 10:07:31,290 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2021-01-25 10:07:40,575 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2021-01-25 10:07:43,635 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2021-01-25 10:07:54,817 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-25 10:07:54,820 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2021-01-25 10:08:00,110 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+Country: Bulgaria
+There is no State or Province for this country
+2021-01-25 10:08:17,895 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+2021-01-25 10:08:17,921 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-25 10:08:17,922 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+Store URL: https://ora-simonis.myshopify.com
+Account info:
+Email: ora_simonis@mail.com
+Store Name: Ora Simonis
+Store type: Free
+Password: Jaquelin80
+Address: 45505 Sherman Stravenue
+City: East Leonardo
+Country: Bulgaria
+Created time: 25/01/2021 10:08:17
+2021-01-25 10:08:17,951 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Select Apps menu
+2021-01-25 10:08:23,097 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Visit Shopify App store
+2021-01-25 10:08:26,222 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+2021-01-25 10:08:32,583 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Search import product app
+2021-01-25 10:08:42,371 INFO  shopify.createStoreAndInstallChatalyst - Step 13: Select app
+2021-01-25 10:09:14,373 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Add random app to store
+2021-01-25 10:09:22,464 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Apps menu
+2021-01-25 10:09:25,556 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Visit Shopify App store
+2021-01-25 10:09:28,667 INFO  shopify.createStoreAndInstallChatalyst - Step 17: choose account to continue to shopify app
+2021-01-25 10:09:28,667 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search app Oberlo
+2021-01-25 10:09:41,083 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Select Oberlo app
+2021-01-25 10:09:42,385 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add Oberlo app to store
+2021-01-25 10:09:59,225 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}) on port 39963
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1611544042.266][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1611544042.266][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+Jan 25, 2021 10:07:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="33.837">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial'] (tried for 30 second(s) with 500 milliseconds interval)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='Add app']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']"}
   (Session info: chrome=88.0.4324.104)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8fcaac2e03f80b182181ca4ce384a5f1
-*** Element info: {Using=xpath, value=//input[@value='Add app']}
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:202)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 16358ee8456e0e8e6805fd70f462864e
+*** Element info: {Using=xpath, value=//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']}
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)
 </failure>
-    <system-out><![CDATA[2021-01-23 16:27:34,921 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
-2021-01-23 16:27:34,934 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 16:27:37,407 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-2021-01-23 16:27:37,648 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-2021-01-23 16:27:41,299 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-2021-01-23 16:27:51,206 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-2021-01-23 16:27:54,234 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-2021-01-23 16:28:03,954 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-23 16:28:03,955 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-2021-01-23 16:28:09,245 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-Country: New Zealand
-2021-01-23 16:28:23,558 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-2021-01-23 16:28:23,592 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-2021-01-23 16:28:23,592 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-Store URL: https://evangeline-nicolas.myshopify.com
-Account info:
-Email: evangeline_nicolas@mail.com
-Store Name: Evangeline Nicolas
-Store type: Free
-Password: Stan90
-Address: 66195 Savion Prairie
-City: Darrinton
-Country: New Zealand
-Created time: 23/01/2021 16:28:23
-2021-01-23 16:28:23,617 INFO  shopify.createStoreAndInstallChatalyst - Step 22: Select Apps menu
-2021-01-23 16:28:28,748 INFO  shopify.createStoreAndInstallChatalyst - Step 23: Visit Shopify App store
-2021-01-23 16:28:31,862 INFO  shopify.createStoreAndInstallChatalyst - Random delay
-2021-01-23 16:28:31,862 INFO  shopify.createStoreAndInstallChatalyst - Step 25: Search free Shopify app
-2021-01-23 16:28:46,508 INFO  shopify.createStoreAndInstallChatalyst - Step 26: Select app
-2021-01-23 16:29:01,706 INFO  shopify.createStoreAndInstallChatalyst - Step 27: Add random app to store
-]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}) on port 18816
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1611394053.801][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1611394053.801][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-Jan 23, 2021 4:27:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="3.883">
-    <failure message="Index 0 out of bounds for length 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:87)
-</failure>
-    <system-out><![CDATA[2021-01-23 16:29:31,806 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-2021-01-23 16:29:35,630 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+    <system-out><![CDATA[2021-01-25 10:11:51,613 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-25 10:11:55,264 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 ]]></system-out>
   </testcase>
-  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="0.041">
-    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=88.0.4324.104)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8fcaac2e03f80b182181ca4ce384a5f1" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=88.0.4324.104)
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="738.422"/>
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="716.256"/>
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="69.402">
+    <failure message="Cannot locate element with text: Macao SAR China&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Cannot locate element with text: Macao SAR China
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8fcaac2e03f80b182181ca4ce384a5f1
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
+Driver info: driver.version: unknown
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:145)
 </failure>
-    <system-out><![CDATA[2021-01-23 16:29:35,690 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-]]></system-out>
-  </testcase>
-  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="0.057">
-    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=88.0.4324.104)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8fcaac2e03f80b182181ca4ce384a5f1" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=88.0.4324.104)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8fcaac2e03f80b182181ca4ce384a5f1
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
-</failure>
-    <system-out><![CDATA[2021-01-23 16:29:35,699 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-]]></system-out>
-  </testcase>
-  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="0.002">
-    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=88.0.4324.104)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8fcaac2e03f80b182181ca4ce384a5f1" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=88.0.4324.104)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8fcaac2e03f80b182181ca4ce384a5f1
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:84)
-</failure>
-    <system-out><![CDATA[2021-01-23 16:29:35,716 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+    <system-out><![CDATA[2021-01-25 10:36:40,131 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-25 10:36:40,963 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-25 10:36:41,321 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-25 10:36:44,787 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2021-01-25 10:36:54,949 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2021-01-25 10:36:57,969 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2021-01-25 10:37:08,877 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-25 10:37:08,877 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2021-01-25 10:37:18,211 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 ]]></system-out>
   </testcase>
 </testsuite>

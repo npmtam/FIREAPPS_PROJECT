@@ -181,8 +181,8 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
         if (isChooseAnAccountToShopifyAppStore) {
             shopifyPage.chooseAccount();
         }
-
-        log.info("Step 12: Search free Shopify app");
+        // INSTALL APP IMPORT PRODUCT
+        log.info("Step 12: Search import product app");
         shopifyPage.inputKeyword(shopifyPage.searchImportProductApp());
         shopifyPage.clickToSearchBtn();
 
@@ -203,11 +203,11 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
         oberloPage.clickToVisitShopifyAppStore();
 
         log.info("Step 17: choose account to continue to shopify app");
-        shopifyPage.switchTabChooseAccount();
+        /*shopifyPage.switchTabChooseAccount();
         boolean isChooseAnAccountToShopifyAppStore1 = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CHOOSE_AN_ACCOUNT);
         if (isChooseAnAccountToShopifyAppStore) {
             shopifyPage.chooseAccount();
-        }
+        } */
 
         log.info("Step 18: Search app Oberlo");
         boolean isPageNotFound = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
@@ -272,12 +272,6 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
 
         log.info("Step 26: Visit Shopify App store");
         multiImporterPage.clickToVisitShopifyAppStore();
-
-        log.info("Step 27: choose account to continue to shopify app");
-        shopifyPage.switchTabChooseAccount();
-        if (isChooseAnAccountToShopifyAppStore) {
-            shopifyPage.chooseAccount();
-        }
 
         log.info("Step 28: Search app Multi Importer");
         boolean isPageNotFound2 = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
@@ -385,10 +379,6 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
         shopifyPage.clickToVisitShopifyAppStore();
 
         log.info("Random delay");
-        shopifyPage.switchTabChooseAccount();
-        if (isChooseAnAccountToShopifyAppStore) {
-            shopifyPage.chooseAccount();
-        }
 
         log.info("Step 33: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeShopifyApp());
@@ -399,9 +389,8 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
 
         //log.info("Step 27: Add random app to store");
         //shopifyPage.clickToAddApp();
-        shopifyPage.clickToInstallApp();
+        //shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
-
 
         //ADD FREE OTHER APP 1 (RANDOM FROM LIST)
         log.info("Step 35: Select Apps menu");
@@ -410,11 +399,6 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
 
         log.info("Step 36: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
-
-        shopifyPage.switchTabChooseAccount();
-        if (isChooseAnAccountToShopifyAppStore) {
-            shopifyPage.chooseAccount();
-        }
 
         log.info("Step 37: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp());
@@ -435,11 +419,6 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
 
         log.info("Step 41: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
-
-        shopifyPage.switchTabChooseAccount();
-        if (isChooseAnAccountToShopifyAppStore) {
-            shopifyPage.chooseAccount();
-        }
 
         log.info("Step 42: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp2());
@@ -471,7 +450,7 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
         shopifyPage.clickToSave();
         shopifyPage.sleepRandomly();
 
-        //Install Swift app
+        //Install Chatalyst app
         // pause code
         log.info("Step 49: Select Apps menu");
         chatalystPage = PageGeneratorManager.getChatalystPage(driver);
@@ -479,12 +458,6 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
 
         log.info("Step 50: Visit Shopify App store");
         chatalystPage.clickToVisitShopifyAppStore();
-
-        shopifyPage.switchTabChooseAccount();
-        if (isChooseAnAccountToShopifyAppStore) {
-            shopifyPage.chooseAccount();
-        }
-
 
         log.info("Step 51: Search app by keyword");
         chatalystPage.inputKeyword(chatalystPage.getRandomKeyword());

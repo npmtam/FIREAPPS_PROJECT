@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: shopify.createStore
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.55 sec <<< FAILURE! - in shopify.createStore
+beforeTest(shopify.createStore)  Time elapsed: 0.444 sec  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+
+

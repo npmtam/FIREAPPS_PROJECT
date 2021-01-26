@@ -22,7 +22,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.lang.Thread;
 
-public class createStoreAndInstallChatalyst extends AbstractTest{
+public class createStoreAndInstallChatalyst extends AbstractTest {
     private WebDriver driver;
     private AbstractPage abstractPage;
     private ShopifyPO shopifyPage;
@@ -122,12 +122,6 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
             shopifyPage.clickToCreateAccountButton();
         }
 
-        /*log.info("Step Create an account");
-        shopifyPage.inputToCreateAccount("first_name", firstName);
-        shopifyPage.inputToCreateAccount("last_name", lastName);
-        shopifyPage.inputToCreateAccount("password", password);
-        shopifyPage.inputToCreateAccount("password_confirmation",password_confirmation);
-        shopifyPage.clickToCreateAccountButton();*/
 
         log.info("Step 05: Verify the user can create the store");
         verifyTrue(shopifyPage.isRegisterInfoAcceptable());
@@ -173,33 +167,55 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         System.out.println("Country: " + country);
         System.out.println("Created time: " + dateTime);
 
-        log.info("Step 10: Write data to the csv" + csvName);
-        shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
-        //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
-        System.out.println("Written Data");
+        log.info("Step 10: Select Apps menu");
+        shopifyPage = PageGeneratorManager.getShopifyPage(driver);
+        shopifyPage.selectAppsMenu();
 
-       ///INSTALL OBERLO APP
-        log.info("Step 11: Select Apps menu");
-        oberloPage = PageGeneratorManager.getOberloPO(driver);
-        oberloPage.selectAppsMenu();
+        log.info("Step 11: Visit Shopify App store");
+        shopifyPage.clickToVisitShopifyAppStore();
 
-        log.info("Step 12: Visit Shopify App store");
-        oberloPage.clickToVisitShopifyAppStore();
+        log.info("Random delay");
 
-        log.info("Step 13: choose account to continue to shopify app");
         shopifyPage.switchTabChooseAccount();
         boolean isChooseAnAccountToShopifyAppStore = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CHOOSE_AN_ACCOUNT);
         if (isChooseAnAccountToShopifyAppStore) {
             shopifyPage.chooseAccount();
         }
+        // INSTALL APP IMPORT PRODUCT
+        log.info("Step 12: Search import product app");
+        shopifyPage.inputKeyword(shopifyPage.searchImportProductApp());
+        shopifyPage.clickToSearchBtn();
 
-        log.info("Step 14: Search app Oberlo");
+        log.info("Step 13: Select app");
+        shopifyPage.selectImportProductAppRandom();
+
+        log.info("Step 14: Add random app to store");
+        //shopifyPage.clickToAddApp();
+        //shopifyPage.clickToInstallApp();
+        shopifyPage.sWitchTab();
+
+        ///INSTALL OBERLO APP
+        log.info("Step 15: Select Apps menu");
+        oberloPage = PageGeneratorManager.getOberloPO(driver);
+        oberloPage.selectAppsMenu();
+
+        log.info("Step 16: Visit Shopify App store");
+        oberloPage.clickToVisitShopifyAppStore();
+
+        log.info("Step 17: choose account to continue to shopify app");
+        /*shopifyPage.switchTabChooseAccount();
+        boolean isChooseAnAccountToShopifyAppStore1 = abstractPage.isElementPresentInDOM(ShopifyPageUI.TITLE_CHOOSE_AN_ACCOUNT);
+        if (isChooseAnAccountToShopifyAppStore) {
+            shopifyPage.chooseAccount();
+        } */
+
+        log.info("Step 18: Search app Oberlo");
         boolean isPageNotFound = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
-        if (isPageNotFound){
+        if (isPageNotFound) {
             shopifyPage.searchAppInShopifyAppStore();
             oberloPage.inputKeywordOberlo(oberloPage.searchOberlo());
             oberloPage.clickToSearchAppBtn();
-        }else {
+        } else {
             oberloPage.inputKeyword(oberloPage.searchOberlo());
             oberloPage.clickToSearchBtn();
         }
@@ -207,10 +223,10 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         //oberloPage.inputKeyword(oberloPage.searchOberlo());
         //oberloPage.clickToSearchBtn();
 
-        log.info("Step 15: Select Oberlo app");
+        log.info("Step 19: Select Oberlo app");
         oberloPage.selectOberloInAppStore();
 
-        log.info("Step 16: Add Oberlo app to store");
+        log.info("Step 20: Add Oberlo app to store");
         oberloPage.clickToAddApp();
         oberloPage.clickToInstallApp();
 
@@ -227,14 +243,14 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
 
         shopifyPage.sleepRandomly();
         oberloPage.clickToClosePopup();
-        log.info("Step 18: Search product Oberlo");
+        log.info("Step 21: Search product Oberlo");
         oberloPage.clickToSearchProduct();
 
-        log.info("Step 19: Search random product");
+        log.info("Step 22: Search random product");
         oberloPage.inputNameProduct(oberloPage.searchProductOberlo());
         oberloPage.clickToSearchProductBtn();
 
-        log.info("Step 20: Add product to import list");
+        log.info("Step 23: Add product to import list");
         oberloPage.clickAddToImportList_1();
         oberloPage.clickAddToImportList_2();
         oberloPage.clickAddToImportList_3();
@@ -242,11 +258,39 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         oberloPage.clickAddToImportList_5();
         oberloPage.clickAddToImportList_6();
 
-        log.info("Step 21: Import List product");
+        log.info("Step 24: Import List product");
         oberloPage.clickImportListMenu();
         oberloPage.clickCheckboxAllProduct();
         oberloPage.clickImportAllToStore();
         oberloPage.clickToPushProduct();
+        shopifyPage.sWitchTab();
+
+        //Install app MultiImporter
+        log.info("Step 25: Select Apps menu");
+        multiImporterPage = PageGeneratorManager.getMultiImporterPage(driver);
+        multiImporterPage.selectAppsMenu();
+
+        log.info("Step 26: Visit Shopify App store");
+        multiImporterPage.clickToVisitShopifyAppStore();
+
+        log.info("Step 28: Search app Multi Importer");
+        boolean isPageNotFound2 = abstractPage.isElementPresentInDOM(ShopifyPageUI.ERR_PAGE_NOT_FOUND);
+        if (isPageNotFound2) {
+            shopifyPage.searchAppInShopifyAppStore();
+            multiImporterPage.inputKeywordMultiImporter(multiImporterPage.searchMultiImporter());
+            multiImporterPage.clickToSearchAppBtn();
+        } else {
+            multiImporterPage.inputKeyword(multiImporterPage.searchMultiImporter());
+            multiImporterPage.clickToSearchBtn();
+        }
+
+        log.info("Step 29: Select Multi Importer app");
+        multiImporterPage.selectMultiImporterInAppStore();
+
+        log.info("Step 30: Add Multi Importer app to store");
+        multiImporterPage.clickToAddApp();
+        multiImporterPage.clickToInstallApp();
+
         shopifyPage.sWitchTab();
 
 //        Install app MultiImporter
@@ -327,89 +371,78 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         shopifyPage.selectActionPublishTheme();*/
 
         //ADD FREE SHOPIFY APP (RANDOM FROM LIST)
-        log.info("Step 22: Select Apps menu");
+        log.info("Step 31: Select Apps menu");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.selectAppsMenu();
 
-        log.info("Step 23: Visit Shopify App store");
+        log.info("Step 32: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
         log.info("Random delay");
-        //shopifyPage.sleepRandomly();
 
-        //log.info("Step 24 choose account to continue to shopify app");
-        //shopifyPage.chooseAccount();
-
-        log.info("Step 25: Search free Shopify app");
+        log.info("Step 33: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeShopifyApp());
         shopifyPage.clickToSearchBtn();
 
-        log.info("Step 26: Select app");
+        log.info("Step 34: Select app");
         shopifyPage.selectFreeShopifyAppRandom();
 
-        log.info("Step 27: Add random app to store");
-        shopifyPage.clickToAddApp();
-        shopifyPage.clickToInstallApp();
+        //log.info("Step 27: Add random app to store");
+        //shopifyPage.clickToAddApp();
+        //shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
-
         //ADD FREE OTHER APP 1 (RANDOM FROM LIST)
-        log.info("Step 28: Select Apps menu");
+        log.info("Step 35: Select Apps menu");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.selectAppsMenu();
 
-        log.info("Step 29: Visit Shopify App store");
+        log.info("Step 36: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
-        //log.info("Step 30: choose account to continue to shopify app");
-        //shopifyPage.chooseAccount();
-
-        log.info("Step 31: Search free Shopify app");
+        log.info("Step 37: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp());
         shopifyPage.clickToSearchBtn();
 
-        log.info("Step 32: Select app");
+        log.info("Step 38: Select app");
         shopifyPage.selectFreeOtherAppRandom();
 
-        log.info("Step 33: Add random app to store");
-        shopifyPage.clickToAddApp();
-        shopifyPage.clickToInstallApp();
+        log.info("Step 39: Add random app to store");
+        //shopifyPage.clickToAddApp();
+        //shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
         //ADD FREE OTHER APP 2 (RANDOM FROM LIST)
-        log.info("Step 34: Select Apps menu");
+        log.info("Step 40: Select Apps menu");
         shopifyPage = PageGeneratorManager.getShopifyPage(driver);
         shopifyPage.selectAppsMenu();
 
-        log.info("Step 35: Visit Shopify App store");
+        log.info("Step 41: Visit Shopify App store");
         shopifyPage.clickToVisitShopifyAppStore();
 
-        //log.info("Step 36: choose account to continue to shopify app");
-        //shopifyPage.chooseAccount();
-
-        log.info("Step 37: Search free Shopify app");
+        log.info("Step 42: Search free Shopify app");
         shopifyPage.inputKeyword(shopifyPage.searchFreeOtherApp2());
         shopifyPage.clickToSearchBtn();
 
-        log.info("Step 38: Select app");
+        log.info("Step 43: Select app");
         shopifyPage.selectFreeOtherAppRandom2();
 
-        log.info("Step 39: Add random app to store");
-        shopifyPage.clickToAddApp();
-        shopifyPage.clickToInstallApp();
+        log.info("Step 44: Add random app to store");
+        //shopifyPage.clickToAddApp();
+        //shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
-        log.info("Step 40 : Select Discount menu");
+        log.info("Step 45: Select Discount menu");
         shopifyPage.clickTodDiscountsMenu();
         shopifyPage.clickCreateDiscountCode();
 
-        log.info("Step 41: Input random code name");
+        log.info("Step 46: Input random code name");
         shopifyPage.inputKeywordCodeName(shopifyPage.inputCodeName());
 
-        log.info("Step 42: Input random discount value");
+        log.info("Step 47: Input random discount value");
         shopifyPage.inputKeywordCodeValue(shopifyPage.inputDiscountValue());
 
-        log.info("Step 43: Check Limit to one use per customer");
+        log.info("Step 48: Check Limit to one use per customer");
         shopifyPage.scrollPage();
         shopifyPage.sleepRandomly();
         shopifyPage.checkToUsageLimits();
@@ -417,34 +450,35 @@ public class createStoreAndInstallChatalyst extends AbstractTest{
         shopifyPage.clickToSave();
         shopifyPage.sleepRandomly();
 
-        //Install Swift app
+        //Install Chatalyst app
         // pause code
-        log.info("Step 44: Select Apps menu");
+        log.info("Step 49: Select Apps menu");
         chatalystPage = PageGeneratorManager.getChatalystPage(driver);
         chatalystPage.selectAppsMenu();
 
-        log.info("Step 45: Visit Shopify App store");
+        log.info("Step 50: Visit Shopify App store");
         chatalystPage.clickToVisitShopifyAppStore();
 
-        //log.info("Step 42: choose account to continue to shopify app");
-        //shopifyPage.chooseAccount();
-
-        //log.info("Random delay");
-        //shopifyPage.sleepRandomly();
-
-        log.info("Step 46: Search app by keyword");
+        log.info("Step 51: Search app by keyword");
         chatalystPage.inputKeyword(chatalystPage.getRandomKeyword());
         chatalystPage.clickToSearchBtn();
 
         //log.info("Step 14.1: Load page 2");
         //messentPage.clickToLoadPageTwo();
 
-        log.info("Step 47: Select Chatalyst app");
+        log.info("Step 52: Select Chatalyst app");
         //chatalystPage.clickToChatalystAppInAppStore();
         chatalystPage.clickToURLAppChatalyst();
 
-        log.info("Step 48: Add Chatalyst app to store");
+        log.info("Step 53: Add Chatalyst app to store");
         chatalystPage.clickToAddApp();
+
+        log.info("Step 54: Write data to the csv" + csvName);
+        shopifyPage.writeDataToCsv(System.getProperty("user.dir") + "/src/test/resources/" + csvName, email, storeName, store_type, password, address, city, country, dateTime);
+        //shopifyPage.writeDataToCsv(Constants.WRITE_CSV_FILE_PATH, email, storeName, store_type, password, address, city, country, dateTime);
+        System.out.println("Written Data");
+
+        log.info("Step 55: Add Chatalyst app to store");
         chatalystPage.clickToInstallApp();
 
         //log.info("Step 49: Verify the choose plan page display");

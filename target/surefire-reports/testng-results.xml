@@ -2,147 +2,132 @@
 <testng-results total="5" passed="0" failed="5" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[2021-01-21 10:38:34,177 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
+      <![CDATA[2021-01-25 14:55:00,221 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:38:34,202 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+      <![CDATA[2021-01-25 14:55:00,239 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:38:47,148 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+      <![CDATA[2021-01-25 14:55:06,202 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:38:47,497 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+      <![CDATA[2021-01-25 14:55:06,467 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:38:51,167 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+      <![CDATA[2021-01-25 14:55:10,134 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:00,511 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+      <![CDATA[2021-01-25 14:55:19,603 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:03,557 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+      <![CDATA[2021-01-25 14:55:22,659 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:14,591 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-25 14:55:34,581 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:14,593 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+      <![CDATA[2021-01-25 14:55:34,585 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:19,918 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+      <![CDATA[2021-01-25 14:55:39,907 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:32,878 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+      <![CDATA[2021-01-25 14:55:51,232 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:38,609 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-25 14:55:59,943 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:38,610 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+      <![CDATA[2021-01-25 14:55:59,948 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:38,641 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210121_103834_Chatalyst.csv
+      <![CDATA[2021-01-25 14:56:00,034 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Select Apps menu
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:38,645 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
+      <![CDATA[2021-01-25 14:56:05,255 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Visit Shopify App store
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:41,795 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
+      <![CDATA[2021-01-25 14:56:08,370 INFO  shopify.createStoreAndInstallChatalyst - Random delay
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:44,918 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
+      <![CDATA[2021-01-25 14:56:15,815 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Search import product app
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:39:53,352 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
+      <![CDATA[2021-01-25 14:56:25,523 INFO  shopify.createStoreAndInstallChatalyst - Step 13: Select app
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:40:05,788 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
+      <![CDATA[2021-01-25 14:56:58,748 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:40:06,890 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
+      <![CDATA[2021-01-25 14:57:01,709 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:40:23,214 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+      <![CDATA[2021-01-25 14:57:01,778 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:42:46,130 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+      <![CDATA[2021-01-25 14:57:01,785 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:42:50,096 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+      <![CDATA[2021-01-25 14:57:01,802 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:42:54,345 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+      <![CDATA[2021-01-25 14:57:01,814 INFO  shopify.createStoreAndInstallChatalyst - OS Name = windows 10
 ]]>
     </line>
     <line>
-      <![CDATA[2021-01-21 10:42:54,349 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-]]>
-    </line>
-    <line>
-      <![CDATA[2021-01-21 10:42:54,353 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-]]>
-    </line>
-    <line>
-      <![CDATA[2021-01-21 10:42:54,356 INFO  shopify.createStoreAndInstallChatalyst - OS Name = windows 10
-]]>
-    </line>
-    <line>
-      <![CDATA[2021-01-21 10:42:55,092 INFO  shopify.createStoreAndInstallChatalyst - ----------------QUIT BROWSER SUCCESS-----------------
+      <![CDATA[2021-01-25 14:57:02,899 INFO  shopify.createStoreAndInstallChatalyst - ----------------QUIT BROWSER SUCCESS-----------------
 ]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-01-21T03:38:28Z" name="Surefire suite" finished-at="2021-01-21T03:42:55Z" duration-ms="266827">
+  <suite started-at="2021-01-25T07:54:57Z" name="Surefire suite" finished-at="2021-01-25T07:57:02Z" duration-ms="125467">
     <groups>
     </groups>
-    <test started-at="2021-01-21T03:38:28Z" name="Surefire test" finished-at="2021-01-21T03:42:55Z" duration-ms="266827">
+    <test started-at="2021-01-25T07:54:57Z" name="Surefire test" finished-at="2021-01-25T07:57:02Z" duration-ms="125467">
       <class name="shopify.createStoreAndInstallChatalyst">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:shopify.createStoreAndInstallChatalyst@3023df74]" started-at="2021-01-21T10:38:28Z" name="beforeTest" finished-at="2021-01-21T10:38:34Z" duration-ms="5916" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:shopify.createStoreAndInstallChatalyst@313ac989]" started-at="2021-01-25T14:54:57Z" name="beforeTest" finished-at="2021-01-25T14:55:00Z" duration-ms="2795" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[2021-01-21 10:38:34,177 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
+              <![CDATA[2021-01-25 14:55:00,221 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@3023df74]" started-at="2021-01-21T10:38:34Z" name="TC01_CreateShopifyStore" finished-at="2021-01-21T10:42:46Z" duration-ms="251930" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchFrameException">
+        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@313ac989]" started-at="2021-01-25T14:55:00Z" name="TC01_CreateShopifyStore" finished-at="2021-01-25T14:56:58Z" duration-ms="118501" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[No frame element found by name or id intercom-modal-frame
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type='search' and contains(@class, 'hero')] (tried for 30 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id intercom-modal-frame
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
-	at pageObject.OberloPO.clickToClosePopup(OberloPO.java:143)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:230)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type='search' and contains(@class, 'hero')] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:343)
+	at pageObject.ShopifyPO.inputKeyword1(ShopifyPO.java:655)
+	at pageObject.ShopifyPO.selectImportProductAppRandom(ShopifyPO.java:507)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:190)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,111 +156,15 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
-          <reporter-output>
-            <line>
-              <![CDATA[2021-01-21 10:38:34,202 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:38:47,148 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:38:47,497 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:38:51,167 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:00,511 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:03,557 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:14,591 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:14,593 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:19,918 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:32,878 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:38,609 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:38,610 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:38,641 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Write data to the csv20210121_103834_Chatalyst.csv
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:38,645 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Select Apps menu
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:41,795 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Visit Shopify App store
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:44,918 INFO  shopify.createStoreAndInstallChatalyst - Step 13: choose account to continue to shopify app
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:39:53,352 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Search app Oberlo
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:40:05,788 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Oberlo app
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:40:06,890 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Add Oberlo app to store
-]]>
-            </line>
-            <line>
-              <![CDATA[2021-01-21 10:40:23,214 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
-]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC01_CreateShopifyStore -->
-        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@3023df74]" started-at="2021-01-21T10:42:46Z" name="TC01_CreateShopifyStore" finished-at="2021-01-21T10:42:54Z" duration-ms="8215" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=87.0.4280.141)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='search' and contains(@class, 'hero')]"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aac46f7fd14e070c0a107d480a5fa0ae]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=87.0.4280.141)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aac46f7fd14e070c0a107d480a5fa0ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 834b4cf4a234bf554585f056c6267b4a
+*** Element info: {Using=xpath, value=//input[@type='search' and contains(@class, 'hero')]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -287,9 +176,102 @@ Session ID: aac46f7fd14e070c0a107d480a5fa0ae
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
-	at pageObject.ShopifyPO.closeTabToTheRight(ShopifyPO.java:737)
-	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:88)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[2021-01-25 14:55:00,239 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:06,202 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:06,467 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:10,134 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:19,603 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:22,659 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:34,581 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:34,585 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:39,907 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:51,232 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:59,943 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:55:59,948 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:56:00,034 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Select Apps menu
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:56:05,255 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Visit Shopify App store
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:56:08,370 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:56:15,815 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Search import product app
+]]>
+            </line>
+            <line>
+              <![CDATA[2021-01-25 14:56:25,523 INFO  shopify.createStoreAndInstallChatalyst - Step 13: Select app
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC01_CreateShopifyStore -->
+        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@313ac989]" started-at="2021-01-25T14:56:58Z" name="TC01_CreateShopifyStore" finished-at="2021-01-25T14:57:01Z" duration-ms="3030" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:373)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at pageObject.ShopifyPO.switchToFirstWindow(ShopifyPO.java:898)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:87)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -320,39 +302,39 @@ Session ID: aac46f7fd14e070c0a107d480a5fa0ae
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
             <line>
-              <![CDATA[2021-01-21 10:42:46,130 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+              <![CDATA[2021-01-25 14:56:58,748 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
             </line>
             <line>
-              <![CDATA[2021-01-21 10:42:50,096 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+              <![CDATA[2021-01-25 14:57:01,709 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC01_CreateShopifyStore -->
-        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@3023df74]" started-at="2021-01-21T10:42:54Z" name="TC01_CreateShopifyStore" finished-at="2021-01-21T10:42:54Z" duration-ms="3" status="FAIL">
+        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@313ac989]" started-at="2021-01-25T14:57:01Z" name="TC01_CreateShopifyStore" finished-at="2021-01-25T14:57:01Z" duration-ms="7" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aac46f7fd14e070c0a107d480a5fa0ae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 834b4cf4a234bf554585f056c6267b4a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aac46f7fd14e070c0a107d480a5fa0ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 834b4cf4a234bf554585f056c6267b4a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -399,32 +381,32 @@ Session ID: aac46f7fd14e070c0a107d480a5fa0ae
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
             <line>
-              <![CDATA[2021-01-21 10:42:54,345 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+              <![CDATA[2021-01-25 14:57:01,778 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC01_CreateShopifyStore -->
-        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@3023df74]" started-at="2021-01-21T10:42:54Z" name="TC01_CreateShopifyStore" finished-at="2021-01-21T10:42:54Z" duration-ms="3" status="FAIL">
+        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@313ac989]" started-at="2021-01-25T14:57:01Z" name="TC01_CreateShopifyStore" finished-at="2021-01-25T14:57:01Z" duration-ms="13" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aac46f7fd14e070c0a107d480a5fa0ae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 834b4cf4a234bf554585f056c6267b4a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aac46f7fd14e070c0a107d480a5fa0ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 834b4cf4a234bf554585f056c6267b4a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -471,32 +453,32 @@ Session ID: aac46f7fd14e070c0a107d480a5fa0ae
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
             <line>
-              <![CDATA[2021-01-21 10:42:54,349 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+              <![CDATA[2021-01-25 14:57:01,785 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC01_CreateShopifyStore -->
-        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@3023df74]" started-at="2021-01-21T10:42:54Z" name="TC01_CreateShopifyStore" finished-at="2021-01-21T10:42:54Z" duration-ms="4" status="FAIL">
+        <test-method signature="TC01_CreateShopifyStore()[pri:0, instance:shopify.createStoreAndInstallChatalyst@313ac989]" started-at="2021-01-25T14:57:01Z" name="TC01_CreateShopifyStore" finished-at="2021-01-25T14:57:01Z" duration-ms="12" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aac46f7fd14e070c0a107d480a5fa0ae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 834b4cf4a234bf554585f056c6267b4a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aac46f7fd14e070c0a107d480a5fa0ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 834b4cf4a234bf554585f056c6267b4a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -543,19 +525,19 @@ Session ID: aac46f7fd14e070c0a107d480a5fa0ae
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
             <line>
-              <![CDATA[2021-01-21 10:42:54,353 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+              <![CDATA[2021-01-25 14:57:01,802 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC01_CreateShopifyStore -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:shopify.createStoreAndInstallChatalyst@3023df74]" started-at="2021-01-21T10:42:54Z" name="quitBrowser" finished-at="2021-01-21T10:42:55Z" duration-ms="737" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:shopify.createStoreAndInstallChatalyst@313ac989]" started-at="2021-01-25T14:57:01Z" name="quitBrowser" finished-at="2021-01-25T14:57:02Z" duration-ms="1086" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[2021-01-21 10:42:54,356 INFO  shopify.createStoreAndInstallChatalyst - OS Name = windows 10
+              <![CDATA[2021-01-25 14:57:01,814 INFO  shopify.createStoreAndInstallChatalyst - OS Name = windows 10
 ]]>
             </line>
             <line>
-              <![CDATA[2021-01-21 10:42:55,092 INFO  shopify.createStoreAndInstallChatalyst - ----------------QUIT BROWSER SUCCESS-----------------
+              <![CDATA[2021-01-25 14:57:02,899 INFO  shopify.createStoreAndInstallChatalyst - ----------------QUIT BROWSER SUCCESS-----------------
 ]]>
             </line>
           </reporter-output>

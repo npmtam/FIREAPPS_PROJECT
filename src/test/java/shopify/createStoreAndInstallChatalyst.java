@@ -186,12 +186,19 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
         shopifyPage.inputKeyword(shopifyPage.searchImportProductApp());
         shopifyPage.clickToSearchBtn();
 
+        boolean isPageNotResult = abstractPage.isElementPresentInDOM(ShopifyPageUI.NO_RESULT);
+        if (isPageNotResult) {
+            shopifyPage.searchAppInShopifyAppStore();
+            shopifyPage.inputKeyword(shopifyPage.searchImportProductApp());
+            shopifyPage.clickToSearchBtn();
+        }
+
         log.info("Step 13: Select app");
         shopifyPage.selectImportProductAppRandom();
 
         log.info("Step 14: Add random app to store");
-        //shopifyPage.clickToAddApp();
-        //shopifyPage.clickToInstallApp();
+        shopifyPage.clickToAddApp();
+        shopifyPage.clickToInstallApp();
         shopifyPage.sWitchTab();
 
         ///INSTALL OBERLO APP
@@ -459,9 +466,10 @@ public class createStoreAndInstallChatalyst extends AbstractTest {
         log.info("Step 50: Visit Shopify App store");
         chatalystPage.clickToVisitShopifyAppStore();
 
-        log.info("Step 51: Search app by keyword");
+        log.info("Step 51 : Search app by keyword");
         chatalystPage.inputKeyword(chatalystPage.getRandomKeyword());
         chatalystPage.clickToSearchBtn();
+
 
         //log.info("Step 14.1: Load page 2");
         //messentPage.clickToLoadPageTwo();

@@ -904,8 +904,8 @@ public class ShopifyPO extends AbstractPage {
 
     public void searchAppInShopifyAppStore() {
         sleepInSecond(3);
-        waitToElementClickable(ShopifyPageUI.SEARCH_SHOPIFY_APP_STORE_BTN);
-        clickToElement(ShopifyPageUI.SEARCH_SHOPIFY_APP_STORE_BTN);
+        waitToElementClickable(ShopifyPageUI.SEARCH_APP_STORE_BTN);
+        clickToElement(ShopifyPageUI.SEARCH_APP_STORE_BTN);
     }
 
 }

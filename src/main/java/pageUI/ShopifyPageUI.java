@@ -14,6 +14,7 @@ public class ShopifyPageUI {
     public static final String ERR_NAME_EXISTS = "//span[contains(text(), 'A store with that name already exists')]";
     public static final String ERR_ZIP_CODE = "//div[@id='PolarisTextField8Error']";
     public static final String ERR_PAGE_NOT_FOUND = "//h3[contains(text(),'The page youʼre looking for canʼt be found')]";
+    public static final String NO_RESULT = "//h2[contains(text(),'No results for this request')]";
 
     //Tell us a little about yourself
     public static final String TITLE_MORE_INFO = "//h1[text()='Tell us a little about yourself']";
@@ -71,6 +72,7 @@ public class ShopifyPageUI {
     public static final String SHOW_FULL_DESCRIPTION_BTN = "//button[contains(text(),'Show full description')]";
     public static final String CREATE_DISCOUNT_BTN = "//span[contains(text(),'Create discount code')]";
     public static final String SEARCH_SHOPIFY_APP_STORE_BTN = "//*[@id=\"ShopifyMainNav\"]/button[1]";
+    public static final String SEARCH_APP_STORE_BTN = "//*[@id=\"ShopifyMainNav\"]/button[1]/span";
     public static final String SEARCH_BTN_SHOPIFY_APP_STORE_BTN = "//body/div[@id='UiSearchNavbar']/div[1]/div[1]/form[1]/label[1]/button[1]/*[1]";
     public static final String SEARCH_APP_OBERLO_TEXTBOX = "//*[@id=\"UiSearchSuggestionForm\"]/label/input";
     public static final String SPOCKET_DROPSHIPPING_APP_IN_APPSTORE = "//div[@class='ui-app-card' and not (contains(@data-target-href, 'ad'))]//h4[contains(text(), 'Spocket ‑ US & EU Dropshipping')]";
@@ -193,8 +195,8 @@ public class ShopifyPageUI {
     public static final String ADD_PRODUCT6_TO_IMPORT_LIST = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div/div[3]/div[2]/div/div[6]/div/div/div[2]/div/div[2]/button/span[2]";
     public static final String IMPORT_LIST = "//span[contains(text(),'Import List')]";
     //public static final String SELECT_ALL_PRODUCT_CHECKBOX ="//label[@class='bulk-actions__item btn-basic']";
-    public static final String SELECT_ALL_PRODUCT_CHECKBOX = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[3]/div[2]/div/label";
-    public static final String IMPORT_ALL_PRODUCT_TO_STORE = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[3]/div[2]/div/button[1]";
+    public static final String SELECT_ALL_PRODUCT_CHECKBOX = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/div/label/input";
+    public static final String IMPORT_ALL_PRODUCT_TO_STORE = "//*[@id=\"page-content\"]/div/div[2]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/button/span";
     public static final String PUSH_PRODUCTS = "//span[contains(text(),'Yes')]";
     public static final String BACK_TO_SHOPIFY_ADMIN = "//span[contains(text(),'Shopify Admin')]";
 

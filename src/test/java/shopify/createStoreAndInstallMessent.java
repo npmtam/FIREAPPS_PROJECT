@@ -358,7 +358,7 @@ public class createStoreAndInstallMessent extends AbstractTest {
         log.info("Step 41: Visit Shopify App store");
         messentPage.clickToVisitShopifyAppStore();
 
-        *//*log.info("Step 42: choose account to continue to shopify app");
+        /*log.info("Step 42: choose account to continue to shopify app");
         shopifyPage.chooseAccount();*//*
 
         log.info("Random delay");

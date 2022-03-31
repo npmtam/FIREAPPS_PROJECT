@@ -170,6 +170,11 @@ public class AbstractPage {
         jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 
+    public void scrollPage(){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollBy(0,350)");
+    }
+
     public void selectItemInCustomDropdown(String parentLocator, String allItemsLocator, String expectedItem) {
         jsExecutor = (JavascriptExecutor) driver;
         waitExplicit = new WebDriverWait(driver, longTimeout);
@@ -369,6 +374,11 @@ public class AbstractPage {
         element = driver.findElement(By.xpath(locator));
         String actualText = element.getText();
         return actualText.equals(expectedResult);
+    }
+
+    public void enableCreateAccountButton(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.getElementsByClassName('captcha__submit')[0].removeAttribute('disabled')");
     }
 
     public boolean isElementEquals(String locator, String expectedResult, String... values) {

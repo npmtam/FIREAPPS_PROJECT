@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="shopify.createStoreAndInstallChatalyst" time="1,830.428" tests="5" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.2+12-46"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\FIREAPPS\auto-install\auto-install"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="createStoreAndInstallChatalyst"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\FIREAPPS\auto-install\auto-install"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="14.0.2+12-46"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-14.0.2;C:\Program Files\TortoiseGit\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.timezone" value="Asia/Saigon"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="Admin"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=createStoreAndInstallChatalyst test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-14.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="267.955">
+    <failure message="No frame element found by name or id intercom-modal-frame&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchFrameException">org.openqa.selenium.NoSuchFrameException: 
+No frame element found by name or id intercom-modal-frame
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:245)
+</failure>
+    <system-out><![CDATA[2021-01-25 10:07:23,451 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Clear test data
+2021-01-25 10:07:23,467 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-25 10:07:27,566 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-25 10:07:27,803 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-25 10:07:31,290 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2021-01-25 10:07:40,575 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2021-01-25 10:07:43,635 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2021-01-25 10:07:54,817 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-25 10:07:54,820 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2021-01-25 10:08:00,110 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+Country: Bulgaria
+There is no State or Province for this country
+2021-01-25 10:08:17,895 INFO  shopify.createStoreAndInstallChatalyst - Step 08: Verify the store has been created
+2021-01-25 10:08:17,921 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-25 10:08:17,922 INFO  shopify.createStoreAndInstallChatalyst - Step 09: Print store info
+Store URL: https://ora-simonis.myshopify.com
+Account info:
+Email: ora_simonis@mail.com
+Store Name: Ora Simonis
+Store type: Free
+Password: Jaquelin80
+Address: 45505 Sherman Stravenue
+City: East Leonardo
+Country: Bulgaria
+Created time: 25/01/2021 10:08:17
+2021-01-25 10:08:17,951 INFO  shopify.createStoreAndInstallChatalyst - Step 10: Select Apps menu
+2021-01-25 10:08:23,097 INFO  shopify.createStoreAndInstallChatalyst - Step 11: Visit Shopify App store
+2021-01-25 10:08:26,222 INFO  shopify.createStoreAndInstallChatalyst - Random delay
+2021-01-25 10:08:32,583 INFO  shopify.createStoreAndInstallChatalyst - Step 12: Search import product app
+2021-01-25 10:08:42,371 INFO  shopify.createStoreAndInstallChatalyst - Step 13: Select app
+2021-01-25 10:09:14,373 INFO  shopify.createStoreAndInstallChatalyst - Step 14: Add random app to store
+2021-01-25 10:09:22,464 INFO  shopify.createStoreAndInstallChatalyst - Step 15: Select Apps menu
+2021-01-25 10:09:25,556 INFO  shopify.createStoreAndInstallChatalyst - Step 16: Visit Shopify App store
+2021-01-25 10:09:28,667 INFO  shopify.createStoreAndInstallChatalyst - Step 17: choose account to continue to shopify app
+2021-01-25 10:09:28,667 INFO  shopify.createStoreAndInstallChatalyst - Step 18: Search app Oberlo
+2021-01-25 10:09:41,083 INFO  shopify.createStoreAndInstallChatalyst - Step 19: Select Oberlo app
+2021-01-25 10:09:42,385 INFO  shopify.createStoreAndInstallChatalyst - Step 20: Add Oberlo app to store
+2021-01-25 10:09:59,225 INFO  shopify.createStoreAndInstallChatalyst - Step create new account oberlo
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}) on port 39963
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1611544042.266][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1611544042.266][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+Jan 25, 2021 10:07:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="33.837">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class=&apos;marketing-nav__items marketing-nav__user display--expanded-nav&apos;]//input[@value=&apos;Start free trial&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial'] (tried for 30 second(s) with 500 milliseconds interval)
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 16358ee8456e0e8e6805fd70f462864e
+*** Element info: {Using=xpath, value=//ul[@class='marketing-nav__items marketing-nav__user display--expanded-nav']//input[@value='Start free trial']}
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:90)
+</failure>
+    <system-out><![CDATA[2021-01-25 10:11:51,613 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-25 10:11:55,264 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+]]></system-out>
+  </testcase>
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="738.422"/>
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="716.256"/>
+  <testcase name="TC01_CreateShopifyStore" classname="shopify.createStoreAndInstallChatalyst" time="69.402">
+    <failure message="Cannot locate element with text: Macao SAR China&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q3PRP13&apos;, ip: &apos;192.168.3.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Cannot locate element with text: Macao SAR China
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q3PRP13', ip: '192.168.3.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+	at shopify.createStoreAndInstallChatalyst.TC01_CreateShopifyStore(createStoreAndInstallChatalyst.java:145)
+</failure>
+    <system-out><![CDATA[2021-01-25 10:36:40,131 INFO  shopify.createStoreAndInstallChatalyst - Pre-condition: Access Shopify
+2021-01-25 10:36:40,963 INFO  shopify.createStoreAndInstallChatalyst - Step 01: Press on Start free trial button
+2021-01-25 10:36:41,321 INFO  shopify.createStoreAndInstallChatalyst - Step 02: Fill info to register
+2021-01-25 10:36:44,787 INFO  shopify.createStoreAndInstallChatalyst - Step 03: Press Create your store button
+2021-01-25 10:36:54,949 INFO  shopify.createStoreAndInstallChatalyst - Step 04: Verify Create an account
+2021-01-25 10:36:57,969 INFO  shopify.createStoreAndInstallChatalyst - Step 05: Verify the user can create the store
+2021-01-25 10:37:08,877 INFO  shopify.createStoreAndInstallChatalyst -  -------------------------- PASSED -------------------------- 
+2021-01-25 10:37:08,877 INFO  shopify.createStoreAndInstallChatalyst - Step 06: Fill info at About yourself
+2021-01-25 10:37:18,211 INFO  shopify.createStoreAndInstallChatalyst - Step 07: Fill address
+]]></system-out>
+  </testcase>
+</testsuite>

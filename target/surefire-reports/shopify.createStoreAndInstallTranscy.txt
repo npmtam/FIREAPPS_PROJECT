@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: shopify.createStoreAndInstallTranscy
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 6.12 sec <<< FAILURE! - in shopify.createStoreAndInstallTranscy
+beforeTest(shopify.createStoreAndInstallTranscy)  Time elapsed: 6.037 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:45613
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q3PRP13', ip: '10.10.15.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+	at shopify.createStoreAndInstallTranscy.beforeTest(createStoreAndInstallTranscy.java:43)
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:45613
+	at shopify.createStoreAndInstallTranscy.beforeTest(createStoreAndInstallTranscy.java:43)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at shopify.createStoreAndInstallTranscy.beforeTest(createStoreAndInstallTranscy.java:43)
+
